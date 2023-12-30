@@ -1,0 +1,19 @@
+.containerMap{
+  min-height: 20rem;
+}
+
+.containerMap div{
+  height: 100%;
+}
+
+.iconFacebook:hover{
+  color: rgb(27, 27, 189);
+}
+
+.iconInstagram{
+  color: rgb(210, 48, 48);
+}
+
+.iconInstagram:hover{
+  color: red;
+}
