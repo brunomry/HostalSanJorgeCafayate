@@ -1,7 +1,24 @@
 footer{
-  background-color: rgb(95, 154, 138);
+  background-color: rgb(207, 207, 207);
 }
 
-.iconSocial:hover{
-  color: black;
+.containerLogo img{
+  width: 200px;
+  height: 120px;
+}
+
+h5{
+  color: rgb(185, 151, 106);
+}
+
+.iconFacebook:hover{
+  color: rgb(27, 27, 189);
+}
+
+.iconInstagram{
+  color: rgb(210, 48, 48);
+}
+
+.iconInstagram:hover{
+  color: red;
 }
