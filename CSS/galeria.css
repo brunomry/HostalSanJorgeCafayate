@@ -1,13 +1,97 @@
-section img{
+.containerImg img{
   width: 100%;
-  height: 410px;
   object-fit: cover;
-  border: 5px solid rgb(255, 255, 255);
   cursor: pointer;
 }
-/* 
-section img:hover{
-  border: 5px solid rgb(255, 255, 255);
-  border-radius: 5px;
-}  */
 
+.containerImg{
+  position: relative;
+}
+
+.containerImg .containerBg{
+  display: none;
+}
+
+.containerImg:hover .containerBg{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Color negro con opacidad */
+  z-index: 99;
+  cursor: pointer;
+  color: #fff;
+  font-size: 12px;
+}
+
+.fullscreen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  margin: auto;
+}
+
+.fullscreen img {
+  max-width: 90%;
+  max-height: 100%;
+  object-fit: fill;
+}
+
+.fullscreen i{
+  display: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+@media all and (min-width:576px){
+  .containerImg:hover .containerBg{
+    width: 95%;
+    font-size: 1rem;
+  }
+}
+
+@media all and (min-width:768px){
+  .containerImg:hover .containerBg{
+    width: 88%;
+  }
+}
+
+@media all and (min-width:992px){
+  .containerImg:hover .containerBg{
+    width: 86%;
+  }
+
+  .fullscreen img {
+    max-width: 800px;
+    max-height: 600px;
+  }
+
+  .fullscreen i{
+    width: 900px;
+    text-align: end;
+  }
+}
+
+@media all and (min-width:1200px){
+  .containerImg:hover .containerBg{
+    width: 88%;
+  }
+}
+
+@media all and (min-width:1400px){
+  .containerImg:hover .containerBg{
+    width: 90%;
+  }
+}
