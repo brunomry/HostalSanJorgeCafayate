@@ -1,0 +1,93 @@
+.imgCarrusel{
+  height: 280px;
+  object-fit: fill;
+}
+
+.containerWelcome{
+  width: 900px;
+  height: 500px;
+}
+
+.containerService{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+  height: 500px;
+  background: #d1d1d1;
+}
+
+.containerService .containerImageService{
+  width: 500px;
+  height: 400px;
+}
+
+.containerImageService img{
+  width: 100%;
+  height: 100%;
+}
+
+.containerDescriptionService{
+  width: 400px;
+  padding-bottom: 100px;
+}
+
+.containerDescriptionService h2{
+  padding-bottom: 20px;
+}
+
+
+@media all and (min-width:576px){
+  .imgCarrusel{
+    height: 480px;
+  }
+}
+
+@media all and (min-width:768px){
+  .imgCarrusel{
+    height: 580px;
+  }
+}
+
+@media all and (min-width:992px){
+  .imgCarrusel{
+    height: 680px;
+  }
+}
+
+@media all and (min-width:1200px){
+  .imgCarrusel{
+    height: 780px;
+  }
+}
+
+@media all and (min-width:1400px){
+  .imgCarrusel{
+    height: 90vh;
+  }
+}
+
+.banner .containerImgHostal{
+  position: relative;
+  width: 100vw;
+}
+
+.imageHostal{
+  width: 100%;
+  height: 800px;
+  object-fit: fill;
+}
+
+.descriptionWelcome{
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0);
+  color: #FFf;
+}
