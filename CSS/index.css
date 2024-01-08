@@ -1,11 +1,22 @@
+body{
+  font-family: 'Nunito';
+}
+
 .imgCarrusel{
   height: 280px;
   object-fit: fill;
 }
 
 .containerWelcome{
-  width: 900px;
+  display: flex;
+  justify-content: center;
+  background: #F4F3E8;
   height: 500px;
+}
+
+.welcomeDescription{
+  width: 900px;
+ 
 }
 
 .containerService{
@@ -14,7 +25,8 @@
   align-items: center;
   gap: 75px;
   height: 500px;
-  background: #d1d1d1;
+  background: #F4F3E8;
+  background: #E6DCC8;
 }
 
 .containerService .containerImageService{
@@ -63,31 +75,6 @@
 
 @media all and (min-width:1400px){
   .imgCarrusel{
-    height: 90vh;
+    height: 70vh;
   }
-}
-
-.banner .containerImgHostal{
-  position: relative;
-  width: 100vw;
-}
-
-.imageHostal{
-  width: 100%;
-  height: 800px;
-  object-fit: fill;
-}
-
-.descriptionWelcome{
-  width: 100%;
-  height: 800px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  background-color: rgba(0,0,0,0);
-  color: #FFf;
 }
