@@ -22,99 +22,130 @@
     <main>
       <section id="carouselHostal" class="carousel slide">
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-interval="3000">
             <img
               src="./IMG/Hostal/1 (1).jpg"
               class="d-block w-100 imgCarrusel"
-              alt="..."
+              alt="vista de entrada del hostal"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-interval="3000">
             <img
               src="./IMG/Hostal/2.jpg"
               class="d-block w-100 imgCarrusel"
-              alt="..."
+              alt="Desayunador"
             />
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-interval="3000">
             <img
               src="./IMG/Hostal/7.jpg"
               class="d-block w-100 imgCarrusel"
-              alt="..."
+              alt="habitación"
             />
           </div>
         </div>
-        <button
+        <a
           class="carousel-control-prev"
-          type="button"
+          type="a"
           data-bs-target="#carouselHostal"
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
-        </button>
-        <button
+        </a>
+        <a
           class="carousel-control-next"
-          type="button"
+          type="a"
           data-bs-target="#carouselHostal"
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
-        </button>
+        </a>
       </section>
-      <section class="container-fluid sectionWelcome px-md-5 text-center py-5">
+      <section class="container-fluid sectionWelcome d-flex justify-content-center px-md-5 text-center py-5">
         <div class="welcomeDescription">
           <h1 class="pb-3 pt-md-5">¡Bienvenido a Hostal San Jorge!</h1>
           <p class="lead">
-            Hostal San Jorge se encuentra situado en la ciudad de Cafayate, provincia de Salta,
-            uno de los lugares más turísticos de Argentina. Contamos con más de 10 años brindando
-            alojamiento a nuestros huéspedes, siendo un lugar ideal para todas
-            aquellas personas que busquen un ambiente cómodo y tranquilo para descansar.
+            Con más de 10 años brindando alojamiento a nuestros huéspedes, en
+            Hostal San Jorge le ofrecemos un lugar cómodo, tranquilo e ideal
+            para descansar. Descubra la serenidad y la hospitalidad en el
+            corazón de Cafayate, provincia de Salta. Permítanos ser su hogar
+            lejos de casa mientras disfruta de los encantos de esta hermosa
+            región argentina.
           </p>
         </div>
       </section>
-      <section class="container-fluid sectionService py-5 d-flex justify-content-center align-items-center">
-        <div class="containerService d-flex justify-content-center align-items-center flex-column flex-md-row ">
+      <section
+        class="container-fluid sectionService py-5 d-flex justify-content-center align-items-center"
+      >
+        <div
+          class="containerService d-flex justify-content-center align-items-center flex-column flex-md-row"
+        >
           <div class="containerImageService order-1 order-md-0">
-            <img src="./IMG/Hostal/2.jpg" alt="" />
+            <img src="./IMG/Hostal/2.jpg" alt="desayuno" />
           </div>
           <div class="containerDescriptionService text-center">
-            <h2 class="pb-3">Servicio de Desayuno</h2>
+            <h2 class="pb-3">Servicio de Desayuno incluido</h2>
             <p class="lead">
-              Contamos con servicio de desayuno incluido en el horario de 8:45 a
-              9:45 am
+              Comience sus mañanas con un rico desayuno para energizar su día.
+              Te esperamos para brindarte nuestro servicio de desayuno, que
+              podrás disfrutar cada mañana en el horario de 8:45 a 9:45 am
+              durante tu estadía en Hostal San Jorge.
             </p>
           </div>
-        </div> 
+        </div>
       </section>
-      <section class="container-fluid sectionService py-5 d-flex justify-content-center align-items-center">
-        <div class="containerService d-flex justify-content-center align-items-center flex-column flex-md-row ">
+      <section
+        class="container-fluid sectionService py-5 d-flex justify-content-center align-items-center"
+      >
+        <div
+          class="containerService d-flex justify-content-center align-items-center flex-column flex-md-row"
+        >
           <div class="containerDescriptionService text-center">
             <h2 class="pb-3 pt-lg-5">Nuestras Habitaciones</h2>
-            <p class="lead pb-3">
-              Contamos con habitaciones simples, dobles, triples y quíntuples.
+            <p class="lead">
+              En Hostal San Jorge, entendemos que cada huésped es único. Por
+              eso, ofrecemos habitaciones diseñadas para su comodidad y
+              tranquilidad, que van desde simples hasta quíntuples.
             </p>
-            <button class="btn btn-outline-success">Ver Habitaciones</button>
+            <p class="lead pb-3">
+              ¡Tu espacio perfecto y la mejor experiencia la tendrás con
+              nosotros!
+            </p>
+            <a class="btnHabitaciones rounded-2 py-2 px-3 lead border-0">Ver Habitaciones</a>
           </div>
-          <div class="containerImageService">
-            <img src="./IMG/Hostal/7.jpg" alt="" />
+          <div class="containerImageService mt-3 mt-md-0">
+            <img src="./IMG/Hostal/7.jpg" alt="habitación" />
           </div>
-        </div>   
+        </div>
       </section>
-      <section class="container-fluid sectionInfo py-5 d-flex justify-content-center align-items-center">
-        <div class="containerInfo text-center d-flex justify-content-center align-items-center flex-column flex-xl-row">
+      <section
+        class="container-fluid sectionInfo py-5 d-flex justify-content-center align-items-center"
+      >
+        <div
+          class="containerInfo text-center d-flex justify-content-center align-items-center flex-column flex-xl-row"
+        >
           <div class="description">
-            <p class="lead">Consultá las preguntas más frecuentes de nuestros huéspedes.</p>
-            <button class="btn btn-outline-success">Ver Preguntas frecuentes</button>
+            <p class="lead pb-2">
+              Consultá las preguntas más frecuentes de nuestros huéspedes.
+            </p>
+            <a class="btnInfo rounded-2 py-2 px-3 lead">
+              Ver Preguntas frecuentes
+            </a>
           </div>
           <div class="description">
-            <p class="lead">Nuestro Hostal se encuentra ubicado a 2 cuadras de la plaza principal de Cafayate.</p>
-            <button class="btn btn-outline-success">Ver Cómo Llegar</button>
+            <p class="lead pb-2">
+              Nuestro Hostal se encuentra ubicado a 2 cuadras de la plaza
+              principal de Cafayate.
+            </p>
+            <a class="btnInfo rounded-2 py-2 px-3 lead">Ver Cómo Llegar</a>
           </div>
           <div class="description">
-            <p class="lead">También puedes ver más imágenes en nuestra galería</p>
-            <button class="btn btn-outline-success">Ver Galería</button>
+            <p class="lead pb-2">
+              También puedes ver más imágenes en nuestra galería
+            </p>
+            <a class="btnInfo rounded-2 py-2 px-3 lead">Ver Galería</a>
           </div>
         </div>
       </section>

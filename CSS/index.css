@@ -2,16 +2,19 @@ body{
   font-family: 'Nunito';
 }
 
+a{
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
 .imgCarrusel{
   height: 280px;
   object-fit: fill;
 }
 
 .sectionWelcome{
-  display: flex;
-  justify-content: center;
-
-  min-height: 600px;
+  min-height: 500px;
 }
 
 section:nth-child(2), section:nth-child(4){
@@ -24,8 +27,8 @@ section:nth-child(2), section:nth-child(4){
 
 .sectionService{
   width: 100%;
-  min-height: 400px;
   height: 100%;
+  min-height: 400px;
   background: #E6DCC8;
 }
 
@@ -66,6 +69,26 @@ section:nth-child(2), section:nth-child(4){
 
 .containerInfo .description{
   width: 100%;
+}
+
+.btnHabitaciones{
+  background: #decca7;
+}
+
+.btnHabitaciones:hover{
+  background: #c6a767;
+  transition: all .2s ease-in-out;
+}
+
+.btnInfo{
+  border: 1px solid #8f884d;
+  background: #E6DCC8;
+}
+
+.btnInfo:hover{
+  background: #ba9f6a;
+  transition: all .2s ease-in-out;
+  color: #fff;
 }
 
 @media all and (min-width:576px){
