@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Hostal San Jorge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,7 +21,31 @@
   </head>
   <body>
     <main>
-      <section id="carouselHostal" class="carousel slide">
+      <section id="carouselHostal" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselHostal"
+            data-bs-slide-to="0"
+            class="bg-dark active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            class="bg-dark"
+            data-bs-target="#carouselHostal"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            class="bg-dark"
+            data-bs-target="#carouselHostal"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
             <img
@@ -38,7 +63,7 @@
           </div>
           <div class="carousel-item" data-bs-interval="3000">
             <img
-              src="./IMG/Hostal/7.jpg"
+              src="./IMG/Hostal/habitacion4.jpg"
               class="d-block w-100 imgCarrusel"
               alt="habitación"
             />
@@ -63,17 +88,20 @@
           <span class="visually-hidden">Next</span>
         </a>
       </section>
-      <section class="container-fluid sectionWelcome d-flex justify-content-center px-md-5 text-center py-5">
+      <section
+        class="container-fluid sectionWelcome d-flex justify-content-center px-md-5 text-center py-5"
+      >
         <div class="welcomeDescription">
-          <h1 class="pb-3 pt-md-5">¡Bienvenido a Hostal San Jorge!</h1>
+          <h1 class="pb-4 mt-sm-5">¡Bienvenido a Hostal San Jorge!</h1>
           <p class="lead">
             Con más de 10 años brindando alojamiento a nuestros huéspedes, en
             Hostal San Jorge le ofrecemos un lugar cómodo, tranquilo e ideal
             para descansar. Descubra la serenidad y la hospitalidad en el
             corazón de Cafayate, provincia de Salta. Permítanos ser su hogar
-            lejos de casa mientras disfruta de los encantos de esta hermosa
-            región argentina.
+            lejos de casa y disfrute de una experiencia agradable y memorable
+            mientras disfruta de los encantos de esta hermosa región argentina.
           </p>
+
         </div>
       </section>
       <section
@@ -87,12 +115,34 @@
           </div>
           <div class="containerDescriptionService text-center">
             <h2 class="pb-3 pb-md-0 pb-lg-3">Servicio de Desayuno incluido</h2>
-            <p class="lead ">
+            <p class="lead">
               Comience sus mañanas con un rico desayuno para energizar su día.
               Te esperamos para brindarte nuestro servicio de desayuno, que
-              podrás disfrutar cada mañana en el horario de 8:45 a 9:45 am
-              durante tu estadía en Hostal San Jorge.
-            </p>
+              podrás disfrutar cada mañana durante tu estadía en Hostal San
+              Jorge.
+            </p> 
+            <div class="mt-4 d-none d-lg-block">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>    
+          </div>
+        </div>
+      </section>
+      <section
+        class="container-fluid sectionServices py-5 d-flex flex-column align-items-center justify-content-center"
+      >
+        <h2 class="pb-4 pb-lg-5 ">Comodidades</h2>
+        <div class="d-flex flex-column flex-md-row containerAmenities justify-content-center">
+          <div class="d-flex flex-column gap-2 align-items-center ">
+            <i class="fa-solid fa-wifi"></i>
+            <span class="text-center lead">Wi-Fi</span>
+          </div>
+          <div class="d-flex flex-column gap-2 text-center">
+            <i class="fa-solid fa-bed"></i> 
+            <span class="text-center lead">Ropa de cama y toallas</span>
+          </div>
+          <div class="d-flex flex-column gap-2 text-center">
+            <i class="fa-solid fa-shower"></i> 
+            <span class="text-center lead">Baño privado</span>
           </div>
         </div>
       </section>
@@ -113,7 +163,9 @@
               ¡Tu espacio perfecto y la mejor experiencia la tendrás con
               nosotros!
             </p>
-            <a class="btnHabitaciones rounded-2 py-2 px-3 lead border-0">Ver Habitaciones</a>
+            <a class="btnHabitaciones rounded-2 py-2 px-3 lead border-0" href="./PAGES/habitaciones.html"
+              >Ver Habitaciones</a
+            >
           </div>
           <div class="containerImageService mt-3 mt-md-0">
             <img src="./IMG/Hostal/7.jpg" alt="habitación" />
@@ -130,7 +182,7 @@
             <p class="lead pb-2">
               Consultá las preguntas más frecuentes de nuestros huéspedes.
             </p>
-            <a class="btnInfo rounded-2 py-2 px-3 lead">
+            <a class="btnInfo rounded-2 py-2 px-3 lead" href="./PAGES/preguntasFrecuentes.html">
               Ver Preguntas frecuentes
             </a>
           </div>
@@ -139,13 +191,13 @@
               Nuestro Hostal se encuentra ubicado a 2 cuadras de la plaza
               principal de Cafayate.
             </p>
-            <a class="btnInfo rounded-2 py-2 px-3 lead">Ver Cómo Llegar</a>
+            <a class="btnInfo rounded-2 py-2 px-3 lead" href="./PAGES/comoLlegar.html">Ver Cómo Llegar</a>
           </div>
           <div class="description">
             <p class="lead pb-2">
               También puedes ver más imágenes en nuestra galería
             </p>
-            <a class="btnInfo rounded-2 py-2 px-3 lead">Ver Galería</a>
+            <a class="btnInfo rounded-2 py-2 px-3 lead" href="./PAGES/galeria.html">Ver Galería</a>
           </div>
         </div>
       </section>
