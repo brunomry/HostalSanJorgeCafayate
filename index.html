@@ -3,8 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bienvenido a Hostal San Jorge, un lugar cómodo e ideal para descansar, en la ciudad de Cafayate, provincia de Salta. Disfrute de una experiencia agradable y memorable mientras explora los encantos de esta hermosa región argentina."
+    />
+    <meta
+      name="keywords"
+      content="Hostal San Jorge, alojamiento, Cafayate, Salta, habitaciones, desayuno, comodidades, redes sociales, Wi-Fi, baño privado, ropa de cama, toallas, preguntas frecuentes, cómo llegar, galería"
+    />
+    <meta name="author" content="Bruno Madozzo Romay" />
+    <meta name="robots" content="index, follow" />
     <title>Home | Hostal San Jorge</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,11 +37,13 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./CSS/estilos.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
     <link rel="stylesheet" href="./CSS/index.css" />
   </head>
   <body>
     <main>
-      <section id="carouselHostal" class="carousel slide" data-bs-ride="carousel">
+      <section id="carouselHostal" class="carousel slide">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -49,9 +71,9 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
             <img
-              src="./IMG/Hostal/1 (1).jpg"
+              src="./IMG/Hostal/habitacion4.jpg"
               class="d-block w-100 imgCarrusel"
-              alt="vista de entrada del hostal"
+              alt="habitación"
             />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
@@ -63,9 +85,14 @@
           </div>
           <div class="carousel-item" data-bs-interval="3000">
             <img
-              src="./IMG/Hostal/habitacion4.jpg"
-              class="d-block w-100 imgCarrusel"
-              alt="habitación"
+              src="./IMG/Hostal/1 (1).jpg"
+              class="d-block d-lg-none w-100 imgCarrusel"
+              alt="vista de entrada del hostal"
+            />
+            <img
+              src="./IMG/Hostal/1 (1).jpg"
+              class="d-none d-lg-block w-100 imgCarrusel"
+              alt="vista de entrada del hostal"
             />
           </div>
         </div>
@@ -99,9 +126,8 @@
             para descansar. Descubra la serenidad y la hospitalidad en el
             corazón de Cafayate, provincia de Salta. Permítanos ser su hogar
             lejos de casa y disfrute de una experiencia agradable y memorable
-            mientras disfruta de los encantos de esta hermosa región argentina.
+            mientras explora los encantos de esta hermosa región argentina.
           </p>
-
         </div>
       </section>
       <section
@@ -120,28 +146,30 @@
               Te esperamos para brindarte nuestro servicio de desayuno, que
               podrás disfrutar cada mañana durante tu estadía en Hostal San
               Jorge.
-            </p> 
+            </p>
             <div class="mt-4 d-none d-lg-block">
               <i class="fa-solid fa-mug-hot"></i>
-            </div>    
+            </div>
           </div>
         </div>
       </section>
       <section
         class="container-fluid sectionServices py-5 d-flex flex-column align-items-center justify-content-center"
       >
-        <h2 class="pb-4 pb-lg-5 ">Comodidades</h2>
-        <div class="d-flex flex-column flex-md-row containerAmenities justify-content-center">
-          <div class="d-flex flex-column gap-2 align-items-center ">
+        <h2 class="pb-4 pb-lg-5">Comodidades</h2>
+        <div
+          class="d-flex flex-column flex-md-row containerAmenities justify-content-center"
+        >
+          <div class="d-flex flex-column gap-2 align-items-center">
             <i class="fa-solid fa-wifi"></i>
             <span class="text-center lead">Wi-Fi</span>
           </div>
           <div class="d-flex flex-column gap-2 text-center">
-            <i class="fa-solid fa-bed"></i> 
+            <i class="fa-solid fa-bed"></i>
             <span class="text-center lead">Ropa de cama y toallas</span>
           </div>
           <div class="d-flex flex-column gap-2 text-center">
-            <i class="fa-solid fa-shower"></i> 
+            <i class="fa-solid fa-shower"></i>
             <span class="text-center lead">Baño privado</span>
           </div>
         </div>
@@ -156,14 +184,14 @@
             <h2 class="pb-3 pb-md-0 pb-lg-3 pt-lg-5">Nuestras Habitaciones</h2>
             <p class="lead">
               En Hostal San Jorge, entendemos que cada huésped es único. Por
-              eso, ofrecemos habitaciones diseñadas para su comodidad y
+              eso, ofrecemos habitaciones privadas diseñadas para su comodidad y
               tranquilidad, que van desde simples hasta quíntuples.
             </p>
             <p class="lead pb-3 pb-md-0 pb-lg-3">
               ¡Tu espacio perfecto y la mejor experiencia la tendrás con
               nosotros!
             </p>
-            <a class="btnHabitaciones rounded-2 py-2 px-3 lead border-0" href="./PAGES/habitaciones.html"
+            <a class="btnHabitaciones rounded-2 py-2 px-3 lead"
               >Ver Habitaciones</a
             >
           </div>
@@ -179,25 +207,29 @@
           class="containerInfo text-center d-flex justify-content-center align-items-center flex-column flex-xl-row"
         >
           <div class="description">
+            <i class="fa-solid fa-circle-question pb-3"></i>
+            <h3>Preguntas frecuentes</h3>
             <p class="lead pb-2">
               Consultá las preguntas más frecuentes de nuestros huéspedes.
             </p>
-            <a class="btnInfo rounded-2 py-2 px-3 lead" href="./PAGES/preguntasFrecuentes.html">
-              Ver Preguntas frecuentes
-            </a>
+            <a class="btnInfo rounded-2 py-2 px-3 lead"> Ver más </a>
           </div>
           <div class="description">
+            <i class="fa-solid fa-location-dot mb-3"></i>
+            <h3>Cómo llegar</h3>
             <p class="lead pb-2">
-              Nuestro Hostal se encuentra ubicado a 2 cuadras de la plaza
+              Hostal San Jorge se encuentra ubicado a 2 cuadras de la plaza
               principal de Cafayate.
             </p>
-            <a class="btnInfo rounded-2 py-2 px-3 lead" href="./PAGES/comoLlegar.html">Ver Cómo Llegar</a>
+            <a class="btnInfo rounded-2 py-2 px-3 lead">Ver más</a>
           </div>
           <div class="description">
+            <i class="fa-solid fa-image pb-3"></i>
+            <h3>Galería</h3>
             <p class="lead pb-2">
-              También puedes ver más imágenes en nuestra galería
+              También puedes ver más imágenes de nuestro hostal.
             </p>
-            <a class="btnInfo rounded-2 py-2 px-3 lead" href="./PAGES/galeria.html">Ver Galería</a>
+            <a class="btnInfo rounded-2 py-2 px-3 lead">Ver más</a>
           </div>
         </div>
       </section>

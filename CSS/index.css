@@ -9,12 +9,12 @@ a{
 }
 
 .imgCarrusel{
-  height: 280px;
+  height: 17.5rem;
   object-fit: fill;
 }
 
 .sectionWelcome{
-  min-height: 500px;
+  min-height: 31.25rem;
 }
 
 section:nth-child(2), section:nth-child(4){
@@ -22,25 +22,25 @@ section:nth-child(2), section:nth-child(4){
 }
 
 .welcomeDescription{
-  width: 700px;
+  width: 43.75rem;
 }
 
 .sectionService{
   width: 100%;
   height: 100%;
-  min-height: 400px;
+  min-height: 25rem;
   background: #E6DCC8;
 }
 
 .sectionService .containerService{
-  min-width: 230px;
+  min-width: 14.375rem;
   max-width: 100%;
   gap: 30px;
 }
 
 .sectionService .containerImageService{
-  min-width: 230px;
-  min-height: 200px;
+  min-width: 14.375rem;
+  min-height: 12.5rem;
 }
 
 .containerImageService img{
@@ -49,7 +49,7 @@ section:nth-child(2), section:nth-child(4){
 }
 
 .containerDescriptionService{
-  min-width: 240px;
+  min-width: 15rem;
   width: 100%;
 }
 
@@ -59,7 +59,7 @@ section:nth-child(2), section:nth-child(4){
 
 .sectionServices{
   width: 100%;
-  min-height: 300px;
+  min-height: 25rem;
 }
 
 .sectionServices .containerAmenities{
@@ -67,14 +67,20 @@ section:nth-child(2), section:nth-child(4){
   gap: 30px;
 }
 
-i{
+.containerAmenities i,
+.sectionService i{
   font-size:30px;
   color: #c6a767;
 }
 
+.sectionInfo i{
+  font-size:30px;
+  color: #ba9f6a;
+}
+
 .sectionInfo{
   background: #F4F3E8;
-  min-height: 300px;
+  min-height: 25rem;
 }
 
 .sectionInfo .containerInfo{
@@ -87,11 +93,14 @@ i{
 }
 
 .btnHabitaciones{
-  background: #c6a767;
+  border: 1px solid #8f884d;
+  background: #b8954f;
+  /* background: #ba9f6a; */
+  color: #fff;
 }
 
 .btnHabitaciones:hover{
-  background: #b8954f;
+  background: #9d7d3d;
   color: #fff;
   transition: all .2s ease-in-out;
 }
@@ -109,21 +118,21 @@ i{
 
 @media all and (min-width:576px){
   .imgCarrusel{
-    height: 480px;
+    height: 30rem;
   }
 
   .containerImageService{
-    max-width: 400px;
+    max-width: 25rem;
   }
 }
 
 @media all and (min-width:768px){
   .imgCarrusel{
-    height: 580px;
+    height: 36.25rem;
   }
 
   .sectionService{
-    height: 500px;
+    height: 31.25rem;
   }
 
   .sectionService .containerService{
@@ -139,7 +148,9 @@ i{
     gap: 100px;
   }
   
-  i{
+  .containerAmenities i,
+  .sectionService i,
+  .sectionInfo i{
     font-size:50px;
   }
 
