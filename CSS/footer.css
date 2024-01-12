@@ -1,5 +1,6 @@
 footer{
-  background-color: rgb(207, 207, 207);
+  border-top: 1px solid rgb(224, 221, 221);
+  background: #eee4d3;
 }
 
 .containerLogo img{
@@ -8,7 +9,11 @@ footer{
 }
 
 h5{
-  color: rgb(185, 151, 106);
+  color: rgb(150, 117, 74);
+}
+
+.iconFacebook{
+  color: #3d61f2;
 }
 
 .iconFacebook:hover{
