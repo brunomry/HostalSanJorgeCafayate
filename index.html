@@ -43,7 +43,7 @@
   </head>
   <body>
     <main>
-      <section id="carouselHostal" class="carousel slide">
+      <section id="carouselHostal" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -71,9 +71,14 @@
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3000">
             <img
-              src="./IMG/Hostal/habitacion4.jpg"
-              class="d-block w-100 imgCarrusel"
-              alt="habitación"
+              src="./IMG/Hostal/1 (1).jpg"
+              class="d-block d-lg-none w-100 imgCarrusel"
+              alt="vista de entrada del hostal"
+            />
+            <img
+              src="./IMG/Hostal/1 (1).jpg"
+              class="d-none d-lg-block w-100 imgCarrusel"
+              alt="vista de entrada del hostal"
             />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
@@ -85,16 +90,11 @@
           </div>
           <div class="carousel-item" data-bs-interval="3000">
             <img
-              src="./IMG/Hostal/1 (1).jpg"
-              class="d-block d-lg-none w-100 imgCarrusel"
-              alt="vista de entrada del hostal"
+              src="./IMG/Hostal/habitacion4.jpg"
+              class="d-block w-100 imgCarrusel"
+              alt="habitación"
             />
-            <img
-              src="./IMG/Hostal/1 (1).jpg"
-              class="d-none d-lg-block w-100 imgCarrusel"
-              alt="vista de entrada del hostal"
-            />
-          </div>
+          </div>         
         </div>
         <a
           class="carousel-control-prev"
@@ -102,7 +102,7 @@
           data-bs-target="#carouselHostal"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </a>
         <a
@@ -111,7 +111,7 @@
           data-bs-target="#carouselHostal"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </a>
       </section>
@@ -137,7 +137,7 @@
           class="containerService d-flex justify-content-center align-items-center flex-column flex-md-row"
         >
           <div class="containerImageService order-1 order-md-0">
-            <img src="./IMG/Hostal/2.jpg" alt="desayuno" />
+            <img src="./IMG/Hostal/2.jpg" alt="desayuno" class="shadow"/>
           </div>
           <div class="containerDescriptionService text-center">
             <h2 class="pb-3 pb-md-0 pb-lg-3">Servicio de Desayuno incluido</h2>
@@ -191,12 +191,12 @@
               ¡Tu espacio perfecto y la mejor experiencia la tendrás con
               nosotros!
             </p>
-            <a class="btnHabitaciones rounded-2 py-2 px-3 lead"
+            <a class="btnHabitaciones rounded-2 py-2 px-3 lead" href="./PAGES/habitaciones.html"
               >Ver Habitaciones</a
             >
           </div>
           <div class="containerImageService mt-3 mt-md-0">
-            <img src="./IMG/Hostal/7.jpg" alt="habitación" />
+            <img src="./IMG/Hostal/7.jpg" alt="habitación" class="shadow"/>
           </div>
         </div>
       </section>
