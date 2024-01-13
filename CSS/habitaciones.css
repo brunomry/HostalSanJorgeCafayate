@@ -1,0 +1,25 @@
+main{
+  background: #f1e8d6;
+}
+
+.cardRoom{
+  width: 1075px;
+  min-height: 400px;
+  background: #F4F3E8;
+}
+
+.cardRoom .carouselRoom{
+  width: 400px;
+  height: 100%;
+}
+
+.containerImg img{
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carouselImgIndicators img{
+  width: 100px;
+  height: 100px;
+}
