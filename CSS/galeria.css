@@ -4,6 +4,8 @@ main{
 
 .containerImg img{
   width: 100%;
+  height: 100%;
+  height: 130px;
   object-fit: cover;
   cursor: pointer;
 }
@@ -24,7 +26,7 @@ main{
   width: 97%;
   height: 100%;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.4); /* Color negro con opacidad */
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 99;
   cursor: pointer;
   color: #fff;
@@ -64,17 +66,32 @@ main{
     width: 95%;
     font-size: 1rem;
   }
+
+  .containerImg img{
+    width: 100%;
+    height: 190px;
+  }
 }
 
 @media all and (min-width:768px){
   .containerImg:hover .containerBg{
     width: 88%;
   }
+
+  .containerImg img{
+    width: 325px;
+    height: 300px;
+  }
 }
 
 @media all and (min-width:992px){
+  .containerImg img{
+    width: 300px;
+    height: 250px;
+  }
+
   .containerImg:hover .containerBg{
-    width: 86%;
+    width: 92%;
   }
 
   .fullscreen img {
@@ -89,12 +106,22 @@ main{
 }
 
 @media all and (min-width:1200px){
+  .containerImg img{
+    width: 340px;
+    height: 300px;
+  }
+
   .containerImg:hover .containerBg{
     width: 88%;
   }
 }
 
 @media all and (min-width:1400px){
+  .containerImg img{
+    width: 400px;
+    height: 300px;
+  }
+
   .containerImg:hover .containerBg{
     width: 90%;
   }
