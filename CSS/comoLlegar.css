@@ -1,3 +1,11 @@
+body{
+  font-family: 'Nunito', sans-serif;
+}
+
+main{
+  background: #f1e8d6;
+}
+
 .containerMap{
   min-height: 20rem;
 }
