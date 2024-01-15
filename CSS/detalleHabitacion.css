@@ -1,21 +1,27 @@
-body{
-  font-family: 'Nunito', sans-serif;
-  background: #f1e8d6;;
+.containerImg img{
+  width: 100%;
+  height: 400px;
+  cursor: pointer;
 }
 
 .smallImg{
   width: 100px;
   height: 100px;
+  cursor: pointer;
 }
 
 i{
   color: #c6a767;
 }
 
-@media all and (min-width:992px){
+@media all and (min-width:1400px){
+  .containerSmallImg{
+    width: 600px;
+  }
+
   .containerImg{
     width: 600px;
-    height: 500px;
+    height: 400px;
   }
 
   img{
