@@ -10,11 +10,6 @@ section .descriptionRooms{
   background: #F4F3E8;
 }
 
-.cardRoom .carouselRoom{
-  width: 400px;
-  height: 100%;
-}
-
 .containerImg img{
   width: 100%;
   height: 225px;
@@ -57,15 +52,15 @@ section .descriptionRooms{
 
 @media all and (min-width:992px){
   section .descriptionRooms{
-    width: 850px;
+    width: 900px;
   }
 
   .cardRoom{
-    width: 800px;
+    width: 900px;
   }
 
   .containerImg img{
-    width: 400px;
-    height: 285px;
+    width: 450px;
+    height: 300px;
   }
 }
