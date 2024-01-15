@@ -2,3 +2,24 @@ body{
   font-family: 'Nunito', sans-serif;
   background: #f1e8d6;;
 }
+
+.smallImg{
+  width: 100px;
+  height: 100px;
+}
+
+i{
+  color: #c6a767;
+}
+
+@media all and (min-width:992px){
+  .containerImg{
+    width: 600px;
+    height: 500px;
+  }
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
