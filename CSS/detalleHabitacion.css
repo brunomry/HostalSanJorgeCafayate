@@ -9,8 +9,14 @@
   object-fit: fill;
 }
 
+.containerSmallImg{
+  width: 100%;
+}
+
 .containerSmallImg .smallImg{
-  width: 100px;
+  width: 100%;
+  min-width: 70px;
+  max-width: 100px;
   height: 100px;
   cursor: pointer;
 }
