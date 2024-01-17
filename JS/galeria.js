@@ -1,10 +1,19 @@
 const div = document.getElementById('fullscreen');
-const img = document.getElementById('fullscreenImg');
 const botonCerrar = document.getElementById('cerrar');
+const itemsCarousel = document.querySelectorAll('.carousel-item');
+const imagesCarousel = document.querySelectorAll('.imgCarousel');
 
 const abrirImagen = imageSrc => {
-    img.src = imageSrc;
-    div.classList.add('d-flex','flex-column');    
+    div.classList.add('d-flex','flex-column');
+    imagesCarousel.forEach((img,pos) =>{
+        if(itemsCarousel[pos].classList.contains('active')){
+          itemsCarousel[pos].classList.remove('active')
+        }
+
+        if(img.src === imageSrc){
+          itemsCarousel[pos].classList.add('active');
+        }
+    })
 }
 
 const cerrarImagen = () => {
@@ -21,11 +30,9 @@ document.addEventListener('click', (e) => {
   if (
     e.target.id === "cerrar" || 
     e.target.id === "fullscreenImg" || 
-    e.target.id === "btnVolver" || 
+    e.target.id === "btnCerrar" || 
     e.target.id === "fullscreen"
   ){
     cerrarImagen();
   }
 });
-
-const containerBg = document.getElementById("containerBg")

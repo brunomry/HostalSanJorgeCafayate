@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Explora las instalaciones y habitaciones del Hostal San Jorge a través de las imágenes de la galería." />
-    <meta name="keywords" content="Hostal San Jorge, galería, habitaciones, instalaciones, imágenes, alojamiento, antiguedades" />
+    <meta
+      name="description"
+      content="Explora las instalaciones y habitaciones del Hostal San Jorge a través de las imágenes de la galería."
+    />
+    <meta
+      name="keywords"
+      content="Hostal San Jorge, galería, habitaciones, instalaciones, imágenes, alojamiento, antiguedades"
+    />
     <meta name="author" content="Bruno Madozzo Romay" />
     <title>Galería | Hostal San Jorge</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,8 +40,7 @@
         <div class="text-center">
           <h1 class="pb-4">Hostal San Jorge</h1>
           <p class="lead">
-            Explora nuestras instalaciones y habitaciones a través de estas
-            imágenes. 
+            Explora nuestras instalaciones y habitaciones a través de estas imágenes.
           </p>
           <p class="lead">Haz clic en cada imagen para verla en detalle.</p>
         </div>
@@ -46,7 +51,7 @@
               alt="hostal"
               class="shadow border border-2 border-white"
             />
-            <div class="containerBg" id="fullscreenClic">
+            <div class="containerBg">
               <p>Haz clic para ver</p>
             </div>
           </div>
@@ -56,7 +61,7 @@
               alt="televisor antiguo"
               class="shadow border border-2 border-white"
             />
-            <div class="containerBg" id="fullscreenClic">
+            <div class="containerBg">
               <p>Haz clic para ver</p>
             </div>
           </div>
@@ -66,7 +71,7 @@
               alt="desayunador"
               class="shadow border border-2 border-white"
             />
-            <div class="containerBg" id="fullscreenClic">
+            <div class="containerBg">
               <p>Haz clic para ver</p>
             </div>
           </div>
@@ -76,7 +81,7 @@
               alt="antiguedades"
               class="shadow border border-2 border-white"
             />
-            <div class="containerBg" id="fullscreenClic">
+            <div class="containerBg">
               <p>Haz clic para ver</p>
             </div>
           </div>
@@ -86,7 +91,7 @@
               alt="Sillones y antiguedades"
               class="shadow border border-2 border-white"
             />
-            <div class="containerBg" id="fullscreenClic">
+            <div class="containerBg">
               <p>Haz clic para ver</p>
             </div>
           </div>
@@ -96,7 +101,7 @@
               alt="Pasillo del salón desayunador"
               class="shadow border border-2 border-white"
             />
-            <div class="containerBg" id="fullscreenClic">
+            <div class="containerBg">
               <p>Haz clic para ver</p>
             </div>
           </div>
@@ -106,7 +111,7 @@
               alt="habitacion matrimonial"
               class="shadow border border-2 border-white"
             />
-            <div class="containerBg" id="fullscreenClic">
+            <div class="containerBg">
               <p>Haz clic para ver</p>
             </div>
           </div>
@@ -116,7 +121,7 @@
               alt="relojes antiguos"
               class="shadow border border-2 border-white"
             />
-            <div class="containerBg" id="fullscreenClic">
+            <div class="containerBg">
               <p>Haz clic para ver</p>
             </div>
           </div>
@@ -126,7 +131,7 @@
               alt="habitacion matrimonial"
               class="shadow border border-2 border-white"
             />
-            <div class="containerBg" id="fullscreenClic">
+            <div class="containerBg">
               <p>Haz clic para ver</p>
             </div>
           </div>
@@ -136,7 +141,7 @@
               alt="máquina de escribir"
               class="shadow border border-2 border-white"
             />
-            <div class="containerBg" id="fullscreenClic">
+            <div class="containerBg">
               <p>Haz clic para ver</p>
             </div>
           </div>
@@ -146,7 +151,7 @@
               alt="parra de uva"
               class="shadow border border-2 border-white"
             />
-            <div class="containerBg" id="fullscreenClic">
+            <div class="containerBg">
               <p>Haz clic para ver</p>
             </div>
           </div>
@@ -156,26 +161,134 @@
               alt="baño"
               class="shadow border border-2 border-white"
             />
-            <div class="containerBg" id="fullscreenClic">
+            <div class="containerBg">
               <p>Haz clic para ver</p>
             </div>
           </div>
         </div>
       </section>
-      <div id="fullscreen" class="fullscreen">
+      <div
+        id="fullscreen"
+        class="fullscreen text-center"
+        data-bs-slide="carousel"
+      >
         <i class="bi bi-x-lg d-md-none" id="cerrar"></i>
-        <img
-          id="fullscreenImg"
-          src=""
-          alt="Fullscreen Image"
-          class="border border-4 border-white"
-        />
-        <button
-          class="btn btn-dark mt-3 fs-5 fw-bold border border-white"
-          id="btnVolver"
-        >
-          Volver a la galería
-        </button>
+        <div id="carouselFullScreen" class="carousel slide carouselFullScreen">
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img
+                src="../IMG/Galeria/frente.jpg"
+                alt="Fullscreen Image"
+                class="border border-4 border-white imgCarousel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../IMG/Galeria/televisorAntiguo.jpg"
+                alt="Fullscreen Image"
+                class="border border-4 border-white imgCarousel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../IMG/Galeria/3.jpg"
+                alt="Fullscreen Image"
+                class="border border-4 border-white imgCarousel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../IMG/Galeria/4.jpg"
+                alt="Fullscreen Image"
+                class="border border-4 border-white imgCarousel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../IMG/Galeria/5.jpg"
+                alt="Fullscreen Image"
+                class="border border-4 border-white imgCarousel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../IMG/Galeria/6.jpg"
+                alt="Fullscreen Image"
+                class="border border-4 border-white imgCarousel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../IMG/Galeria/habitacion7.jpg"
+                alt="Fullscreen Image"
+                class="border border-4 border-white imgCarousel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../IMG/Galeria/relojes.jpg"
+                alt="Fullscreen Image"
+                class="border border-4 border-white imgCarousel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../IMG/Galeria/habitacion6.jpg"
+                alt="Fullscreen Image"
+                class="border border-4 border-white imgCarousel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../IMG/Galeria/maquinaDeEscribir.jpg"
+                alt="Fullscreen Image"
+                class="border border-4 border-white imgCarousel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../IMG/Galeria/12.jpg"
+                alt="Fullscreen Image"
+                class="border border-4 border-white imgCarousel"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../IMG/Galeria/baño.jpg"
+                alt="Fullscreen Image"
+                class="border border-4 border-white imgCarousel"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            id="carouselPrev"
+            type="button"
+            data-bs-target="#carouselFullScreen"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            id="carouselNext"
+            type="button"
+            data-bs-target="#carouselFullScreen"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="text-center">
+          <button
+            class="btn btn-dark mt-3 fs-5 fw-bold border border-white px-5"
+            id="btnCerrar"
+          >
+            Cerrar
+          </button>
+        </div>
       </div>
     </main>
     <script
@@ -184,5 +297,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="../JS/galeria.js"></script>
+    <script src="../JS/app.js"></script>
   </body>
 </html>
