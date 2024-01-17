@@ -4,7 +4,7 @@
 
 .containerImg img{
   width: 100%;
-  height: 350px;
+  height: 40vh;
   cursor: pointer;
   object-fit: fill;
 }
@@ -16,8 +16,8 @@
 .containerSmallImg .smallImg{
   width: 100%;
   min-width: 70px;
-  max-width: 100px;
-  height: 100px;
+  max-width: 120px;
+  height: 10vh;
   cursor: pointer;
 }
 
@@ -35,7 +35,7 @@ i{
   background: rgba(0, 0, 0, 0.9);
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 99;
   margin: auto;
 }
 
@@ -45,7 +45,7 @@ i{
 
 .imgCarousel {
   width: 100%;
-  height: 400px;
+  height: 40vh;
   object-fit: fill;
 }
 
@@ -57,15 +57,51 @@ i{
   margin-bottom: 20px;
 }
 
-@media all and (min-width: 768px){
+@media all and (min-width: 375px){
   .containerImg img{
-    height: 450px;
+    height: 55vh;
+  }
+
+  .containerSmallImg .smallImg{
+    height: 12vh;
+  }
+
+  .carouselFullScreen .imgCarousel{
+    height: 63.79vh;
+    object-fit: fill;
+  }
+}
+
+@media all and (min-width: 576px){
+  .containerImg img{
+    width: 500px;
+    height: 58vh;
   }
 
   .carouselFullScreen .imgCarousel{
     max-width: 700px;
-    height: 600px;
+  }
+
+  .carouselFullScreen{
+    max-width: 680px;
+  }
+}
+
+@media all and (min-width: 768px){
+  .containerImg{
+    text-align: center;
+  }
+
+  .containerImg img{
+    width: 600px;
+    height: 58vh;
     object-fit: fill;
+  }
+}
+
+@media all and (min-width:992px){
+  .containerImg img{
+    width: 100%;
   }
 }
 
@@ -76,7 +112,7 @@ i{
 
   .containerImg{
     width: 600px;
-    height: 500px;
+    height: 60vh;
   }
 
   .containerImg img{
@@ -85,9 +121,13 @@ i{
     object-fit: fill;
   }
 
+  .carouselFullScreen{
+    max-width: 780px;
+  }
+
   .carouselFullScreen .imgCarousel{
     max-width: 800px;
-    height: 700px;
+    height: 80vh;
     text-align: center;
   }
 }

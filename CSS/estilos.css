@@ -2,3 +2,13 @@ body{
   font-family: 'Nunito', sans-serif;
   background: #f1e8d6;;
 }
+
+.lead{
+  font-size: 1rem;
+}
+
+@media all and (min-width:1200px){
+  .lead{
+    font-size: 1.25rem;
+  }
+}

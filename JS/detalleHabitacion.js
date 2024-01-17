@@ -1,10 +1,8 @@
 const imgGrande = document.getElementById('largeImg');
 const div = document.getElementById('fullscreen');
-const img = document.getElementById('fullscreenImg');
 const botonCerrar = document.getElementById('cerrar');
 const itemsCarousel = document.querySelectorAll('.carousel-item');
 const imagesCarousel = document.querySelectorAll('.imgCarousel');
-const carouselFullScreen = document.getElementById('carouselFullScreen');
 
 const abrirImagen = imageSrc => {
     div.classList.add('d-flex','flex-column');
@@ -39,30 +37,9 @@ document.addEventListener('click', (e) => {
 
   if (
     e.target.id === "cerrar" || 
-    e.target.id === "btnVolver" ||
+    e.target.id === "btnCerrar" ||
     e.target.id === "fullscreen"
   ){
     cerrarImagen();
   }
 })
-
-document.getElementById('carouselPrev').addEventListener('click', () => {
-  carouselFullScreen.prev();
-});
-
-document.getElementById('carouselNext').addEventListener('click', () => {
-  
-});
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   const smallImages = document.querySelectorAll('.smallImg');
-//   const largeImage = document.querySelector('.articleImgRoom img');
-
-//   smallImages.forEach(function (smallImg) {
-//       smallImg.addEventListener('click', () => {
-//       const imgSrc = smallImg.getAttribute('src');
-//       largeImage.setAttribute('src', imgSrc);
-//     });
-//   });
-// });
