@@ -60,7 +60,7 @@ section:nth-child(2), section:nth-child(4){
 
 .sectionServices .containerAmenities{
   width: 100%;
-  gap: 30px;
+  gap: 20px;
 }
 
 .containerAmenities i,
@@ -144,7 +144,7 @@ section:nth-child(2), section:nth-child(4){
   }
 
   .sectionServices .containerAmenities{
-    gap: 100px;
+    gap: 50px;
   }
   
   .containerAmenities i,
@@ -191,10 +191,6 @@ section:nth-child(2), section:nth-child(4){
     width: 500px;
     padding-bottom: 80px;
   }
-
-  .sectionServices .containerAmenities{
-    gap: 150px;
-  }
 }
 
 @media all and (min-width:1200px){
@@ -207,7 +203,7 @@ section:nth-child(2), section:nth-child(4){
   }
   
   .sectionServices .containerAmenities{
-    gap: 200px;
+    gap: 75px;
   }
 }
 
