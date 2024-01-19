@@ -57,6 +57,30 @@
   margin-bottom: 20px;
 }
 
+.cardRoom{
+  width: 375px;
+  min-height: 60vh;
+  background: #F4F3E8;
+}
+
+.containerImgCard img{
+  width: 100%;
+  height: 30vh;
+}
+
+.btnMoreInfo{
+  border: 1px solid #8f884d;
+  background: #d3ac5e;
+  background: #ba9f6a;
+}
+
+.btnMoreInfo:hover{
+  border: 1px solid #111010;
+  background: #bb9852;
+  background: #b8954f;
+  transition: all .2s ease-in-out;
+}
+
 @media all and (min-width: 375px){
   .containerImg img{
     height: 55vh;

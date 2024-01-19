@@ -1,6 +1,6 @@
 body{
   font-family: 'Nunito', sans-serif;
-  background: #f1e8d6;;
+  background: #f1e8d6;
 }
 
 .lead{
@@ -26,6 +26,11 @@ body{
 .iconWhatsApp:hover{
   color: rgb(3, 96, 3);
 }
+
+.sectionMoreRooms{
+  background: #F4F3E8;
+}
+
 
 @media all and (min-width:1200px){
   .lead{
