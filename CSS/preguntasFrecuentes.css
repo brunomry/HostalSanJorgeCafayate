@@ -10,3 +10,13 @@ main{
 .accordion .accordion-body{
   background: #F4F3E8;
 }
+
+.containerQuestions{
+  width: 100%;
+}
+
+@media all and (min-width:992px){
+  .containerQuestions{
+    width: 800px;
+  }
+}

@@ -37,19 +37,33 @@
   <body>
     <main>
       <section class="container py-5">
-        <div class="text-center mb-3">
-          <h1 class="mb-5">Preguntas frecuentes</h1>
+        <div class="text-center mb-3 containerQuestions mx-auto">
+          <h1 class="mb-5 fw-bold">Preguntas frecuentes</h1>
           <p class="lead">
             Si tu pregunta no se encuentra aquí, no te preocupes. Puedes
             escribirnos o llamarnos y estaremos encantados en ayudarte a
             responder tus dudas.
           </p>
-          <p class="mb-0 lead">WhatsApp: +54 9 381 6561404 <span class="mx-2">o </span>+54 9 381 5680429</p>
-          <p class="lead">o Llámanos: +54 9 03868 422388</p>
+          <div
+            class="d-flex flex-column align-items-center flex-md-row justify-content-md-center gap-2 gap-md-5"
+          >
+            <div>
+              <i class="bi bi-whatsapp me-2 fs-2 text-success"
+                ><span class="fs-5">WhatsApp</span></i
+              >
+              <p class="lead mb-0">+54 9 0381 5680429</p>
+            </div>
+            <div>
+              <i class="bi bi-telephone me-2 fs-2 text-dark"
+                ><span class="fs-5">Teléfono</span></i
+              >
+              <p class="lead mb-0">+54 9 03868 422388</p>
+            </div>
+          </div>
         </div>
         <div class="d-flex justify-content-center pt-3">
           <div class="accordion" id="accordionQuestions">
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fs-5"
@@ -59,7 +73,8 @@
                   aria-expanded="false"
                   aria-controls="collapseOne"
                 >
-                  ¿A qué hora puedo realizar el Check-In (hora de ingreso)?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿A qué
+                  hora puedo realizar el Check-In (hora de ingreso)?
                 </button>
               </h2>
               <div
@@ -74,7 +89,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fs-5"
@@ -84,7 +99,8 @@
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  ¿A qué hora puedo realizar el Check-Out (hora de salida)?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿A qué
+                  hora puedo realizar el Check-Out (hora de salida)?
                 </button>
               </h2>
               <div
@@ -97,7 +113,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fs-5"
@@ -107,7 +123,8 @@
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  ¿El Desayuno está incluido en la Estadía?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿El
+                  Desayuno está incluido en la Estadía?
                 </button>
               </h2>
               <div
@@ -123,7 +140,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fw-medium fs-5"
@@ -133,7 +150,8 @@
                   aria-expanded="false"
                   aria-controls="collapseFour"
                 >
-                  ¿Cuáles son las Formas de pago?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Cuáles
+                  son las Formas de pago?
                 </button>
               </h2>
               <div
@@ -142,23 +160,34 @@
                 data-bs-parent="#accordionQuestions"
               >
                 <div class="accordion-body">
-                  <ul class="lead">
-                    <li>Pago en efectivo.</li>
-                    <li>Transferencias bancarias.</li>
+                  <ul class="lead list-unstyled">
                     <li>
-                      Tarjeta de débito y crédito con un cargo adicional del 10%
-                      en un solo pago.
+                      <i class="bi bi-check-lg fs-2 text-success me-2"></i>Pago
+                      en efectivo.
                     </li>
-                    <li>Opción de pago mediante enlace de Mercado Pago.</li>
                     <li>
-                      Aceptamos todas las tarjetas para brindarte la máxima
+                      <i class="bi bi-check-lg fs-2 text-success me-2"></i
+                      >Transferencias bancarias.
+                    </li>
+                    <li>
+                      <i class="bi bi-check-lg fs-2 text-success me-2"></i
+                      >Tarjeta de débito y crédito con un cargo adicional del
+                      10% en un solo pago.
+                    </li>
+                    <li>
+                      <i class="bi bi-check-lg fs-2 text-success me-2"></i
+                      >Opción de pago mediante enlace de Mercado Pago.
+                    </li>
+                    <li>
+                      <i class="bi bi-check-lg fs-2 text-success me-2"></i
+                      >Aceptamos todas las tarjetas para brindarte la máxima
                       flexibilidad.
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fw-medium fs-5"
@@ -168,7 +197,8 @@
                   aria-expanded="false"
                   aria-controls="collapseFive"
                 >
-                  ¿El Hostal cuenta con Wi-Fi?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿El Hostal
+                  cuenta con Wi-Fi?
                 </button>
               </h2>
               <div
@@ -185,7 +215,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fw-medium fs-5"
@@ -195,7 +225,8 @@
                   aria-expanded="false"
                   aria-controls="collapseFiveTeen"
                 >
-                  ¿Las Habitaciones son Privadas o Compartidas?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Las
+                  Habitaciones son Privadas o Compartidas?
                 </button>
               </h2>
               <div
@@ -214,7 +245,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fw-medium fs-5"
@@ -224,7 +255,8 @@
                   aria-expanded="false"
                   aria-controls="collapseSix"
                 >
-                  ¿Las Habitaciones cuentan con Aire Acondicionado?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Las
+                  Habitaciones cuentan con Aire Acondicionado?
                 </button>
               </h2>
               <div
@@ -241,7 +273,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fw-medium fs-5"
@@ -251,7 +283,8 @@
                   aria-expanded="false"
                   aria-controls="collapseSeven"
                 >
-                  ¿Las Habitaciones cuentan con Televisión?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Las
+                  Habitaciones cuentan con Televisión?
                 </button>
               </h2>
               <div
@@ -270,7 +303,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fw-medium fs-5"
@@ -280,7 +313,8 @@
                   aria-expanded="false"
                   aria-controls="collapseEight"
                 >
-                  ¿Las Habitaciones cuentan con Baño privado?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Las
+                  Habitaciones cuentan con Baño privado?
                 </button>
               </h2>
               <div
@@ -297,7 +331,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fs-5"
@@ -307,7 +341,8 @@
                   aria-expanded="false"
                   aria-controls="collapseNine"
                 >
-                  ¿El Hostal cuenta con Estacionamiento?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿El Hostal
+                  cuenta con Estacionamiento?
                 </button>
               </h2>
               <div
@@ -326,7 +361,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fw-medium fs-5"
@@ -336,7 +371,8 @@
                   aria-expanded="false"
                   aria-controls="collapseTen"
                 >
-                  ¿El Hostal cuenta con Piscina?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿El Hostal
+                  cuenta con Piscina?
                 </button>
               </h2>
               <div
@@ -349,7 +385,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fw-medium fs-5"
@@ -359,7 +395,8 @@
                   aria-expanded="false"
                   aria-controls="collapseEleven"
                 >
-                  ¿Se aceptan mascotas?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Se
+                  aceptan mascotas?
                 </button>
               </h2>
               <div
@@ -372,7 +409,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fs-5"
@@ -382,8 +419,9 @@
                   aria-expanded="false"
                   aria-controls="collapseTwelve"
                 >
-                  ¿A partir de qué edad se aplica para niños la tarifa
-                  equivalente a la de un huésped?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿A partir
+                  de qué edad se aplica para niños la tarifa equivalente a la de
+                  un huésped?
                 </button>
               </h2>
               <div
@@ -400,7 +438,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fs-5"
@@ -410,7 +448,8 @@
                   aria-expanded="false"
                   aria-controls="collapsethirteen"
                 >
-                  ¿Cómo puedo realizar una reserva?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Cómo
+                  puedo realizar una reserva?
                 </button>
               </h2>
               <div
@@ -429,7 +468,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fw-medium fs-5"
@@ -439,7 +478,8 @@
                   aria-expanded="false"
                   aria-controls="collapseFourteen"
                 >
-                  ¿Cuáles son las políticas de reserva?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Cuáles
+                  son las políticas de reserva?
                 </button>
               </h2>
               <div
@@ -465,7 +505,7 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
+            <div class="accordion-item my-3 border border-secondary">
               <h2 class="accordion-header">
                 <button
                   class="accordion-button collapsed fw-medium fs-5"
@@ -475,8 +515,9 @@
                   aria-expanded="false"
                   aria-controls="collapseFiveteen"
                 >
-                  ¿Cuál es la política en caso de llegar tarde a pesar de tener
-                  una reserva, especialmente en períodos de alta demanda?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Cuál es
+                  la política en caso de llegar tarde a pesar de tener una
+                  reserva, especialmente en períodos de alta demanda?
                 </button>
               </h2>
               <div
