@@ -52,8 +52,8 @@ document.addEventListener('click', (e) => {
 })
 
 const compartirEnRedSocial = (redSocial, url) => {
-  const mensaje = `¡Mira esta Habitación de Hostal San Jorge!\n\n${habitacion}\n\n${urlHabitacion}`;
-  const consulta = `Consulta de ${habitacion}\n\n${urlHabitacion}`;
+  const mensaje = `¡Mira esta Habitación de Hostal San Jorge!\n\n *** ${habitacion} *** \n\n${urlHabitacion}`;
+  const consulta = `*** Consulta de ${habitacion} ***\n\n${urlHabitacion}`;
   const numeroTelefono = `+5493815680429`
   let link;
 
