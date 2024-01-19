@@ -37,14 +37,18 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/navbar.css" />
     <link rel="stylesheet" href="./CSS/footer.css" />
-    <link rel="stylesheet" href="./CSS/index.css" />    
+    <link rel="stylesheet" href="./CSS/index.css" />
     <link rel="stylesheet" href="./CSS/estilos.css" />
   </head>
   <body>
     <main>
-      <section id="carouselHostal" class="carousel slide" data-bs-ride="carousel">
+      <section
+        id="carouselHostal"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-indicators">
           <button
             type="button"
@@ -95,7 +99,7 @@
               class="d-block w-100 imgCarrusel"
               alt="habitación"
             />
-          </div>         
+          </div>
         </div>
         <a
           class="carousel-control-prev"
@@ -103,7 +107,10 @@
           data-bs-target="#carouselHostal"
           data-bs-slide="prev"
         >
-          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <span
+            class="carousel-control-prev-icon bg-dark"
+            aria-hidden="true"
+          ></span>
           <span class="visually-hidden">Previous</span>
         </a>
         <a
@@ -112,16 +119,23 @@
           data-bs-target="#carouselHostal"
           data-bs-slide="next"
         >
-          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <span
+            class="carousel-control-next-icon bg-dark"
+            aria-hidden="true"
+          ></span>
           <span class="visually-hidden">Next</span>
         </a>
       </section>
       <section
         class="container-fluid sectionWelcome d-flex justify-content-center px-md-5 text-center py-5"
       >
-        <div class="welcomeDescription">     
-          <h1 class="mt-sm-5" id="welcomeTitle"></h1>
-          <img src="./IMG/Hostal/logo2.png" alt="logo hostal san jorge" class="img-fluid">
+        <div class="welcomeDescription">
+          <h1 class="mt-3" id="welcomeTitle"></h1>
+          <img
+            src="./IMG/Hostal/logo2.png"
+            alt="logo hostal san jorge"
+            class="img-fluid"
+          />
           <p class="lead mt-3">
             Con más de 10 años brindando alojamiento a nuestros huéspedes, en
             Hostal San Jorge le ofrecemos un lugar cómodo, tranquilo e ideal
@@ -130,7 +144,6 @@
             lejos de casa y disfrute de una experiencia agradable y memorable
             mientras explora los encantos de esta hermosa región argentina.
           </p>
-          
         </div>
       </section>
       <section
@@ -139,8 +152,8 @@
         <div
           class="containerService d-flex justify-content-center align-items-center flex-column flex-md-row"
         >
-          <div class="containerImageService order-1 order-md-0">
-            <img src="./IMG/Hostal/2.jpg" alt="desayuno" class="shadow"/>
+          <div class="containerImageService order-1 order-md-0 d-flex align-items-center">
+            <img src="./IMG/Hostal/2.jpg" alt="desayuno" class="shadow" />
           </div>
           <div class="containerDescriptionService text-center">
             <h2 class="pb-3 pb-md-0 pb-lg-3">Servicio de Desayuno incluido</h2>
@@ -192,22 +205,24 @@
           class="containerService d-flex justify-content-center align-items-center flex-column flex-md-row"
         >
           <div class="containerDescriptionService text-center">
-            <h2 class="pb-3 pb-md-0 pb-lg-3 pt-lg-5">Nuestras Habitaciones</h2>
+            <h2 class="pb-3 pb-md-0 pb-lg-3">Nuestras Habitaciones</h2>
             <p class="lead">
               En Hostal San Jorge, entendemos que cada huésped es único. Por
               eso, ofrecemos habitaciones privadas diseñadas para su comodidad y
               tranquilidad, que van desde simples hasta quíntuples.
             </p>
-            <p class="lead pb-3 pb-md-0 pb-lg-3">
+            <p class="lead pb-3 pb-md-0 pb-md-3 mb-0 mb-md-3">
               ¡Tu espacio perfecto y la mejor experiencia la tendrás con
               nosotros!
             </p>
-            <a class="btnHabitaciones rounded-2 py-2 px-3 lead" href="./PAGES/habitaciones.html"
+            <a
+              class="btnHabitaciones rounded-0 py-2 mt-md-4 px-3 lead border border-dark"
+              href="./PAGES/habitaciones.html"
               >Ver Habitaciones</a
             >
           </div>
-          <div class="containerImageService mt-3 mt-md-0">
-            <img src="./IMG/Hostal/7.jpg" alt="habitación" class="shadow"/>
+          <div class="containerImageService mt-3 mt-md-0 d-flex align-items-center">
+            <img src="./IMG/Hostal/7.jpg" alt="habitación" class="shadow" />
           </div>
         </div>
       </section>
@@ -220,29 +235,70 @@
           <div class="description">
             <i class="fa-solid fa-circle-question pb-3"></i>
             <h3>Preguntas frecuentes</h3>
-            <p class="lead pb-2">
+            <p class="lead pb-md-2">
               Consultá las preguntas más frecuentes de nuestros huéspedes.
             </p>
-            <a class="btnInfo rounded-2 py-2 px-3 lead" href="./PAGES/preguntasFrecuentes.html"> Ver más </a>
+            <a
+              class="btnInfo rounded-0 py-2 px-3 lead"
+              href="./PAGES/preguntasFrecuentes.html"
+            >
+              Ver más
+            </a>
           </div>
           <div class="description">
             <i class="fa-solid fa-location-dot mb-3"></i>
             <h3>Cómo llegar</h3>
-            <p class="lead pb-2">
+            <p class="lead pb-md-2">
               Hostal San Jorge se encuentra ubicado a 2 cuadras de la plaza
               principal de Cafayate.
             </p>
-            <a class="btnInfo rounded-2 py-2 px-3 lead" href="./PAGES/comoLlegar.html">Ver más</a>
+            <a
+              class="btnInfo rounded-0 py-2 px-3 lead"
+              href="./PAGES/comoLlegar.html"
+              >Ver más</a
+            >
           </div>
           <div class="description">
             <i class="fa-solid fa-image pb-3"></i>
             <h3>Galería</h3>
-            <p class="lead pb-2">
+            <p class="lead pb-md-2">
               También puedes ver más imágenes de nuestro hostal.
             </p>
-            <a class="btnInfo rounded-2 py-2 px-3 lead" href="./PAGES/galeria.html">Ver más</a>
+            <a
+              class="btnInfo py-2 px-3 lead rounded-0"
+              href="./PAGES/galeria.html"
+              >Ver más</a
+            >
           </div>
         </div>
+      </section>
+      <section
+        class="container-fluid sectionPaymentMethods py-5 mx-auto"
+      >
+      <h3 class="text-center mt-md-5">Medios de pago</h3>
+      <div class="mx-auto text-md-center mt-3">
+        <ul class="lead list-unstyled">
+          <li>
+            <i class="bi bi-check-lg me-2 text-success fs-2"></i>Pago en efectivo.
+          </li>
+          <li>
+            <i class="bi bi-check-lg me-2 text-success fs-2"></i>Transferencias
+            bancarias.
+          </li>
+          <li>
+            <i class="bi bi-check-lg me-2 text-success fs-2"></i>Tarjeta de débito
+            y crédito con un cargo adicional del 10% en un solo pago.
+          </li>
+          <li>
+            <i class="bi bi-check-lg me-2 text-success fs-2"></i>Opción de pago
+            mediante enlace de Mercado Pago.
+          </li>
+          <li>
+            <i class="bi bi-check-lg me-2 text-success fs-2"></i>Aceptamos todas
+            las tarjetas para brindarte la máxima flexibilidad.
+          </li>                   
+        </ul>
+      </div>
       </section>
     </main>
     <script

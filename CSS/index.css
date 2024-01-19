@@ -13,7 +13,8 @@ a{
   min-height: 45vh;
 }
 
-section:nth-child(2), section:nth-child(4){
+section:nth-child(2), 
+section:nth-child(4){
   background: #F4F3E8;
 }
 
@@ -47,6 +48,7 @@ section:nth-child(2), section:nth-child(4){
 .containerDescriptionService{
   min-width: 15rem;
   width: 100%;
+  height: 100%;
 }
 
 .containerDescriptionService h2{
@@ -76,7 +78,7 @@ section:nth-child(2), section:nth-child(4){
 
 .sectionInfo{
   background: #F4F3E8;
-  min-height: 42.5vh;
+  min-height: 43vh;
 }
 
 .sectionInfo .containerInfo{
@@ -86,10 +88,10 @@ section:nth-child(2), section:nth-child(4){
 
 .containerInfo .description{
   width: 100%;
+  min-height: 180px;
 }
 
 .btnHabitaciones{
-  border: 1px solid #8f884d;
   background: #b8954f;
   color: #fff;
 }
@@ -109,6 +111,11 @@ section:nth-child(2), section:nth-child(4){
   background: #ba9f6a;
   transition: all .2s ease-in-out;
   color: #fff;
+}
+
+.sectionPaymentMethods{
+  min-height: 45vh;
+  background: #E6DCC8;
 }
 
 @media all and (min-width:576px){
@@ -189,7 +196,6 @@ section:nth-child(2), section:nth-child(4){
 
   .containerService .containerDescriptionService{
     width: 500px;
-    padding-bottom: 80px;
   }
 }
 
