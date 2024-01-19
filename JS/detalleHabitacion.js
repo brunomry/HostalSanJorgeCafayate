@@ -4,6 +4,12 @@ const botonCerrar = document.getElementById('cerrar');
 const itemsCarousel = document.querySelectorAll('.carousel-item');
 const imagesCarousel = document.querySelectorAll('.imgCarousel');
 
+const btnWhatsApp = document.getElementById('btnWhatsApp');
+const btnFacebook = document.getElementById("btnFacebook");
+const h1 = document.querySelector('h1');
+const nombreProducto = h1.textContent;
+const urlHabitacion = window.location.href;
+
 const abrirImagen = imageSrc => {
     div.classList.add('d-flex','flex-column');
     imagesCarousel.forEach((img,pos) =>{
@@ -43,3 +49,27 @@ document.addEventListener('click', (e) => {
     cerrarImagen();
   }
 })
+
+const compartirEnRedSocial = (redSocial, url) => {
+  const mensaje = `¡Mira esta Habitación de Hostal San Jorge!\n\n${nombreProducto}\n\n${urlHabitacion}`;
+  let link;
+
+  switch (redSocial) {
+    case "WhatsApp":
+      link = `https://wa.me/?text=${encodeURIComponent(mensaje)}`;
+      break;
+    case "Facebook":
+      link = `https://www.facebook.com/sharer/sharer.php?u=${url}`;          
+      break;
+  }
+  window.open(link, '_blank'); 
+}
+
+btnWhatsApp.addEventListener("click", () => {
+  compartirEnRedSocial("WhatsApp", urlHabitacion);
+  });
+
+btnFacebook.addEventListener("click", () => {
+  compartirEnRedSocial("Facebook", urlHabitacion);
+});
+
