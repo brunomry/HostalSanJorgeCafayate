@@ -21,3 +21,24 @@ main{
 .iconInstagram:hover{
   color: red;
 }
+
+.formContact{
+  width: 100%;
+}
+
+article:nth-child(1),
+article:nth-child(2){
+  width: 100%;
+  background: #E6DCC8;
+}
+
+textarea{
+  height: 200px;
+  resize: none;
+}
+
+@media all and (min-width:768px){
+  .formContact{
+    width: 800px;
+  }
+}

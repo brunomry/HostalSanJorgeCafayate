@@ -39,7 +39,7 @@
       <section class="container py-5">
         <div class="text-center mb-5">
           <h1 class="mb-4 fw-bold">Cómo llegar a nuestro Hostal</h1>
-          <p class="lead">Encuéntranos con Google Maps</p>
+          <p class="lead mt-5">Encuéntranos con Google Maps</p>
         </div>
         <div class="row">
           <article class="col-lg-6 containerMap">
@@ -71,6 +71,58 @@
               >
               <p class="lead">+54 9 03868 422388</p>
             </div>
+          </article>
+          <article class="d-flex flex-column align-items-center mt-5">
+            <h3 class="text-center py-3 fw-bold">Déjanos tu mensaje</h3>
+            <form action="" class="formContact px-md-4">
+              <div class="mb-3">
+                <label for="name" class="form-label lead"
+                  >Nombre y Apellido:</label
+                >
+                <input
+                  type="email"
+                  class="form-control py-3 rounded-0 border border-secondary"
+                  id="name"
+                  placeholder="Nombre y Apellido"
+                  minlength="3"
+                  maxlength="50"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label lead"
+                  >Correo electrónico:</label
+                >
+                <input
+                  type="email"
+                  class="form-control py-3 rounded-0 text-secondary border border-secondary"
+                  id="email"
+                  placeholder="nombre@ejemplo.com"
+                  minlength="3"
+                  maxlength="265"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label lead">Mensaje:</label>
+                <textarea
+                  class="form-control rounded-0 border border-secondary"
+                  id="message"
+                  placeholder="Deja tu mensaje"
+                  minlength="10"
+                  maxlength="500"
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-3 w-100">
+                <button
+                  type="submit"
+                  class="btn btn-dark rounded-0 w-100 py-3 fs-5"
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
           </article>
         </div>
       </section>
