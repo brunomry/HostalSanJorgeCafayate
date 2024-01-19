@@ -4,10 +4,11 @@ const botonCerrar = document.getElementById('cerrar');
 const itemsCarousel = document.querySelectorAll('.carousel-item');
 const imagesCarousel = document.querySelectorAll('.imgCarousel');
 
+const btnConsultaHabitacion = document.getElementById('btnWhatsAppForRoom');
 const btnWhatsApp = document.getElementById('btnWhatsApp');
 const btnFacebook = document.getElementById("btnFacebook");
 const h1 = document.querySelector('h1');
-const nombreProducto = h1.textContent;
+const habitacion = h1.textContent;
 const urlHabitacion = window.location.href;
 
 const abrirImagen = imageSrc => {
@@ -51,10 +52,15 @@ document.addEventListener('click', (e) => {
 })
 
 const compartirEnRedSocial = (redSocial, url) => {
-  const mensaje = `¡Mira esta Habitación de Hostal San Jorge!\n\n${nombreProducto}\n\n${urlHabitacion}`;
+  const mensaje = `¡Mira esta Habitación de Hostal San Jorge!\n\n${habitacion}\n\n${urlHabitacion}`;
+  const consulta = `Consulta de ${habitacion}\n\n${urlHabitacion}`;
+  const numeroTelefono = `+5493815680429`
   let link;
 
   switch (redSocial) {
+    case "ConsultaWhatsApp":
+      link = `https://wa.me/${numeroTelefono}?text=${encodeURIComponent(consulta)}`;
+      break;
     case "WhatsApp":
       link = `https://wa.me/?text=${encodeURIComponent(mensaje)}`;
       break;
@@ -64,6 +70,10 @@ const compartirEnRedSocial = (redSocial, url) => {
   }
   window.open(link, '_blank'); 
 }
+
+btnConsultaHabitacion.addEventListener("click", () => {
+  compartirEnRedSocial("ConsultaWhatsApp", urlHabitacion);
+  });
 
 btnWhatsApp.addEventListener("click", () => {
   compartirEnRedSocial("WhatsApp", urlHabitacion);
