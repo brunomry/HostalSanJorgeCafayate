@@ -2,6 +2,12 @@ main{
   background: #f1e8d6;
 }
 
+.linkModalPaymentMethods{
+  cursor: pointer;
+  text-decoration: none;
+  color: #9d7d3d;
+}
+
 .accordion{
   width: 800px;
 }
