@@ -167,13 +167,16 @@ section:nth-child(4){
   .containerInfo .description{
     width: 400px;
   }
+
+  .sectionPaymentMethods div{
+    max-width: 700px;
+  }
 }
 
 @media all and (min-width:992px){
   .sectionWelcome{
     min-height: 53.14vh;
   }
-
 
   .imgCarrusel{
     height: 72.26vh;
@@ -197,6 +200,7 @@ section:nth-child(4){
   .containerService .containerDescriptionService{
     width: 500px;
   }
+
 }
 
 @media all and (min-width:1200px){
@@ -210,6 +214,10 @@ section:nth-child(4){
   
   .sectionServices .containerAmenities{
     gap: 75px;
+  }
+  
+  .sectionPaymentMethods div{
+    max-width: 800px;
   }
 }
 
