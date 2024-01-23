@@ -54,7 +54,7 @@ document.addEventListener('click', (e) => {
 const compartirEnRedSocial = (redSocial, url) => {
   const mensaje = `¡Mira esta Habitación de Hostal San Jorge!\n\n *** ${habitacion} *** \n\n${urlHabitacion}`;
   const consulta = `*** Consulta de ${habitacion} ***\n\n${urlHabitacion}`;
-  const numeroTelefono = `+5493815680429`
+  const numeroTelefono = `+5493876843082`
   let link;
 
   switch (redSocial) {
