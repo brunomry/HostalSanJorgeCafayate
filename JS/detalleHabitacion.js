@@ -4,7 +4,7 @@ const botonCerrar = document.getElementById('cerrar');
 const itemsCarousel = document.querySelectorAll('.carousel-item');
 const imagesCarousel = document.querySelectorAll('.imgCarousel');
 
-const btnConsultaHabitacion = document.getElementById('btnWhatsAppForRoom');
+const btnConsultaHabitacion = document.getElementById('btnCheckRoom');
 const btnWhatsApp = document.getElementById('btnWhatsApp');
 const btnFacebook = document.getElementById("btnFacebook");
 const h1 = document.querySelector('h1');
