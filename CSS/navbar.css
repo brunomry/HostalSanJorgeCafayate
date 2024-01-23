@@ -4,7 +4,7 @@
 
 .navBar,
 .dropdown-menu{
-  background: #ede3d9;
+  background: #dfd3c6;
 }
 
 #navbarNav .navigation{
@@ -20,7 +20,7 @@
 }
 
 .navigation .nav-item .nav-link{
-  border-bottom: 3px solid #ede3d9;
+  border-bottom: 3px solid #dfd3c6;;
 }
 
 .navigation .nav-item:hover .nav-link{
