@@ -1,63 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap"
       rel="stylesheet"
     />
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
-/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="../CSS/navbar.css">
-  <link rel="stylesheet" href="../CSS/estilos.css">
-</head>
-<body>
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg py-lg-0 py-xl-3 navBar">
-      <div class="container-fluid d-flex flex-lg-column align-items-center flex-xl-row justify-content-xl-evenly align-items-lg-center">
-        <a class="navbar-brand ms-xxl-5" href="index.html"><img src="../IMG/Hostal/logo2.png" class="logo" alt="logo hostal san jorge"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse my-2 d-lg-flex justify-content-center justify-content-xl-end me-xxl-5" id="navbarNav">
-          <ul class="navbar-nav d-flex gap-2 align-items-center justify-content-xl-end gap-lg-5 gap-xl-4 my-xl-2 lead navigation">
-            <li class="nav-item text-center">
-              <a class="nav-link linkBorder pb-0 pb-sm-2" href="index.html">Home</a>
-            </li>
-            <li class="nav-item text-center">
-              <a class="nav-link" href="../PAGES/habitaciones.html">Habitaciones</a>
-            </li>
-            <li class="nav-item text-center">
-              <a class="nav-link" href="../PAGES/galeria.html">Galería</a>
-            </li>
-            <li class="nav-item text-center">
-              <a class="nav-link" href="../PAGES/comoLlegar.html">Cómo Llegar</a>
-            </li>
-            <li class="nav-item text-center">
-              <a class="nav-link" href="../PAGES/preguntasFrecuentes.html">Preguntas frecuentes</a>
-            </li>
-            <li class="nav-item dropdown text-center">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-globe fst-normal"> Idioma</i>
-              </a>
-              <ul class="dropdown-menu lead text-center text-lg-start">
-                <li><a class="dropdown-item text-secondary fw-light" href="#" onclick="cambiarIdioma('es')"><img src="../IMG/Hostal/argentina.png" class="imgLanguage ms-3 ms-lg-0" alt="bandera de argentina"> Español</a></li>
-                <li><a class="dropdown-item text-secondary fw-light" href="#" onclick="cambiarIdioma('en')"><img src="../IMG/Hostal/ingles.png" class="imgLanguage" alt="bandera de inglaterra"> Inglés</a></li>
-              </ul>
-            </li>
-          </ul>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/estilos.css" />
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg py-lg-0 py-xl-3 navBar">
+        <div
+          class="container-fluid d-flex flex-lg-column align-items-center flex-xl-row justify-content-xl-evenly align-items-lg-center"
+        >
+          <a class="navbar-brand ms-xxl-5" href="index.html"
+            ><img
+              src="../IMG/Hostal/logo2.png"
+              class="logo"
+              alt="logo hostal san jorge"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse my-2 d-lg-flex justify-content-center justify-content-xl-end me-xxl-5"
+            id="navbarNav"
+          >
+            <ul
+              class="navbar-nav d-flex gap-2 align-items-center justify-content-xl-end gap-lg-5 gap-xl-4 my-xl-2 lead navigation"
+            >
+              <li class="nav-item text-center">
+                <a class="nav-link linkBorder pb-0 pb-sm-2" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="../PAGES/habitaciones.html"
+                  >Habitaciones</a
+                >
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="../PAGES/galeria.html">Galería</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="../PAGES/comoLlegar.html"
+                  >Cómo Llegar</a
+                >
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="../PAGES/preguntasFrecuentes.html"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+              <li class="nav-item dropdown text-center">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-globe fst-normal"> Idioma</i>
+                </a>
+                <ul class="dropdown-menu lead text-center text-lg-start">
+                  <li>
+                    <a
+                      class="dropdown-item text-secondary fw-light"
+                      href="#"
+                      id="optionEs"
+                      ><img
+                        src="../IMG/Hostal/argentina.png"
+                        class="imgLanguage ms-3 ms-lg-0"
+                        alt="bandera de argentina"
+                      />
+                      <span class="me-2">Español</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-secondary fw-light"
+                      href="#"
+                      id="optionEn"
+                      ><img
+                        src="../IMG/Hostal/ingles.png"
+                        class="imgLanguage"
+                        alt="bandera de inglaterra"
+                      />
+                      <span class="me-2">Inglés</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <script src="../JS/app.js"></script>
-</body>
+      </nav>
+    </header>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JS/app.js" type="module"></script>
+  </body>
 </html>
