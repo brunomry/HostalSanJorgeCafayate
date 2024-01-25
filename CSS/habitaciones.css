@@ -2,6 +2,11 @@ main{
   background: #f1e8d6;
 }
 
+.containerImgRoom img{
+  width: 100%;
+  height: 20vh;
+}
+
 section .descriptionRooms{
   width: 100%;
 }
@@ -38,7 +43,17 @@ section .descriptionRooms{
   transition: all .2s ease-in-out;
 }
 
+@media all and (min-width:576px){
+  .containerImgRoom img{
+    height: 40vh;
+  }
+}
+
 @media all and (min-width:768px){
+  .containerImgRoom img{
+    height: 45vh;
+  }
+
   section .descriptionRooms{
     width: 700px;
   }
@@ -59,6 +74,10 @@ section .descriptionRooms{
 }
 
 @media all and (min-width:992px){
+  .containerImgRoom img{
+    height: 55vh;
+  }
+
   section .descriptionRooms{
     width: 900px;
   }
@@ -69,5 +88,11 @@ section .descriptionRooms{
 
   .containerImg img{
     width: 450px;
+  }
+}
+
+@media all and (min-width:1200px){
+  .containerImgRoom img{
+    height: 60vh;
   }
 }

@@ -5,12 +5,20 @@ body{
   flex-direction: column;
 }
 
+h1,
+h2,
+h3{
+  color: #8a9017;
+  color: #9f870b;
+}
+
 main{
   flex-grow: 1;
 }
 
 .lead{
   font-size: 1rem;
+  font-weight: 400;
 }
 
 @media all and (min-width:1200px){
