@@ -9,8 +9,15 @@ main{
   flex-grow: 1;
 }
 
+h1,
+h2,
+h3{
+  color: #9f870b;
+}
+
 .lead{
   font-size: 1rem;
+  font-weight: 400;
 }
 
 @media all and (min-width:1200px){
