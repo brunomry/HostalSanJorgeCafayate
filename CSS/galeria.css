@@ -2,6 +2,11 @@ main{
   background: #f1e8d6;
 }
 
+.containerImgGallery img{
+  width: 100%;
+  height: 22.5vh;
+}
+
 .containerImg img{
   width: 100%;
   height: 100%;
@@ -66,6 +71,11 @@ main{
 }
 
 @media all and (min-width:576px){
+  .containerImgGallery img{
+    width: 100%;
+    height: 40vh;
+  }
+
   .containerImg:hover .containerBg{
     width: 95%;
     font-size: 1rem;
@@ -78,6 +88,11 @@ main{
 }
 
 @media all and (min-width:768px){
+  .containerImgGallery img{
+    width: 100%;
+    height: 45vh;
+  }
+
   .containerImg:hover .containerBg{
     width: 88%;
   }
@@ -98,6 +113,11 @@ main{
 }
 
 @media all and (min-width:992px){
+  .containerImgGallery img{
+    width: 100%;
+    height: 55vh;
+  }
+
   .containerImg img{
     width: 300px;
     height: 40vh;
@@ -109,6 +129,11 @@ main{
 }
 
 @media all and (min-width:1200px){
+  .containerImgGallery img{
+    width: 100%;
+    height: 60vh;
+  }
+
   .containerImg img{
     width: 340px;
     height: 31.88vh;
