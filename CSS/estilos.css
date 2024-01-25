@@ -3,6 +3,13 @@ body{
   background: #f1e8d6;
 }
 
+h1,
+h2,
+h3{
+  color: #8a9017;
+  color: #9f870b;
+}
+
 .lead{
   font-size: 1rem;
   font-weight: 400;
