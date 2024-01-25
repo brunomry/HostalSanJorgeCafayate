@@ -9,6 +9,12 @@ main{
   flex-grow: 1;
 }
 
+h1,
+h2,
+h3{
+  color: #b4996d;
+}
+
 .lead{
   font-size: 1rem;
   font-weight:400;

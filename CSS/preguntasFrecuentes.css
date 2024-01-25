@@ -2,6 +2,11 @@ main{
   background: #f1e8d6;
 }
 
+.containerImgFaqs img{
+  width: 100%;
+  height: 22vh;
+}
+
 .linkModalPaymentMethods{
   cursor: pointer;
   text-decoration: none;
@@ -21,8 +26,30 @@ main{
   width: 100%;
 }
 
+@media all and (min-width:576px){
+  .containerImgFaqs img{
+    height: 40vh;
+  }
+}
+
+@media all and (min-width:768px){
+  .containerImgFaqs img{
+    height: 45vh;
+  }
+}
+
 @media all and (min-width:992px){
+  .containerImgFaqs img{
+    height: 55vh;
+  }
+
   .containerQuestions{
     width: 800px;
+  }
+}
+
+@media all and (min-width:1200px){
+  .containerImgFaqs img{
+    height: 60vh;
   }
 }
