@@ -4,7 +4,7 @@ main{
 
 .containerImgFaqs img{
   width: 100%;
-  height: 22vh;
+  height: 35vh;
 }
 
 .linkModalPaymentMethods{
@@ -40,16 +40,10 @@ main{
 
 @media all and (min-width:992px){
   .containerImgFaqs img{
-    height: 55vh;
+    height: 75vh;
   }
 
   .containerQuestions{
     width: 800px;
-  }
-}
-
-@media all and (min-width:1200px){
-  .containerImgFaqs img{
-    height: 60vh;
   }
 }

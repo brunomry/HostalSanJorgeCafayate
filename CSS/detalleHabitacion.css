@@ -1,3 +1,7 @@
+body{
+  background: #f1e8d6;
+}
+
 .sectionRoom{
   width: 100%;
 }
@@ -8,7 +12,7 @@
 
 .containerImg img{
   width: 100%;
-  height: 40vh;
+  height: 50vh;
   cursor: pointer;
   object-fit: fill;
 }
@@ -65,20 +69,26 @@
   width: 120px;
 }
 
-.sectionMoreRooms{
-  background: #F4F3E8;
-}
-
 .cardRoom{
   width: 375px;
   min-height: 60vh;
   background: #F4F3E8;
 }
 
+.cardRoom .containerImgCard{
+  height: 352px;
+}
+
+.containerImgCard img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* 
 .containerImgCard img{
   width: 100%;
   height: 37.5vh;
-}
+} */
 
 .btnMoreInfo{
   border: 1px solid #8f884d;
@@ -111,7 +121,7 @@
 @media all and (min-width: 576px){
   .containerImg img{
     width: 516px;
-    height: 58vh;
+    height: 60vh;
   }
 
   .carouselFullScreen .imgCarousel{
@@ -133,11 +143,40 @@
     height: 65vh;
     object-fit: fill;
   }
+
+  .carouselFullScreen{
+    max-width: 680px;
+  }
+
+  .carouselFullScreen .imgCarousel{
+    width: 100%;
+    height: 63.79vh;
+  }
 }
 
 @media all and (min-width:992px){
   .containerImg img{
     width: 100%;
+  }
+
+  .carouselFullScreen {
+    max-width: 65vw;
+  }
+
+  .carouselFullScreen .imgCarousel{
+    width: 100%;
+    height: 70vh;
+  }
+}
+
+@media all and (min-width:1200px){
+  .carouselFullScreen {
+    max-width: 750px;
+  }
+
+  .carouselFullScreen .imgCarousel {
+    width: 100%;
+    height: 65vh;
   }
 }
 
@@ -157,12 +196,12 @@
     object-fit: fill;
   }
 
-  .carouselFullScreen{
-    max-width: 780px;
+  .carouselFullScreen {
+    max-width: 900px;
   }
 
   .carouselFullScreen .imgCarousel{
-    max-width: 800px;
+    max-width: 100%;
     height: 80vh;
     text-align: center;
   }

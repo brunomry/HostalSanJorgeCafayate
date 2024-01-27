@@ -1,3 +1,4 @@
+const navbar = document.querySelector('.navbar');
 const div = document.getElementById('fullscreen');
 const botonCerrar = document.getElementById('cerrar');
 const itemsCarousel = document.querySelectorAll('.carousel-item');
@@ -5,6 +6,7 @@ const imagesCarousel = document.querySelectorAll('.imgCarousel');
 
 const abrirImagen = imageSrc => {
     div.classList.add('d-flex','flex-column');
+    navbar.classList.toggle('d-none');
     imagesCarousel.forEach((img,pos) =>{
         if(itemsCarousel[pos].classList.contains('active')){
           itemsCarousel[pos].classList.remove('active')
@@ -19,6 +21,7 @@ const abrirImagen = imageSrc => {
 const cerrarImagen = () => {
   botonCerrar.style.display = 'none';
   div.classList.remove('d-flex');
+  navbar.classList.toggle('d-none');
 }
 
 document.addEventListener('click', (e) => {

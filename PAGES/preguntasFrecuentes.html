@@ -35,6 +35,102 @@
     <link rel="stylesheet" href="../CSS/estilos.css" />
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg py-lg-0 navBar">
+        <div
+          class="container-fluid d-flex align-items-center flex-lg-row justify-content-lg-evenly"
+        >
+          <a class="navbar-brand ms-xxl-5" href="../index.html"
+            ><img
+              src="../IMG/Hostal/logo2.png"
+              class="logo"
+              alt="logo hostal san jorge"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse my-2 d-lg-flex justify-content-center justify-content-xl-end me-xxl-5"
+            id="navbarNav"
+          >
+            <ul
+              class="navbar-nav d-flex gap-2 align-items-center justify-content-lg-end gap-xl-4 my-xl-2 lead navigation"
+            >
+              <li class="nav-item text-center">
+                <a class="nav-link pb-0 pb-sm-2" href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="habitaciones.html"
+                  >Habitaciones</a
+                >
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="galeria.html">Galería</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="comoLlegar.html"
+                  >Cómo Llegar</a
+                >
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link linkBorder" href="preguntasFrecuentes.html"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+              <li class="nav-item dropdown text-center">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-globe fst-normal"><span class="ms-2">Idioma</span></i>
+                </a>
+                <ul class="dropdown-menu lead text-center text-lg-start">
+                  <li>
+                    <a
+                      class="dropdown-item text-secondary fw-light"
+                      href="#"
+                      id="optionEs"
+                      ><img
+                        src="../IMG/Hostal/argentina.png"
+                        class="imgLanguage ms-3 ms-lg-0"
+                        alt="bandera de argentina"
+                      />
+                      Español</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-secondary fw-light"
+                      href="#"
+                      id="optionEn"
+                      ><img
+                        src="../IMG/Hostal/ingles.png"
+                        class="imgLanguage"
+                        alt="bandera de inglaterra"
+                      />
+                      Inglés</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main>
       <section>
         <div class="containerImgFaqs">
@@ -43,7 +139,7 @@
       </section>
       <section class="container py-5">
         <div class="text-center mb-3 containerQuestions mx-auto">
-          <h1 class="mb-5 fw-bold">Preguntas Frecuentes</h1>
+          <h1 class="mb-3 fw-bold">Preguntas Frecuentes</h1>
           <p class="lead">
             Si tu pregunta no se encuentra aquí, no te preocupes. Puedes
             escribirnos o llamarnos y estaremos encantados en ayudarte a
@@ -78,8 +174,8 @@
                   aria-expanded="false"
                   aria-controls="collapseOne"
                 >
-                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿A qué
-                  hora puedo realizar el Check-In (hora de ingreso)?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i><span class="lead">¿A qué
+                    hora puedo realizar el Check-In (hora de ingreso)?</span>
                 </button>
               </h2>
               <div
@@ -104,8 +200,8 @@
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿A qué
-                  hora puedo realizar el Check-Out (hora de salida)?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i><span class="lead">¿A qué
+                    hora puedo realizar el Check-Out (hora de salida)?</span>
                 </button>
               </h2>
               <div
@@ -128,7 +224,7 @@
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿El Desayuno está incluido en la Estadía?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i><span class="lead">¿El Desayuno está incluido en la Estadía?</span>
                 </button>
               </h2>
               <div
@@ -153,7 +249,7 @@
                   aria-expanded="false"
                   aria-controls="collapseFour"
                 >
-                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Cuáles son las Formas de pago?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i><span class="lead">¿Cuáles son las Formas de pago?</span>
                 </button>
               </h2>
               <div
@@ -188,7 +284,7 @@
                   aria-controls="collapseFive"
                 >
                   <i class="bi bi-question-circle-fill fs-2 me-4"></i>
-                  ¿El Hostal cuenta con Wi-Fi?
+                  <span class="lead">¿El Hostal cuenta con Wi-Fi?</span>
                 </button>
               </h2>
               <div
@@ -213,8 +309,8 @@
                   aria-expanded="false"
                   aria-controls="collapseFiveTeen"
                 >
-                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Las
-                  Habitaciones son Privadas o Compartidas?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i><span class="lead">¿Las
+                    Habitaciones son Privadas o Compartidas?</span>
                 </button>
               </h2>
               <div
@@ -243,8 +339,8 @@
                   aria-expanded="false"
                   aria-controls="collapseSix"
                 >
-                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Las
-                  Habitaciones cuentan con Aire Acondicionado?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i><span class="lead">¿Las
+                    Habitaciones cuentan con Aire Acondicionado?</span>
                 </button>
               </h2>
               <div
@@ -271,8 +367,8 @@
                   aria-expanded="false"
                   aria-controls="collapseSeven"
                 >
-                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Las
-                  Habitaciones cuentan con Televisión?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i><span class="lead">¿Las
+                    Habitaciones cuentan con Televisión?</span>
                 </button>
               </h2>
               <div
@@ -301,8 +397,8 @@
                   aria-expanded="false"
                   aria-controls="collapseEight"
                 >
-                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Las
-                  Habitaciones cuentan con Baño privado?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i><span class="lead">¿Las
+                    Habitaciones cuentan con Baño privado?</span>
                 </button>
               </h2>
               <div
@@ -329,8 +425,8 @@
                   aria-expanded="false"
                   aria-controls="collapseNine"
                 >
-                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿El Hostal
-                  cuenta con Estacionamiento?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i><span class="lead">¿El Hostal
+                    cuenta con Estacionamiento?</span>
                 </button>
               </h2>
               <div
@@ -356,9 +452,9 @@
                   aria-expanded="false"
                   aria-controls="collapseTen"
                 >
-                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿El Hostal
-                  cuenta con Piscina?
-                </button>
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i><span class="lead">¿El Hostal
+                    cuenta con Piscina?
+                  </button></span>
               </h2>
               <div
                 id="collapseTen"
@@ -380,8 +476,8 @@
                   aria-expanded="false"
                   aria-controls="collapseEleven"
                 >
-                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Se
-                  aceptan mascotas?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i><span class="lead">¿Se
+                    aceptan mascotas?</span>
                 </button>
               </h2>
               <div
@@ -404,8 +500,8 @@
                   aria-expanded="false"
                   aria-controls="collapsethirteen"
                 >
-                  <i class="bi bi-question-circle-fill fs-2 me-4"></i>¿Cómo
-                  puedo realizar una reserva?
+                  <i class="bi bi-question-circle-fill fs-2 me-4"></i><span class="lead">¿Cómo
+                    puedo realizar una reserva?</span>
                 </button>
               </h2>
               <div
@@ -438,7 +534,7 @@
                   </p>
                   <p>
                     Si tienes alguna pregunta adicional, estamos
-                    disponibles para ayudarte.
+                    disponibles para ayudarte.
                   </p>
                 </div>
               </div>
@@ -447,6 +543,70 @@
         </div>
       </section>
     </main>
+    <footer class="pt-5">
+      <section class="container-fluid">
+        <div
+          class="row gap-4 gap-md-0 justify-content-md-center pb-5"
+        >
+          <div class="col-md-12 col-lg-4 text-center mb-4 containerLogo">
+            <img src="../IMG/Hostal/logo2.png" alt="Logo Hostal San Jorge" />
+          </div>
+          <div class="col-md-6 col-lg-4 text-center">
+            <h5 class="fw-bold mb-3">Información</h5>
+            <ul class="list-unstyled">
+              <li class="nav-link pb-2">
+                <h6>Calixto Mamaní 105, Cafayate, Salta, Argentina</h6>
+              </li>
+              <li class="nav-link pb-2">
+                <i class="bi bi-whatsapp me-2 fs-5 text-success"></i>WhatsApp:
+                +54 9 0387 6843082
+              </li>
+              <li class="nav-link pb-2">
+                <i class="bi bi-telephone-fill me-2 fs-5 text-dark"></i
+                >Teléfono: +54 9 03868 422388
+              </li>
+              <li class="nav-link pb-4 pb-lg-0">
+                <i class="bi bi-google me-2 fs-5 text-danger"></i
+                >hostalsanjorgecafayate@gmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-4 text-center">
+            <h5 class="fw-bold">Síguenos en nuestras redes</h5>
+            <div class="d-flex justify-content-center gap-3">
+              <a
+                href="https://www.facebook.com/profile.php?id=100089399326566"
+                target="_blank"
+                ><i class="bi bi-facebook fs-2 iconFacebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/hostalsanjorgecafayate/"
+                target="_blank"
+                ><i class="bi bi-instagram fs-2 iconInstagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+          class="py-3 d-flex flex-column align-items-center justify-content-end flex-md-row justify-content-md-center align-items-md-end bg-light"
+        >
+          <p class="mb-1 text-center">&copy;Todos los derechos reservados. 2024.</p>
+          <p class="mb-1 ms-1 text-center">
+            <span>
+              Diseñado por
+            </span>
+            <span
+              class="text-dark fw-bold"
+              >Bruno Madozzo</span>.
+          </p>
+          <span class="ms-2 pb-1">
+            <a href="https://www.linkedin.com/in/bruno-madozzo" target="_blank"><i class="bi bi-linkedin fs-5 text-primary"></i></a>
+            <a href="https://www.instagram.com/bruno__mdz?igsh=Mjc3a3RhMXplcjdy" class="ms-1" target="_blank"><i class="bi bi-instagram fs-5 iconInstagram"></i></a>
+            <a href="" class="ms-1" id="btnWppMe"><i class="bi bi-whatsapp fs-5 text-success"></i></a>
+          </span>
+        </section>
+    </footer>
     <div
       class="modal fade"
       id="modalPaymentMethods"
@@ -501,6 +661,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="../JS/app.js"></script>
+    <script src="../JS/app.js" type="module"></script>
   </body>
 </html>

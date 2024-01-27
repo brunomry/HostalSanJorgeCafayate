@@ -1,3 +1,4 @@
+const navbar = document.querySelector('.navbar');
 const imgGrande = document.getElementById('largeImg');
 const div = document.getElementById('fullscreen');
 const botonCerrar = document.getElementById('cerrar');
@@ -12,6 +13,7 @@ const habitacion = h1.textContent;
 const urlHabitacion = window.location.href;
 
 const abrirImagen = imageSrc => {
+  navbar.classList.toggle('d-none');
     div.classList.add('d-flex','flex-column');
     imagesCarousel.forEach((img,pos) =>{
         if(itemsCarousel[pos].classList.contains('active')){
@@ -27,6 +29,7 @@ const abrirImagen = imageSrc => {
 const cerrarImagen = () => {
   botonCerrar.style.display = 'none';
   div.classList.remove('d-flex');
+  navbar.classList.toggle('d-none');
 }
 
 document.addEventListener('click', (e) => {
@@ -54,7 +57,7 @@ document.addEventListener('click', (e) => {
 const compartirEnRedSocial = (redSocial, url) => {
   const mensaje = `¡Mira esta Habitación de Hostal San Jorge!\n\n *** ${habitacion} *** \n\n${urlHabitacion}`;
   const consulta = `*** Consulta de ${habitacion} ***\n\n${urlHabitacion}`;
-  const numeroTelefono = `+5493876843082`
+  const numeroTelefono = `+5493815680429`
   let link;
 
   switch (redSocial) {

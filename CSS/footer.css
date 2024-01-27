@@ -12,19 +12,3 @@ footer{
 h5{
   color: rgb(150, 117, 74);
 }
-
-.iconFacebook{
-  color: #3d61f2;
-}
-
-.iconFacebook:hover{
-  color: rgb(27, 27, 189);
-}
-
-.iconInstagram{
-  color: rgb(210, 48, 48);
-}
-
-.iconInstagram:hover{
-  color: red;
-}

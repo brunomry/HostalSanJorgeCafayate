@@ -48,7 +48,6 @@ const cambiarTraduccion = (elemento, traduccion, idioma) => {
 }
 
 obtenerIdioma();
-cambiarIdioma('es')
 
 opcionEs.addEventListener('click', (e) => {
   cambiarIdioma('es');

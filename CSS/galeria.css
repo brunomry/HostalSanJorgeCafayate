@@ -4,7 +4,7 @@ main{
 
 .containerImgGallery img{
   width: 100%;
-  height: 22.5vh;
+  height: 35vh;
 }
 
 .containerImg img{
@@ -36,6 +36,7 @@ main{
   cursor: pointer;
   color: #fff;
   font-size: 12px;
+  transition: all .1s;
 }
 
 .fullscreen {
@@ -107,15 +108,15 @@ main{
   }
 
   .carouselFullScreen .imgCarousel{
-    max-width: 700px;
-    height: 63.79vh;
+    width: 100%;
+    height: 65vh;
   }
 }
 
 @media all and (min-width:992px){
   .containerImgGallery img{
     width: 100%;
-    height: 55vh;
+    height: 75vh;
   }
 
   .containerImg img{
@@ -126,14 +127,18 @@ main{
   .containerImg:hover .containerBg{
     width: 92%;
   }
+
+  .carouselFullScreen {
+    max-width: 75vw;
+  }
+
+  .carouselFullScreen .imgCarousel{
+    width: 100%;
+    height: 75vh;
+  }
 }
 
 @media all and (min-width:1200px){
-  .containerImgGallery img{
-    width: 100%;
-    height: 60vh;
-  }
-
   .containerImg img{
     width: 340px;
     height: 31.88vh;
@@ -141,6 +146,10 @@ main{
 
   .containerImg:hover .containerBg{
     width: 88%;
+  }
+
+  .carouselFullScreen {
+    max-width: 800px;
   }
 }
 

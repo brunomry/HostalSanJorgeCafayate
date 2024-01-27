@@ -5,7 +5,15 @@ body{
   flex-direction: column;
 }
 
+header{
+  width: 100%;
+  z-index: 99;
+  position: fixed;
+  top:0;
+}
+
 main{
+  margin-top: 96.75px;
   flex-grow: 1;
   background: #f1e8d6;
 }
@@ -20,6 +28,10 @@ h3{
 .lead{
   font-size: 1rem;
   font-weight: 400;
+}
+
+.iconFacebook{
+  color: #3d61f2;
 }
 
 .iconFacebook:hover{
@@ -43,8 +55,19 @@ h3{
   font-weight:400;
 }
 
+@media all and (min-width:992px){
+  main{
+    margin-top:80.75px;
+  }
+}
+
 @media all and (min-width:1200px){
+  main{
+    margin-top: 104px;
+  }
+
   .lead{
     font-size: 1.25rem;
+    font-weight:400;
   }
 }

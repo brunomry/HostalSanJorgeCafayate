@@ -4,7 +4,7 @@ main{
 
 .containerImgRoom img{
   width: 100%;
-  height: 20vh;
+  height: 35vh;
 }
 
 section .descriptionRooms{
@@ -75,7 +75,7 @@ section .descriptionRooms{
 
 @media all and (min-width:992px){
   .containerImgRoom img{
-    height: 55vh;
+    height: 75vh;
   }
 
   section .descriptionRooms{
@@ -88,11 +88,5 @@ section .descriptionRooms{
 
   .containerImg img{
     width: 450px;
-  }
-}
-
-@media all and (min-width:1200px){
-  .containerImgRoom img{
-    height: 60vh;
   }
 }

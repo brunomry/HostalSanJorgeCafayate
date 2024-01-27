@@ -4,7 +4,7 @@ main{
 
 .containerImgHowToGet img{
   width: 100%;
-  height: 22vh;
+  height: 35vh;
 }
 
 .containerMap{
@@ -13,18 +13,6 @@ main{
 
 .containerMap div{
   height: 100%;
-}
-
-.iconFacebook:hover{
-  color: rgb(27, 27, 189);
-}
-
-.iconInstagram{
-  color: rgb(210, 48, 48);
-}
-
-.iconInstagram:hover{
-  color: red;
 }
 
 .formContact{
@@ -63,13 +51,6 @@ textarea{
 @media all and (min-width:992px){
   .containerImgHowToGet img{
     width: 100%;
-    height: 55vh;
-  }
-}
-
-@media all and (min-width:1200px){
-  .containerImgHowToGet img{
-    width: 100%;
-    height: 60vh;
+    height: 75vh;
   }
 }

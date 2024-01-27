@@ -1,14 +1,10 @@
-let tituloBienvenida;
-
-const traducciones = {
+export const traducciones = {
   'es': {
-    //navbar
     'rooms': 'Habitaciones',
     'gallery': 'Galería',
     'howToGet': 'Cómo Llegar',
     'faqs': 'Preguntas Frecuentes',
     'language': 'Idioma',
-    //home
     'sectionWelcome.title': 'Bienvenido a',
     'sectionWelcome.description': 'Con más de 10 años brindando alojamiento a nuestros huéspedes, en Hostal San Jorge le ofrecemos un lugar cómodo, tranquilo e ideal para descansar. Descubra la serenidad y la hospitalidad en el corazón de Cafayate, provincia de Salta. Permítanos ser su hogar lejos de casa y disfrute de una experiencia agradable y memorable mientras explora los encantos de esta hermosa región argentina.',
     'sectionService.breakfastTitle': 'Servicio de Desayuno incluido',
@@ -23,7 +19,7 @@ const traducciones = {
     'sectionInfo.howToArriveDescription': 'Hostal San Jorge se encuentra ubicado a 2 cuadras de la plaza principal de Cafayate.',
     'sectionInfo.galleryTitle': 'Galería',
     'sectionInfo.galleryDescription': 'También puedes ver más imágenes de nuestro Hostal.',
-    //habitaciones
+    'sectionInfo.SeeMore':'Ver más',
     'descriptionRooms.title':'Nuestras Habitaciones',
     'descriptionRooms.description':'Descubre el encanto y la comodidad de nuestras habitaciones. Cada espacio ha sido diseñado pensando en tu confort, ofreciendo una experiencia única en hospitalidad.',
     'descriptionRooms.description1':'¡Conoce nuestras habitaciones y no dudes en elegirnos!',
@@ -33,17 +29,16 @@ const traducciones = {
     'cardRoom.descriptionBedDouble':'1 cama matrimonial.',
     'cardRoom.descriptionBedTriple':'1 cama matrimonial y 1 cama individual.',
     'cardRoom.descriptionBedQuintuple':'1 cama matrimonial, 1 cama individual y 1 cama cucheta.',
-    'cardRoom.maximumCapacitySingle':'Capacidad máxima: 1',
-    'cardRoom.maximumCapacityDouble':'Capacidad máxima: 2',
-    'cardRoom.maximumCapacityTriple':'Capacidad máxima: 3',
-    'cardRoom.maximumCapacityQuintuple':'Capacidad máxima: 5',
+    'cardRoom.maximumCapacitySingle':'Capacidad Máxima:',
+    'cardRoom.maximumCapacityDouble':'Capacidad Máxima:',
+    'cardRoom.maximumCapacityTriple':'Capacidad Máxima:',
+    'cardRoom.maximumCapacityQuintuple':'Capacidad Máxima:',
     'cardRoom.btnMoreInfo':'Más información',
-    //galeria
+    'btnCheckRoom': 'Consultar Habitación',
     'sectionGallery.title':'Galería de imágenes',
     'sectionGallery.description1':'¡Conoce nuestras instalaciones y habitaciones a través de nuestra galería de imágenes!',
-    'sectionGallery.description2':'Puedes ver cada imagen en detalle',
-    'sectionGallery.description':'Imágenes tomadas por Sol Herrera. Ig: solherrera.ar',
-    //Como llegar
+    'sectionGallery.description2':'Puedes ver cada imagen en detalle.',
+    'sectionGallery.description3':'Imágenes tomadas por Sol Herrera. Ig: solherrera.ar',
     'sectionHowToGet.title':'Cómo llegar a nuestro Hostal',
     'sectionHowToGet.description':'Encuéntranos con Google Maps',
     'sectionContact.title':'Visítanos',
@@ -54,22 +49,20 @@ const traducciones = {
     'formContact.email':'Correo electrónico:',
     'formContact.message':'Mensaje:',
     'formContact.btnSubmit':'Enviar',
-    //detalle habitacion simple, doble, triple y quintuple
     'simpleRoom': 'Habitación Individual',
     'dobleRoom': 'Habitación Doble',
     'tripleRoom': 'Habitación Triple',
     'quintupleRoom': 'Habitación Quíntuple',
     'roomDescription.subtitle': 'Descripción',
-    'roomDescription.descriptionSingle': 'Esta acogedora habitación cuenta con 1 cama individual y comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.',
+    'roomDescription.descriptionSingle': 'Esta acogedora habitación cuenta con 1 cama individual para una sola persona y comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.',
     'roomDescription.descriptionDouble':'Esta habitación cuenta con 1 cama matrimonial para 2 personas y comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo. Además cuenta con un mini balcón.',
     'roomDescription.descriptionTriple':'Esta habitación para 3 personas cuenta con 1 cama matrimonial y 1 cama individual. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.',
     'roomDescription.descriptionQuintuple':'Esta amplia y cómoda habitación para 5 personas cuenta con 1 cama matrimonial, 1 cama individual y 1 cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.',
-    'roomDescription.share':'Compartir',
+    'roomDescription.share':'Compartir:',
     'contact.title': 'Por Consultas o Reservas:',
     'telephone': 'Teléfono',
     'fullscreen.btnClose': 'Cerrar',
     'fullscreen.btnVolver': 'Volver',
-    //preguntasFrecuentes
     'containerQuestions.title':'Preguntas Frecuentes',
     'containerQuestions.description':'Si tu pregunta no se encuentra aquí, no te preocupes. Puedes escribirnos o llamarnos y estaremos encantados en ayudarte a responder tus dudas.',
     'faq.question1': '¿A qué hora puedo realizar el Check-In (hora de ingreso)?',
@@ -101,14 +94,13 @@ const traducciones = {
     'faq.answer13.description1.span2':'habilitadas.',
     'faq.answer13.description2':'En caso de cancelación, te recomendamos notificarnos con al menos 12 horas de antelación para poder procesar el reintegro de la seña. Estas políticas nos permiten gestionar eficientemente nuestras reservas y brindarte el mejor servicio posible.',
     'faq.answer13.description3':' En caso de llegar más tarde de lo previsto, por favor comunícate con nosotros para informarnos. Esto nos ayuda a asegurarnos de tu llegada. Apreciamos tu colaboración, especialmente en períodos de alta demanda.',
-    'faq.answer13.description4':'Si tienes alguna pregunta adicional, estamos disponibles para ayudarte.',
-    //seccion formas de pago, modal formas de pago y respuesta formas de pago
+    'faq.answer13.description4':'Si tienes alguna pregunta adicional, estamos disponibles para ayudarte.',
     'paymentMethods.title': 'Formas de Pago',
     'paymentMethods.payment1': 'Pago en efectivo.',
     'paymentMethods.payment2': 'Transferencias bancarias.',
-    'paymentMethods.payment3': 'Link de la app MercadoPago para que puedas pagar con tu tarjeta de débito o crédito. (Esta operación tiene un 10% de recargo)',
-    //amenities
+    'paymentMethods.payment3': 'Link de la app MercadoPago para que puedas pagar con tu tarjeta de débito o crédito. (Esta operación tiene un 10% de recargo)',  
     'amenities.title': 'Comodidades',
+    'amenities.subtitle': 'Comodidades:',
     'amenities.wifi': 'Wi-Fi',
     'amenities.bedAndTowels': 'Ropa de cama y toallas',
     'amenities.ceilingFan': 'Ventilador de techo',
@@ -116,7 +108,8 @@ const traducciones = {
     'amenities.AirAconditioner': 'Aire acondicionado',
     'amenities.privateBathroom': 'Baño privado',
     'amenities.toiletries':'Artículos de tocador',
-    //footer
+    'language.es':'Español',
+    'language.en':'Inglés',
     'footer.info': 'Información',
     'footer.telephone': 'Teléfono: +54 9 03868 422388',
     'footer.socialMedia': 'Síguenos en nuestras redes',
@@ -125,13 +118,11 @@ const traducciones = {
     'footer.name': 'Bruno Madozzo'
   },
   'en': {
-    //navbar
     'rooms': 'Rooms',
     'gallery': 'Gallery',
     'howToGet': 'How to get',
     'faqs': 'Faqs',
     'language': 'Language',
-    //home
     'sectionWelcome.title': 'Welcome to',
     'sectionWelcome.description': 'With more than 10 years providing accommodation to our guests, at Hostal San Jorge we offer a comfortable, quiet and ideal place to rest. Discover serenity and hospitality in the centre of Cafayate, Salta province. Let us be your home away from home and enjoy an enjoyable and memorable experience while exploring the charms of this beautiful Argentine region.',
     'sectionService.breakfastTitle': 'Breakfast service included',
@@ -143,7 +134,7 @@ const traducciones = {
     'sectionInfo.faqsDescription': 'Check out the most frequent questions from our guests.',
     'sectionInfo.howToArriveDescription': 'Hostal San Jorge is located 2 blocks from the main square of Cafayate.',
     'sectionInfo.galleryDescription': 'You can also see more images of our Hostel.',
-    //habitaciones
+    'sectionInfo.SeeMore':'See more',
     'descriptionRooms.title':'Our Rooms',
     'descriptionRooms.description':'Discover the charm and comfort of our rooms. Each space has been designed thinking about your comfort, offering a unique hospitality experience.',
     'descriptionRooms.description1':'¡Get to know our rooms and do not hesitate to choose us!',
@@ -153,17 +144,16 @@ const traducciones = {
     'cardRoom.descriptionBedDouble':'1 double bed',
     'cardRoom.descriptionBedTriple':'1 double bed and 1 single bed',
     'cardRoom.descriptionBedQuintuple':'1 double bed, 1 single bed and 1 bunk bed.',
-    'cardRoom.maximumCapacitySingle':'Maximum capacity: 1',
-    'cardRoom.maximumCapacityDouble':'Maximum capacity: 2',
-    'cardRoom.maximumCapacityTriple':'Maximum capacity: 3',
-    'cardRoom.maximumCapacityQuintuple':'Maximum capacity: 5',
+    'cardRoom.maximumCapacitySingle':'Maximum capacity:',
+    'cardRoom.maximumCapacityDouble':'Maximum capacity:',
+    'cardRoom.maximumCapacityTriple':'Maximum capacity:',
+    'cardRoom.maximumCapacityQuintuple':'Maximum capacity:',
     'cardRoom.btnMoreInfo':'More information',
-    //galeria
+    'btnCheckRoom': 'Check Room',
     'sectionGallery.title':'Image Gallery',
     'sectionGallery.description1':'¡Get to know our facilities and rooms through our image gallery!',
     'sectionGallery.description2':'You can see each image in detail.',
-    'sectionGallery.description3': 'Photographed by Sol Herrera. Ig: solherrera.ar',
-    //Como llegar
+    'sectionGallery.description3': 'Photographed by Sol Herrera. Ig: solherrera.ar',
     'sectionHowToGet.title':'How to get to our Hostel',
     'sectionHowToGet.description':'Find us with Google Maps',
     'sectionContact.title':'Visit us',
@@ -173,7 +163,6 @@ const traducciones = {
     'formContact.email':'Email:',
     'formContact.message':'Message:',
     'formContact.btnSubmit':'Submit',
-    //detalle habitacion simple, doble, triple y quintuple
     'simpleRoom': 'Single Room',
     'dobleRoom': 'Double Room',
     'tripleRoom': 'Triple Room',
@@ -183,12 +172,11 @@ const traducciones = {
     'roomDescription.descriptionDouble':'This room has 1 double bed (2 people) and amenities such as Wi-Fi, air conditioning, private bathroom, bed linen, towels, toiletries and ceiling fan. It also has a mini balcony.',
     'roomDescription.descriptionTriple':'Three people room with one double bed and a single bed. Includes wi-fi , private bathroom , linens and towells , basic toiletries and ceiling fan.',
     'roomDescription.descriptionQuintuple':'This spacious and comfortable room for 5 people has 1 double bed, 1 single bed and 1 bunk bed. Includes amenities such as Wi-Fi, private bathroom, linens, towels, toiletries and ceiling fan.',
-    'roomDescription.share':'Share',
+    'roomDescription.share':'Share:',
     'contact.title': 'For Questions or Reservations:',
     'telephone': 'Telephone',
     'fullscreen.btnClose': 'Close',
     'fullscreen.btnVolver': 'Return',
-    //preguntasFrecuentes
     'containerQuestions.title':'Faqs',
     'containerQuestions.description':"If your question isn't here, don't worry. You can text or call us and we'll be glad to help you solving your doubts.",
     'faq.question1': '¿Time to check-in (entering hour)?',
@@ -221,26 +209,26 @@ const traducciones = {
     'faq.answer13.description2':'In cancelattion case, we recomend notifying us, at least twelve hours before, to process the devolution of your warranty money. This policy allows us an efficient management of our reservations and allows us to provide you with the best possible service.',
     'faq.answer13.description3':'In case of late arriving, please communicate us to be in knowledge of the Situation. It permit us be sure of your arriving. Your colaboration is well appreciate, especially in high season.',
     'faq.answer13.description4':'For adittional questions, we are always able to solve your doubts.',
-    //seccion formas de pago, modal formas de pago y respuesta formas de pago
     'paymentMethods.title': 'Payment Methods',
     'paymentMethods.payment1': 'Cash payment.',
     'paymentMethods.payment2': 'Bank transfer.',
     'paymentMethods.payment3': 'Payment link (mercado pago) we receive all debit card, and credit card (10% adittional)',
-    //amenities
     'amenities.title': 'Amenities',
+    'amenities.subtitle': 'Amenities:',
     'amenities.wifi': 'Wi-Fi',
     'amenities.bedAndTowels': 'Linens and towels',
     'amenities.ceilingFan': 'Ceiling fan',
     'amenities.AirAconditionerAndCeilingFan': 'Air conditioner and ceiling fan',
-    'amenities.AirAconditioner': 'Aire acondicionado',
+    'amenities.AirAconditioner': 'Air conditioner',
     'amenities.privateBathroom': 'Private bathroom',
     'amenities.toiletries':'Toiletries',
-    //footer
+     'language.es':'Spanish',
+     'language.en':'English',
     'footer.info': 'Information',
     'footer.telephone': 'Telephone: +54 9 03868 422388',
     'footer.socialMedia': 'Follow us on our networks',
     'footer.rightsReserved': '©All rights reserved. 2024.',
-    'footer.designedBy': 'Designed by ',
-    'footer.name': 'Bruno Madozzo'
+    'footer.designedBy': 'Designed by',
+    'footer.name': ' Bruno Madozzo'
   },
 }
