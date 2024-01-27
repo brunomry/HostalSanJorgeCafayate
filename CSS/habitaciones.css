@@ -1,0 +1,98 @@
+main{
+  background: #f1e8d6;
+}
+
+.containerImgRoom img{
+  width: 100%;
+  height: 20vh;
+}
+
+section .descriptionRooms{
+  width: 100%;
+}
+
+.cardRoom{
+  background: #F4F3E8;
+  min-height: 320px;
+}
+
+.card-body{
+  height: 100%;
+}
+
+.cardRoom .containerImg{
+  height: 352px;
+}
+
+.containerImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btnMoreInfo{
+  /* border: 1px solid #8f884d; */
+  background: #d3ac5e;
+  background: #ba9f6a;
+}
+
+.btnMoreInfo:hover{
+  /* border: 1px solid #111010; */
+  background: #bb9852;
+  background: #b8954f;
+  transition: all .2s ease-in-out;
+}
+
+@media all and (min-width:576px){
+  .containerImgRoom img{
+    height: 40vh;
+  }
+}
+
+@media all and (min-width:768px){
+  .containerImgRoom img{
+    height: 45vh;
+  }
+
+  section .descriptionRooms{
+    width: 700px;
+  }
+
+  .cardRoom{
+    width: 700px;
+  }
+
+  .containerImg img{
+    width: 350px;
+  }
+
+  .textHidden {
+    overflow: hidden;
+    white-space: wrap;
+    text-overflow: ellipsis;
+  }
+}
+
+@media all and (min-width:992px){
+  .containerImgRoom img{
+    height: 55vh;
+  }
+
+  section .descriptionRooms{
+    width: 900px;
+  }
+
+  .cardRoom{
+    width: 900px;
+  }
+
+  .containerImg img{
+    width: 450px;
+  }
+}
+
+@media all and (min-width:1200px){
+  .containerImgRoom img{
+    height: 60vh;
+  }
+}
