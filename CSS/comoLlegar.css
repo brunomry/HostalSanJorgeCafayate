@@ -1,0 +1,75 @@
+main{
+  background: #f1e8d6;
+}
+
+.containerImgHowToGet img{
+  width: 100%;
+  height: 22vh;
+}
+
+.containerMap{
+  min-height: 20rem;
+}
+
+.containerMap div{
+  height: 100%;
+}
+
+.iconFacebook:hover{
+  color: rgb(27, 27, 189);
+}
+
+.iconInstagram{
+  color: rgb(210, 48, 48);
+}
+
+.iconInstagram:hover{
+  color: red;
+}
+
+.formContact{
+  width: 100%;
+}
+
+article:nth-child(1),
+article:nth-child(2){
+  width: 100%;
+  background: #E6DCC8;
+}
+
+textarea{
+  height: 200px;
+  resize: none;
+}
+
+@media all and (min-width:576px){
+  .containerImgHowToGet img{
+    width: 100%;
+    height: 40vh;
+  }
+}
+
+@media all and (min-width:768px){
+  .containerImgHowToGet img{
+    width: 100%;
+    height: 45vh;
+  }
+
+  .formContact{
+    width: 800px;
+  }
+}
+
+@media all and (min-width:992px){
+  .containerImgHowToGet img{
+    width: 100%;
+    height: 55vh;
+  }
+}
+
+@media all and (min-width:1200px){
+  .containerImgHowToGet img{
+    width: 100%;
+    height: 60vh;
+  }
+}
