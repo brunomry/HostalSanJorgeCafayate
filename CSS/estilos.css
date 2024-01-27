@@ -7,6 +7,7 @@ body{
 
 main{
   flex-grow: 1;
+  background: #f1e8d6;
 }
 
 h1,
@@ -19,6 +20,26 @@ h3{
 .lead{
   font-size: 1rem;
   font-weight: 400;
+}
+
+.iconFacebook:hover{
+  color: rgb(27, 27, 189);
+}
+
+.iconInstagram{
+  color: rgb(210, 48, 48);
+}
+
+.iconInstagram:hover{
+  color: red;
+}
+
+.iconWhatsApp{
+  color: green;
+}
+
+.iconWhatsApp:hover{
+  color: rgb(3, 96, 3);
 }
 
 @media all and (min-width:1200px){
