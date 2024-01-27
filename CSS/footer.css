@@ -1,0 +1,30 @@
+footer{
+  border-top: 1px solid rgb(185, 182, 182);
+  background: #cbb38e;
+  color: #5b5757;
+}
+
+.containerLogo img{
+  width: 200px;
+  height: 120px;
+}
+
+h5{
+  color: rgb(150, 117, 74);
+}
+
+.iconFacebook{
+  color: #3d61f2;
+}
+
+.iconFacebook:hover{
+  color: rgb(27, 27, 189);
+}
+
+.iconInstagram{
+  color: rgb(210, 48, 48);
+}
+
+.iconInstagram:hover{
+  color: red;
+}
