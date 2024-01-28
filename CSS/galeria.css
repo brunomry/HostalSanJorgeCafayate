@@ -122,6 +122,7 @@ main{
   .containerImg img{
     width: 300px;
     height: 40vh;
+    object-fit: cover;
   }
 
   .containerImg:hover .containerBg{
