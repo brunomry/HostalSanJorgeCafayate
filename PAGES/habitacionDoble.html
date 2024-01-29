@@ -139,7 +139,7 @@
       </nav>
     </header>
     <main>
-      <section class="container pt-5 sectionRoom">
+      <section class="container-fluid pt-5 sectionRoom">
         <nav aria-label="breadcrumb ">
           <ol class="breadcrumb mb-md-0 mb-lg-4 mb-xl-5">
             <li class="breadcrumb-item lead">
@@ -155,14 +155,14 @@
             </li>
           </ol>
         </nav>
-        <div class="row my-4 pb-5 mt-md-0">
+        <div class="my-4 pb-5 mt-md-0 d-flex flex-column flex-lg-row justify-content-lg-center gap-4">
           <article
-            class="col-lg-6 mt-md-4 mt-lg-0 pb-3 pb-md-5 pb-lg-0 articleImgRoom"
+            class="mt-md-4 mt-lg-0 pb-3 pb-md-5 pb-lg-0 articleImgRoom"
           >
-            <div class="containerImg shadow">
+            <div class="containerImg">
               <img
                 src="../IMG/fotos/doble1.jpg"
-                alt="imágenes de habitación doble"
+                alt="imágenes de habitacion quintuple"
                 class="shadow border border-dark"
                 id="largeImg"
               />
@@ -190,7 +190,7 @@
               />
             </div>
           </article>
-          <article class="col-lg-6 mt-4 mt-md-0 text-center text-lg-start">
+          <article class="mt-4 mt-md-0 text-center text-lg-start descriptionRoom">
             <div>
               <h1 class="fw-bold">Habitación Doble</h1>
               <hr />
@@ -206,10 +206,10 @@
               </p>
               <p class="fw-bold lead">Comodidades:</p>
               <div
-                class="d-flex justify-content-center gap-4 containerAmenities flex-wrap flex-sm-nowrap"
+                class="d-flex justify-content-center gap-4 gap-lg-2 containerAmenities flex-wrap flex-sm-nowrap justify-content-xxl-start"
               >
                 <div class="d-flex flex-column gap-2 text-center">
-                  <i class="fa-solid fa-wifi fs-2 px-2"></i>
+                  <i class="fa-solid fa-wifi fs-2"></i>
                   <span class="lead">Wi-Fi</span>
                 </div>
                 <div class="d-flex flex-column gap-2 text-center">
@@ -552,7 +552,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <script src="../JS/detalleHabitacion.js"></script>
+    <script src="../JS/detalleHabitacion.js" type="module"></script>
     <script src="../JS/app.js" type="module"></script>
   </body>
 </html>

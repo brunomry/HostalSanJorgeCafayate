@@ -24,7 +24,6 @@ const cambiarTraduccion = (elemento, traduccion, idioma) => {
   if (elemento.nodeType === Node.TEXT_NODE && elemento.textContent.trim() !== '') {
 
     let textoFormateado = formatearTexto(elemento.textContent);
-    console.log(textoFormateado)
     if(idioma === 'en'){
       for (const key in traduccion) {
         if (traducciones.es[key] === textoFormateado) {

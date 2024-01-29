@@ -103,24 +103,20 @@ body{
 }
 
 @media all and (min-width: 375px){
-  .containerImg img{
-    height: 55vh;
-  }
-
   .containerSmallImg .smallImg{
     height: 12vh;
   }
 
   .carouselFullScreen .imgCarousel{
-    height: 63.79vh;
+    height: 65vh;
     object-fit: fill;
   }
 }
 
 @media all and (min-width: 576px){
   .containerImg img{
-    width: 516px;
-    height: 60vh;
+    width: 100%;
+    height: 70vh;
   }
 
   .carouselFullScreen .imgCarousel{
@@ -138,9 +134,8 @@ body{
   }
 
   .containerImg img{
-    width: 600px;
+    width: 80%;
     height: 65vh;
-    object-fit: fill;
   }
 
   .carouselFullScreen{
@@ -149,13 +144,21 @@ body{
 
   .carouselFullScreen .imgCarousel{
     width: 100%;
-    height: 63.79vh;
+    height: 75vh;
   }
 }
 
 @media all and (min-width:992px){
+  .articleImgRoom{
+    width: 48%;
+  }
+
   .containerImg img{
     width: 100%;
+  }
+
+  .descriptionRoom{
+    width: 50%;
   }
 
   .carouselFullScreen {
@@ -164,29 +167,29 @@ body{
 
   .carouselFullScreen .imgCarousel{
     width: 100%;
-    height: 70vh;
+    height: 80vh;
   }
 }
 
 @media all and (min-width:1200px){
   .carouselFullScreen {
-    max-width: 750px;
+    max-width: 70vh;
   }
 
   .carouselFullScreen .imgCarousel {
     width: 100%;
-    height: 65vh;
+    height: 85vh;
   }
 }
 
 @media all and (min-width:1400px){
-  .containerSmallImg{
-    width: 600px;
+  .sectionRoom{
+    padding: 120px;
   }
-
+  
   .containerImg{
-    width: 600px;
-    height: 65vh;
+    max-width: 750px;
+    height: 70vh;
   }
 
   .containerImg img{
@@ -195,13 +198,20 @@ body{
     object-fit: fill;
   }
 
+  .containerSmallImg{
+    width: 750px;
+  }
+
   .carouselFullScreen {
     max-width: 900px;
   }
 
   .carouselFullScreen .imgCarousel{
     max-width: 100%;
-    height: 80vh;
+    height: 90vh;
     text-align: center;
+    object-fit: fill;
   }
+
+
 }

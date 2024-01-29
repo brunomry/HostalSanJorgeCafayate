@@ -1,36 +1,12 @@
-const navbar = document.querySelector('.navbar');
-const imgGrande = document.getElementById('largeImg');
-const div = document.getElementById('fullscreen');
-const botonCerrar = document.getElementById('cerrar');
-const itemsCarousel = document.querySelectorAll('.carousel-item');
-const imagesCarousel = document.querySelectorAll('.imgCarousel');
+import { abrirImagen, cerrarImagen, botonCerrar } from "./funciones.js";
 
+const imgGrande = document.getElementById('largeImg');
 const btnConsultaHabitacion = document.getElementById('btnCheckRoom');
 const btnWhatsApp = document.getElementById('btnWhatsApp');
 const btnFacebook = document.getElementById("btnFacebook");
 const h1 = document.querySelector('h1');
 const habitacion = h1.textContent;
 const urlHabitacion = window.location.href;
-
-const abrirImagen = imageSrc => {
-  navbar.classList.toggle('d-none');
-    div.classList.add('d-flex','flex-column');
-    imagesCarousel.forEach((img,pos) =>{
-        if(itemsCarousel[pos].classList.contains('active')){
-          itemsCarousel[pos].classList.remove('active')
-        }
-
-        if(img.src === imageSrc){
-          itemsCarousel[pos].classList.add('active');
-        }
-    })
-}
-
-const cerrarImagen = () => {
-  botonCerrar.style.display = 'none';
-  div.classList.remove('d-flex');
-  navbar.classList.toggle('d-none');
-}
 
 document.addEventListener('click', (e) => {
   let imgSrc;
@@ -57,7 +33,7 @@ document.addEventListener('click', (e) => {
 const compartirEnRedSocial = (redSocial, url) => {
   const mensaje = `¡Mira esta Habitación de Hostal San Jorge!\n\n *** ${habitacion} *** \n\n${urlHabitacion}`;
   const consulta = `*** Consulta de ${habitacion} ***\n\n${urlHabitacion}`;
-  const numeroTelefono = `+5493815680429`
+  const numeroTelefono = `+5493876843082`
   let link;
 
   switch (redSocial) {
@@ -85,4 +61,3 @@ btnWhatsApp.addEventListener("click", () => {
 btnFacebook.addEventListener("click", () => {
   compartirEnRedSocial("Facebook", urlHabitacion);
 });
-
