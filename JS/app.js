@@ -1,5 +1,7 @@
 import { traducciones } from './traducciones.js';
 
+document.getElementById("formQuestions").action = "https://formsubmit.co/hostalsanjorgecafayate@gmail.com";
+
 const opcionEs = document.getElementById('optionEs');
 const opcionEn = document.getElementById('optionEn');
 
