@@ -57,6 +57,12 @@ h5{
   font-weight:400;
 }
 
+.btnWppFixed{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
 @media all and (min-width:992px){
   main{
     margin-top:80.75px;
