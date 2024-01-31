@@ -1,7 +1,7 @@
 import { traducciones } from './traducciones.js';
 
-const opcionEs = document.getElementById('optionEs')
-const opcionEn = document.getElementById('optionEn')
+const opcionEs = document.getElementById('optionEs');
+const opcionEn = document.getElementById('optionEn');
 
 const obtenerIdioma = () => {
   const idiomaActual = localStorage.getItem('idiomaKey');

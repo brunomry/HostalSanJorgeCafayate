@@ -109,7 +109,8 @@ main{
 
   .carouselFullScreen .imgCarousel{
     width: 100%;
-    height: 65vh;
+    object-fit: contain;
+    /* height: 65vh; */
   }
 }
 
@@ -135,7 +136,7 @@ main{
 
   .carouselFullScreen .imgCarousel{
     width: 100%;
-    height: 75vh;
+    /* height: 75vh; */
   }
 }
 

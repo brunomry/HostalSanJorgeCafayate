@@ -174,17 +174,34 @@
           </article>
           <article class="d-flex flex-column align-items-center mt-5">
             <h3 class="text-center py-3 fw-bold">Deja tu consulta</h3>
-            <form action="" class="formContact px-md-4">
+            <form action="https://formsubmit.co/hostalsanjorgecafayate@gmail.com" method="POST" class="formContact px-md-4">
               <div class="mb-3">
                 <label for="name" class="form-label lead"
                   >Nombre y Apellido:</label
                 >
                 <input
-                  type="email"
+                  type="text"
                   class="form-control py-3 rounded-1 border border-secondary"
                   id="name"
+                  name="Nombre y Apellido"
                   minlength="3"
                   maxlength="50"
+                  pattern="\b[A-Za-z][a-z]+\b\s\b[A-Za-z][a-z]+\b"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label lead"
+                  >Teléfono:</label
+                >
+                <input
+                  type="tel"
+                  class="form-control py-3 rounded-1 text-secondary border border-secondary"
+                  id="telephone"
+                  name="Teléfono"
+                  minlength="10"
+                  maxlength="10"
+                  pattern="[0-9]{10}"
                   required
                 />
               </div>
@@ -196,8 +213,10 @@
                   type="email"
                   class="form-control py-3 rounded-1 text-secondary border border-secondary"
                   id="email"
+                  name="Correo electrónico"
                   minlength="3"
                   maxlength="265"
+                  pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
                   required
                 />
               </div>
@@ -206,11 +225,14 @@
                 <textarea
                   class="form-control rounded-1 border border-secondary"
                   id="questions"
+                  name="Consulta"
                   minlength="10"
                   maxlength="500"
                   required
                 ></textarea>
               </div>
+              <input type="text" hidden name="_next" value="http://127.0.0.1:5500/PAGES/comoLlegar.html">
+              <input type="text" hidden name="_subject" value="CONSULTA - HOSTAL SAN JORGE">
               <div class="mb-3 w-100">
                 <button
                   type="submit"
