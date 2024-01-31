@@ -1,7 +1,12 @@
 import { traducciones } from './traducciones.js';
 
+const btnWppFijo = document.getElementById('btnWhatsAppFixed');
+const btnWppPropio = document.getElementById('btnWppMee');
 const opcionEs = document.getElementById('optionEs');
 const opcionEn = document.getElementById('optionEn');
+
+const linkWppFijo = 'https://wa.me/+5493876843082';
+const linkWppPropio = 'https://wa.me/+5493816561404';
 
 const obtenerIdioma = () => {
   const idiomaActual = localStorage.getItem('idiomaKey');
@@ -55,3 +60,6 @@ opcionEs.addEventListener('click', (e) => {
 opcionEn.addEventListener('click', (e) => {
   cambiarIdioma('en');
 })
+
+btnWppFijo.addEventListener('click', () => window.open(linkWppFijo,'_blank'));
+btnWppPropio.addEventListener('click', () => window.open(linkWppPropio,'_blank'));

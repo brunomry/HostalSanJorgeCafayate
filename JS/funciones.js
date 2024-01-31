@@ -23,11 +23,3 @@ export const cerrarImagen = () => {
   div.classList.remove('d-flex');
   navbar.classList.toggle('d-none');
 }
-
-const link = 'https://wa.me/+5493876843082';
-
-document.getElementById('formQuestions').action = "https://formsubmit.co/hostalsanjorgecafayate@gmail.com";
-
-document.getElementById('btnWhatsAppFixed').addEventListener('click', () => {
-    window.open(link, '_blank');
-});
