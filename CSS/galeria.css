@@ -110,7 +110,6 @@ main{
   .carouselFullScreen .imgCarousel{
     width: 100%;
     object-fit: contain;
-    /* height: 65vh; */
   }
 }
 
@@ -130,13 +129,8 @@ main{
     width: 92%;
   }
 
-  .carouselFullScreen {
-    max-width: 75vw;
-  }
-
   .carouselFullScreen .imgCarousel{
     width: 100%;
-    /* height: 75vh; */
   }
 }
 
@@ -148,10 +142,6 @@ main{
 
   .containerImg:hover .containerBg{
     width: 88%;
-  }
-
-  .carouselFullScreen {
-    max-width: 800px;
   }
 }
 

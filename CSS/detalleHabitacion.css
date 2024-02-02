@@ -144,7 +144,7 @@ body{
 
   .carouselFullScreen .imgCarousel{
     width: 100%;
-    height: 75vh;
+    object-fit: contain;
   }
 }
 
@@ -159,26 +159,6 @@ body{
 
   .descriptionRoom{
     width: 50%;
-  }
-
-  .carouselFullScreen {
-    max-width: 65vw;
-  }
-
-  .carouselFullScreen .imgCarousel{
-    width: 100%;
-    height: 80vh;
-  }
-}
-
-@media all and (min-width:1200px){
-  .carouselFullScreen {
-    max-width: 70vh;
-  }
-
-  .carouselFullScreen .imgCarousel {
-    width: 100%;
-    height: 85vh;
   }
 }
 
@@ -197,21 +177,4 @@ body{
     height: 100%;
     object-fit: fill;
   }
-
-  .containerSmallImg{
-    width: 750px;
-  }
-
-  .carouselFullScreen {
-    max-width: 900px;
-  }
-
-  .carouselFullScreen .imgCarousel{
-    max-width: 100%;
-    height: 90vh;
-    text-align: center;
-    object-fit: fill;
-  }
-
-
 }
