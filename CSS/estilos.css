@@ -61,6 +61,14 @@ h5{
   position: fixed;
   right: 20px;
   bottom: 20px;
+  font-size: 60px;
+}
+
+@media all and (min-width:768px){
+  .btnWppFixed{
+    font-size: 80px;
+  }
+
 }
 
 @media all and (min-width:992px){
