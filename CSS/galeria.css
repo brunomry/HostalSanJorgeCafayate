@@ -36,7 +36,6 @@ main{
   cursor: pointer;
   color: #fff;
   font-size: 12px;
-  transition: all .1s;
 }
 
 .fullscreen {
@@ -51,6 +50,7 @@ main{
   align-items: center;
   z-index: 99;
   margin: auto;
+  cursor: pointer;
 }
 
 .fullscreen i{
@@ -68,7 +68,7 @@ main{
 .imgCarousel {
   width: 100%;
   height: 50vh;
-  object-fit: fill;
+  object-fit: contain;
 }
 
 @media all and (min-width:576px){
@@ -85,6 +85,10 @@ main{
   .containerImg img{
     width: 100%;
     height: 20.19vh;
+  }
+
+  .carouselFullScreen .imgCarousel{
+    height: 75vh;
   }
 }
 
@@ -106,11 +110,6 @@ main{
   .carouselFullScreen{
     max-width: 680px;
   }
-
-  .carouselFullScreen .imgCarousel{
-    width: 100%;
-    object-fit: contain;
-  }
 }
 
 @media all and (min-width:992px){
@@ -127,10 +126,6 @@ main{
 
   .containerImg:hover .containerBg{
     width: 92%;
-  }
-
-  .carouselFullScreen .imgCarousel{
-    width: 100%;
   }
 }
 
@@ -151,6 +146,6 @@ main{
   }
 
   .containerImg:hover .containerBg{
-    width: 90%;
+    width: 92%;
   }
 }

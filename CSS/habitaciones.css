@@ -31,15 +31,11 @@ section .descriptionRooms{
 }
 
 .btnMoreInfo{
-  /* border: 1px solid #8f884d; */
-  background: #d3ac5e;
   background: #ba9f6a;
 }
 
 .btnMoreInfo:hover{
-  /* border: 1px solid #111010; */
-  background: #bb9852;
-  background: #b8954f;
+  background: #aa8843;
   transition: all .2s ease-in-out;
 }
 

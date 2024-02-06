@@ -14,7 +14,7 @@ body{
   width: 100%;
   height: 60vh;
   cursor: pointer;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .containerSmallImg{
@@ -27,6 +27,7 @@ body{
   max-width: 120px;
   height: 15vh;
   cursor: pointer;
+  object-fit: fill;
 }
 
 .containerAmenities i{
@@ -45,6 +46,7 @@ body{
   align-items: center;
   z-index: 99;
   margin: auto;
+  cursor: pointer;
 }
 
 .carouselFullScreen{
@@ -54,7 +56,7 @@ body{
 .imgCarousel {
   width: 100%;
   height: 60vh;
-  object-fit: fill;
+  object-fit: contain;
 }
 
 .fullscreen i{
@@ -109,18 +111,17 @@ body{
 
   .carouselFullScreen .imgCarousel{
     height: 65vh;
-    object-fit: fill;
   }
 }
 
 @media all and (min-width: 576px){
   .containerImg img{
-    width: 100%;
     height: 70vh;
   }
 
   .carouselFullScreen .imgCarousel{
     max-width: 700px;
+    height: 75vh;
   }
 
   .carouselFullScreen{
@@ -144,7 +145,6 @@ body{
 
   .carouselFullScreen .imgCarousel{
     width: 100%;
-    object-fit: contain;
   }
 }
 
@@ -175,6 +175,5 @@ body{
   .containerImg img{
     width: 100%;
     height: 100%;
-    object-fit: fill;
   }
 }
