@@ -216,10 +216,6 @@ section:nth-child(6){
 }
 
 @media all and (min-width:1200px){
-  .imgCarrusel{
-    height: 75vh;
-  }
-
   .sectionService .containerService{
     gap: 75px;
   }
@@ -234,10 +230,6 @@ section:nth-child(6){
 }
 
 @media all and (min-width:1400px){
-  .imgCarrusel{
-    height: 90vh;
-  }
-
   .sectionService .containerService{
     width: 100%;
     gap: 75px;
