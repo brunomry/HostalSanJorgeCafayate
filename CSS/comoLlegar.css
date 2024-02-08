@@ -15,8 +15,8 @@
   width: 100%;
 }
 
-article:nth-child(1),
-article:nth-child(2){
+main article:nth-child(1),
+main article:nth-child(2){
   width: 100%;
   background: #E6DCC8;
 }
@@ -28,12 +28,14 @@ textarea{
 
 @media all and (min-width:576px){
   .bannerImgHowToGet img{
+    width: 100%;
     height: 40vh;
   }
 }
 
 @media all and (min-width:768px){
   .bannerImgHowToGet img{
+    width: 100%;
     height: 45vh;
   }
 
@@ -44,6 +46,7 @@ textarea{
 
 @media all and (min-width:992px){
   .bannerImgHowToGet img{
+    width: 100%;
     height: 75vh;
   }
 }
