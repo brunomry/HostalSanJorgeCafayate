@@ -29,10 +29,6 @@
   border-bottom: 3px solid #9d7d3d;
 }
 
-.imgLanguage{
-  width: 30px;
-}
-
 @media all and (min-width:576px){
   #navbarNav ul .nav-item{
     width: 50%;

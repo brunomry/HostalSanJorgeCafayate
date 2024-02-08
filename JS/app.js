@@ -3,7 +3,6 @@ import { traducciones } from './traducciones.js';
 const btnWppFijo = document.getElementById('btnWhatsAppFixed');
 const opcionEs = document.getElementById('optionEs');
 const opcionEn = document.getElementById('optionEn');
-
 const linkWppFijo = 'https://wa.me/+5493876843082';
 
 const obtenerIdioma = () => {
