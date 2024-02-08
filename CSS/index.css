@@ -107,7 +107,7 @@ section:nth-child(6){
 .btnHabitaciones:hover{
   background: #9d7d3d;
   color: #fff;
-  transition: all .2s ease-in-out;
+  transition: all .2s;
 }
 
 .btnInfo{

@@ -61,12 +61,6 @@ section .descriptionRooms{
   .containerImg img{
     width: 350px;
   }
-
-  .textHidden {
-    overflow: hidden;
-    white-space: wrap;
-    text-overflow: ellipsis;
-  }
 }
 
 @media all and (min-width:992px){
