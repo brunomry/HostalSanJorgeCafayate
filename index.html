@@ -32,6 +32,7 @@
     <title>Home | Hostal San Jorge - Alojamiento en Cafayate, Salta</title>
     <link
       rel="stylesheet"
+      defer
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
     <link
@@ -55,7 +56,6 @@
     />
     <link rel="stylesheet" href="./CSS/navbar.min.css" />
     <link rel="stylesheet" href="./CSS/footer.min.css" />
-    <link rel="stylesheet" href="./CSS/index.min.css" />
     <link rel="stylesheet" href="./CSS/estilos.min.css" />
   </head>
   <body>
@@ -203,6 +203,7 @@
               class="w-100 imgCarrusel"
               alt="Vista de frente del hostal"
               title="Frente del Hostal"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
@@ -211,6 +212,7 @@
               class="d-block w-100 imgCarrusel"
               alt="Salón Desayunador"
               title="Salón Desayunador"
+              loading="lazy"
             />
           </div>
           <div class="carousel-item" data-bs-interval="3000">
@@ -219,6 +221,7 @@
               class="d-block w-100 imgCarrusel"
               alt="Habitación quíntuple"
               title="Habitación quíntuple"
+              loading="lazy"
             />
           </div>
         </div>
@@ -292,6 +295,7 @@
               alt="Habitación doble"
               title="Habitación doble"
               class="shadow rounded-1"
+              loading="lazy"
             />
           </div>
         </article>
@@ -310,6 +314,7 @@
               alt="Desayuno"
               title="Desayuno"
               class="shadow rounded-1"
+              loading="lazy"
             />
           </div>
           <div class="containerDescriptionService text-center">
@@ -407,7 +412,7 @@
           </div>
         </article>
       </section>
-      <a href="" id="btnWhatsAppFixed" class="btnWppFixed"
+      <a href="" id="btnWhatsAppFixed" class="btnWppFixed" title="WhatsApp"
         ><i class="fa-brands fa-square-whatsapp text-success"></i>
       </a>
     </main>
@@ -443,11 +448,13 @@
               <a
                 href="https://www.facebook.com/profile.php?id=100089399326566"
                 target="_blank"
+                title="Facebook"
                 ><i class="bi bi-facebook fs-2 iconFacebook"></i
               ></a>
               <a
                 href="https://www.instagram.com/hostalsanjorgecafayate/"
                 target="_blank"
+                title="Instagram"
                 ><i class="bi bi-instagram fs-2 iconInstagram"></i
               ></a>
             </div>
