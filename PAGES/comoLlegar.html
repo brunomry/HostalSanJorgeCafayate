@@ -141,7 +141,6 @@
             src="../IMG/frente.webp"
             alt="Frente del hostal"
             title="Frente del hostal"
-            loading="lazy"
           />
         </div>
       </section>
@@ -161,6 +160,7 @@
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
+                title="ubicación"
               ></iframe>
             </div>
           </article>
@@ -191,13 +191,14 @@
               class="formContact px-md-4"
             >
               <div class="mb-3">
-                <label for="name" class="form-label lead"
+                <label for="name" class="form-label lead" title="Nombre y Apellido"
                   >Nombre y Apellido:</label
                 >
                 <input
                   type="text"
                   class="form-control py-3 rounded-1 border border-secondary"
                   id="name"
+                  title="Nombre y Apellido"
                   name="Nombre y Apellido"
                   minlength="3"
                   maxlength="50"
@@ -206,12 +207,13 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label lead">Teléfono:</label>
+                <label for="telephone" class="form-label lead" title="Teléfono">Teléfono:</label>
                 <input
                   type="tel"
                   class="form-control py-3 rounded-1 text-secondary border border-secondary"
                   id="telephone"
                   name="Teléfono"
+                  title="Teléfono"
                   minlength="10"
                   maxlength="10"
                   pattern="[0-9]{10}"
@@ -219,13 +221,14 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="email" class="form-label lead"
+                <label for="email" class="form-label lead" title="Email"
                   >Correo electrónico:</label
                 >
                 <input
                   type="email"
                   class="form-control py-3 rounded-1 text-secondary border border-secondary"
                   id="email"
+                  title="Email"
                   name="Correo electrónico"
                   minlength="3"
                   maxlength="265"
@@ -234,11 +237,12 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="questions" class="form-label lead">Consulta:</label>
+                <label for="questions" class="form-label lead" title="Consulta">Consulta:</label>
                 <textarea
                   class="form-control rounded-1 border border-secondary"
                   id="questions"
                   name="Consulta"
+                  title="Consulta"
                   minlength="10"
                   maxlength="500"
                   required
