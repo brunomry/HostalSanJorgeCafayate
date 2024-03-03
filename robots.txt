@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /index.html
+Allow: /PAGES/habitaciones.html
+Allow: /PAGES/habitacionSimple.html
+Allow: /PAGES/habitacionDoble.html
+Allow: /PAGES/habitacionTriple.html
+Allow: /PAGES/habitacionQuintuple.html
+Allow: /PAGES/galeria.html
+Allow: /PAGES/comoLlegar.html
+Allow: /PAGES/preguntasFrecuentes.html
