@@ -30,7 +30,7 @@ section:nth-child(6){
 .sectionService{
   width: 100%;
   min-height: 42.5vh;
-  background: #F9FAFB;
+  background: #F4F4F4;
 }
 
 .sectionService .containerService{
@@ -61,7 +61,7 @@ section:nth-child(6){
 .sectionServices{
   width: 100%;
   min-height: 42.5vh;
-  background: #F9FAFB;
+  background: #F4F4F4;
 }
 
 .sectionServices .containerAmenities{
@@ -76,23 +76,15 @@ section:nth-child(6){
 .containerAmenities i,
 .sectionService i{
   font-size: 1.875rem;
-  color: #11100f;
-  color: #111427;
-  color: #a09f9f;
   color:#668091;
-
 }
 
 .sectionInfo i{
   font-size: 1.875rem;
-  color: #ba9f6a;
-  color: #a09f9f;
-  color:#394753;
   color:#668091;
 }
 
 .sectionInfo{
-  background: #E6DCC8;
   min-height: 43vh;
 }
 
@@ -114,8 +106,8 @@ section:nth-child(6){
 }
 
 .btnHabitaciones:hover{
-  background: #D5DDE2;
-  transition: all .2s;
+  background: #F4F4F4;
+  transition: 1s;
 }
 
 .btnInfo{
