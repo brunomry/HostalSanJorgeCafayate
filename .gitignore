@@ -5,10 +5,9 @@ estilos.css
 footer.css
 galeria.css
 habitaciones.css
-index.css
 navbar.css
 preguntasFrecuentes.css
-
+index.css
 app.js
 detalleHabitacion.js
 form.js
