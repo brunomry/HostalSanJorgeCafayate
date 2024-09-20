@@ -1,0 +1,137 @@
+.bannerImgGallery img {
+    width: 100%;
+    height: 35vh;
+}
+
+.containerImg {
+    position: relative;
+}
+
+.containerImg img {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.containerImg .containerBg {
+    display: none;
+}
+
+.containerImg:hover .containerBg {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 97%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    cursor: pointer;
+    color: #fff;
+    font-size: 12px;
+}
+
+.fullscreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+    margin: auto;
+    cursor: pointer;
+}
+
+.fullscreen i {
+    display: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.carouselFullScreen {
+    width: 100%;
+}
+
+.imgCarousel {
+    width: 100%;
+    height: 60vh;
+    object-fit: contain;
+}
+
+@media all and (min-width: 576px) {
+    .bannerImgGallery img {
+        height: 40vh;
+    }
+
+    .containerImg:hover .containerBg {
+        width: 95%;
+        font-size: 1rem;
+    }
+
+    .containerImg img {
+        height: 20.19vh;
+    }
+
+    .carouselFullScreen .imgCarousel {
+        height: 75vh;
+    }
+}
+
+@media all and (min-width: 768px) {
+    .bannerImgGallery img {
+        height: 45vh;
+    }
+
+    .containerImg img {
+        width: 325px;
+        height: 31.88vh;
+    }
+
+    .carouselFullScreen {
+        max-width: 680px;
+    }
+}
+
+@media all and (min-width: 992px) {
+    .bannerImgGallery img {
+        height: 75vh;
+    }
+
+    .containerImg img {
+        width: 300px;
+        height: 40vh;
+    }
+
+    .containerImg:hover .containerBg {
+        width: 92%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .containerImg img {
+        width: 340px;
+        height: 31.88vh;
+    }
+
+    .containerImg:hover .containerBg {
+        width: 88%;
+    }
+}
+
+@media all and (min-width: 1400px) {
+    .containerImg img {
+        width: 400px;
+    }
+
+    .containerImg:hover .containerBg {
+        width: 92%;
+    }
+}
