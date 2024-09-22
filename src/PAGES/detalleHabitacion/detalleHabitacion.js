@@ -1,4 +1,4 @@
-import { abrirImagen, cerrarImagen, botonCerrar } from "./funciones.js";
+import { abrirImagen, cerrarImagen, botonCerrar } from "../../helpers/funciones.js";
 
 const imgGrande = document.getElementById('largeImg');
 const btnConsultaHabitacion = document.getElementById('btnCheckRoom');

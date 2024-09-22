@@ -1,4 +1,4 @@
-import { abrirImagen, cerrarImagen } from "./funciones.js";
+import { abrirImagen, cerrarImagen } from "../../helpers/funciones.js";
 
 document.addEventListener('click', (e) => {
     if (e.target.closest('.containerBg')) {
