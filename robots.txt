@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /index.html
-Allow: /PAGES/habitaciones.html
-Allow: /PAGES/galeria.html
-Allow: /PAGES/comoLlegar.html
-Allow: /PAGES/preguntasFrecuentes.html
+Allow: /src/PAGES/habitaciones/habitaciones.html
+Allow: /src/PAGES/galeria/galeria.html
+Allow: /src/PAGES/comoLlegar/comoLlegar.html
+Allow: /src/PAGES/preguntasFrecuentes/preguntasFrecuentes.html

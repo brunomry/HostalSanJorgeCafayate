@@ -6,7 +6,7 @@ document.addEventListener('click', (e) => {
 
         abrirImagen(imageSrc);
 
-        botonCerrar.style.display = 'block';
+        // botonCerrar.style.display = 'block';
     }
 
     if (e.target.id === "cerrar" || e.target.id === "fullscreenImg" || 
