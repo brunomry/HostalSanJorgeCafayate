@@ -1,10 +1,6 @@
-.logo {
-    width: 150px;
-}
-
 .navBar,
 .dropdown-menu {
-    background: #eceff2;
+    background: #fff;
 }
 
 #navbarNav .navigation {
@@ -17,12 +13,12 @@
 
 .navigation .nav-item .nav-link {
     color: #000;
-    border-bottom: 3px solid #eceff2;
+    /* border-bottom: 3px solid #eceff2; */
 }
 
 .navigation .nav-item:hover .nav-link {
     color: #000;
-    border-bottom: 3px solid #516778;
+    /* border-bottom: 3px solid #516778; */
 }
 
 @media all and (min-width: 576px) {

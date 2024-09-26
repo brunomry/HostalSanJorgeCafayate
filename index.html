@@ -41,108 +41,70 @@
     <header class="header">
     </header>
     <main>
+      
       <section
-        id="carouselHostal"
-        class="carousel slide"
-        data-bs-ride="carousel"
+        class="container-fluid px-0 d-flex justify-content-center mt-5 text-center "
       >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselHostal"
-            data-bs-slide-to="0"
-            class="bg-dark active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            class="bg-dark"
-            data-bs-target="#carouselHostal"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            class="bg-dark"
-            data-bs-target="#carouselHostal"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img
-              src="./src/IMG/frente.webp"
-              class="w-100 imgCarrusel"
-              alt="Vista de frente del hostal"
-              title="Frente del Hostal"              
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img
-              src="./src/IMG/Home/desayunador.webp"
-              class="d-block w-100 imgCarrusel"
-              alt="Salón Desayunador"
-              title="Salón Desayunador"
-              loading="lazy"
-            />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img
-              src="./src/IMG/habitacion4.webp"
-              class="d-block w-100 imgCarrusel"
-              alt="Habitación quíntuple"
-              title="Habitación quíntuple"
-              loading="lazy"
-            />
-          </div>
-        </div>
-        <span
-          class="carousel-control-prev prev"
-          type="a"
-          data-bs-target="#carouselHostal"
-          data-bs-slide="prev"
+        <article class="row gx-5 justify-content-center mt-5 px-0 w-100 px-0">
+          <div class="col-lg-4 mt-5">
+            <h1 class="mb-4">Hostal San Jorge de Cafayate</h1>
+            <!-- <p class="lead mt-3">
+              Con más de 15 años brindando alojamiento a nuestros huéspedes, en
+              Hostal San Jorge le ofrecemos un lugar cómodo, tranquilo e ideal
+              para descansar. Permítanos ser su hogar lejos de casa y disfrute de
+              una experiencia agradable y memorable mientras explora los encantos
+              de la hermosa ciudad de Cafayate en la provincia de Salta, noroeste
+              argentino.
+            </p> -->
+            <p>¡Tu espacio perfecto y la mejor experiencia la tendrás con nosotros!</p>
+            <button class="border border-1 border-dark rounded-2 py-3 px-4">
+              Nuestras Habitaciones
+            </button>
+            <article
+          class="d-flex mt-5 gap-5 justify-content-center flex-wrap justify-content-lg-between justify-content-xl-center"
         >
-          <span
-            class="carousel-control-prev-icon bg-dark"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Previous</span>
-        </span>
-        <span
-          class="carousel-control-next next"
-          type="a"
-          data-bs-target="#carouselHostal"
-          data-bs-slide="next"
-        >
-          <span
-            class="carousel-control-next-icon bg-dark"
-            aria-hidden="true"
-          ></span>
-          <span class="visually-hidden">Next</span>
-        </span>
-      </section>
-      <section
-        class="container-fluid sectionWelcome d-flex justify-content-center px-md-5 text-center py-5"
-      >
-        <article class="welcomeDescription mt-3 mt-sm-5">
-          <h1 class="fw-bold display-4 fst-italic mb-4">Hostal San Jorge</h1>
-          <p class="lead mt-3">
-            Con más de 15 años brindando alojamiento a nuestros huéspedes, en
-            Hostal San Jorge le ofrecemos un lugar cómodo, tranquilo e ideal
-            para descansar. Permítanos ser su hogar lejos de casa y disfrute de
-            una experiencia agradable y memorable mientras explora los encantos
-            de la hermosa ciudad de Cafayate en la provincia de Salta, noroeste
-            argentino.
-          </p>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <i class="fa-solid fa-wifi fs-4"></i>
+            <span class="text-center lead">Wi-Fi</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <i class="fa-solid fa-snowflake me-2 fs-4"></i>
+            <span class="text-center lead">Calefacción</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <i class="fa-solid fa-mug-hot me-2 fs-4"></i>
+            <span class="text-center lead">Desayuno</span>
+          </div>
+          <div class="d-flex flex-column gap-2 text-center">
+            <i class="fa-solid fa-shower fs-4"></i>
+            <span class="text-center lead">Baño privado</span>
+          </div>
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <i class="fa-solid fa-soap me-2 fs-4"></i>
+            <span class="text-center lead">Artículos de tocador</span>
+          </div>
+         
+          <div class="d-flex flex-column gap-2 align-items-center">
+            <i class="fa-solid fa-mask-ventilator me-2 fs-4"></i>
+            <span class="text-center lead">Ventilador</span>
+          </div>
+          <div class="d-flex flex-column gap-2 text-center">
+            <i class="fa-solid fa-bed fs-4"></i>
+            <span class="text-center lead">Ropa de cama y toallas</span>
+          </div>
+       
+        </article>
+          </div>
+          <div class="col-lg-5 bannerHome">
+            <img src="./src/IMG/frente.webp" alt="">
+          </div>
         </article>
       </section>
       <section
-        class="container-fluid sectionService py-5 d-flex justify-content-center align-items-center"
+        class="container-fluid sectionService py-5 d-flex align-items-center"
       >
         <article
-          class="containerService d-flex justify-content-center align-items-center flex-column flex-md-row"
+          class="containerService d-flex align-items-center flex-column flex-md-row"
         >
           <div class="containerDescriptionService text-center">
             <h2 class="pb-3 pb-md-0 pb-lg-3 fw-bold">Nuestras Habitaciones</h2>
@@ -159,6 +121,7 @@
               href="./src/PAGES/habitaciones.html"
               >Ver Habitaciones</a
             >
+            
           </div>
           <div
             class="containerImageService mt-3 mt-md-0 d-flex align-items-center"
