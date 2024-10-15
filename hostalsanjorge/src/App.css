@@ -1,3 +1,60 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'DM Sans',sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+main {
+    flex-grow: 1;
+    background: #fff;
+}
+
+h1, h2, h3, h5 {
+    color: #394753;
+}
+
+.lead {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.iconWhatsApp {
+    color: green;
+}
+
+.iconWhatsApp:hover {
+    color: rgb(3, 96, 3);
+    font-weight: 400;
+}
+
+.btnWppFixed {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font-size: 60px;
+}
+
+@media all and (min-width: 768px) {
+    .btnWppFixed {
+        font-size: 80px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .lead {
+        font-weight: 400;
+    }
+}

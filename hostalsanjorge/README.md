@@ -8,15 +8,11 @@ La aplicación está desplegada en Netlify. Puedes acceder haciendo clic en el s
 
 [Hostal San Jorge](https://hostalsanjorgecafayate.netlify.app/)
 
-Para visitar el sitio web y más, también puedes buscar 'hostal san jorge cafayate' o 'san jorge cafayate' en Google y encontrarás el enlace en los primeros resultados de búsqueda y más información sobre el hostal.
+Para visitar el sitio web y más, también puedes buscar 'hostal san jorge', 'hostal san jorge cafayate' o 'san jorge cafayate' en Google y encontrarás el enlace en los primeros resultados de búsqueda y más información sobre el hostal.
 
 ## Tecnologías utilizadas
 
-- [HTML5](https://developer.mozilla.org/es/docs/Glossary/HTML5)
-- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
-- [Bootstrap5](https://getbootstrap.com/)
-- [CSS3](https://developer.mozilla.org/es/docs/Web/CSS)
-- [FormSubmit](https://formsubmit.co/)
+- HTML5, CSS3, Tailwind, React, Javascript, React-Helmet, React-Router-Dom
 
 ## Funcionalidades y Aspectos Adicionales
 

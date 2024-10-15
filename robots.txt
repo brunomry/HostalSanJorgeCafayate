@@ -1,6 +1,0 @@
-User-agent: *
-Allow: /index.html
-Allow: /src/PAGES/habitaciones/habitaciones.html
-Allow: /src/PAGES/galeria/galeria.html
-Allow: /src/PAGES/comoLlegar/comoLlegar.html
-Allow: /src/PAGES/preguntasFrecuentes/preguntasFrecuentes.html
