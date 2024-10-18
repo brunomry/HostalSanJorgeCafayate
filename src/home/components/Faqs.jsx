@@ -14,10 +14,6 @@ function Faqs() {
     />
     <meta name="author" content="Bruno Madozzo Romay" />
     <meta name="robots" content="index, follow" />
-    <link
-      rel="canonical"
-      href="https://hostalsanjorgecafayate.netlify.app/PAGES/preguntasFrecuentes"
-    />
     <link rel="icon" href="../IMG/favicon.png" />
     <link rel="apple-touch-icon" href="../IMG/favicon.png" />
     <meta
