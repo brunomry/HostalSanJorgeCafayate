@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import "./styles/home.css";
 import BannerHome from "./components/BannerHome";
+import Comentarios from "./components/Comentarios";
 
 function Home() {
   return (
@@ -44,7 +45,8 @@ function Home() {
         <link rel="stylesheet" href="./src/styles/index.css" />
       </Helmet>
       <BannerHome></BannerHome>
-      <section className="flex justify-center min-h-[250px] w-[100%] my-10">
+      <Comentarios></Comentarios>
+      <section className="flex justify-center min-h-[250px] w-[100%] mt-[450px]">
         <div className="bg-slate-700 w-[75%] min-h-[200px] text-[#fff] flex gap-24 p-10 rounded-[10px]">
           <div className="w-[75%]">
             <h2 className="lg:text-[45px]">Sobre Nosotros</h2>
