@@ -10,6 +10,7 @@
     width: 100%;
     min-height: 250px;
     position: absolute;
+    filter: saturate(110%);
 }
 
 .bannerHome__description{
@@ -17,6 +18,12 @@
     top: 150px;
     left: 20px;
     right: 20px;
+}
+
+.imgSalon{
+    width: 900px;
+    height: 600px;
+    object-fit: cover;
 }
 
 @media all and (min-width: 1200px) {
