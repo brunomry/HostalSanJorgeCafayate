@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    font-family: 'Kanit';
+    font-family: 'Questrial';
     min-height: 100vh;
     display: flex;
     flex-direction: column;

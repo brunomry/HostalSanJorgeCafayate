@@ -3,7 +3,7 @@ import CardComentario from "./CardComentario";
 
 const Comentarios = () => {
   return (
-    <section className="absolute  w-[100%] top-[90%] mx-auto flex flex-col items-center gap-5 justify-center">
+    <section className="absolute  w-[100%] top-[90%] mx-auto flex flex-col items-center gap-10 justify-center">
       <div className="flex gap-5">
         {comentarios.map((comentario) => (
           <CardComentario

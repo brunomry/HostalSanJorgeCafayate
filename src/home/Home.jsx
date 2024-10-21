@@ -3,6 +3,7 @@ import "./styles/home.css";
 import BannerHome from "./components/BannerHome";
 import Comentarios from "./components/Comentarios";
 import NosotrosHome from "./components/NosotrosHome";
+import HabitacionesHome from "./components/HabitacionesHome";
 
 function Home() {
   return (
@@ -48,6 +49,7 @@ function Home() {
       <BannerHome></BannerHome>
       <Comentarios></Comentarios>
       <NosotrosHome></NosotrosHome>
+      <HabitacionesHome></HabitacionesHome>
       <br />
       <br />
       <br />

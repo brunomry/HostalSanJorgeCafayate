@@ -19,8 +19,8 @@ function NosotrosHome() {
             </div>
 
             <div className="w-[100%] flex items-center">
-              <button className="bg-emerald-400 flex items-center gap-5 px-15 p-5 xl:w-[25%] xl:text-[16px]">
-                <span>Leer más</span> <MdArrowForwardIos />
+              <button className="bg-emerald-500 flex justify-center items-center gap-3 px-15 p-5 xl:w-[30%] xl:text-[16px]">
+                <span>LEER MÁS</span> <MdArrowForwardIos />
               </button>
             </div>
           </div>
