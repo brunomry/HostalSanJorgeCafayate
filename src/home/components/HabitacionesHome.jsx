@@ -3,6 +3,7 @@ import desayuno from "../../assets/IMG/Home/desayuno.webp";
 import habitacion7 from "../../assets/IMG/Habitaciones/HabitacionDoble/hd1.jpeg";
 import habitacion4 from "../../assets/IMG/habitacion4.webp";
 import { MdArrowForwardIos } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function HabitacionesHome() {
   return (
@@ -54,6 +55,9 @@ function HabitacionesHome() {
                 Baño privado
               </div>
               <div className="border py-2 px-5 text-[#363636]">
+                Habitaciones privadas
+              </div>
+              <div className="border py-2 px-5 text-[#363636]">
                 Artículos de tocador
               </div>
               <div className="border py-2 px-5 text-[#363636]">Ventilador</div>
@@ -64,10 +68,10 @@ function HabitacionesHome() {
             </div>
           </div>
           <div className="w-[100%] flex items-center">
-            <button className="bg-emerald-500 flex justify-center items-center gap-3 px-15 p-5 xl:w-[35%] xl:text-[16px]">
+            <Link to={"/habitaciones"} className="bg-emerald-500 flex justify-center items-center gap-3 px-15 p-5 xl:w-[35%] xl:text-[16px]">
               <span className="text-[#fff]">VER HABITACIONES</span>{" "}
               <MdArrowForwardIos className="text-[#fff]" />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

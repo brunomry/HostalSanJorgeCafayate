@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 .bannerHome{
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     position: relative;
 }

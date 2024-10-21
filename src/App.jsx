@@ -3,6 +3,7 @@ import Home from "./home/Home";
 import Habitaciones from "./habitaciones/Habitaciones";
 import "./App.css";
 import Navbar from "./common/Navbar";
+import 'flowbite';
 
 function App() {
   return (

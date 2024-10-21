@@ -7,7 +7,7 @@ function BannerHome() {
     <div>
       <section className="bannerHome">
         <div>
-          <img src={frente} alt="" />
+          <img src={frente} alt=""/>
         </div>
         <div className="bannerHome__description flex flex-col gap-3  bg-[rgba(43,69,94,0.8)] p-3 md:p-10 lg:p-20 max-w-[950px] min-h-[100px]">
           <small className="hidden md:block text-[#fff] mb-0">Provincia de Salta, Noroeste Argentino</small>

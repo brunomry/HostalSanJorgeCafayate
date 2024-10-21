@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import salon from "../../assets/IMG/Home/desayunador.webp";
 import { MdArrowForwardIos } from "react-icons/md";
 
@@ -19,9 +20,9 @@ function NosotrosHome() {
             </div>
 
             <div className="w-[100%] flex items-center">
-              <button className="bg-emerald-500 flex justify-center items-center gap-3 px-15 p-5 xl:w-[30%] xl:text-[16px]">
+              <Link to={"/nosotros"} className="bg-emerald-500 text-white flex justify-center items-center gap-3 px-15 p-5 xl:w-[30%] xl:text-[16px]">
                 <span>LEER MÁS</span> <MdArrowForwardIos />
-              </button>
+              </Link>
             </div>
           </div>
           <div className=" w-[50%]">

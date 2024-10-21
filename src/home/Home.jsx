@@ -4,6 +4,7 @@ import BannerHome from "./components/BannerHome";
 import Comentarios from "./components/Comentarios";
 import NosotrosHome from "./components/NosotrosHome";
 import HabitacionesHome from "./components/HabitacionesHome";
+import FaqsHome from "./components/FaqsHome";
 
 function Home() {
   return (
@@ -50,6 +51,7 @@ function Home() {
       <Comentarios></Comentarios>
       <NosotrosHome></NosotrosHome>
       <HabitacionesHome></HabitacionesHome>
+      <FaqsHome></FaqsHome>
       <br />
       <br />
       <br />
