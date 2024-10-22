@@ -1,7 +1,9 @@
 import { Helmet } from "react-helmet";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import habitaciones from "../../helpers/habitaciones";
 import { useEffect, useState } from "react";
+import { ImWhatsapp } from "react-icons/im";
+import { FaFacebook } from "react-icons/fa";
 
 const DetalleHabitacion = () => {
   const [habitacion, setHabitacion] = useState(null);
@@ -11,8 +13,6 @@ const DetalleHabitacion = () => {
     const habitacionBuscada = habitaciones.find((h) => h.id == id);
     setHabitacion(habitacionBuscada);
   };
-
-  console.log(habitacion);
 
   useEffect(() => {
     obtenerHabitacion();
@@ -37,11 +37,14 @@ const DetalleHabitacion = () => {
         <meta name="robots" content="index, follow" />
         <link
           rel="canonical"
-          href="https://hostalsanjorgecafayate.netlify.app/src/habitacion/"
+          href={`https://hostalsanjorgecafayate.netlify.app/src/habitacion/${habitacion.tipo}`}
         />
         <link rel="icon" href="../../IMG/favicon.png" />
         <link rel="apple-touch-icon" href="../../IMG/favicon.png" />
-        <meta property="og:title" content="| Hostal San Jorge - Alojamiento" />
+        <meta
+          property="og:title"
+          content={`${habitacion.tipo} | Hostal San Jorge - Alojamiento`}
+        />
         <meta
           property="og:description"
           content="Mira ahora mismo las imágenes y comodidades de nuestra habitación doble en Hostal San Jorge, Cafayate. ¡No dudes en contactarnos!"
@@ -52,13 +55,33 @@ const DetalleHabitacion = () => {
         />
         <meta
           property="og:url"
-          content="https://hostalsanjorgecafayate.netlify.app/src/habitacion/"
+          content={`https://hostalsanjorgecafayate.netlify.app/src/habitacion/${habitacion.tipo}`}
         />
-        <title> | Hostal San Jorge - Alojamiento</title>
+        <title> {habitacion.tipo} | Hostal San Jorge - Alojamiento</title>
       </Helmet>
-      <section className="px-10 pt-10">
-        <div className="">
-          <article className="w-[100%] xl:w-[45%]">
+      <section className="xl:px-20 pt-20 w-[100%] flex flex-col gap-10">
+        <div className="flex flex-wrap justify-center  gap-5">
+          <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+            Individual
+          </span>
+          <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+            Doble opción 1
+          </span>
+          <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+            Doble opción 2
+          </span>
+          <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+            Triple
+          </span>
+          <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+            Cuádruple
+          </span>
+          <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+            Quíntuple
+          </span>
+        </div>
+        <div className="flex flex-wrap gap-10 w-[100%]">
+          <article className="w-[100%] xl:w-[50%]">
             <div className="border bg-gray-100 flex justify-center">
               <div
                 id="default-carousel"
@@ -122,7 +145,7 @@ const DetalleHabitacion = () => {
                 </div>
                 <button
                   type="button"
-                  class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none hover:bg-[rgba(0,0,0,0.3)]"
+                  class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none hover:bg-[rgba(0,0,0,0.1)]"
                   data-carousel-prev
                 >
                   <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800  group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
@@ -169,78 +192,68 @@ const DetalleHabitacion = () => {
                   </span>
                 </button>
               </div>
-
-              {/* <img
-                src={habitacion.img1}
-                alt="Habitacion doble"
-                title="Habitación doble"
-                className="h-[500px] max-w-[800px]"
-                id="largeImg"
-                loading="lazy"
-              /> */}
-              {/* <img
-                src={habitacion.img2}
-                alt="Habitación doble"
-                title="Habitación doble"
-                className="h-[400px] object-cover"
-                id="smallImgOne"
-                loading="lazy"
-              />
-              <img
-                src={habitacion.img3}
-                alt="Baño de habitación doble"
-                title="Baño de habitación doble"
-                className="h-[400px] object-cover"
-                id="smallImgTwo"
-                loading="lazy"
-              /> */}
             </div>
           </article>
 
-          {/* <article
-            className=""
-          >
-            <div>
-              <h1 className="">Habitación Doble</h1>
-              <p className="">
-                <span className="">Capacidad Máxima:</span> 2
+          <article className="w-[45%]">
+            <div className="flex flex-col gap-2">
+              <h1 className="text-[45px] mb-0">Habitación Doble</h1>
+              <p className="text-gray-600">{habitacion.descripcion_breve}</p>
+              <p className="text-gray-600">
+                <span className="">Capacidad máxima:</span>{" "}
+                {habitacion.capacidad}
               </p>
-              <p className=" ">Comodidades:</p>
-
-             
-              <div
-                className=""
-              >
-                <div className="">
-                  <a href="#" className="" id="btnCheckRoom"
-                    ><span className="mb-4">Consultar Habitación</span></a
-                  >
-                </div>
-                <div className="">
-                  <span className=" ">Compartir:</span>
-                  <div className="">
-                    <a href="" id="btnWhatsApp" title="WhatsApp"
-                      ></a>
-                    <a href="" id="btnFacebook" title="Facebook"
-                      ></a>
-                  </div>
+              <div>
+                <h3 className="mb-1  text-[18px] ">Comodidades:</h3>
+                <div className="flex flex-wrap gap-2">
+                  {habitacion.comodidades &&
+                    habitacion.comodidades.map((com) => (
+                      <span className="border py-2 px-5 text-gray-600">
+                        {com}
+                      </span>
+                    ))}
                 </div>
               </div>
+              <div>
+                <Link
+                  to={"/habitaciones"}
+                  className="p-2 md:p-3 mt-2 w-[100%] md:max-w-[300px] flex gap-3 justify-center items-center text-[1rem] bg-emerald-600 text-white lg:hover:bg-emerald-700 lg:hover:text-[#fff] "
+                >
+                  <ImWhatsapp className="text-[30px]" />
+                  <span>CONSULTAR DISPONIBILIDAD</span>
+                </Link>
+              </div>
             </div>
-          </article> */}
-        </div>
-        <div className="">
-          <p className="">
-            <span className="">Check-In: </span>02:00 PM
+          </article>
+          <article className="w-[50%] flex flex-col gap-2">
+          <h2 className="text-[25px] border-b mb-4">Más información</h2>
+          <p className="text-gray-600">{habitacion.descripcion_amplia}</p>
+          <p className="text-gray-600">
+            <span className="">Check-In: </span>a partir de las 02:00 am hasta
+            00:00
           </p>
-          <p className="">
-            <span className="">Check-Out: </span>10:00 AM
+          <p className="text-gray-600">
+            <span className="">Check-Out: </span>hasta 10:00 am
           </p>
+          <p className="text-gray-600">La estadía incluye Desayuno</p>
+          <p className="text-gray-600">
+            <span className="">Horario Desayuno: </span>8:30 a 09:45 am
+          </p>
+          <div className="flex items-center gap-5">
+            <span className=" text-gray-600">Compartir:</span>
+            <div className="flex gap-4 mt-2">
+              <Link id="btnWhatsApp" to={`` } title="WhatsApp" className="bg-gray-200 p-2 rounded-[100%]">
+              
+              <ImWhatsapp className="text-[30px] text-green-400" />
+              </Link>
+              <Link id="btnFacebook" to={``} title="Facebook" className="bg-gray-200 p-2 rounded-[100%]">
+              <FaFacebook className="text-[30px] text-blue-600"/>
+              </Link>
+            </div>
+          </div>
+        </article>
         </div>
-      </section>
-      <section className="">
-        <h2 className="">Habitaciones</h2>
-        <div className=""></div>
+        
       </section>
 
       {/* <div

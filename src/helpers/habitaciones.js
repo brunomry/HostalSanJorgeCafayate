@@ -17,10 +17,10 @@ const habitaciones = [
         img2: simple2,
         img3: simple3,
         tipo: "Habitación Individual",
-        descripcion_breve: "Habitación simple con cama individual",
-        descripcion_amplia: "Esta acogedora habitación cuenta con 1 cama individual para una sola persona y comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.",
+        descripcion_breve: "Habitación simple de 4 m2 con cama individual",
+        descripcion_amplia: "Esta acogedora habitación de 4 metros cuadrados con cama individual para 1 persona incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 1 huésped.",
         capacidad: 1,
-        comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa"]    
+        comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido"]    
       },
       {
         id: 6,
@@ -28,10 +28,10 @@ const habitaciones = [
         img2: doble6_1,
         img3: doble6_2,
         tipo: "Habitación Doble",
-        descripcion_breve: "Habitación doble con cama matrimonial",
-        descripcion_amplia: "Esta habitación cuenta con 1 cama matrimonial para 2 personas y comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo. Además cuenta con un mini balcón.",
+        descripcion_breve: "Habitación doble de 9 m2 con cama matrimonial",
+        descripcion_amplia: "Esta cómoda y luminosa habitación de 9 metros cuadrados cuenta con 1 cama matrimonial e incluye comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador, ventilador, armario y un mini balcón. Cuenta con una capacidad máxima de 2 huéspedes.",
         capacidad: 2,
-        comodidades: ["Wi-Fi", "Aire acondicionado", "Balcón", "Armario", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa"]    
+        comodidades: ["Wi-Fi", "Aire acondicionado", "Balcón", "Armario", "Ropa de cama", "Sommier", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido"]    
       },
       {
         id: 7,
@@ -39,10 +39,10 @@ const habitaciones = [
         img2: doble7_1,
         img3: doble6_1,
         tipo: "Habitación Doble",
-        descripcion_breve: "Habitación doble con cama matrimonial",
-        descripcion_amplia: "Esta habitación cuenta con 1 cama matrimonial para 2 personas y comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo. Además cuenta con un mini balcón.",
+        descripcion_breve: "Habitación doble de 9 m2 con cama matrimonial",
+        descripcion_amplia: "Esta habitación cuenta con 1 cama matrimonial para 2 personas y comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador, ventilador, armario y un mini balcón. Cuenta con una capacidad máxima de 2 huéspedes.",
         capacidad: 2,
-        comodidades: ["Wi-Fi", "Aire acondicionado", "Balcón", "Armario", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa"]  
+        comodidades: ["Wi-Fi", "Aire acondicionado", "Balcón", "Armario", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido"]  
       },
       {
         id: 5,
@@ -50,10 +50,10 @@ const habitaciones = [
         img2: simple2,
         img3: simple3,
         tipo: "Habitación Triple",
-        descripcion_breve: "Habitación triple con cama matrimonial e individual",
-        descripcion_amplia: "Esta habitación para 3 personas cuenta con 1 cama matrimonial y 1 cama individual. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.",
+        descripcion_breve: "Habitación triple de 10 m2 con cama matrimonial e individual",
+        descripcion_amplia: "Esta habitación cuenta con 1 cama matrimonial y 1 cama individual. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 3 huéspedes.",
         capacidad: 3,
-        comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa"]    
+        comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador",  "Armario", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido"]    
       },
       {
         id: 3,
@@ -61,10 +61,10 @@ const habitaciones = [
         img2: simple2,
         img3: simple3,
         tipo: "Habitación Cuádruple",
-        descripcion_breve: "Habitación quíntuple con cama matrimonial y 2 camas individuales",
-        descripcion_amplia: "Esta amplia y cómoda habitación para 5 personas cuenta con 1 cama matrimonial, 1 cama individual y 1 cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.",
+        descripcion_breve: "Habitación cuádruple de 11 m2 con cama matrimonial y 2 camas individuales",
+        descripcion_amplia: "Esta amplia y cómoda habitación de 11 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 5 huéspedes.",
         capacidad: 4,
-        comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa"]    
+        comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Armario", "Mesa pequeña", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido"]    
       },
       {
         id: 4,
@@ -72,10 +72,10 @@ const habitaciones = [
         img2: simple2,
         img3: simple3,
         tipo: "Habitación Quíntuple",
-        descripcion_breve: "Habitación quíntuple con cama matrimonial, cama individual y cama cucheta",
-        descripcion_amplia: "Esta amplia y cómoda habitación para 5 personas cuenta con 1 cama matrimonial, 1 cama individual y 1 cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.",
+        descripcion_breve: "Habitación quíntuple de 11 m2 con cama matrimonial, cama individual y cama cucheta",
+        descripcion_amplia: "Esta amplia y cómoda habitación de 11 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 5 huéspedes.",
         capacidad: 5,
-        comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa"]    
+        comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Armario", "Mesa pequeña", "Estufa", "Ducha", "Agua caliente","Desayuno incluido"]    
       },     
 ]
 
