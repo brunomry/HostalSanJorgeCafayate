@@ -58,7 +58,7 @@ function Habitaciones() {
           </h1>
         </article>
       </section>
-      <section className="xl:px-10 mt-10">
+      <section className="xl:px-10 mt-20">
         <article className="text-center">
           <h2 className="text-[30px] mb-5">Nuestras habitaciones</h2>
           <p className=" text-gray-600">
@@ -67,7 +67,7 @@ function Habitaciones() {
           </p>
           <p className="pb-4 text-gray-600">¡No dudes en elegirnos!</p>
         </article>
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 mt-10 gap-10">
+        <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4  mt-10 gap-10">
           {habitaciones.map((habitacion) => (
             <CardHabitacion
               key={habitacion.id}
