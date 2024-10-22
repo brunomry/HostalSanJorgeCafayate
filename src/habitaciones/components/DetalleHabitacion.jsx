@@ -59,7 +59,7 @@ const DetalleHabitacion = () => {
         />
         <title> {habitacion.tipo} | Hostal San Jorge - Alojamiento</title>
       </Helmet>
-      <section className="xl:px-20 pt-20 w-[100%] flex flex-col gap-10">
+      <section className="xl:px-20 py-20 w-[100%] flex flex-col gap-10">
         <div className="flex flex-wrap justify-center  gap-5">
           <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
             Individual
