@@ -67,6 +67,31 @@ function Habitaciones() {
           </p>
           <p className="pb-4 text-gray-600">¡No dudes en elegirnos!</p>
         </article>
+        <article className="flex flex-col gap-3 mt-10">
+          <p className="text-center text-[#363636]">
+            Puedes seleccionar el tipo de habitación que estés buscando
+          </p>
+          <div className="flex flex-wrap justify-center  gap-5">
+            <span className="border py-2 px-5 text-[#363636] cursor-pointer bg-gray-200">
+              Todas
+            </span>
+            <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+              Individual
+            </span>
+            <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+              Doble
+            </span>
+            <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+              Triple
+            </span>
+            <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+              Cuádruple
+            </span>
+            <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+              Quíntuple
+            </span>
+          </div>
+        </article>
         <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4  mt-10 gap-10">
           {habitaciones.map((habitacion) => (
             <CardHabitacion

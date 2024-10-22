@@ -39,32 +39,32 @@ function HabitacionesHome() {
           <div>
             <h3 className="lg:text-[25px] mb-3">Comodidades y Servicios</h3>
             <div className="flex flex-wrap gap-5">
-              <div className="border py-2 px-5 text-[#363636]">Wi-Fi</div>
-              <div className="border py-2 px-5 text-[#363636]">
+              <span className="border py-2 px-5 text-[#363636]">Wi-Fi</span>
+              <span className="border py-2 px-5 text-[#363636]">
                 Desayuno incluido
-              </div>
-              <div className="border py-2 px-5 text-[#363636]">
+              </span>
+              <span className="border py-2 px-5 text-[#363636]">
                 Aire acondicionado
-              </div>
-              <div className="border py-2 px-5 text-[#363636]">Estufa</div>
-              <div className="border py-2 px-5 text-[#363636]">
+              </span>
+              <span className="border py-2 px-5 text-[#363636]">Estufa</span>
+              <span className="border py-2 px-5 text-[#363636]">
                 Ropa de cama
-              </div>
-              <div className="border py-2 px-5 text-[#363636]">Toallas</div>
-              <div className="border py-2 px-5 text-[#363636]">
+              </span>
+              <span className="border py-2 px-5 text-[#363636]">Toallas</span>
+              <span className="border py-2 px-5 text-[#363636]">
                 Baño privado
-              </div>
-              <div className="border py-2 px-5 text-[#363636]">
+              </span>
+              <span className="border py-2 px-5 text-[#363636]">
                 Habitaciones privadas
-              </div>
-              <div className="border py-2 px-5 text-[#363636]">
+              </span>
+              <span className="border py-2 px-5 text-[#363636]">
                 Artículos de tocador
-              </div>
-              <div className="border py-2 px-5 text-[#363636]">Ventilador</div>
-              <div className="border py-2 px-5 text-[#363636]">Armario</div>
-              <div className="border py-2 px-5 text-[#363636]">
+              </span>
+              <span className="border py-2 px-5 text-[#363636]">Ventilador</span>
+              <span className="border py-2 px-5 text-[#363636]">Armario</span>
+              <span className="border py-2 px-5 text-[#363636]">
                 Zona de estar
-              </div>
+              </span>
             </div>
           </div>
           <div className="w-[100%] flex items-center">
