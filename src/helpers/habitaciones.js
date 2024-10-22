@@ -7,8 +7,13 @@ import doble6 from "../assets/IMG/Habitaciones/HabitacionDoble/hab6 (1).webp";
 import doble6_1 from "../assets/IMG/Habitaciones/HabitacionDoble/bañoHab6 (1).webp";
 import doble6_2 from "../assets/IMG/Habitaciones/HabitacionDoble/hab6 (3).webp";
 import triple from "../assets/IMG/Habitaciones/HabitacionTriple/hab5.webp";
+import triple1 from "../assets/IMG/Habitaciones/HabitacionTriple/baño5 (1).webp";
+import triple2 from "../assets/IMG/Habitaciones/HabitacionTriple/baño5 (2).webp";
 import cuadruple from "../assets/IMG/habitacion4.webp";
 import quintuple from "../assets/IMG/Habitaciones/HabitacionQuintuple/hab4 (1).webp";
+import quintuple1 from "../assets/IMG/Habitaciones/HabitacionQuintuple/bañoHab4 (1).webp";
+import quintuple2 from "../assets/IMG/Habitaciones/HabitacionQuintuple/bañoHab4 (2).webp";
+
 
 const habitaciones = [
     {
@@ -18,7 +23,7 @@ const habitaciones = [
         img3: simple3,
         tipo: "Habitación Individual",
         descripcion_breve: "Habitación simple de 4 m2 con cama individual",
-        descripcion_amplia: "Esta acogedora habitación de 4 metros cuadrados con cama individual para 1 persona incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 1 huésped.",
+        descripcion_amplia: "Esta acogedora habitación de 4 metros cuadrados con cama individual incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 1 huésped.",
         capacidad: 1,
         comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido"]    
       },
@@ -47,8 +52,8 @@ const habitaciones = [
       {
         id: 5,
         img1: triple,
-        img2: simple2,
-        img3: simple3,
+        img2: triple1,
+        img3: triple2,
         tipo: "Habitación Triple",
         descripcion_breve: "Habitación triple de 10 m2 con cama matrimonial e individual",
         descripcion_amplia: "Esta habitación cuenta con 1 cama matrimonial y 1 cama individual. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 3 huéspedes.",
@@ -58,19 +63,19 @@ const habitaciones = [
       {
         id: 3,
         img1: cuadruple,
-        img2: simple2,
-        img3: simple3,
+        img2: quintuple1,
+        img3: quintuple2,
         tipo: "Habitación Cuádruple",
         descripcion_breve: "Habitación cuádruple de 11 m2 con cama matrimonial y 2 camas individuales",
-        descripcion_amplia: "Esta amplia y cómoda habitación de 11 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 5 huéspedes.",
+        descripcion_amplia: "Esta amplia y cómoda habitación de 11 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 4 huéspedes.",
         capacidad: 4,
         comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Armario", "Mesa pequeña", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido"]    
       },
       {
         id: 4,
         img1: quintuple,
-        img2: simple2,
-        img3: simple3,
+        img2: quintuple1,
+        img3: quintuple2,
         tipo: "Habitación Quíntuple",
         descripcion_breve: "Habitación quíntuple de 11 m2 con cama matrimonial, cama individual y cama cucheta",
         descripcion_amplia: "Esta amplia y cómoda habitación de 11 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 5 huéspedes.",
