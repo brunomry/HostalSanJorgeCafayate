@@ -4,6 +4,7 @@ import Habitaciones from "./habitaciones/Habitaciones";
 import "./App.css";
 import Navbar from "./common/Navbar";
 import 'flowbite';
+import DetalleHabitacion from "./habitaciones/components/DetalleHabitacion";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/habitaciones" element={<Habitaciones></Habitaciones>}></Route>
+        <Route path="/habitacion/:id" element={<DetalleHabitacion></DetalleHabitacion>}></Route>
       </Routes>
      </BrowserRouter>
     </> 

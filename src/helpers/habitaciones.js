@@ -1,6 +1,11 @@
 import simple from "../assets/IMG/Habitaciones/HabitacionSimple/hab8.webp";
+import simple2 from "../assets/IMG/Habitaciones/HabitacionSimple/bañoSimple (1).webp";
+import simple3 from "../assets/IMG/Habitaciones/HabitacionSimple/bañoSimple (2).webp";
 import doble7 from "../assets/IMG/Habitaciones/HabitacionDoble/hd1.jpeg";
+import doble7_1 from "../assets/IMG/Habitaciones/HabitacionDoble/hab7.webp";
 import doble6 from "../assets/IMG/Habitaciones/HabitacionDoble/hab6 (1).webp";
+import doble6_1 from "../assets/IMG/Habitaciones/HabitacionDoble/bañoHab6 (1).webp";
+import doble6_2 from "../assets/IMG/Habitaciones/HabitacionDoble/hab6 (3).webp";
 import triple from "../assets/IMG/Habitaciones/HabitacionTriple/hab5.webp";
 import cuadruple from "../assets/IMG/habitacion4.webp";
 import quintuple from "../assets/IMG/Habitaciones/HabitacionQuintuple/hab4 (1).webp";
@@ -8,7 +13,9 @@ import quintuple from "../assets/IMG/Habitaciones/HabitacionQuintuple/hab4 (1).w
 const habitaciones = [
     {
         id: 8,
-        imagenes: [simple, ],
+        img1: simple,
+        img2: simple2,
+        img3: simple3,
         tipo: "Habitación Individual",
         descripcion_breve: "Habitación simple con cama individual",
         descripcion_amplia: "Esta acogedora habitación cuenta con 1 cama individual para una sola persona y comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.",
@@ -17,7 +24,9 @@ const habitaciones = [
       },
       {
         id: 6,
-        imagenes: [doble6],
+        img1: doble6,
+        img2: doble6_1,
+        img3: doble6_2,
         tipo: "Habitación Doble",
         descripcion_breve: "Habitación doble con cama matrimonial",
         descripcion_amplia: "Esta habitación cuenta con 1 cama matrimonial para 2 personas y comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo. Además cuenta con un mini balcón.",
@@ -26,7 +35,9 @@ const habitaciones = [
       },
       {
         id: 7,
-        imagenes: [doble7],
+        img1: doble7,
+        img2: doble7_1,
+        img3: doble6_1,
         tipo: "Habitación Doble",
         descripcion_breve: "Habitación doble con cama matrimonial",
         descripcion_amplia: "Esta habitación cuenta con 1 cama matrimonial para 2 personas y comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo. Además cuenta con un mini balcón.",
@@ -35,7 +46,9 @@ const habitaciones = [
       },
       {
         id: 5,
-        imagenes: [triple],
+        img1: triple,
+        img2: simple2,
+        img3: simple3,
         tipo: "Habitación Triple",
         descripcion_breve: "Habitación triple con cama matrimonial e individual",
         descripcion_amplia: "Esta habitación para 3 personas cuenta con 1 cama matrimonial y 1 cama individual. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.",
@@ -44,7 +57,9 @@ const habitaciones = [
       },
       {
         id: 3,
-        imagenes: [cuadruple],
+        img1: cuadruple,
+        img2: simple2,
+        img3: simple3,
         tipo: "Habitación Cuádruple",
         descripcion_breve: "Habitación quíntuple con cama matrimonial y 2 camas individuales",
         descripcion_amplia: "Esta amplia y cómoda habitación para 5 personas cuenta con 1 cama matrimonial, 1 cama individual y 1 cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.",
@@ -53,7 +68,9 @@ const habitaciones = [
       },
       {
         id: 4,
-        imagenes: [quintuple],
+        img1: quintuple,
+        img2: simple2,
+        img3: simple3,
         tipo: "Habitación Quíntuple",
         descripcion_breve: "Habitación quíntuple con cama matrimonial, cama individual y cama cucheta",
         descripcion_amplia: "Esta amplia y cómoda habitación para 5 personas cuenta con 1 cama matrimonial, 1 cama individual y 1 cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.",

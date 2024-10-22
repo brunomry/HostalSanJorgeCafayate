@@ -6,7 +6,7 @@ function CardHabitacion({ habitacion }) {
   return (
     <article className="border min-h-[400px] w-[100%] cursor-pointer">
       <img
-        src={habitacion.imagenes[0]}
+        src={habitacion.img1}
         alt=""
         className="h-[450px] w-full object-cover"
       />
@@ -15,7 +15,7 @@ function CardHabitacion({ habitacion }) {
         <p className="text-gray-600 overflow-hidden text-ellipsis whitespace-nowrap">{habitacion.descripcion_breve}</p>
         <div className="flex flex-col gap-2 items-center w-[100%] mt-8">
         <Link
-            to={"/habitaciones"}
+            to={`/habitacion/${habitacion.id}`}
             className="p-2 md:p-4 w-[70%] flex gap-2 justify-center items-center text-[1rem]  text-blue-500 hover:text-blue-800 hover:underline"
           >
             <span>MÁS INFORMACIÓN</span> <MdArrowForwardIos />
