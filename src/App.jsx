@@ -9,11 +9,13 @@ import Galeria from "./galeria/Galeria";
 import Faqs from "./faqs/Faqs";
 import Contacto from "./contacto/Contacto";
 import Footer from "./common/Footer";
+import ScrollTop from "./common/ScrollTop";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
+        <ScrollTop></ScrollTop>
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
