@@ -5,8 +5,9 @@ import "./App.css";
 import Navbar from "./common/Navbar";
 import 'flowbite';
 import DetalleHabitacion from "./habitaciones/components/DetalleHabitacion";
+import Galeria from "./galeria/Galeria";
 
-function App() {
+const App = () => {
   return (
     <>
      <BrowserRouter>
@@ -15,10 +16,11 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/habitaciones" element={<Habitaciones></Habitaciones>}></Route>
         <Route path="/habitacion/:id" element={<DetalleHabitacion></DetalleHabitacion>}></Route>
+        <Route path="/galeria" element={<Galeria></Galeria>}></Route>
       </Routes>
      </BrowserRouter>
     </> 
   )
 }
 
-export default App
+export default App;
