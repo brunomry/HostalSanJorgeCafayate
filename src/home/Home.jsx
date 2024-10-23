@@ -4,11 +4,11 @@ import BannerHome from "./components/BannerHome";
 import Comentarios from "./components/Comentarios";
 import NosotrosHome from "./components/NosotrosHome";
 import HabitacionesHome from "./components/HabitacionesHome";
-import FaqsHome from "./components/FaqsHome";
+import Faqs from "../faqs/Faqs";
 
 function Home() {
   return (
-    <main>
+    <main className="pb-20">
       <Helmet>
         <meta
           name="description"
@@ -51,27 +51,7 @@ function Home() {
       <Comentarios></Comentarios>
       <NosotrosHome></NosotrosHome>
       <HabitacionesHome></HabitacionesHome>
-      <FaqsHome></FaqsHome>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Faqs></Faqs>
     </main>
   );
 }
