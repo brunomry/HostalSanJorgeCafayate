@@ -4,6 +4,7 @@ import { FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import FormContacto from "./components/FormContacto";
+import BtnWhatsApp from "../common/BtnWhatsApp";
 
 const Contacto = () => {
   return (
@@ -107,6 +108,7 @@ const Contacto = () => {
           <FormContacto></FormContacto>
         </article>
       </section>
+      <BtnWhatsApp></BtnWhatsApp>
     </>
   );
 };

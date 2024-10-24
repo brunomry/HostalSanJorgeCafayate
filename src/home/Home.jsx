@@ -5,6 +5,7 @@ import Comentarios from "./components/Comentarios";
 import NosotrosHome from "./components/NosotrosHome";
 import HabitacionesHome from "./components/HabitacionesHome";
 import Faqs from "../faqs/Faqs";
+import BtnWhatsApp from "../common/BtnWhatsApp";
 
 function Home() {
   return (
@@ -52,6 +53,7 @@ function Home() {
       <NosotrosHome></NosotrosHome>
       <HabitacionesHome></HabitacionesHome>
       <Faqs></Faqs>
+      <BtnWhatsApp></BtnWhatsApp>
     </main>
   );
 }

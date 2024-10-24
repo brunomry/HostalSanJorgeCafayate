@@ -3,6 +3,7 @@ import bannerGaleria from "../assets/IMG/Galeria/antiguedades2.webp";
 import galeria from "../helpers/galeriaImagenes";
 import ImgGaleria from "./components/ImgGaleria";
 import { useState } from "react";
+import BtnWhatsApp from "../common/BtnWhatsApp";
 
 const Galeria = () => {
 
@@ -78,6 +79,7 @@ const Galeria = () => {
           ))}
         </div>
       </section>
+      <BtnWhatsApp></BtnWhatsApp>
     </main>
   );
 }

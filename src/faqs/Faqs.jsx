@@ -3,6 +3,7 @@ import faqs from "../helpers/faqs";
 import { Link } from "react-router-dom";
 import { MdArrowForwardIos } from "react-icons/md";
 import Faq from "./components/Faq";
+import BtnWhatsApp from "../common/BtnWhatsApp";
 
 const Faqs = () => {
   const rutaActual = window.location.href;
@@ -31,6 +32,7 @@ const Faqs = () => {
           </Link>
         </div>
       )}
+      <BtnWhatsApp></BtnWhatsApp>
     </section>
   );
 };
