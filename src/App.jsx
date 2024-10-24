@@ -10,6 +10,7 @@ import Faqs from "./faqs/Faqs";
 import Contacto from "./contacto/Contacto";
 import Footer from "./common/Footer";
 import ScrollTop from "./common/ScrollTop";
+import Politicas from "./politicas/Politicas";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           <Route path="/galeria" element={<Galeria></Galeria>}></Route>
           <Route path="/preguntasfrecuentes" element={<Faqs></Faqs>}></Route>
           <Route path="/contacto" element={<Contacto></Contacto>}></Route>
+          <Route path="/politicas" element={<Politicas></Politicas>}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
