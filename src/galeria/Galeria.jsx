@@ -66,11 +66,11 @@ const Galeria = () => {
       <section className="py-20 md:px-20">
         <article className="text-center">
           <h2 className="text-[25px] mb-2">Galería de imágenes</h2>
-          <p className="lead">
-            Conoce nuestras instalaciones y habitaciones.
+          <p className="text-gray-600">
+            Conoce nuestras instalaciones y habitaciones a través de nuestra galería.
           </p>
-          <div className="text-center mt-10">
-            <small>Imágenes tomadas por Sol Herrera. Ig: solherrera.ar</small>
+          <div className="text-center mt-20">
+            <small className="text-gray-600">Imágenes tomadas por Sol Herrera. Instagram: solherrera.ar</small>
           </div>
         </article>
         <div className="flex flex-wrap justify-center items-center mt-5 gap-8">
