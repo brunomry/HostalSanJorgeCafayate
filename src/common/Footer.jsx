@@ -1,70 +1,118 @@
+import { FaFacebook, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
+import { RiInstagramFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div>
-    {/* <section class="container-fluid">
-        <div class="row gap-4 gap-md-0 justify-content-md-center pb-5">
-          <article class="col-md-12 col-lg-4 text-center mb-4 containerLogo">
-            <a alt="Logo Hostal San Jorge" title="Logo Hostal San Jorge">Hostal San Jorge</a>
-          </article>
-          <article class="col-md-6 col-lg-4 text-center">
-            <h4 class="fw-bold mb-3">Información</h4>
-            <ul class="list-unstyled">
-              <li class="nav-link pb-2">
-                <p class="mb-0">Calixto Mamaní 105, Cafayate, Salta, Argentina</p>
-              </li>
-              <li class="nav-link pb-2">
-                <i class="fa-brands fa-whatsapp me-2 fs-5 text-success"></i>
-                WhatsApp: +54 9 387 6843082
-              </li>
-              <li class="nav-link pb-2">
-                <i class="fa-solid fa-phone me-2 fs-5 text-dark"></i>
-                Teléfono: +54 9 3868 422388
-              </li>
-              <li class="nav-link pb-4 pb-lg-0">
-                <i class="fa-brands fa-google me-2 fs-5 text-danger"></i>
-                hostalsanjorgecafayate@gmail.com
-              </li>
-            </ul>
-          </article>
-          <article class="col-md-6 col-lg-4 text-center">
-            <h4 class="fw-bold">Síguenos en nuestras redes</h4>
-            <div class="d-flex justify-content-center gap-3">
-              <a
-                href="https://www.facebook.com/profile.php?id=100089399326566"
-                target="_blank"
-                title="Facebook"
-                ><i class="fa-brands fa-facebook fs-2 iconFacebook"></i
-              ></a>
-              <a
-                href="https://www.instagram.com/hostalsanjorgecafayate/"
-                target="_blank"
-                title="Instagram"
-                ><i class="fa-brands fa-instagram fs-2 iconInstagram"></i
-              ></a>
+    <footer class="bg-gray-50 dark:bg-gray-900">
+      <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between w-[100%]">
+          <div class="mb-6 md:mb-0">
+            <div class="flex flex-col gap-20 items-center">
+              <div className="flex flex-col gap-2">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                  Hostal San Jorge
+                </span>
+                <small className="text-sm">Cafayate, Salta</small>
+              </div>
+              <div>
+                <p className="mb-3">Síguenos en nuestras redes</p>
+                <div className="flex gap-3">
+                  <Link
+                    to={``}
+                    title="Instagram"
+                    className="bg-gray-200 p-2 rounded-[100%] hover:scale-110"
+                  >
+                    <RiInstagramFill className="text-[30px] text-rose-700" />
+                  </Link>
+                  <Link
+                    to={``}
+                    title="Facebook"
+                    className="bg-gray-200 p-2 rounded-[100%] hover:scale-110"
+                  >
+                    <FaFacebook className="text-[30px] text-blue-600" />
+                  </Link>
+                </div>
+              </div>
             </div>
-          </article>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-16">
+            <div>
+              <h4 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                Contacto
+              </h4>
+              <ul class="text-gray-600 flex flex-col gap-4">
+                <li className="flex gap-2 items-center">
+                  <FaMapMarkerAlt className="text-[20px] text-teal-500" />
+                  <p>Calixto Mamaní 105, Cafayate, Salta, Argentina</p>{" "}
+                </li>
+                <li className="flex gap-2 items-center">
+                  <IoLogoWhatsapp className="text-[20px] text-teal-500" />
+                  <p>+54 387 6843082</p>
+                </li>
+                <li className="flex gap-2 items-center">
+                  <FaPhone className="text-[20px] text-teal-500" />
+                  <p>+54 03868 422388</p>
+                </li>
+                <li className="flex gap-2 items-center">
+                  <MdEmail className="text-[20px] text-teal-500" />
+                  <p>hostalsanjorgecafayate@gmail.com</p>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="mb-6 text-sm font-semibold text-gray-900 uppercase">
+                Información
+              </h4>
+              <ul class="text-gray-600 ">
+                <li class="mb-4">
+                  <Link to={"/politicas"} class="hover:underline text-gray-600">
+                    Políticas del Hostal
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
+                    to={"/preguntasfrecuentes"}
+                    class="hover:underline text-gray-600"
+                  >
+                    Preguntas frecuentes
+                  </Link>
+                </li>
+                <li>
+                  <Link to={"/nosotros"} class="hover:underline text-gray-600">
+                    Sobre Nosotros
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </section>
-      <section
-        class="py-3 d-flex flex-column align-items-center justify-content-end flex-md-row justify-content-md-center align-items-md-end bg-light"
-      >
-        <p class="mb-1 text-center text-dark">
-          &copy;Todos los derechos reservados. 2024.
-        </p>
-        <p class="mb-1 ms-1 text-center text-dark">
-          <span> Diseñado por </span>
-          <span class="text-dark fw-bold">Bruno Madozzo</span>.
-        </p>
-        <span class="ms-2 pb-1">
-          <a href="https://www.linkedin.com/in/bruno-madozzo" target="_blank" title="Linkedin"
-            ><i class="fa-brands fa-linkedin fs-5 text-primary"></i>
-          </a>
-        </span>
-      </section> */}
-    </div>
+        <div class="sm:flex sm:items-center sm:justify-between border-t mt-8 pt-6">
+          <span class=" text-gray-600 sm:text-center dark:text-gray-400">
+            © 2024{" "}
+            <a href="https://flowbite.com/" class="hover:underline">
+              Hostal San Jorge
+            </a>
+            . Todos los derechos reservados.
+          </span>
+          <div class="flex mt-4 sm:justify-center sm:mt-0">
+            <p className="text-gray-600">
+              Desarrollado por{" "}
+              <Link
+                to={"https://brunomadozzo-portfolio.netlify.app"}
+                target="_blank"
+                className="text-blue-600 cursor-pointer hover:underline"
+              >
+                BRUNO MADOZZO
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
-  )
-}
-
-export default Footer
+export default Footer;
