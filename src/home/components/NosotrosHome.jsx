@@ -26,7 +26,7 @@ function NosotrosHome() {
             </div>
           </div>
           <div className=" w-[50%]">
-          <img src={salon} alt="" className="imgSalon w-[90%]" />
+          <img src={salon} alt="" className="imgSalon w-[90%] border-[8px] border-[#fff]" />
           </div>
          
         </div>

@@ -48,7 +48,7 @@ const Contacto = () => {
           Contacto | Hostal San Jorge - Alojamiento en Cafayate, Salta
         </title>
       </Helmet>
-      <section className="w-[100%] relative">
+      {/* <section className="w-[100%] relative">
         <div className="w-full ">
           <img
             src={bannerContacto}
@@ -62,8 +62,8 @@ const Contacto = () => {
             Contacto
           </h1>
         </article>
-      </section>
-      <section className="py-5 md:px-20 md:py-20 flex justify-center flex-wrap gap-10">
+      </section> */}
+      <section className="py-5 md:px-20 md:py-20 xl:py-40 flex justify-center flex-wrap gap-10">
         <article className=" md:w-[45%] ">
           <p className=" my-3 text-gray-600">Encuéntranos con Google Maps</p>
           <iframe

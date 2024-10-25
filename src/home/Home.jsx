@@ -9,7 +9,7 @@ import BtnWhatsApp from "../common/BtnWhatsApp";
 
 function Home() {
   return (
-    <main className="pb-20">
+    <main className="">
       <Helmet>
         <meta
           name="description"

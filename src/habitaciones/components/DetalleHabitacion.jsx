@@ -63,7 +63,7 @@ const DetalleHabitacion = () => {
         />
         <title> {habitacion.tipo} | Hostal San Jorge - Alojamiento</title>
       </Helmet>
-      <section className="xl:px-20 py-20 w-[100%] flex flex-col gap-8">
+      <section className="xl:px-20 my-14 py-20 w-[100%] flex flex-col gap-8">
         <BreadcrumbDetalle habitacion={habitacion}></BreadcrumbDetalle>
         <FiltrosDetalle></FiltrosDetalle>
         <div className="flex flex-wrap gap-10 w-[100%]">

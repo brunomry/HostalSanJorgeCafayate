@@ -48,7 +48,7 @@ const Galeria = () => {
           Galería | Hostal San Jorge - Alojamiento en Cafayate, Salta
         </title>
       </Helmet>
-      <section className="">
+      {/* <section>
         <div className="w-[100%] h-[70vh]">
           <img
             src={bannerGaleria}
@@ -57,19 +57,22 @@ const Galeria = () => {
             title=""
           />
         </div>
-        <article className="absolute w-[100%] top-[280px] text-center">
-          <h1 className="text-center text-[45px] text-[#fff] inline-block">
+        <article className="absolute w-[50%] left-[450px] top-[280px] px-8 bg-[rgba(43,69,94,0.8)]  py-8">
+          <h1 className="text-center text-[45px] text-[#fff] inline-block mb-3">
             Galería
           </h1>
+          <p className="text-white text-[22px]">
+            Conoce nuestras instalaciones y habitaciones a través de nuestra galería.
+          </p>
         </article>
-      </section>
-      <section className="py-20 md:px-20">
+      </section> */}
+      <section className="py-40 md:px-32">
         <article className="text-center">
-          <h2 className="text-[25px] mb-2">Galería de imágenes</h2>
+          <h2 className="text-[25px]">Galería de imágenes</h2>
           <p className="text-gray-600">
             Conoce nuestras instalaciones y habitaciones a través de nuestra galería.
           </p>
-          <div className="text-center mt-20">
+          <div className="text-center mt-10">
             <small className="text-gray-600">Imágenes tomadas por Sol Herrera. Instagram: solherrera.ar</small>
           </div>
         </article>

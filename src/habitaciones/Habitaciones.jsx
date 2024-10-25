@@ -43,7 +43,7 @@ function Habitaciones() {
           Habitaciones | Hostal San Jorge - Alojamiento en Cafayate, Salta
         </title>
       </Helmet>
-      <section className="w-[100%] relative">
+      {/* <section className="w-[100%] relative xl:py-20">
         <div className="w-full ">
           <img
             src={banner}
@@ -52,22 +52,25 @@ function Habitaciones() {
             title="Una de nuestras habitaciones dobles"
           />
         </div>
-        <article className="absolute w-[100%] top-[180px] text-center">
-          <h1 className="text-center text-[45px] text-[#fff] inline-block">
+        <article className="absolute w-[50%] left-[450px] top-[200px] px-8 bg-[rgba(43,69,94,0.8)]  py-8">
+          <h1 className=" text-[45px] text-[#fff] inline-block mb-3">
             Habitaciones
           </h1>
-        </article>
-      </section>
-      <section className="xl:px-10 mt-20">
-        <article className="text-center">
-          <h2 className="text-[30px] mb-5">Nuestras habitaciones</h2>
-          <p className=" text-gray-600">
+          <p className="text-white text-[20px]">
             Descubre el encanto y la comodidad de nuestras habitaciones. Cada
             espacio fue diseñado pensando en tu confort.
           </p>
-          <p className="pb-4 text-gray-600">¡No dudes en elegirnos!</p>
         </article>
-        <article className="flex flex-col gap-3 mt-10">
+      </section> */}
+      <section className="xl:px-32 xl:py-40 ">
+        <article className="mb-14">
+          <h2 className="text-[30px] mb-3">Nuestras habitaciones</h2>
+          <p className="text-gray-600">
+            Descubre el encanto y la comodidad de nuestras habitaciones. Cada
+            espacio fue diseñado pensando en tu confort.
+          </p>
+        </article>
+        <article className="flex flex-col gap-3 ">
           <p className="text-center text-[#363636]">
             Puedes seleccionar el tipo de habitación que estés buscando
           </p>

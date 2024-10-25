@@ -13,7 +13,7 @@ const ImgGaleria = ({ img, index }) => {
 
   return (
     <>
-      <article className="xl:w-[400px] xl:h-[300px] cursor-pointer " onClick={()=>openCarousel(index)}>
+      <article className="xl:w-[300px] xl:h-[200px] cursor-pointer " onClick={()=>openCarousel(index)}>
         <img
           src={img.url}
           alt=""
