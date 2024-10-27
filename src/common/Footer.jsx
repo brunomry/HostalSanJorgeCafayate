@@ -8,11 +8,11 @@ const Footer = () => {
   return (
     <footer className=" dark:bg-gray-900 border-t">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-        <div className="md:flex md:justify-between w-[100%]">
+        <div className="md:flex md:flex-col lg:flex-row md:justify-between gap-8 w-[100%]">
           <div className="mb-6 md:mb-0">
-            <div className="flex flex-col gap-20 items-center">
+            <div className="flex flex-col gap-10 lg:gap-20 lg:items-center">
               <div className="flex flex-col gap-2">
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                <span className="text-2xl font-semibold whitespace-nowrap dark:text-white">
                   Hostal San Jorge
                 </span>
                 <small className="text-sm">Cafayate, Salta</small>
@@ -38,7 +38,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-16">
+          <div className="flex flex-col sm:flex-row gap-8 md:gap-16">
             <div>
               <h4 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Contacto

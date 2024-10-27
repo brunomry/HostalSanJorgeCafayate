@@ -10,7 +10,7 @@ function CardHabitacion({ habitacion }) {
         alt=""
         className="h-[300px] xl:h-[350px] 2xl:h-[400px] w-full object-cover"
       />
-      <div className="p-4 md:p-8">
+      <div className="vsm:p-2 mb:p-4 md:p-8">
         <h3 className="text-[20px] md:text-[25px]">{habitacion.tipo}</h3>
         <p className="text-gray-600 overflow-hidden text-ellipsis whitespace-nowrap">{habitacion.descripcion_breve}</p>
         <div className="flex flex-col gap-2 items-center w-[100%] mt-4 md:mt-8">
@@ -24,7 +24,7 @@ function CardHabitacion({ habitacion }) {
             to={"/habitaciones"}
             className="p-2 md:p-4 w-[100%] flex gap-2 md:gap-3 justify-center items-center text-[1rem] bg-emerald-600 text-white lg:hover:bg-emerald-700 lg:hover:text-[#fff] "
           >
-            <ImWhatsapp className="text-[20px] md:text-[30px]" />
+            <ImWhatsapp className="vsm:text-[15px] mb:text-[20px] md:text-[30px]" />
             <span className="text-[.9rem] lg:text-[1rem]">CONSULTAR DISPONIBILIDAD</span>
           </Link>
         

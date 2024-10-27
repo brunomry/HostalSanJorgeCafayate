@@ -65,7 +65,7 @@ function Habitaciones() {
       </section> */}
       <section className="py-24 px-2 lg:px-24 xl:px-10 lg:py-40 w-[100%]">
         <article className="mb-8 xl:mb-14">
-          <h1 className="text-center text-[28px] xl:text-[30px] md:mb-3">Nuestras habitaciones</h1>
+          <h1 className="text-center text-[28px] lg:text-[32px] xl:text-[40px] md:mb-3">Nuestras habitaciones</h1>
           <p className="text-center text-gray-600 text-[1rem]">
             Descubre el encanto y la comodidad de nuestras habitaciones. Cada
             espacio fue diseñado pensando en tu confort.

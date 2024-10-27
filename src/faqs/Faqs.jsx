@@ -10,8 +10,8 @@ const Faqs = () => {
   const faqsMin = faqs.filter((_, index) => index < 7);
 
   return (
-    <section className=" pt-3 w-[100%] xl:px-10 flex flex-col gap-10 bg-gray-50 xl:py-40">
-      <h3 className="text-[25px] text-center ">Preguntas frecuentes - FAQS</h3>
+    <section className="px-4 py-24 w-[100%] xl:px-10 flex flex-col gap-5 md:gap-10  lg:py-40">
+      <h1 className="text-center text-[28px] lg:text-[32px] xl:text-[40px]">Preguntas frecuentes - FAQS</h1>
       <div
         id="accordion-collapse"
         data-accordion="collapse"

@@ -28,9 +28,19 @@ const politicas = [
         "Para garantizar la tranquilidad y respetar el descanso de todos los huéspedes, solicitamos que se mantenga un nivel de ruido discreto, especialmente después de las 11 pm."
     },
     {
+      titulo: "Política de Edad para niños",
+      descripcion:
+        "En nuestro hostal, los niños deben abonar la tarifa correspondiente a partir de los 4 años de edad."
+    },
+    {
       titulo: "Política de Desayuno",
       descripcion:
         "El desayuno está incluido en la tarifa de la habitación y se sirve de 08:30 a 09:45 am horas. Debe aguardar en el salón hasta que sea atendido. Por el momento no ofrecemos alternativas en caso de restricciones alimentarias."
+    },
+    {
+      titulo: "Política de Visitas",
+      descripcion:
+        "No se permite el ingreso de personas que no estén hospedadas en el hostal. Esta medida es para garantizar la seguridad y tranquilidad de todos nuestros huéspedes."
     },
     {
       titulo: "Política de Fumadores",
@@ -46,6 +56,11 @@ const politicas = [
       titulo: "Política de Mascotas",
       descripcion:
         "Lamentablemente, no se permiten mascotas en el hostal para garantizar la comodidad de todos nuestros huéspedes."
+    },
+    {
+      titulo: "Política de Consumo de alcohol",
+      descripcion:
+        "No está permitido consumir alcohol en las habitaciones para evitar ruidos o posibles daños a las instalaciones y garantizar la tranquilidad de todos los huéspedes."
     }
   ];
 

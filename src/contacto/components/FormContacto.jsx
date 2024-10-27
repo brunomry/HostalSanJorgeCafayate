@@ -1,6 +1,6 @@
 const FormContacto = () => {
   return (
-    <form className="max-w-[700px] mx-auto border p-10 flex flex-wrap gap-7 ">
+    <form className="vsm:w-[100%] max-w-[700px] mx-auto md:border vsm:px-2 vsm:py-3 mb:p-4 md:p-10 flex flex-wrap md:gap-2 lg:gap-7 ">
             <div className="mb-3 w-[100%]">
               <label
                 htmlFor="fullname"
@@ -16,7 +16,7 @@ const FormContacto = () => {
                 placeholder="Juan Perez"
               />
             </div>
-            <div className="mb-3 md:w-[60%]">
+            <div className="mb-3 vsm:w-[100%] md:w-[60%]">
               <label
                 htmlFor="email"
                 className="block mb-2  font-medium text-gray-900 dark:text-white"
@@ -31,7 +31,7 @@ const FormContacto = () => {
                 placeholder="nombre@ejemplo.com"
               />
             </div>
-            <div className="mb-3 md:w-[35%]">
+            <div className="mb-3 vsm:w-[100%] md:w-[35%]">
               <label
                 htmlFor="tel"
                 className="block mb-2  font-medium text-gray-900 dark:text-white"
@@ -61,7 +61,7 @@ const FormContacto = () => {
               ></textarea>
             </div>
             <div className="flex justify-center w-[100%]">
-              <button className="bg-teal-400 hover:bg-teal-600 text-white p-3 md:w-[35%]">
+              <button className="bg-teal-400 hover:bg-teal-600 text-white p-3 vsm:w-[100%] md:w-[35%]">
                 ENVIAR
               </button>
             </div>

@@ -39,11 +39,11 @@ const Nosotros = () => {
           Nosotros | Hostal San Jorge - Alojamiento en Cafayate, Salta
         </title>
       </Helmet>
-      <section className="w-[100%] relative p-20 xl:py-40 bg-slate-700 flex flex-col items-center gap-10 justify-center">
-        <article className="md:w-[70%] flex flex-col gap-5  ">
+      <section className="w-[100%] relative px-8 py-20 md:p-20 lg:py-40 bg-gray-50 flex flex-col items-center gap-10 justify-center">
+        <article className="xl:w-[70%] flex flex-col gap-5  ">
           <div>
-            <h1 className="text-start text-[45px] text-white">Sobre Nosotros</h1>
-            <p className="text-gray-300">
+            <h1 className="text-justify md:text-start text-[28px] lg:text-[32px] xl:text-[40px] text-gray-500">Sobre Nosotros</h1>
+            <p className="text-gray-500 text-justify md:text-start">
               Con más de 15 años brindando alojamiento a nuestros huéspedes, en
               Hostal San Jorge le ofrecemos un lugar cómodo, tranquilo e ideal
               para descansar. Ubicado en la hermosa ciudad de Cafayate, en la
@@ -54,8 +54,8 @@ const Nosotros = () => {
           </div>
           <div>
             {" "}
-            <h2 className="text-[25px] mb-2 text-white">Nuestra historia</h2>
-            <p className="text-gray-300">
+            <h2 className="text-[20px] lg:text-[25px] mb-2 text-gray-500 text-justify md:text-start">Nuestra historia</h2>
+            <p className="text-gray-500 text-justify md:text-start">
               El Hostal San Jorge comenzó su camino como un proyecto familiar
               con la visión de ofrecer a turistas y viajeros un espacio donde
               relajarse después de explorar los maravillosos paisajes de
@@ -69,22 +69,22 @@ const Nosotros = () => {
         <figure className="w-full flex flex-col items-center">
           <img
             src={frente}
-            className="object-cover w-[700px] h-[400px] border-[8px] border-[#fff]"
+            className="object-cover w-[100%] md:w-[700px] h-[200px] md:h-[400px] border-[8px] border-gray-200"
             alt="Hostal San Jorge"
             title="Hostal San Jorge de Cafayate, Salta"
           />
           <figcaption>
-            <small className="text-gray-300">
+            <small className="text-gray-500">
               Hostal San Jorge fue fundado en el año 2007. Imagen tomada por Sol
               Herrera. Instagram: solherrera.ar
             </small>
           </figcaption>
         </figure>
 
-        <article className="w-[70%] flex flex-col gap-3">
+        <article className="w-[100%] xl:w-[70%] flex flex-col gap-3">
           <div className="flex flex-col gap-2">
-            <h2 className="text-[25px] text-white">Misión</h2>
-            <p className="text-gray-300">
+            <h2 className="text-[20px] lg:text-[25px] text-gray-500 text-justify md:text-start">Misión</h2>
+            <p className="text-gray-500 text-justify md:text-start">
               Nuestra misión es ofrecer a nuestros huéspedes un lugar cómodo,
               tranquilo e ideal para descansar, comprometidos a brindar una
               experiencia única y agradable, donde puedan sentirse como en casa
@@ -92,8 +92,8 @@ const Nosotros = () => {
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <h2 className="text-[25px] text-white">Visión</h2>
-            <p className="text-gray-300">
+            <h2 className="text-[20px] lg:text-[25px] text-gray-500 text-justify md:text-start">Visión</h2>
+            <p className="text-gray-500 text-justify md:text-start">
               Nuestra visión es ser un hostal de referencia en la ciudad,
               reconocido por nuestra hospitalidad, siendo un lugar donde cada
               huésped se sienta cómodo y seguro, asegurando que en el futuro nos
@@ -101,30 +101,21 @@ const Nosotros = () => {
             </p>
           </div>
           <div className="flex flex-col gap-2">
-            <h2 className="text-[25px] text-white">Valores</h2>
-            <ul className="list-disc ms-8">
-              <li className="text-gray-300">
+            <h2 className="text-[20px] lg:text-[25px] text-gray-500 text-justify md:text-start">Valores</h2>
+            <ul className="md:list-disc md:ms-8 text-justify md:text-start">
+              <li className="text-gray-500 mb-2 md:mb-0">
                 Hospitalidad: Nos enorgullecemos de hacer sentir a nuestros
                 huéspedes como en casa, brindando un trato personalizado y
                 cordial.
               </li>
-              <li className="text-gray-300">
+              <li className="text-gray-500 mb-2 md:mb-0">
                 Calidad: Mantenemos altos estándares de limpieza, confort y
                 atención para asegurar que su estadía sea inmejorable.
               </li>
-              <li className="text-gray-300">
+              <li className="text-gray-500 mb-2 md:mb-0">
                 Compromiso: Estamos comprometidos con el bienestar de nuestros
                 huéspedes, haciendo todo lo posible para superar sus
                 expectativas.
-              </li>
-              <li className="text-gray-300">
-                Autenticidad: Promovemos la cultura local y ofrecemos a nuestros
-                huéspedes la posibilidad de conocer Cafayate desde una
-                perspectiva genuina.
-              </li>
-              <li className="text-gray-300">
-                Sostenibilidad: Fomentamos el cuidado del medio ambiente a
-                través de prácticas responsables en nuestras instalaciones.
               </li>
             </ul>
           </div>
