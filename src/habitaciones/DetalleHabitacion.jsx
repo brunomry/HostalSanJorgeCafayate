@@ -1,13 +1,13 @@
 import { Helmet } from "react-helmet";
 import { Link, useParams } from "react-router-dom";
-import habitaciones from "../../helpers/habitaciones";
+import habitaciones from "../helpers/habitaciones";
 import { useEffect, useState } from "react";
 import { ImWhatsapp } from "react-icons/im";
 import { FaFacebook } from "react-icons/fa";
-import CarruselDetalleHabitacion from "./CarruselDetalleHabitacion";
-import banner from "../../assets/IMG/Galeria/pasillo.webp";
-import BreadcrumbDetalle from "./BreadcrumbDetalle";
-import FiltrosDetalle from "./FiltrosDetalle";
+import CarruselDetalleHabitacion from "./components/CarruselDetalleHabitacion";
+import banner from "../assets/IMG/Galeria/pasillo.webp";
+import BreadcrumbDetalle from "./components/BreadcrumbDetalle";
+import FiltrosDetalle from "./components/FiltrosDetalle";
 
 const DetalleHabitacion = () => {
   const [habitacion, setHabitacion] = useState(null);

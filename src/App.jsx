@@ -4,7 +4,7 @@ import Habitaciones from "./habitaciones/Habitaciones";
 import "./App.css";
 import Navbar from "./common/Navbar";
 import "flowbite";
-import DetalleHabitacion from "./habitaciones/components/DetalleHabitacion";
+import DetalleHabitacion from "./habitaciones/DetalleHabitacion";
 import Galeria from "./galeria/Galeria";
 import Faqs from "./faqs/Faqs";
 import Contacto from "./contacto/Contacto";

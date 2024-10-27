@@ -2,10 +2,11 @@ import { Helmet } from "react-helmet";
 import banner from "../assets/IMG/Galeria/pasillo.webp";
 import habitaciones from "../helpers/habitaciones";
 import CardHabitacion from "./components/CardHabitacion";
+import "../habitaciones/styles/habitaciones.css";
 
 function Habitaciones() {
   return (
-    <main className="mb-40">
+    <>
       <Helmet>
         <meta
           name="description"
@@ -62,40 +63,40 @@ function Habitaciones() {
           </p>
         </article>
       </section> */}
-      <section className="xl:px-32 xl:py-40 ">
-        <article className="mb-14">
-          <h2 className="text-[30px] mb-3">Nuestras habitaciones</h2>
-          <p className="text-gray-600">
+      <section className="py-24 px-2 lg:px-24 xl:px-10 lg:py-40 w-[100%]">
+        <article className="mb-8 xl:mb-14">
+          <h1 className="text-center text-[28px] xl:text-[30px] md:mb-3">Nuestras habitaciones</h1>
+          <p className="text-center text-gray-600 text-[1rem]">
             Descubre el encanto y la comodidad de nuestras habitaciones. Cada
             espacio fue diseñado pensando en tu confort.
           </p>
         </article>
         <article className="flex flex-col gap-3 ">
-          <p className="text-center text-[#363636]">
+          <p className="text-center text-gray-600">
             Puedes seleccionar el tipo de habitación que estés buscando
           </p>
-          <div className="flex flex-wrap justify-center  gap-5">
-            <span className="border py-2 px-5 text-[#363636] cursor-pointer bg-gray-200">
+          <div className="flex flex-wrap justify-center gap-3 md:gap-5">
+            <span className="border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer bg-gray-200">
               Todas
             </span>
-            <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+            <span className="border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer hover:bg-gray-200">
               Individual
             </span>
-            <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+            <span className="border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer hover:bg-gray-200">
               Doble
             </span>
-            <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+            <span className="border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer hover:bg-gray-200">
               Triple
             </span>
-            <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+            <span className="border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer hover:bg-gray-200">
               Cuádruple
             </span>
-            <span className="border py-2 px-5 text-[#363636] cursor-pointer hover:bg-gray-200">
+            <span className="border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer hover:bg-gray-200">
               Quíntuple
             </span>
           </div>
         </article>
-        <div className="grid md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4  mt-10 gap-10">
+        <div className="flex gap-4 containerRooms w-[100%] h-[525px] sm:h-[initial] sm:px-4 sm:grid sm:grid-cols-2 xl:grid-cols-3  mt-10 md:gap-5 lg:gap-10 xl:justify-center xl:items-center 3xl:grid-cols-4">
           {habitaciones.map((habitacion) => (
             <CardHabitacion
               key={habitacion.id}
@@ -104,7 +105,7 @@ function Habitaciones() {
           ))}
         </div>
       </section>
-    </main>
+    </>
   );
 }
 
