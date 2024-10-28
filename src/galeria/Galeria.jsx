@@ -67,9 +67,9 @@ const Galeria = () => {
         </article>
       </section> */}
       <section className="py-40 md:px-32">
-        <article className="text-center">
-          <h2 className="text-[25px]">Galería de imágenes</h2>
-          <p className="text-gray-600">
+        <article className="text-center ">
+          <h2 className="text-center text-[28px] lg:text-[32px] lg:text-start xl:text-[40px] md:mb-3">Galería de imágenes</h2>
+          <p className="text-gray-600 lg:text-start">
             Conoce nuestras instalaciones y habitaciones a través de nuestra galería.
           </p>
           <div className="text-center mt-10">

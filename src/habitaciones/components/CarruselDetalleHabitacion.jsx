@@ -7,7 +7,7 @@ const CarruselDetalleHabitacion = ({habitacion}) => {
       class="relative w-full"
       data-carousel="static"
     >
-      <div class="relative h-56 overflow-hidden flex justify-center rounded-lg md:h-96">
+      <div class="relative h-56 overflow-hidden flex justify-center md:h-96">
         <div
           class="h-[100%] md:h-[400px] hidden duration-0 ease-in"
           data-carousel-item

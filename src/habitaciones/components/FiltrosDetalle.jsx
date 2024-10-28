@@ -1,6 +1,6 @@
 const FiltrosDetalle = () => {
   return (
-    <div className="flex w-[100%] h-[60px] pe-2 filtersDetail md:flex-wrap sm:justify-center vsm:gap-2 md:gap-5">
+    <div className="flex w-[100%] h-[60px] pe-2 filtersDetail md:flex-wrap sm:justify-center vsm:gap-2 md:gap-3 md:h-[inherit]">
       <span className="border vsm:min-w-[100px] vsm:h-[40px] vsm:p-2 sm:py-2 sm:px-5 text-gray-600 cursor-pointer hover:bg-gray-200">
         Individual
       </span>
