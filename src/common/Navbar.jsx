@@ -5,8 +5,8 @@ import en from "../assets/IMG/ingles.webp";
 const Navbar = () => {
   return (
     <header>
-      <nav className=" bg-white z-50 dark:bg-gray-900 fixed w-full top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-        <div className="w-full lg:max-w-screen-xl flex flex-wrap lg:flex-col lg:justify-center items-center justify-between mx-auto p-2 xl:p-8">
+      <nav className=" bg-white z-50 dark:bg-gray-900 fixed vsm:w-full top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <div className="vsm:w-full lg:max-w-screen-xl flex flex-wrap lg:flex-col lg:justify-center items-center justify-between mx-auto p-2 xl:p-8">
           <Link
             to={"/"}
             className="flex flex-col lg:items-center xl:hidden space-x-3 rtl:space-x-reverse px-2 lg:px-5"
@@ -41,7 +41,7 @@ const Navbar = () => {
             </svg>
           </button>
           <div
-            className="items-center justify-between hidden w-full lg:flex lg:w-auto md:order-1"
+            className="items-center justify-between hidden vsm:w-full lg:flex lg:w-auto md:order-1"
             id="navbar-hamburger"
           >
             <ul className="flex flex-col justify-center text-[18px] text-white lg:flex-row items-center p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">

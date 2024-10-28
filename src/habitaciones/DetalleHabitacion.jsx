@@ -8,6 +8,7 @@ import CarruselDetalleHabitacion from "./components/CarruselDetalleHabitacion";
 import banner from "../assets/IMG/Galeria/pasillo.webp";
 import BreadcrumbDetalle from "./components/BreadcrumbDetalle";
 import FiltrosDetalle from "./components/FiltrosDetalle";
+import "./styles/detalleHabitacion.css";
 
 const DetalleHabitacion = () => {
   const [habitacion, setHabitacion] = useState(null);
@@ -27,7 +28,7 @@ const DetalleHabitacion = () => {
   }
 
   return (
-    <main>
+    <>
       <Helmet>
         <meta
           name="description"
@@ -63,18 +64,18 @@ const DetalleHabitacion = () => {
         />
         <title> {habitacion.tipo} | Hostal San Jorge - Alojamiento</title>
       </Helmet>
-      <section className="xl:px-20 my-14 py-20 w-[100%] flex flex-col gap-8">
+      <section className="vsm:px-4 xl:px-20 my-14 vsm:py-10 md:py-20 vsm:w-[100%] flex flex-col gap-8 text-justify">
         <BreadcrumbDetalle habitacion={habitacion}></BreadcrumbDetalle>
         <FiltrosDetalle></FiltrosDetalle>
-        <div className="flex flex-wrap gap-10 w-[100%]">
+        <div className="flex flex-col flex-wrap vsm:gap-3 md:gap-10 vsm:w-[100%]">
           <article className="w-[100%] xl:w-[50%]">
             <CarruselDetalleHabitacion
               habitacion={habitacion}
             ></CarruselDetalleHabitacion>
           </article>
-          <article className="w-[45%]">
-            <div className="flex flex-col gap-2">
-              <h1 className="text-[45px] mb-0">{habitacion.tipo}</h1>
+          <article className="vsm:w-[100%] md:w-[45%]">
+            <div className="flex flex-col vsm:gap-1">
+              <h1 className="vsm:text-[24px] lg:text-[32px] xl:text-[40px] mb-0  ">{habitacion.tipo}</h1>
               <p className="text-gray-600">{habitacion.descripcion_breve}</p>
               <p className="text-gray-600">
                 <span className="">Capacidad máxima:</span>{" "}
@@ -85,13 +86,13 @@ const DetalleHabitacion = () => {
                 <div className="flex flex-wrap gap-2">
                   {habitacion.comodidades &&
                     habitacion.comodidades.map((com) => (
-                      <span className="border py-2 px-5 text-gray-600">
+                      <span className="border vsm:p-2 sm:py-2 sm:px-5 text-gray-600">
                         {com}
                       </span>
                     ))}
                 </div>
               </div>
-              <div>
+              {/* <div className="fixed bottom-0 left-0 z-50 py-1 flex pb-2 bg-gray-200 vsm:w-[100%] vsm:px-0 sm:static sm:bg-inherit">
                 <Link
                   to={"/habitaciones"}
                   className="p-2 md:p-3 mt-2 w-[100%] md:max-w-[300px] flex gap-3 justify-center items-center text-[1rem] bg-emerald-600 text-white lg:hover:bg-emerald-700 lg:hover:text-[#fff] "
@@ -99,11 +100,11 @@ const DetalleHabitacion = () => {
                   <ImWhatsapp className="text-[30px]" />
                   <span>CONSULTAR DISPONIBILIDAD</span>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </article>
-          <article className="w-[50%] flex flex-col gap-2">
-            <h2 className="text-[25px] border-b mb-4">Más información</h2>
+          <article className="vsm:w-[100%] lg:w-[50%] flex flex-col gap-2">
+            <h2 className="vsm:text-[20px] md:text-[25px] border-b md:mb-4">Más información</h2>
             <p className="text-gray-600">{habitacion.descripcion_amplia}</p>
             <p className="text-gray-600">
               <span className="">Check-In: </span>a partir de las 02:00 am hasta
@@ -138,8 +139,8 @@ const DetalleHabitacion = () => {
               </div>
             </div>
           </article>
-          <article className="w-[50%]">
-            <h3 className="text-[20px] border-b mb-4">Formas de pago</h3>
+          <article className="vsm:w-[100%] md:w-[50%] flex flex-col gap-2">
+            <h3 className="text-[20px] border-b md:mb-4">Formas de pago</h3>
             <p className="text-gray-600">
               Aceptamos efectivo, transferencias bancarias y también puedes
               abonar a través de link de mercadopago con tu tarjeta de
@@ -148,7 +149,7 @@ const DetalleHabitacion = () => {
           </article>
         </div>
       </section>
-    </main>
+    </>
   );
 };
 

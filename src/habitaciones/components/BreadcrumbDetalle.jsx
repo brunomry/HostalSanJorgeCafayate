@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function BreadcrumbDetalle({ habitacion }) {
   return (
-    <nav class="flex px-5 pt-3 text-gray-700" aria-label="Breadcrumb">
+    <nav class="flex flex-wrap pt-3 text-gray-700" aria-label="Breadcrumb">
       <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
         <li class="inline-flex items-center">
           <Link
