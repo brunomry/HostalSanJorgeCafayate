@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function BannerHome() {
   return (
     <div>
-      <section className="w-[100%] min-h-[50vh] relative">
+      <section className="w-[100%] min-h-[50vh] xl:min-h-[100vh] relative">
         <div>
           <img src={frente} alt="" className="w-[100%] py-14 md:py-0 min-h-[200px] object-cover md:object-fill absolute imgBannerHome xl:max-h-[800px] 2xl:min-h-[925px]"/>
         </div>

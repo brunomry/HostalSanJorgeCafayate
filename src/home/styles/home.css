@@ -17,12 +17,13 @@
 }
 
 @media all and (min-width: 1200px) {
+    .bannerHome__description {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
 }
 
 @media all and (min-width: 1400px) {
-  .bannerHome__description {
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+
 }
