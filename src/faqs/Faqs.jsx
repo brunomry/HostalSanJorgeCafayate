@@ -10,7 +10,7 @@ const Faqs = () => {
   const faqsMin = faqs.filter((_, index) => index < 7);
 
   return (
-    <section className="px-4 py-24 w-[100%] xl:px-10 flex flex-col gap-5 md:gap-10  lg:py-40">
+    <section className="px-4 pb-24 w-[100%] xl:px-10 flex flex-col gap-5 md:gap-10  xl:py-32">
       <h1 className="text-center text-[28px] lg:text-[32px] xl:text-[40px]">Preguntas frecuentes - FAQS</h1>
       <div
         id="accordion-collapse"
@@ -25,7 +25,7 @@ const Faqs = () => {
         <div className="w-[100%] flex justify-center items-center">
           <Link
             to={"/preguntasfrecuentes"}
-            className="bg-slate-500 flex justify-center items-center gap-3 px-15 p-5 xl:w-[10%] xl:text-[16px]"
+            className="bg-slate-500 flex justify-center items-center gap-3 px-15 p-5 lg:px-8 xl:w-[10%] xl:text-[16px]"
           >
             <span className="text-[#fff]">VER MÁS</span>{" "}
             <MdArrowForwardIos className="text-[#fff]" />

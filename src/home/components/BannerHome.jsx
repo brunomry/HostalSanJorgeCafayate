@@ -5,20 +5,18 @@ import { Link } from "react-router-dom";
 function BannerHome() {
   return (
     <div>
-      <section className="bannerHome">
+      <section className="w-[100%] min-h-[50vh] relative">
         <div>
-          <img src={frente} alt=""/>
+          <img src={frente} alt="" className="w-[100%] py-14 md:py-0 min-h-[200px] object-cover md:object-fill absolute imgBannerHome xl:max-h-[800px] 2xl:min-h-[925px]"/>
         </div>
-        <div className="bannerHome__description flex flex-col gap-3  bg-[rgba(43,69,94,0.8)] p-3 md:p-10 lg:p-20 max-w-[950px] min-h-[100px]">
+        <div className=".bannerHome__description absolute top-[200px] left-5 right-5 mb:top-[150px] xl:top-[100px] xl:left-[100px] 2xl:left-[25%] 2xl:top-[25%] flex flex-col gap-2 md:gap-3  bg-[rgba(43,69,94,0.8)] px-3 py-5 md:p-10 lg:p-20 max-w-[950px] min-h-[100px] rounded-[10px] md:rounded-none">
           <small className="hidden md:block text-[#fff] mb-0 text-sm">Provincia de Salta, Noroeste Argentino</small>
-        <h1 className="md:block text-[20px] lg:text-[45px] text-[#fff] mt-0 font-bold">Hostal San Jorge Cafayate</h1>
+        <h1 className="text-[.9rem] md:block md:text-[25px] lg:text-[45px] text-[#fff] mt-0 md:font-bold">Hostal San Jorge Cafayate</h1>
         <p className="text-[18px] text-[#fff] lg:text-[20px] font-normal">Tu lugar ideal para descansar y pasar tus vacaciones.</p>
-      
-
-        <Link to={"/habitaciones"} className="p-2 md:p-4 w-[100%] flex gap-3 justify-center items-center text-[1rem] bg-amber-400  md:mt-8 text-[#0e2541] md:max-w-[270px] lg:hover:bg-gray-950 lg:hover:text-[#fff] ">
+        <Link to={"/habitaciones"} className="p-3 text-[14px] rounded-[5px] md:rounded-none md:p-4 w-[100%] flex gap-3 justify-center items-center md:text-[1rem] bg-amber-400  md:mt-8 text-[#0e2541] md:max-w-[270px] lg:hover:bg-gray-950 lg:hover:text-[#fff] ">
             <span>NUESTRAS HABITACIONES</span>  <MdArrowForwardIos />   
         </Link>
-        <small className="text-sm text-[#fff] font-normal">Estamos a 2 cuadras de la plaza principal.</small>
+        <small className="hidden md:block text-sm text-[#fff] font-normal">Estamos a 2 cuadras de la plaza principal.</small>
         </div>        
       </section>
     </div>

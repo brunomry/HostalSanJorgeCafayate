@@ -1,52 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
-.bannerHome{
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
+.imgBannerHome {
+  filter: saturate(120%);
 }
 
-.bannerHome img{
-    width: 100%;
-    min-height: 250px;
-    position: absolute;
-    filter: saturate(110%);
+.containerComments {
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
 }
 
-.bannerHome__description{
-    position: absolute;
-    top: 150px;
-    left: 20px;
-    right: 20px;
-}
-
-.imgSalon{
-    width: 900px;
-    height: 600px;
-    object-fit: cover;
+@media all and (min-width: 768px) {
+  .containerComments {
+    scroll-snap-type: none;
+    overflow: hidden;
+  }
 }
 
 @media all and (min-width: 1200px) {
-    .bannerHome img{
-        max-height: 800px;
-    }
-
-    .bannerHome__description{
-        position: absolute;
-        top: 100px;
-        left: 100px;
-    }
 }
 
 @media all and (min-width: 1400px) {
-    .bannerHome img{
-        min-height: 925px;
-    }
-
-    .bannerHome__description{
-        position: absolute;
-        top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    }
+  .bannerHome__description {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
