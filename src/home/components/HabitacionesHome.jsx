@@ -81,7 +81,7 @@ function HabitacionesHome() {
               </span>
             </div>
           </div>
-          <div className="w-[100%] flex justify-start md:justify-end">
+          <div className="w-[100%] flex justify-start md:justify-end xl:justify-start">
             <Link
               to={"/habitaciones"}
               className="bg-emerald-500 flex justify-center items-center gap-3 px-15 p-3 md:p-5 xl:w-[35%] xl:text-[16px]"
