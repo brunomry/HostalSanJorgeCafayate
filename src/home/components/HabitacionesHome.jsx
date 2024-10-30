@@ -9,7 +9,7 @@ function HabitacionesHome() {
   return (
     <section className="px-4 py-8 md:p-20">
       <div className="w-[100%] flex flex-col xl:flex-row gap-5">
-        <div className="w-[100%] order-1 xl:w-[60%] flex lg:flex-wrap gap-1">
+        <div className="w-[100%] order-1 xl:w-[60%] flex lg:flex-wrap gap-1 2xl:gap-2">
           <div className="flex gap-2 lg:w-[100%]">
             <img
               src={habitacion}
@@ -22,17 +22,17 @@ function HabitacionesHome() {
               className="w-[100%] lg:w-[50%] lg:h-[auto] object-cover 2xl:w-[450px] min-h-[300px] xl:max-h-[400px]"
             />
           </div>
-          <div className="flex gap-2 lg:w-[100%] h-[250px]">
+          <div className="flex gap-2 lg:w-[100%] h-[270px]">
             <img
               src={desayuno}
               alt=""
-              className="hidden lg:block lg:w-[45%] object-cover h-[250px] 2xl:w-[380px] xl:h-[250px]"
+              className="hidden lg:block lg:w-[45%] object-cover h-[100%] 2xl:w-[380px] xl:h-[250px]"
             />
 
             <img
               src={habitacion4}
               alt=""
-              className="hidden lg:block lg:w-[55%] object-cover h-[250px] w-[550px]"
+              className="hidden lg:block lg:w-[50%] object-cover h-[100%] w-[550px]"
             />
           </div>
         </div>
