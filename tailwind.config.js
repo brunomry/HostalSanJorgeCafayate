@@ -11,7 +11,7 @@ export default {
   theme: {
     extend: {},
     screens: {
-      'vsm':'315px',
+      'vsm':'280px',
       'mb': '360px',
       'sm': '640px',
       'md': '768px',
