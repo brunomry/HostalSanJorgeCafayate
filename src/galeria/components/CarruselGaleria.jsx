@@ -40,7 +40,7 @@ const CarruselGaleria = ({ setVisible, visible, imagenesActuales, imgActual  }) 
         
       </div>
       <button
-        className="absolute top-[40px] mb:top-[200px] right-[70px] md:right-[100px] lg:top-4 2xl:right-[250px] 2xl:top-[75px] z-30 text-white text-2xl cursor-pointer"
+        className="absolute top-[20px] mb:top-[100px] right-[70px] md:top-[200px] md:right-[100px] lg:top-4 2xl:right-[250px] 2xl:top-[75px] z-30 text-white text-2xl cursor-pointer"
         onClick={() => closeCarousel()}
       >
         <RiCloseLargeFill className="text-[20px] xl:text-[30px]" />
