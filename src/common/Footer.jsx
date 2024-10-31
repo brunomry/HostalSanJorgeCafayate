@@ -98,14 +98,14 @@ const Footer = () => {
             . Todos los derechos reservados.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-[.9rem]">
               Desarrollado por{" "}
               <Link
                 to={"https://brunomadozzo-portfolio.netlify.app"}
                 target="_blank"
-                className="text-blue-600 cursor-pointer hover:underline"
+                className="text-blue-600 cursor-pointer hover:underline ]"
               >
-                BRUNO MADOZZO
+                Bruno Madozzo
               </Link>
             </p>
           </div>
