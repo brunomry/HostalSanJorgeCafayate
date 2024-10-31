@@ -4,11 +4,12 @@ import galeria from "../helpers/galeriaImagenes";
 import ImgGaleria from "./components/ImgGaleria";
 import { useState } from "react";
 import BtnWhatsApp from "../common/BtnWhatsApp";
+import "./styles/galeria.css"
 
 const Galeria = () => {
 
   return (
-    <main className="relative">
+    <>
       <Helmet>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,25 +49,7 @@ const Galeria = () => {
           Galería | Hostal San Jorge - Alojamiento en Cafayate, Salta
         </title>
       </Helmet>
-      {/* <section>
-        <div className="w-[100%] h-[70vh]">
-          <img
-            src={bannerGaleria}
-            className="w-[100%] h-[100%] brightness-[0.7]"
-            alt=""
-            title=""
-          />
-        </div>
-        <article className="absolute w-[50%] left-[450px] top-[280px] px-8 bg-[rgba(43,69,94,0.8)]  py-8">
-          <h1 className="text-center text-[45px] text-[#fff] inline-block mb-3">
-            Galería
-          </h1>
-          <p className="text-white text-[22px]">
-            Conoce nuestras instalaciones y habitaciones a través de nuestra galería.
-          </p>
-        </article>
-      </section> */}
-      <section className="py-40 md:px-32">
+      <section className="py-24 lg:py-40 md:px-20 lg:px-24 px-4">
         <article className="text-center ">
           <h2 className="text-center text-[28px] lg:text-[32px] lg:text-start xl:text-[40px] md:mb-3">Galería de imágenes</h2>
           <p className="text-gray-600 lg:text-start">
@@ -76,14 +59,14 @@ const Galeria = () => {
             <small className="text-gray-600">Imágenes tomadas por Sol Herrera. Instagram: solherrera.ar</small>
           </div>
         </article>
-        <div className="flex flex-wrap justify-center items-center mt-5 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 flex-wrap justify-center items-center mt-5 gap-2 md:gap-4 xl:gap-8">
           {galeria.map((img, index) => (
             <ImgGaleria key={img.id} img={img} index={index}></ImgGaleria>
           ))}
         </div>
       </section>
       <BtnWhatsApp></BtnWhatsApp>
-    </main>
+    </>
   );
 }
 

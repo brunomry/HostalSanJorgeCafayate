@@ -1,55 +1,55 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { RiCloseLargeFill } from "react-icons/ri";
-import galeria from "../../helpers/galeriaImagenes";
 
-const CarruselGaleria = ({ setVisible, visible, setImgActual, imgActual }) => {
+const CarruselGaleria = ({ setVisible, visible, imagenesActuales, imgActual  }) => {
+  const [posicionActual, setPosicionActual] = useState(imgActual);
+
   const closeCarousel = () => {
     setVisible(false);
   };
 
-  const [imagenes, setImagenes] = useState(null);
-
-  const obtenerImagenes = () => {
-    const imagenes = galeria.map((img) => img);
-    setImagenes(imagenes);
+  const handlePrev = () => {
+    setPosicionActual((posicion) =>
+      posicion === 0 ? imagenesActuales.length - 1 : posicion - 1
+    );
   };
 
-  useEffect(() => {
-    obtenerImagenes();
-  }, []);
+  const handleNext = () => {
+    setPosicionActual((posicion) =>
+      posicion === imagenesActuales.length - 1 ? 0 : posicion + 1
+    );
+  };
 
   return (
     <div
       id="controls-carousel"
-      className="z-30 fixed inset-0 h-[100vh] bg-[rgba(0,0,0,0.9)] w-full flex items-center justify-center"
+      className="z-50 fixed inset-0 h-[100vh] bg-[rgba(0,0,0,0.9)] w-full flex items-center justify-center"
       data-carousel="static"
     >
-      <div className=" w-full max-w-3xl flex">
-        {imagenes &&
-          imagenes.map((img) => (
+      <div className="relative w-full max-w-[75%] h-[55%] lg:h-[75%] flex justify-center">
             <div
-              className="h-[100vh] absolute overflow-hidden w-[auto] flex justify-center items-center"
-              key={img.id}
+              className="h-[100%] flex justify-center items-center"
               data-carousel-item
             >
               <img
-                src={img.url}
-                className=" block absolute h-[90vh] object-cover border-[15px]"
+                src={imagenesActuales[posicionActual].url}
+                className=" block absolute max-w-full object-cover max-h-full border-[5px] md:border-[15px]"
                 alt="..."
               />
             </div>
-          ))}
+        
       </div>
       <button
-        className="absolute top-4 right-[150px] z-30 text-white text-2xl cursor-pointer"
+        className="absolute top-[40px] mb:top-[200px] right-[70px] md:right-[100px] lg:top-4 2xl:right-[250px] 2xl:top-[75px] z-30 text-white text-2xl cursor-pointer"
         onClick={() => closeCarousel()}
       >
-        <RiCloseLargeFill className="text-[20px]" />
+        <RiCloseLargeFill className="text-[20px] xl:text-[30px]" />
       </button>
       <button
         type="button"
-        className="absolute z-30 top-0 start-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none hover:bg-gray-500"
+        className="absolute z-30 top-0 start-0 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none lg:hover:bg-gray-500"
         data-carousel-prev
+        onClick={handlePrev}
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg
@@ -72,8 +72,9 @@ const CarruselGaleria = ({ setVisible, visible, setImgActual, imgActual }) => {
       </button>
       <button
         type="button"
-        className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none hover:bg-gray-500"
+        className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none lg:hover:bg-gray-500"
         data-carousel-next
+        onClick={handleNext}
       >
         <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg
