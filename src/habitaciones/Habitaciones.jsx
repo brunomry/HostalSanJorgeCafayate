@@ -63,10 +63,10 @@ function Habitaciones() {
           </p>
         </article>
       </section> */}
-      <section className="py-24 px-2 lg:px-24 xl:px-10 lg:py-40 w-[100%]">
+      <section className="py-24 px-4 lg:px-24 xl:px-10 lg:py-40 w-[100%]">
         <article className="mb-8 xl:mb-14">
-          <h1 className="text-center text-[28px] lg:text-[32px] lg:text-start xl:text-[40px] md:mb-3">Nuestras habitaciones</h1>
-          <p className="text-center text-gray-600 text-[1rem] lg:text-start">
+          <h1 className="text-[28px] lg:text-[32px] lg:text-start xl:text-[40px] md:mb-3">Nuestras habitaciones</h1>
+          <p className=" text-gray-600 text-justify text-[1rem] lg:text-start">
             Descubre el encanto y la comodidad de nuestras habitaciones. Cada
             espacio fue diseñado pensando en tu confort.
           </p>
@@ -75,7 +75,7 @@ function Habitaciones() {
           <p className="text-center text-gray-600">
             Puedes seleccionar la habitación que estés buscando
           </p>
-          <div className="flex flex-wrap justify-center gap-3 md:gap-5">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-5">
             <span className="border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer bg-gray-200">
               Todas
             </span>

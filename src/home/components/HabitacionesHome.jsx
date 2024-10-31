@@ -7,36 +7,35 @@ import { Link } from "react-router-dom";
 
 function HabitacionesHome() {
   return (
-    <section className="px-4 py-8 md:p-20">
-      <div className="w-[100%] flex flex-col xl:flex-row gap-5">
-        <div className="w-[100%] order-1 xl:w-[60%] flex lg:flex-wrap gap-1 2xl:gap-2">
-          <div className="flex gap-2 lg:w-[100%]">
+    <section className="px-4 pt-8 md:px-20 md:pt-20 3xl:px-24 3xl:pt-24">
+      <div className="w-[100%] flex flex-col xl:flex-row gap-5 xl:gap-10 3xl:justify-center">
+        <div className="md:w-[100%] hidden md:order-1 xl:w-[50%]  md:flex lg:flex-wrap gap-2 3xl:gap-2">
+          <div className="flex gap-2 md:w-[100%] max-h-[300px]">
             <img
               src={habitacion}
               alt=""
-              className="hidden lg:block lg:w-[50%] object-cover xl:w-[480px] h-[100%]"
+              className="hidden lg:block lg:w-[50%] object-cover h-[100%]"
             />
             <img
               src={habitacion7}
               alt=""
-              className="w-[100%] lg:w-[50%] lg:h-[auto] object-cover 2xl:w-[450px] min-h-[300px] xl:max-h-[400px]"
+              className="hidden md:w-[100%] md:block lg:w-[50%] lg:h-[100%] object-cover "
             />
           </div>
-          <div className="flex gap-2 lg:w-[100%] h-[270px]">
+          <div className="flex gap-2 lg:w-[100%] max-h-[300px]">
             <img
               src={desayuno}
               alt=""
-              className="hidden lg:block lg:w-[45%] object-cover h-[100%] 2xl:w-[380px] xl:h-[250px]"
+              className="hidden lg:block lg:w-[45%] object-cover h-[100%] "
             />
-
             <img
               src={habitacion4}
               alt=""
-              className="hidden lg:block lg:w-[50%] object-cover h-[100%] w-[550px]"
+              className="hidden lg:block lg:max-w-[55%] object-cover h-[100%]"
             />
           </div>
         </div>
-        <div className="w-[100%] xl:w-[40%] object-cover flex flex-col xl:order-1 gap-5 md:gap-5 xl:gap-10">
+        <div className="w-[100%] xl:w-[50%] 2xl:w-[40%] object-cover flex flex-col xl:order-1 gap-2 2xl:gap-10">
           <div>
             <h2 className="text-[20px] lg:text-[25px]">
               Nuestras Habitaciones
@@ -48,7 +47,7 @@ function HabitacionesHome() {
           </div>
           <div>
             <h3 className="lg:text-[20px] mb-3">Comodidades y Servicios:</h3>
-            <div className="flex flex-wrap gap-1 flex-shrink xl:gap-5">
+            <div className="flex flex-wrap gap-1 flex-shrink 2xl:gap-5">
               <span className="border p-2 md:py-2 md:px-5 text-[#363636]">Wi-Fi</span>
               <span className="border p-2 md:py-2 md:px-5 text-[#363636]">
                 Desayuno incluido
@@ -81,10 +80,10 @@ function HabitacionesHome() {
               </span>
             </div>
           </div>
-          <div className="w-[100%] flex justify-start md:justify-end xl:justify-start">
+          <div className="w-[100%] flex justify-start xl:justify-start">
             <Link
               to={"/habitaciones"}
-              className="bg-emerald-500 flex justify-center items-center gap-3 px-15 p-3 md:p-5 xl:w-[35%] xl:text-[16px]"
+              className="bg-emerald-500 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 2xl:w-[35%] xl:text-[16px]"
             >
               <span className="text-[#fff]">VER HABITACIONES</span>{" "}
               <MdArrowForwardIos className="text-[#fff]" />

@@ -15,7 +15,7 @@ const Faqs = () => {
       <div
         id="accordion-collapse"
         data-accordion="collapse"
-        className="border-none rounded-none outline-none flex flex-col items-center w-[100%] gap-5"
+        className="border-none rounded-none outline-none flex flex-col items-center w-[100%] gap-2 md:gap-5"
       >
         {rutaActual.includes("preguntasfrecuentes")
           ? faqs.map((faq) => <Faq key={faq.id} faq={faq}></Faq>)
@@ -25,7 +25,7 @@ const Faqs = () => {
         <div className="w-[100%] flex justify-center items-center">
           <Link
             to={"/preguntasfrecuentes"}
-            className="bg-slate-500 flex justify-center items-center gap-3 px-15 p-5 lg:px-8 xl:w-[10%] xl:text-[16px]"
+            className="bg-slate-500 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 lg:px-8 2xl:w-[10%] xl:text-[16px]"
           >
             <span className="text-[#fff]">VER MÁS</span>{" "}
             <MdArrowForwardIos className="text-[#fff]" />

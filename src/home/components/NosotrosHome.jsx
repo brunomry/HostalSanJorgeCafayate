@@ -4,9 +4,9 @@ import { MdArrowForwardIos } from "react-icons/md";
 
 function NosotrosHome() {
   return (
-    <section className=" flex flex-col items-center justify-center min-h-[250px] w-[100%]  md:mt-[800px] lg:mt-[450px]">
-        <div className="bg-slate-700 w-[100%] min-h-[200px] text-[#fff] flex md:flex-col lg:flex-row lg:justify-center md:gap-10 gap-24 py-10 md:py-20">
-          <div className="w-[100%] lg:w-[40%] flex flex-col gap-5 xl:gap-16 px-4 lg:px-0 xl:p-20">
+    <section className=" flex flex-col items-center justify-center min-h-[250px] w-[100%] md:mt-[800px] lg:mt-[450px]">
+        <div className="bg-slate-700 w-[100%] min-h-[200px] text-[#fff] flex md:flex-col lg:flex-row lg:justify-center px-4 md:px-20 md:gap-10 gap-24 py-10 md:py-20">
+          <div className="w-[100%] lg:w-[40%] flex flex-col gap-5 xl:gap-16 lg:px-0 2xl:p-20">
             <div>
               <h2 className="text-[20px] md:text-[25px]">Sobre Nosotros</h2>
               <p className="xl:text-[16px] text-justify font-normal text-gray-300">
@@ -19,14 +19,14 @@ function NosotrosHome() {
               </p>
             </div>
 
-            <div className="w-[100%] flex md:justify-end lg:justify-start">
-              <Link to={"/nosotros"} className="bg-emerald-500 text-white flex justify-center items-center gap-3 px-15 p-3 md:p-5 xl:w-[30%] xl:text-[16px]">
+            <div className="w-[100%] flex lg:justify-start">
+              <Link to={"/nosotros"} className="bg-emerald-500 text-white flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 2xl:w-[30%] xl:text-[16px]">
                 <span>LEER MÁS</span> <MdArrowForwardIos />
               </Link>
             </div>
           </div>
           <div className="hidden md:w-[100%] md:flex justify-center lg:w-[50%]">
-          <img src={salon} alt="" className="w-[90%] md:min-h-[400px] xl:max-w-[900px] lg:max-h-[600px] object-cover border-[8px] border-[#fff]" />
+          <img src={salon} alt="" className="w-[100%] md:min-h-[300px] xl:max-w-[900px] xl:max-h-[500px] object-cover border-[8px] border-[#fff]" />
           </div>
          
         </div>
