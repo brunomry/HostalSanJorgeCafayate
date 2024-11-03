@@ -3,8 +3,25 @@ import banner from "../assets/IMG/Galeria/pasillo.webp";
 import habitaciones from "../helpers/habitaciones";
 import CardHabitacion from "./components/CardHabitacion";
 import "../habitaciones/styles/habitaciones.css";
+import { useState } from "react";
+import { useFetcher } from "react-router-dom";
+import { useEffect } from "react";
 
 function Habitaciones() {
+  const [listaHabitaciones, setListaHabitaciones] = useState(habitaciones);
+  const [habitacionSeleccionada, setHabitacionSeleccionada] = useState("");
+
+  const obtenerHabitacion = (habitacion)=>{
+
+    const habitacionBuscada = habitaciones.filter(hab=> hab.tipo.includes(habitacion.charAt(0).toUpperCase() + habitacion.slice(1)))
+    console.log(habitacionBuscada)
+    setHabitacionSeleccionada(habitacionBuscada)
+  }
+
+  useEffect(()=>{
+    
+  },[habitacionSeleccionada])
+
   return (
     <>
       <Helmet>
@@ -76,28 +93,36 @@ function Habitaciones() {
             Puedes seleccionar la habitación que estés buscando
           </p>
           <div className="flex flex-wrap justify-center gap-2 md:gap-5">
-            <span className="border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer bg-gray-200">
+            <span className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${habitacionSeleccionada === "" ? "bg-gray-200" : ""}`} onClick={() => setHabitacionSeleccionada("")}>
               Todas
             </span>
-            <span className="border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer hover:bg-gray-200">
+            <span className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${habitacionSeleccionada.id != "" ? "bg-gray-200" : ""}`} onClick={() => {obtenerHabitacion("In")}}>
               Individual
             </span>
-            <span className="border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer hover:bg-gray-200">
+            <span className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${habitacionSeleccionada ? "bg-gray-200" : ""}`} onClick={() => {obtenerHabitacion("Do")}}>
               Doble
             </span>
-            <span className="border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer hover:bg-gray-200">
+            <span className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${habitacionSeleccionada === "" ? "" : ""}`} onClick={() => {obtenerHabitacion("Tri")}}>
               Triple
             </span>
-            <span className="border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer hover:bg-gray-200">
+            <span className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${habitacionSeleccionada === "" ? "" : ""}`} onClick={() => {obtenerHabitacion("Cu")}}>
               Cuádruple
             </span>
-            <span className="border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer hover:bg-gray-200">
+            <span className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${habitacionSeleccionada === "" ? "" : ""}`} onClick={() => {obtenerHabitacion("Qu")}}>
               Quíntuple
             </span>
           </div>
         </article>
         <div className="flex gap-4 containerRooms w-[100%] h-[525px] sm:h-[initial] sm:px-4 sm:grid sm:grid-cols-2 xl:grid-cols-3  mt-10 md:gap-5 lg:gap-10 xl:justify-center xl:items-center 3xl:grid-cols-4">
-          {habitaciones.map((habitacion) => (
+          {habitacionSeleccionada == "" && listaHabitaciones.map((habitacion) => (
+            <CardHabitacion
+              key={habitacion.id}
+              habitacion={habitacion}
+            ></CardHabitacion>
+          ))}
+        </div>
+        <div className="flex gap-4 containerRooms w-[100%] h-[525px] sm:h-[initial] sm:px-4 sm:grid sm:grid-cols-2 xl:grid-cols-3  mt-10 md:gap-5 lg:gap-10 xl:justify-center xl:items-center 3xl:grid-cols-4">
+          {habitacionSeleccionada && habitacionSeleccionada.map((habitacion) => (
             <CardHabitacion
               key={habitacion.id}
               habitacion={habitacion}
