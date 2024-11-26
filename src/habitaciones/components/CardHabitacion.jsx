@@ -11,7 +11,7 @@ function CardHabitacion({ habitacion }) {
         className="h-[300px] xl:h-[350px] 2xl:h-[400px] w-full object-cover"
       />
       <div className="vsm:p-2 mb:p-4 md:p-8">
-        <h3 className="text-[20px] md:text-[25px]">{habitacion.tipo}</h3>
+        <h3 className="text-[20px] md:text-[25px]">{habitacion.nombre}</h3>
         <p className="text-gray-600 overflow-hidden text-ellipsis whitespace-nowrap">{habitacion.descripcion_breve}</p>
         <div className="flex flex-col gap-2 items-center w-[100%] mt-4 md:mt-8">
         <Link

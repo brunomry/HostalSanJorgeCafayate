@@ -1,26 +1,23 @@
 import { Helmet } from "react-helmet";
-import banner from "../assets/IMG/Galeria/pasillo.webp";
 import habitaciones from "../helpers/habitaciones";
 import CardHabitacion from "./components/CardHabitacion";
 import "../habitaciones/styles/habitaciones.css";
 import { useState } from "react";
-import { useFetcher } from "react-router-dom";
 import { useEffect } from "react";
 
 function Habitaciones() {
   const [listaHabitaciones, setListaHabitaciones] = useState(habitaciones);
-  const [habitacionSeleccionada, setHabitacionSeleccionada] = useState("");
+  const [habitacionSeleccionada, setHabitacionSeleccionada] = useState([]);
+  const [tipo, setTipo] = useState("");
 
-  const obtenerHabitacion = (habitacion)=>{
+  const obtenerHabitacion = (habitacion) => {
 
-    const habitacionBuscada = habitaciones.filter(hab=> hab.tipo.includes(habitacion.charAt(0).toUpperCase() + habitacion.slice(1)))
-    console.log(habitacionBuscada)
-    setHabitacionSeleccionada(habitacionBuscada)
-  }
-
-  useEffect(()=>{
-    
-  },[habitacionSeleccionada])
+    const habitacionBuscada = habitaciones.filter((hab) =>
+      hab.tipo.includes(habitacion)
+    );
+    console.log(habitacionBuscada);
+    setHabitacionSeleccionada(habitacionBuscada);
+  };
 
   return (
     <>
@@ -82,7 +79,9 @@ function Habitaciones() {
       </section> */}
       <section className="py-24 px-4 lg:px-24 xl:px-10 lg:py-40 w-[100%]">
         <article className="mb-8 xl:mb-14">
-          <h1 className="text-[28px] lg:text-[32px] lg:text-start xl:text-[40px] md:mb-3">Nuestras habitaciones</h1>
+          <h1 className="text-[28px] lg:text-[32px] lg:text-start xl:text-[40px] md:mb-3">
+            Nuestras habitaciones
+          </h1>
           <p className=" text-gray-600 text-justify text-[1rem] lg:text-start">
             Descubre el encanto y la comodidad de nuestras habitaciones. Cada
             espacio fue diseñado pensando en tu confort.
@@ -93,41 +92,86 @@ function Habitaciones() {
             Puedes seleccionar la habitación que estés buscando
           </p>
           <div className="flex flex-wrap justify-center gap-2 md:gap-5">
-            <span className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${habitacionSeleccionada === "" ? "bg-gray-200" : ""}`} onClick={() => setHabitacionSeleccionada("")}>
+            <span
+              className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${
+                habitacionSeleccionada === "" ? "bg-gray-200" : ""
+              }`}
+              onClick={() => {
+                setHabitacionSeleccionada("")
+                setTipo("")
+              }}
+            >
               Todas
             </span>
-            <span className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${habitacionSeleccionada.id != "" ? "bg-gray-200" : ""}`} onClick={() => {obtenerHabitacion("In")}}>
-              Individual
-            </span>
-            <span className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${habitacionSeleccionada ? "bg-gray-200" : ""}`} onClick={() => {obtenerHabitacion("Do")}}>
-              Doble
-            </span>
-            <span className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${habitacionSeleccionada === "" ? "" : ""}`} onClick={() => {obtenerHabitacion("Tri")}}>
-              Triple
-            </span>
-            <span className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${habitacionSeleccionada === "" ? "" : ""}`} onClick={() => {obtenerHabitacion("Cu")}}>
-              Cuádruple
-            </span>
-            <span className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${habitacionSeleccionada === "" ? "" : ""}`} onClick={() => {obtenerHabitacion("Qu")}}>
-              Quíntuple
-            </span>
+              <span
+                className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer lg:hover:bg-gray-200 
+                  ${tipo == "Individual" ? "bg-gray-200" : ""}`}
+                onClick={() => {
+                  obtenerHabitacion("Individual")
+                  setTipo("Individual")
+                }}
+              >
+                Individual
+              </span>
+              <span
+                className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer lg:hover:bg-gray-200 
+                  ${tipo == "Doble" ? "bg-gray-200" : ""}`}
+                onClick={() => {
+                  obtenerHabitacion("Doble")
+                  setTipo("Doble")
+                }}
+              >
+                Doble
+              </span>
+              <span
+                className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer lg:hover:bg-gray-200 
+                  ${tipo == "Triple" ? "bg-gray-200" : ""}`}
+                onClick={() => {
+                  obtenerHabitacion("Triple")
+                  setTipo("Triple")
+                }}
+              >
+                Triple
+              </span>
+              <span
+                className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer lg:hover:bg-gray-200 
+                  ${tipo == "Cuádruple" ? "bg-gray-200" : ""}`}
+                onClick={() => {
+                  obtenerHabitacion("Cuádruple")
+                  setTipo("Cuádruple")
+                }}
+              >
+                Cuádruple
+              </span>
+              <span
+                className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer lg:hover:bg-gray-200 
+                  ${tipo == "Quíntuple" ? "bg-gray-200" : ""}`}
+                onClick={() => {
+                  obtenerHabitacion("Quíntuple")
+                  setTipo("Quíntuple")
+                }}
+              >
+                Quíntuple
+              </span>
           </div>
         </article>
         <div className="flex gap-4 containerRooms w-[100%] h-[525px] sm:h-[initial] sm:px-4 sm:grid sm:grid-cols-2 xl:grid-cols-3  mt-10 md:gap-5 lg:gap-10 xl:justify-center xl:items-center 3xl:grid-cols-4">
-          {habitacionSeleccionada == "" && listaHabitaciones.map((habitacion) => (
-            <CardHabitacion
-              key={habitacion.id}
-              habitacion={habitacion}
-            ></CardHabitacion>
-          ))}
+          {habitacionSeleccionada == "" &&
+            listaHabitaciones.map((habitacion) => (
+              <CardHabitacion
+                key={habitacion.id}
+                habitacion={habitacion}
+              ></CardHabitacion>
+            ))}
         </div>
         <div className="flex gap-4 containerRooms w-[100%] h-[525px] sm:h-[initial] sm:px-4 sm:grid sm:grid-cols-2 xl:grid-cols-3  mt-10 md:gap-5 lg:gap-10 xl:justify-center xl:items-center 3xl:grid-cols-4">
-          {habitacionSeleccionada && habitacionSeleccionada.map((habitacion) => (
-            <CardHabitacion
-              key={habitacion.id}
-              habitacion={habitacion}
-            ></CardHabitacion>
-          ))}
+          {habitacionSeleccionada &&
+            habitacionSeleccionada.map((habitacion) => (
+              <CardHabitacion
+                key={habitacion.id}
+                habitacion={habitacion}
+              ></CardHabitacion>
+            ))}
         </div>
       </section>
     </>

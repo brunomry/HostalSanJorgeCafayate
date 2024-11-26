@@ -42,13 +42,13 @@ const DetalleHabitacion = () => {
         <meta name="robots" content="index, follow" />
         <link
           rel="canonical"
-          href={`https://hostalsanjorgecafayate.netlify.app/src/habitacion/${habitacion.tipo}`}
+          href={`https://hostalsanjorgecafayate.netlify.app/src/habitacion/${habitacion.nombre}`}
         />
         <link rel="icon" href="../../IMG/favicon.png" />
         <link rel="apple-touch-icon" href="../../IMG/favicon.png" />
         <meta
           property="og:title"
-          content={`${habitacion.tipo} | Hostal San Jorge - Alojamiento`}
+          content={`${habitacion.nombre} | Hostal San Jorge - Alojamiento`}
         />
         <meta
           property="og:description"
@@ -60,9 +60,9 @@ const DetalleHabitacion = () => {
         />
         <meta
           property="og:url"
-          content={`https://hostalsanjorgecafayate.netlify.app/src/habitacion/${habitacion.tipo}`}
+          content={`https://hostalsanjorgecafayate.netlify.app/src/habitacion/${habitacion.nombre}`}
         />
-        <title> {habitacion.tipo} | Hostal San Jorge - Alojamiento</title>
+        <title> {habitacion.nombre} | Hostal San Jorge - Alojamiento</title>
       </Helmet>
       <section className="vsm:px-4 xl:px-20 my-14 vsm:py-10 md:py-20 vsm:w-[100%] flex flex-col gap-8 text-justify">
         <BreadcrumbDetalle habitacion={habitacion}></BreadcrumbDetalle>
@@ -75,7 +75,9 @@ const DetalleHabitacion = () => {
           </article>
           <article className="vsm:w-[100%] lg:w-[45%]">
             <div className="flex flex-col vsm:gap-1">
-              <h1 className="vsm:text-[24px] md:text-[32px] xl:text-[40px] mb-0  ">{habitacion.tipo}</h1>
+              <h1 className="vsm:text-[24px] md:text-[32px] xl:text-[40px] mb-0  ">{habitacion.nombre}</h1>
+              <p className="vsm:text-[18px] md:text-[24px] xl:text-[30px]">${habitacion.precio}</p>
+
               <p className="text-gray-600">{habitacion.descripcion_breve}</p>
               <p className="text-gray-600">
                 <span className="">Capacidad máxima:</span>{" "}
@@ -85,14 +87,14 @@ const DetalleHabitacion = () => {
                 <h3 className="mb-1  text-[18px] ">Comodidades:</h3>
                 <div className="flex flex-wrap gap-2">
                   {habitacion.comodidades &&
-                    habitacion.comodidades.map((com) => (
-                      <span className="border vsm:p-2 sm:py-2 sm:px-5 text-gray-600">
+                    habitacion.comodidades.map((com,index) => (
+                      <span key={index} className="border vsm:p-2 sm:py-2 sm:px-5 text-gray-600">
                         {com}
                       </span>
                     ))}
                 </div>
               </div>
-              <div className="fixed bottom-0 left-0 z-50 py-1 flex pb-2 bg-gray-200 vsm:w-[100%] vsm:px-0 sm:static sm:bg-inherit">
+              <div className="fixed bottom-0 left-0 z-50 sm:z-0 py-1 flex pb-2 bg-gray-200 vsm:w-[100%] vsm:px-0 sm:static sm:bg-inherit">
                 <Link
                   to={"/habitaciones"}
                   className="p-2 md:p-3 mt-2 w-[100%] md:max-w-[300px] flex gap-3 justify-center items-center text-[1rem] bg-emerald-600 text-white lg:hover:bg-emerald-700 lg:hover:text-[#fff] "
