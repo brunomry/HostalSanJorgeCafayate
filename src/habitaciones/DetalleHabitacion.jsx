@@ -9,6 +9,7 @@ import banner from "../assets/IMG/Galeria/pasillo.webp";
 import BreadcrumbDetalle from "./components/BreadcrumbDetalle";
 import FiltrosDetalle from "./components/FiltrosDetalle";
 import "./styles/detalleHabitacion.css";
+import { consultaPorWhatsApp } from "../helpers/whatsApp";
 
 const DetalleHabitacion = () => {
   const [habitacion, setHabitacion] = useState(null);
@@ -25,6 +26,13 @@ const DetalleHabitacion = () => {
 
   if (!habitacion) {
     return <p>Cargando...</p>;
+  }
+
+  const url = window.location.href;
+  const consulta = `Consulta de ${habitacion.nombre} \n\n${url}`;
+
+  const consultaWhatsApp = () => {
+    consultaPorWhatsApp(consulta)
   }
 
   return (
@@ -95,13 +103,14 @@ const DetalleHabitacion = () => {
                 </div>
               </div>
               <div className="fixed bottom-0 left-0 z-50 sm:z-0 py-1 flex pb-2 bg-gray-200 vsm:w-[100%] vsm:px-0 sm:static sm:bg-inherit">
-                <Link
+                <button 
+                  onClick={consultaWhatsApp}
                   to={"/habitaciones"}
                   className="p-2 md:p-3 mt-2 w-[100%] md:max-w-[300px] flex gap-3 justify-center items-center text-[1rem] bg-emerald-600 text-white lg:hover:bg-emerald-700 lg:hover:text-[#fff] "
                 >
                   <ImWhatsapp className="text-[30px]" />
                   <span>CONSULTAR DISPONIBILIDAD</span>
-                </Link>
+                </button>
               </div> 
             </div>
           </article>
