@@ -25,7 +25,7 @@ function CardHabitacion({ habitacion }) {
   return (
     <article className="border h-[500px] md:h-[100%] md:min-h-[400px] min-w-[85%] md:w-[100%] lg:cursor-pointer lg:hover:shadow-xl" onClick={(e) => verDetalle(e)} title="clic para ver más información">
       <img
-        src={habitacion.img1}
+        src={habitacion.imagenes[0]}
         alt=""
         className="h-[300px] xl:h-[350px] 2xl:h-[400px] w-full object-cover"
       />

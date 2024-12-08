@@ -41,7 +41,7 @@ const CarruselGaleria = ({ setVisible, visible, imagenesActuales, imgActual  }) 
               data-carousel-item
             >
               <img
-                src={imagenesActuales[posicionActual].url}
+                src={imagenesActuales[posicionActual].url || imagenesActuales[posicionActual]}
                 className="noClose block absolute max-w-full object-cover max-h-full border-[5px] md:border-[15px]"
                 alt="..."
               />

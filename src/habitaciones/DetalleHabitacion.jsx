@@ -81,7 +81,7 @@ const DetalleHabitacion = () => {
               habitacion={habitacion}
             ></CarruselDetalleHabitacion>
           </article>
-          <article className="vsm:w-[100%] lg:w-[45%]">
+          <article className="vsm:w-[100%] lg:w-[45%] md:mt-28 lg:mt-0">
             <div className="flex flex-col vsm:gap-1">
               <h1 className="vsm:text-[24px] md:text-[32px] xl:text-[40px] mb-0  ">{habitacion.nombre}</h1>
               <p className="vsm:text-[18px] md:text-[24px] xl:text-[30px]">${habitacion.precio}</p>
@@ -114,7 +114,7 @@ const DetalleHabitacion = () => {
               </div> 
             </div>
           </article>
-          <article className="vsm:w-[100%] lg:w-[50%] flex flex-col gap-2">
+          <article className="vsm:w-[100%] lg:w-[50%] flex flex-col gap-2 xl:mt-10 2xl:mt-28">
             <h2 className="vsm:text-[20px] md:text-[25px] border-b md:mb-4">Más información</h2>
             <p className="text-gray-600">{habitacion.descripcion_amplia}</p>
             <p className="text-gray-600">
@@ -128,7 +128,7 @@ const DetalleHabitacion = () => {
             <p className="text-gray-600">
               <span className="">Horario Desayuno: </span>8:30 a 09:45 am
             </p>
-            <div className="flex items-center gap-5">
+            {/* <div className="flex items-center gap-5">
               <span className=" text-gray-600">Compartir:</span>
               <div className="flex gap-4 mt-2">
                 <Link
@@ -148,7 +148,7 @@ const DetalleHabitacion = () => {
                   <FaFacebook className="text-[30px] text-blue-600" />
                 </Link>
               </div>
-            </div>
+            </div> */}
           </article>
           <article className="vsm:w-[100%] lg:w-[50%] flex flex-col gap-2">
             <h2 className="text-[20px] md:text-[25px] border-b md:mb-4">Formas de pago</h2>
