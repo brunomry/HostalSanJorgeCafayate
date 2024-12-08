@@ -59,7 +59,7 @@ const Galeria = () => {
             <small className="text-gray-600">Imágenes tomadas por Sol Herrera. Instagram: solherrera.ar</small>
           </div>
         </article>
-        <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 flex-wrap justify-center items-center mt-5 gap-2 md:gap-4 xl:gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 flex-wrap justify-center items-center mt-5 gap-2 md:gap-4">
           {galeria.map((img, index) => (
             <ImgGaleria key={img.id} img={img} index={index}></ImgGaleria>
           ))}

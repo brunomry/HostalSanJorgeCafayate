@@ -1,23 +1,14 @@
 import { Helmet } from "react-helmet";
 import habitaciones from "../helpers/habitaciones";
-import CardHabitacion from "./components/CardHabitacion";
 import "../habitaciones/styles/habitaciones.css";
 import { useState } from "react";
-import { useEffect } from "react";
+import FiltrosHabitacion from "./components/FiltrosHabitacion";
+import ListaHabitaciones from "./components/ListaHabitaciones";
 
 function Habitaciones() {
   const [listaHabitaciones, setListaHabitaciones] = useState(habitaciones);
   const [habitacionSeleccionada, setHabitacionSeleccionada] = useState([]);
   const [tipo, setTipo] = useState("");
-
-  const obtenerHabitacion = (habitacion) => {
-
-    const habitacionBuscada = habitaciones.filter((hab) =>
-      hab.tipo.includes(habitacion)
-    );
-    console.log(habitacionBuscada);
-    setHabitacionSeleccionada(habitacionBuscada);
-  };
 
   return (
     <>
@@ -58,25 +49,6 @@ function Habitaciones() {
           Habitaciones | Hostal San Jorge - Alojamiento en Cafayate, Salta
         </title>
       </Helmet>
-      {/* <section className="w-[100%] relative xl:py-20">
-        <div className="w-full ">
-          <img
-            src={banner}
-            className="object-cover w-[100%] h-[400px] brightness-[0.7]"
-            alt="Imagen de Habitación doble"
-            title="Una de nuestras habitaciones dobles"
-          />
-        </div>
-        <article className="absolute w-[50%] left-[450px] top-[200px] px-8 bg-[rgba(43,69,94,0.8)]  py-8">
-          <h1 className=" text-[45px] text-[#fff] inline-block mb-3">
-            Habitaciones
-          </h1>
-          <p className="text-white text-[20px]">
-            Descubre el encanto y la comodidad de nuestras habitaciones. Cada
-            espacio fue diseñado pensando en tu confort.
-          </p>
-        </article>
-      </section> */}
       <section className="py-24 px-4 lg:px-24 xl:px-10 lg:py-40 w-[100%]">
         <article className="mb-8 xl:mb-14">
           <h1 className="text-[28px] lg:text-[32px] lg:text-start xl:text-[40px] md:mb-3">
@@ -91,88 +63,17 @@ function Habitaciones() {
           <p className="text-center text-gray-600">
             Puedes seleccionar la habitación que estés buscando
           </p>
-          <div className="flex flex-wrap justify-center gap-2 md:gap-5">
-            <span
-              className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer ${
-                habitacionSeleccionada === "" ? "bg-gray-200" : ""
-              }`}
-              onClick={() => {
-                setHabitacionSeleccionada("")
-                setTipo("")
-              }}
-            >
-              Todas
-            </span>
-              <span
-                className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer lg:hover:bg-gray-200 
-                  ${tipo == "Individual" ? "bg-gray-200" : ""}`}
-                onClick={() => {
-                  obtenerHabitacion("Individual")
-                  setTipo("Individual")
-                }}
-              >
-                Individual
-              </span>
-              <span
-                className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer lg:hover:bg-gray-200 
-                  ${tipo == "Doble" ? "bg-gray-200" : ""}`}
-                onClick={() => {
-                  obtenerHabitacion("Doble")
-                  setTipo("Doble")
-                }}
-              >
-                Doble
-              </span>
-              <span
-                className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer lg:hover:bg-gray-200 
-                  ${tipo == "Triple" ? "bg-gray-200" : ""}`}
-                onClick={() => {
-                  obtenerHabitacion("Triple")
-                  setTipo("Triple")
-                }}
-              >
-                Triple
-              </span>
-              <span
-                className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer lg:hover:bg-gray-200 
-                  ${tipo == "Cuádruple" ? "bg-gray-200" : ""}`}
-                onClick={() => {
-                  obtenerHabitacion("Cuádruple")
-                  setTipo("Cuádruple")
-                }}
-              >
-                Cuádruple
-              </span>
-              <span
-                className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer lg:hover:bg-gray-200 
-                  ${tipo == "Quíntuple" ? "bg-gray-200" : ""}`}
-                onClick={() => {
-                  obtenerHabitacion("Quíntuple")
-                  setTipo("Quíntuple")
-                }}
-              >
-                Quíntuple
-              </span>
-          </div>
+          <FiltrosHabitacion
+            tipo={tipo}
+            habitacionSeleccionada={habitacionSeleccionada}
+            setHabitacionSeleccionada={setHabitacionSeleccionada}
+            setTipo={setTipo}
+          ></FiltrosHabitacion>
         </article>
-        <div className="flex gap-4 containerRooms w-[100%] h-[525px] sm:h-[initial] sm:px-4 sm:grid sm:grid-cols-2 xl:grid-cols-3  mt-10 md:gap-5 lg:gap-10 xl:justify-center xl:items-center 3xl:grid-cols-4">
-          {habitacionSeleccionada == "" &&
-            listaHabitaciones.map((habitacion) => (
-              <CardHabitacion
-                key={habitacion.id}
-                habitacion={habitacion}
-              ></CardHabitacion>
-            ))}
-        </div>
-        <div className="flex gap-4 containerRooms w-[100%] h-[525px] sm:h-[initial] sm:px-4 sm:grid sm:grid-cols-2 xl:grid-cols-3  mt-10 md:gap-5 lg:gap-10 xl:justify-center xl:items-center 3xl:grid-cols-4">
-          {habitacionSeleccionada &&
-            habitacionSeleccionada.map((habitacion) => (
-              <CardHabitacion
-                key={habitacion.id}
-                habitacion={habitacion}
-              ></CardHabitacion>
-            ))}
-        </div>
+        <ListaHabitaciones
+          listaHabitaciones={listaHabitaciones}
+          habitacionSeleccionada={habitacionSeleccionada}
+        ></ListaHabitaciones>
       </section>
     </>
   );

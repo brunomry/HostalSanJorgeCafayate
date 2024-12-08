@@ -1,17 +1,13 @@
 import { ImWhatsapp } from "react-icons/im";
 import { MdArrowForwardIos } from "react-icons/md";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { consultaPorWhatsApp } from "../../helpers/whatsApp";
 
-
 function CardHabitacion({ habitacion }) {
-  console.log(window.location.href)
   const url = window.location.origin + "/habitacion/" + habitacion.id;
   const consulta = `Consulta de ${habitacion.nombre} \n\n${url}`;
 
-  const consultaWhatsApp = () => {
-    consultaPorWhatsApp(consulta)
-  }
+  const consultaWhatsApp = () => consultaPorWhatsApp(consulta)
 
   const navegacion = useNavigate();
 
@@ -30,7 +26,8 @@ function CardHabitacion({ habitacion }) {
         className="h-[300px] xl:h-[350px] 2xl:h-[400px] w-full object-cover"
       />
       <div className="vsm:p-2 mb:p-4 md:p-8">
-        <h3 className="text-[20px] md:text-[25px]">{habitacion.nombre}</h3>
+        <p className="text-[20px] font-normal">{habitacion.nombre}</p>
+        <h3 className="text-[30px]">$ {habitacion.precio}</h3>
         <p className="text-gray-600 overflow-hidden text-ellipsis whitespace-nowrap">{habitacion.descripcion_breve}</p>
         <div className="flex flex-col gap-2 items-center w-[100%] mt-4 md:mt-8">
         <Link
@@ -42,10 +39,10 @@ function CardHabitacion({ habitacion }) {
           <button
             onClick={consultaWhatsApp}
             title="clic para consultar habitación por WhatsApp"
-            className="btnQuery p-2 md:p-4 w-[100%] flex gap-2 md:gap-3 justify-center items-center text-[1rem] bg-emerald-600 text-white lg:hover:bg-emerald-700 lg:hover:text-[#fff] "
+            className="btnQuery p-2 md:p-4 w-[100%] flex gap-2 justify-center rounded-[100px] items-center text-[1rem] bg-emerald-600 text-white lg:hover:bg-emerald-700 lg:hover:text-[#fff] "
           >
             <ImWhatsapp className="btnQuery vsm:text-[15px] mb:text-[20px] md:text-[30px]" />
-            <span className="btnQuery text-[.9rem] lg:text-[1rem]">CONSULTAR DISPONIBILIDAD</span>
+            <span className="btnQuery text-[.9rem] lg:text-[1rem]">RESERVAR</span>
           </button>   
         </div>
       </div>

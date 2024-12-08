@@ -17,7 +17,7 @@ const ImgGaleria = ({ img, index }) => {
   return (
     <>
       <article
-        className="w-[100%] vsm:h-[100px] mb:h-[150px] md:h-[175px] 2xl:h-[180px] cursor-pointer containerImgGalery"
+        className="w-[100%] vsm:h-[100px] mb:h-[150px] md:h-[175px] 2xl:h-[180px] cursor-zoom-in containerImgGalery"
         onClick={() => openCarousel(index)}
       >
         <img
