@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { RiAddLargeFill } from "react-icons/ri";
+import { FaMinus } from "react-icons/fa";
 
 function Faq({ faq }) {
+  const [visible, setVisible] = useState(false);
+
   return (
     <>
       <button
@@ -9,16 +13,19 @@ function Faq({ faq }) {
         data-accordion-target={`#${faq.id}`}
         aria-expanded="false"
         aria-controls={`${faq.id}`}
+        onClick={() => (visible ? setVisible(false) : setVisible(true))}
       >
         <span className="xl:text-[18px] text-start">{faq.question}</span>
-        <RiAddLargeFill className="" />
+        {visible ? <FaMinus /> : <RiAddLargeFill className="" />}
       </button>
       <div
         id={`${faq.id}`}
-        className="hidden md:w-[80%] lg:w-[70%] border-none p-5 bg-gray-100"
+        className={`${
+          visible ? "block" : "hidden"
+        }  md:w-[80%] lg:w-[70%] border-none bg-slate-100 p-5 bg-gray-100"`}
       >
         <div className=" border-gray-200 dark:border-gray-800 dark:bg-gray-900">
-          <p className=" text-gray-600">{faq.answer}</p>
+          <p className=" text-gray-600 ">{faq.answer}</p>
         </div>
       </div>
     </>

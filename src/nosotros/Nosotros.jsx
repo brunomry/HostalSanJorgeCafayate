@@ -75,7 +75,7 @@ const Nosotros = () => {
           />
           <figcaption>
             <small className="text-gray-500 text-justify text-[.8rem] lg:text-start">
-              Hostal San Jorge fue fundado en el año 2007. Imagen tomada por Sol
+              Hostal San Jorge abrió sus puertas en el año 2008. Imagen tomada por Sol
               Herrera. Instagram: solherrera.ar
             </small>
           </figcaption>
