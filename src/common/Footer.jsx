@@ -103,7 +103,7 @@ const Footer = () => {
                 <li className="mb-4">
                   Fotografía:{" "}
                   <Link
-                    to={"https://www.instagram.com/solherrera.ar/"}
+                    to={""}
                     target="_blank"
                     rel="noopener"
                     className="hover:underline text-blue-600"
