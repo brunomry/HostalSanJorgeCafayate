@@ -79,7 +79,7 @@ const Nosotros = () => {
           />
           <figcaption>
             <small className="text-gray-500 text-justify text-[.8rem] lg:text-start">
-              Hostal San Jorge abrió sus puertas en el año 2008. PH: Sol Herrera. (Instagram: solherrera.ar)
+              Hostal San Jorge abrió sus puertas en el año 2008.
             </small>
           </figcaption>
         </figure>
