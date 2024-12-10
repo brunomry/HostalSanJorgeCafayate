@@ -1,11 +1,9 @@
 import { Helmet } from "react-helmet";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import habitaciones from "../helpers/habitaciones";
 import { useEffect, useState } from "react";
 import { ImWhatsapp } from "react-icons/im";
-import { FaFacebook } from "react-icons/fa";
 import CarruselDetalleHabitacion from "./components/CarruselDetalleHabitacion";
-import banner from "../assets/IMG/Galeria/pasillo.webp";
 import BreadcrumbDetalle from "./components/BreadcrumbDetalle";
 import FiltrosDetalle from "./components/FiltrosDetalle";
 import "./styles/detalleHabitacion.css";
@@ -129,28 +127,6 @@ const DetalleHabitacion = () => {
               <span className="">Horario Desayuno: </span>8:30 a 09:45 am (sin excepción)
             </li>
             </ul>
-         
-            {/* <div className="flex items-center gap-5">
-              <span className=" text-gray-600">Compartir:</span>
-              <div className="flex gap-4 mt-2">
-                <Link
-                  id="btnWhatsApp"
-                  to={``}
-                  title="WhatsApp"
-                  className="bg-gray-200 p-2 rounded-[100%]"
-                >
-                  <ImWhatsapp className="text-[30px] text-green-400" />
-                </Link>
-                <Link
-                  id="btnFacebook"
-                  to={``}
-                  title="Facebook"
-                  className="bg-gray-200 p-2 rounded-[100%]"
-                >
-                  <FaFacebook className="text-[30px] text-blue-600" />
-                </Link>
-              </div>
-            </div> */}
           </article>
           <article className="vsm:w-[100%] lg:w-[50%] flex flex-col gap-2">
             <h2 className="text-[20px] md:text-[25px] border-b md:mb-4">Medios de pago</h2>

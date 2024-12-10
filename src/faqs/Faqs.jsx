@@ -1,11 +1,9 @@
-import { RiAddLargeFill } from "react-icons/ri";
 import faqs from "../helpers/faqs";
 import { Link, useLocation } from "react-router-dom";
 import { MdArrowForwardIos } from "react-icons/md";
 import Faq from "./components/Faq";
 import BtnWhatsApp from "../common/BtnWhatsApp";
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Faqs = () => {
   const [preguntas, setPreguntas] = useState([]);

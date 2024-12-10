@@ -19,9 +19,6 @@ const habitaciones = [
     {
         id: 8,
         imagenes: [simple, simple2, simple3],
-        // img1: simple,
-        // img2: simple2,
-        // img3: simple3,
         nombre: "Habitación Individual",
         precio: "15.000",
         tipo: "Individual",
@@ -33,9 +30,6 @@ const habitaciones = [
       {
         id: 6,
         imagenes:[doble6,doble6_1, doble6_2],
-        // img1: doble6,
-        // img2: doble6_1,
-        // img3: doble6_2,
         nombre: "Habitación Doble",
         precio: "30.000",
         tipo: "Doble opción 1",
@@ -47,9 +41,6 @@ const habitaciones = [
       {
         id: 7,
         imagenes: [doble7, doble7_1, doble6_1],
-        // img1: doble7,
-        // img2: doble7_1,
-        // img3: doble6_1,
         nombre: "Habitación Doble",
         precio: "30.000",
         tipo: "Doble opción 2",
@@ -61,9 +52,6 @@ const habitaciones = [
       {
         id: 5,
         imagenes: [triple, triple1, triple2],
-        // img1: triple,
-        // img2: triple1,
-        // img3: triple2,
         nombre: "Habitación Triple",
         precio: "45.000",
         tipo: "Triple",
@@ -75,9 +63,6 @@ const habitaciones = [
       {
         id: 3,
         imagenes: [cuadruple, quintuple1, quintuple2],
-        // img1: cuadruple,
-        // img2: quintuple1,
-        // img3: quintuple2,
         nombre: "Habitación Cuádruple",
         precio: "56.000",
         tipo: "Cuádruple",
@@ -89,9 +74,6 @@ const habitaciones = [
       {
         id: 4,
         imagenes: [quintuple, quintuple1, quintuple2],
-        // img1: quintuple,
-        // img2: quintuple1,
-        // img3: quintuple2,
         nombre: "Habitación Quíntuple",
         precio: "70.000",
         tipo: "Quíntuple",

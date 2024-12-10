@@ -1,11 +1,9 @@
-import CarruselGaleria from "./CarruselGaleria";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import galeria from "../../helpers/galeriaImagenes";
 import { GoZoomIn } from "react-icons/go";
+import CarruselFullScreen from "../../common/CarruselFullScreen";
 
 const ImgGaleria = ({ img, index }) => {
-  const [imagenes, setImagenes] = useState([]);
-
   const [visible, setVisible] = useState(false);
   const [imgActual, setImgActual] = useState(0);
 
@@ -29,17 +27,17 @@ const ImgGaleria = ({ img, index }) => {
         />
         <div className="hidden containerBg h-[100%] w-[100%] top-0 bg-[rgba(0,0,0,0.6)] text-white">
           <span>Haz clic para ver</span>
-          <GoZoomIn className="text-[30px]"/>
+          <GoZoomIn className="text-[30px]" />
         </div>
       </article>
 
       {visible && (
-        <CarruselGaleria
+        <CarruselFullScreen
           setVisible={setVisible}
           visible={visible}
           imagenesActuales={galeria}
           imgActual={imgActual}
-        ></CarruselGaleria>
+        ></CarruselFullScreen>
       )}
     </>
   );

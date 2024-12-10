@@ -1,7 +1,6 @@
-import { useState } from "react";
-import CarruselGaleria from "../../galeria/components/CarruselGaleria";
+import { useState, useEffect } from "react";
 import { GoZoomIn } from "react-icons/go";
-import { useEffect } from "react";
+import CarruselFullScreen from "../../common/CarruselFullScreen";
 
 const CarruselDetalleHabitacion = ({ habitacion }) => {
   const [imgActual, setImgActual] = useState(0);
@@ -126,12 +125,12 @@ const CarruselDetalleHabitacion = ({ habitacion }) => {
       </div>
 
       {visible && (
-        <CarruselGaleria
+        <CarruselFullScreen
           setVisible={setVisible}
           visible={visible}
           imagenesActuales={habitacion.imagenes}
           imgActual={imgActual}
-        ></CarruselGaleria>
+        ></CarruselFullScreen>
       )}
     </>
   );
