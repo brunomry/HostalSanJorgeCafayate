@@ -19,7 +19,7 @@ function CardHabitacion({ habitacion }) {
   }
 
   return (
-    <article className="border h-[500px] md:h-[100%] md:min-h-[400px] min-w-[85%] md:w-[100%] lg:cursor-pointer lg:hover:shadow-xl" onClick={(e) => verDetalle(e)} title="clic para ver más información">
+    <article className="border h-[550px] md:h-[100%] md:min-h-[400px] min-w-[85%] md:w-[100%] lg:cursor-pointer lg:hover:shadow-xl" onClick={(e) => verDetalle(e)} title="clic para ver más información">
       <img
         src={habitacion.imagenes[0]}
         alt=""
@@ -32,7 +32,7 @@ function CardHabitacion({ habitacion }) {
         <div className="flex flex-col gap-2 items-center w-[100%] mt-4 md:mt-8">
         <Link
             to={`/habitacion/${habitacion.id}`}
-            className="p-2 md:p-4 w-[100%] md:w-[70%] flex gap-2 justify-center items-center text-[1rem]  text-blue-500 hover:text-blue-800 hover:underline"
+            className="p-2 md:p-4 w-[100%] md:w-[100%] flex gap-2 justify-center items-center text-[1rem]  text-blue-500 hover:text-blue-800 hover:underline"
           >
             <span className="text-[.9rem] lg:text-[1rem]">MÁS INFORMACIÓN</span> <MdArrowForwardIos />
           </Link>

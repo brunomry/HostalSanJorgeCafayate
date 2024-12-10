@@ -99,7 +99,7 @@ const DetalleHabitacion = () => {
                     ))}
                 </div>
               </div>
-              <div className="fixed bottom-0 left-0 z-50 sm:z-0 py-1 flex md:px-20 lg:px-0 md:justify-center lg:justify-start pb-2 bg-gray-200 vsm:w-[100%] vsm:px-0 sm:static sm:bg-inherit">
+              <div className="fixed bottom-0 left-0 z-50 sm:z-0 py-1 flex md:px-20 lg:px-0 md:justify-center lg:justify-start pb-2 bg-gray-200 vsm:w-[100%] vsm:px-2 sm:static sm:bg-inherit">
                 <button 
                   onClick={consultaWhatsApp}
                   to={"/habitaciones"}

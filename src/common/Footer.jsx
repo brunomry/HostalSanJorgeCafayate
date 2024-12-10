@@ -11,26 +11,30 @@ const Footer = () => {
         <div className="md:flex md:flex-col lg:flex-row md:justify-between gap-8 w-[100%]">
           <div className="mb-6 md:mb-0">
             <div className="flex flex-col gap-10 lg:gap-20 lg:items-center">
-              <div className="flex flex-col gap-2">
+              <Link className="flex flex-col gap-2" to={"/"}>
                 <span className="text-2xl font-semibold whitespace-nowrap dark:text-white">
                   Hostal San Jorge
                 </span>
                 <small className="text-sm">Cafayate, Salta</small>
-              </div>
+              </Link>
               <div>
                 <p className="mb-3">Síguenos en nuestras redes</p>
                 <div className="flex gap-3">
                   <Link
-                    to={``}
+                    to={`https://www.instagram.com/hostalsanjorgecafayate`}
                     title="Instagram"
                     className="shadow-sm border p-2 rounded-[100%] hover:scale-110"
+                    target="_blank"
+                    rel="noopener"
                   >
                     <RiInstagramFill className="text-[30px] text-rose-700" />
                   </Link>
                   <Link
-                    to={``}
+                    to={`https://www.facebook.com/profile.php?id=100089399326566`}
                     title="Facebook"
                     className="shadow-sm border p-2 rounded-[100%] hover:scale-110"
+                    target="_blank"
+                    rel="noopener"
                   >
                     <FaFacebook className="text-[30px] text-blue-600" />
                   </Link>
@@ -68,7 +72,10 @@ const Footer = () => {
               </h4>
               <ul className="text-gray-600 ">
                 <li className="mb-4">
-                  <Link to={"/politicas"} className="hover:underline text-gray-600">
+                  <Link
+                    to={"/politicas"}
+                    className="hover:underline text-gray-600"
+                  >
                     Políticas del Hostal
                   </Link>
                 </li>
@@ -81,8 +88,38 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to={"/nosotros"} className="hover:underline text-gray-600">
+                  <Link
+                    to={"/nosotros"}
+                    className="hover:underline text-gray-600"
+                  >
                     Sobre Nosotros
+                  </Link>
+                </li>
+              </ul>
+              <h4 className="mt-7 mb-6 text-sm font-semibold text-gray-900 uppercase">
+                Colaboraciones
+              </h4>
+              <ul className="text-gray-600 ">
+                <li className="mb-4">
+                  Fotografía:{" "}
+                  <Link
+                    to={"https://www.instagram.com/solherrera.ar/"}
+                    target="_blank"
+                    rel="noopener"
+                    className="hover:underline text-blue-600"
+                  >
+                    Sol Herrera
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  Traducciones:{" "}
+                  <Link
+                    to={""}
+                    target="_blank"
+                    rel="noopener"
+                    className="hover:underline text-blue-600"
+                  >
+                    .
                   </Link>
                 </li>
               </ul>
@@ -92,17 +129,23 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between border-t mt-8 pt-6">
           <span className=" text-gray-600 sm:text-center dark:text-gray-400">
             © 2024{" "}
-            <a href="https://flowbite.com/" className="hover:underline">
+            <a
+              href="https://tinyurl.com/2xpevaq2"
+              className="hover:underline"
+              target="_blank"
+              rel="noopener"
+            >
               Hostal San Jorge
             </a>
             . Todos los derechos reservados.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
-            <p className="text-gray-600 text-[.9rem]">
+            <p className="text-gray-600">
               Desarrollado por{" "}
               <Link
                 to={"https://brunomadozzo-portfolio.netlify.app"}
                 target="_blank"
+                rel="noopener"
                 className="text-blue-600 cursor-pointer hover:underline ]"
               >
                 Bruno Madozzo

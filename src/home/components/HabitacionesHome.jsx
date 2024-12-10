@@ -4,6 +4,7 @@ import habitacion7 from "../../assets/IMG/Habitaciones/HabitacionDoble/hd1.jpeg"
 import habitacion4 from "../../assets/IMG/habitacion4.webp";
 import { MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { comodidades } from "../../helpers/comodidades";
 
 function HabitacionesHome() {
   return (
@@ -47,43 +48,18 @@ function HabitacionesHome() {
           </div>
           <div>
             <h3 className="lg:text-[20px] mb-3">Comodidades y Servicios:</h3>
-            <div className="flex flex-wrap gap-1 flex-shrink 2xl:gap-5">
-              <span className="border p-2 md:py-2 md:px-5 text-[#363636]">Wi-Fi</span>
-              <span className="border p-2 md:py-2 md:px-5 text-[#363636]">
-                Desayuno incluido
-              </span>
-              <span className="border p-2 md:py-2 md:px-5 text-[#363636]">
-                Ropa de cama
-              </span>
-              <span className="border p-2 md:py-2 md:px-5 text-[#363636]">
-                Aire acondicionado
-              </span>
-              <span className="border p-2 md:py-2 md:px-5 text-[#363636]">Estufa</span>
-            
-              <span className="border p-2 md:py-2 md:px-5 text-[#363636]">Toallas</span>
-              <span className="border p-2 md:py-2 md:px-5 text-[#363636]">
-                Baño privado
-              </span>
-              <span className="border p-2 md:py-2 md:px-5 text-[#363636]">
-                Habitaciones privadas
-              </span>
-              <span className="border p-2 md:py-2 md:px-5 text-[#363636]">
-                Ventilador
-              </span>
-              <span className="border p-2 md:py-2 md:px-5 text-[#363636]">
-                Artículos de tocador
-              </span>
-            
-              <span className="border p-2 md:py-2 md:px-5 text-[#363636]">Armario</span>
-              <span className="border p-2 md:py-2 md:px-5 text-[#363636]">
-                Zona de estar
-              </span>
+            <div className="flex flex-wrap gap-1 flex-shrink 2xl:gap-4">
+              {comodidades.map((com, index) => (
+                <span key={index} className="border p-2 md:py-2 md:px-5 text-[#363636]">
+                  {com}
+                </span>
+              ))}
             </div>
           </div>
           <div className="w-[100%] flex justify-start xl:justify-start">
             <Link
               to={"/habitaciones"}
-              className="bg-emerald-500 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 2xl:w-[35%] xl:text-[16px]"
+              className="bg-emerald-500 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 xl:w-[45%] xl:text-[16px]"
             >
               <span className="text-[#fff]">VER HABITACIONES</span>{" "}
               <MdArrowForwardIos className="text-[#fff]" />

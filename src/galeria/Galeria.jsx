@@ -55,9 +55,6 @@ const Galeria = () => {
           <p className="text-gray-600 lg:text-start">
             Conoce nuestras instalaciones y habitaciones a través de nuestra galería.
           </p>
-          <div className="text-center mt-10">
-            <small className="text-gray-600">Imágenes tomadas por Sol Herrera. Instagram: solherrera.ar</small>
-          </div>
         </article>
         <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 flex-wrap justify-center items-center mt-5 gap-2 md:gap-4">
           {galeria.map((img, index) => (
