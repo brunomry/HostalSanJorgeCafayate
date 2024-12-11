@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import "./styles/home.css";
 import BannerHome from "./components/BannerHome";
 import Comentarios from "./components/Comentarios";
@@ -6,11 +5,15 @@ import NosotrosHome from "./components/NosotrosHome";
 import HabitacionesHome from "./components/HabitacionesHome";
 import Faqs from "../faqs/Faqs";
 import BtnWhatsApp from "../common/BtnWhatsApp";
+import Head from "../seo/Head";
+import headData from "../helpers/head.js";
+
 
 function Home() {
   return (
     <main className="">
-      <Helmet>
+      <Head head={headData.home}></Head>
+      {/* <Helmet>
         <meta
           name="description"
           content="Bienvenido a Hostal San Jorge. Nos encontramos ubicados a 2 cuadras de la Plaza Principal de Cafayate, en la provincia de Salta, noroeste argentino."
@@ -47,7 +50,7 @@ function Home() {
         <title>Home | Hostal San Jorge - Alojamiento en Cafayate, Salta</title>
         <link rel="stylesheet" href="./src/styles/estilos.css" />
         <link rel="stylesheet" href="./src/styles/index.css" />
-      </Helmet>
+      </Helmet> */}
       <BannerHome></BannerHome>
       <Comentarios></Comentarios>
       <NosotrosHome></NosotrosHome>
