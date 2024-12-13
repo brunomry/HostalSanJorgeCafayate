@@ -10,6 +10,7 @@ const FiltrosDetalle = () => {
         <Link
           key={h.id}
           to={`/habitacion/${h.id}`}
+          title={h.tipo}
           className={` ${
             id == h.id ? "bg-gray-200" : ""
           } border vsm:min-w-[125px] md:min-w-[100px] vsm:h-[40px] vsm:p-2 sm:py-2 sm:px-5 text-gray-600 cursor-pointer hover:bg-gray-200`}

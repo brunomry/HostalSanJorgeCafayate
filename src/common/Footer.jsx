@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className=" dark:bg-gray-900 border-t">
-      <div className="mx-auto vsm:w-full max-w-screen-xl p-4 py-6 lg:py-8">
+      <section className="mx-auto vsm:w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div className="md:flex md:flex-col lg:flex-row md:justify-between gap-8 w-[100%]">
-          <div className="mb-6 md:mb-0">
+          <article className="mb-6 md:mb-0">
             <div className="flex flex-col gap-10 lg:gap-20 lg:items-center">
-              <Link className="flex flex-col gap-2" to={"/"}>
+              <Link className="flex flex-col gap-2" to={"/"} title="clic para ir a la página principal">
                 <span className="text-2xl font-semibold whitespace-nowrap dark:text-white">
                   Hostal San Jorge
                 </span>
@@ -22,7 +22,7 @@ const Footer = () => {
                 <div className="flex gap-3">
                   <Link
                     to={`https://www.instagram.com/hostalsanjorgecafayate`}
-                    title="Instagram"
+                    title="clic para visitar perfil de Instagram"
                     className="shadow-sm border p-2 rounded-[100%] hover:scale-110"
                     target="_blank"
                     rel="noopener"
@@ -31,7 +31,7 @@ const Footer = () => {
                   </Link>
                   <Link
                     to={`https://www.facebook.com/profile.php?id=100089399326566`}
-                    title="Facebook"
+                    title="clic para visitar perfil de Facebook"
                     className="shadow-sm border p-2 rounded-[100%] hover:scale-110"
                     target="_blank"
                     rel="noopener"
@@ -41,32 +41,32 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </article>
           <div className="flex flex-col sm:flex-row gap-8 md:gap-16">
-            <div>
+            <article>
               <h4 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Contacto
               </h4>
               <ul className="text-gray-600 flex flex-col gap-4">
-                <li className="flex gap-2 items-center">
+                <li className="flex gap-2 items-center" title="Dirección: Calixto Mamaní 105, Cafayate, Salta, Argentina">
                   <FaMapMarkerAlt className="text-[20px] text-teal-500" />
                   <p>Calixto Mamaní 105, Cafayate, Salta, Argentina</p>{" "}
                 </li>
-                <li className="flex gap-2 items-center">
+                <li className="flex gap-2 items-center" title="WhatsApp: +54 387 6843082">
                   <IoLogoWhatsapp className="text-[20px] text-teal-500" />
                   <p>+54 387 6843082</p>
                 </li>
-                <li className="flex gap-2 items-center">
+                <li className="flex gap-2 items-center" title="Teléfono fijo: +54 3868 422388">
                   <FaPhone className="text-[20px] text-teal-500" />
                   <p>+54 03868 422388</p>
                 </li>
-                <li className="flex gap-2 items-center">
+                <li className="flex gap-2 items-center" title="Email: hostalsanjorgecafayate@gmail.com">
                   <MdEmail className="text-[20px] text-teal-500" />
                   <p>hostalsanjorgecafayate@gmail.com</p>
                 </li>
               </ul>
-            </div>
-            <div>
+            </article>
+            <article>
               <h4 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
                 Información
               </h4>
@@ -101,32 +101,33 @@ const Footer = () => {
               </h4>
               <ul className="text-gray-600 ">
                 <li className="mb-4">
-                  Fotografía:{" "}
+                  Fotografía:
                   <Link
                     to={""}
                     target="_blank"
                     rel="noopener"
-                    className="hover:underline text-blue-600"
+                    title="ir a perfil de Sol Herrera"
+                    className="hover:underline text-blue-600 ms-1"
                   >
                     Sol Herrera
                   </Link>
                 </li>
                 <li className="mb-4">
-                  Traducciones:{" "}
+                  Traducciones:
                   <Link
                     to={""}
                     target="_blank"
                     rel="noopener"
-                    className="hover:underline text-blue-600"
+                    className="hover:underline text-blue-600 ms-1"
                   >
                     .
                   </Link>
                 </li>
               </ul>
-            </div>
+            </article>
           </div>
         </div>
-        <div className="sm:flex sm:items-center sm:justify-between border-t mt-8 pt-6">
+        <article className="sm:flex sm:items-center sm:justify-between border-t mt-8 pt-6">
           <span className=" text-gray-600 sm:text-center dark:text-gray-400">
             © 2024{" "}
             <a
@@ -146,14 +147,15 @@ const Footer = () => {
                 to={"https://brunomadozzo-portfolio.netlify.app"}
                 target="_blank"
                 rel="noopener"
-                className="text-blue-600 cursor-pointer hover:underline ]"
+                className="text-blue-600 cursor-pointer hover:underline"
+                title="clic para visitar perfil de LinkedIn de Bruno Madozzo"
               >
                 Bruno Madozzo
               </Link>
             </p>
           </div>
-        </div>
-      </div>
+        </article>
+      </section>
     </footer>
   );
 };

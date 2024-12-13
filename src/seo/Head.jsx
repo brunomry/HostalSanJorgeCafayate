@@ -1,6 +1,9 @@
 import { Helmet } from "react-helmet";
 
 function Head({head}) {
+
+console.log(head)
+
   return (
     <Helmet>
       <meta
@@ -15,22 +18,22 @@ function Head({head}) {
       <meta name="robots" content={head.robots} />
       <link
         rel="canonical"
-        href={head.canonical}
+        href={`https://www.hostalsanjorgecafayate.netlify.app/${head.canonical}`}
       />
-      <link rel="icon" href="./src/IMG/favicon.png" />
-      <link rel="apple-touch-icon" href="./src/IMG/favicon.png" />
-      <meta property="og:title" content={head.title} />
+      <link rel="icon" href="./src/" />
+      <link rel="apple-touch-icon" href="./src/" />
+      <meta property="og:title" content={`${head.title} | Hostal San Jorge - Alojamiento en Cafayate, Salta`} />
       <meta
         property="og:description"
         content={head.description}
       />
       <meta
         property="og:image"
-        content="https://hostalsanjorgecafayate.netlify.app/src/IMG/frente.webp"
+        content="https://hostalsanjorgecafayate.netlify.app/src/"
       />
       <meta
         property="og:url"
-        content={head.title}
+        content={`${head.title} | Hostal San Jorge - Alojamiento en Cafayate, Salta`}
       />
       <title>
         {head.title}

@@ -84,6 +84,7 @@ const Navbar = () => {
                 to={"/"}
                 className="hidden xl:flex flex-col items-center space-x-3 rtl:space-x-reverse px-5"
                 onClick={() => setDesplegado(false)}
+                title="clic para ir a página principal"
               >
                 <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
                   Hostal San Jorge
@@ -109,11 +110,17 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="flex">
-                <button className="py-2 px-2 flex gap-1 items-center cursor-pointer text-gray-600 hover:text-[#000]">
+                <button
+                  className="py-2 px-2 flex gap-1 items-center cursor-pointer text-gray-600 hover:text-[#000]"
+                  title="cambiar a español"
+                >
                   <span>Es</span>
                   <img src={es} className="w-[25px] h-[18px] object-cover" />
                 </button>
-                <button className="py-2 px-2 flex gap-1 items-center cursor-pointer text-gray-600 hover:text-[#000]">
+                <button
+                  className="py-2 px-2 flex gap-1 items-center cursor-pointer text-gray-600 hover:text-[#000]"
+                  title="cambiar a inglés"
+                >
                   <span>En</span>
                   <img src={en} className="w-[25px] h-[18px] object-cover" />
                 </button>

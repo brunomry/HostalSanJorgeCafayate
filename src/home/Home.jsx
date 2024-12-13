@@ -3,59 +3,46 @@ import BannerHome from "./components/BannerHome";
 import Comentarios from "./components/Comentarios";
 import NosotrosHome from "./components/NosotrosHome";
 import HabitacionesHome from "./components/HabitacionesHome";
-import Faqs from "../faqs/Faqs";
 import BtnWhatsApp from "../common/BtnWhatsApp";
 import Head from "../seo/Head";
-import headData from "../helpers/head.js";
-
+import Faq from "../faqs/components/Faq";
+import { Link } from "react-router-dom";
+import { MdArrowForwardIos } from "react-icons/md";
+import preguntas from "../helpers/faqs";
+import headData from "../helpers/head";
 
 function Home() {
   return (
-    <main className="">
+    <main>
       <Head head={headData.home}></Head>
-      {/* <Helmet>
-        <meta
-          name="description"
-          content="Bienvenido a Hostal San Jorge. Nos encontramos ubicados a 2 cuadras de la Plaza Principal de Cafayate, en la provincia de Salta, noroeste argentino."
-        />
-        <meta
-          name="keywords"
-          content="hostal san jorge, hostal san jorge cafayate, san jorge, san jorge cafayate, alojamiento, Cafayate, Salta, habitaciones, desayuno, comodidades, redes sociales, Wi-Fi, baño privado, ropa de cama, toallas, preguntas frecuentes, cómo llegar, galería"
-        />
-        <meta name="author" content="Bruno Madozzo Romay" />
-        <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href="https://www.hostalsanjorgecafayate.netlify.app/"
-        />
-        <link rel="icon" href="./src/IMG/favicon.png" />
-        <link rel="apple-touch-icon" href="./src/IMG/favicon.png" />
-        <meta property="og:title" content="Home | Hostal San Jorge" />
-        <meta
-          property="og:description"
-          content="Bienvenido a Hostal San Jorge. Nos encontramos ubicados a 2 cuadras de la Plaza Principal de Cafayate, en la provincia de Salta, noroeste argentino."
-        />
-        <meta
-          property="og:image"
-          content="https://hostalsanjorgecafayate.netlify.app/src/IMG/frente.webp"
-        />
-        <meta
-          property="og:url"
-          content="https://hostalsanjorgecafayate.netlify.app/"
-        />
-        <meta
-          name="google-site-verification"
-          content="Tkwt-VsZcevf6jFDeu66qgpSh4m_zMuXkBbHXYpDAcU"
-        />
-        <title>Home | Hostal San Jorge - Alojamiento en Cafayate, Salta</title>
-        <link rel="stylesheet" href="./src/styles/estilos.css" />
-        <link rel="stylesheet" href="./src/styles/index.css" />
-      </Helmet> */}
       <BannerHome></BannerHome>
       <Comentarios></Comentarios>
       <NosotrosHome></NosotrosHome>
       <HabitacionesHome></HabitacionesHome>
-      <Faqs></Faqs>
+      <section className="px-4 py-24 w-[100%] xl:px-10 flex flex-col gap-5 md:gap-10  xl:py-32">
+        <h2 className="text-[20px] lg:text-[25px] text-center">Preguntas frecuentes</h2>
+        <div
+          id="accordion-collapse"
+          data-accordion="collapse"
+          className="border-none rounded-none outline-none flex flex-col items-center w-[100%] gap-2 md:gap-5"
+        >
+          {preguntas
+            .filter((_, index) => index < 7)
+            .map((faq) => (
+              <Faq key={faq.id} faq={faq}></Faq>
+            ))}
+        </div>
+        <div className="w-[100%] flex justify-center items-center">
+          <Link
+            to={"/preguntasfrecuentes"}
+            className="bg-slate-500 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 lg:px-8 2xl:w-[10%] xl:text-[16px]"
+            title="ver más preguntas"
+          >
+            <span className="text-[#fff]">VER MÁS</span>{" "}
+            <MdArrowForwardIos className="text-[#fff]" />
+          </Link>
+        </div>
+      </section>
       <BtnWhatsApp></BtnWhatsApp>
     </main>
   );

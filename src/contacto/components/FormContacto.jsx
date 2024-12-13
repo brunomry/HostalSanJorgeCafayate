@@ -14,6 +14,7 @@ const FormContacto = () => {
                 aria-describedby="helper-text-explanation"
                 className="bg-gray-50 focus:border-gray-100 border-gray-300 text-gray-900    block w-full p-2.5  "
                 placeholder="Juan Perez"
+                title="Escribe tu nombre y apellido"
               />
             </div>
             <div className="mb-3 vsm:w-[100%] md:w-[60%]">
@@ -29,6 +30,7 @@ const FormContacto = () => {
                 aria-describedby="helper-text-explanation"
                 className="bg-gray-50 focus:border-gray-100 border-gray-300 text-gray-900    block w-full p-2.5  "
                 placeholder="nombre@ejemplo.com"
+                title="Escribe tu correo electrónico"
               />
             </div>
             <div className="mb-3 vsm:w-[100%] md:w-[35%]">
@@ -44,6 +46,7 @@ const FormContacto = () => {
                 aria-describedby="helper-text-explanation"
                 className="bg-gray-50 focus:border-gray-100 border-gray-300 text-gray-900    block w-full p-2.5  "
                 placeholder="+54 381 1111111"
+                title="Escribe tu número de celular"
               />
             </div>
             <div className="mb-3 w-[100%]">
@@ -58,10 +61,11 @@ const FormContacto = () => {
                 rows="4"
                 className="bg-gray-50 focus:border-gray-100 border-gray-300 text-gray-900    block w-full p-2.5  "
                 placeholder="Escribe tu mensaje aquí..."
+                title="Escribe tu consulta"
               ></textarea>
             </div>
             <div className="flex justify-center w-[100%]">
-              <button className="bg-teal-400 hover:bg-teal-600 text-white p-3 vsm:w-[100%] md:w-[35%]">
+              <button className="bg-teal-400 hover:bg-teal-600 text-white p-3 vsm:w-[100%] md:w-[35%]" title="clic para confirmar envío">
                 ENVIAR
               </button>
             </div>

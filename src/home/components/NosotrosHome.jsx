@@ -25,6 +25,7 @@ function NosotrosHome() {
           <div className="w-[100%] flex lg:justify-start">
             <Link
               to={"/nosotros"}
+              title="clic para leer más acerca de nosotros"
               className="bg-emerald-500 text-white flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 xl:w-[40%] xl:text-[16px]"
             >
               <span>LEER MÁS</span> <MdArrowForwardIos />

@@ -9,7 +9,8 @@ function BannerHome() {
         <div>
           <img
             src={frente}
-            alt=""
+            alt="Hostal San Jorge Cafayate"
+            title="Hostal San Jorge Cafayate"
             className="w-[100%] py-14 md:py-0 min-h-[200px] object-cover md:object-fill absolute imgBannerHome xl:max-h-[800px] 2xl:min-h-[925px]"
           />
         </div>
@@ -25,6 +26,7 @@ function BannerHome() {
           </p>
           <Link
             to={"/habitaciones"}
+            title="clic para ver nuestras habitaciones"
             className="vsm:px-2 mb:p-3 vsm:text-[.7rem] mb:text-[.8rem] vsm:w-[110%] mb:w-[75%] text-[14px] rounded-[5px] md:rounded-none md:p-4 md:w-[100%] flex gap-2 justify-center items-center md:text-[1rem] bg-amber-400  md:mt-8 text-[#0e2541] md:max-w-[270px] lg:hover:bg-gray-950 lg:hover:text-[#fff] xl:p-5"
           >
             <span>NUESTRAS HABITACIONES</span> <MdArrowForwardIos />

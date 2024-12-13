@@ -68,13 +68,7 @@ const CarruselDetalleHabitacion = ({ habitacion }) => {
                 fill="none"
                 viewBox="0 0 6 10"
               >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 1 1 5l4 4"
-                />
+                <path stroke="currentColor" d="M5 1 1 5l4 4" />
               </svg>
               <span class="sr-only">Previous</span>
             </span>
@@ -93,13 +87,7 @@ const CarruselDetalleHabitacion = ({ habitacion }) => {
                 fill="none"
                 viewBox="0 0 6 10"
               >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m1 9 4-4-4-4"
-                />
+                <path stroke="currentColor" d="m1 9 4-4-4-4" />
               </svg>
               <span class="sr-only">Next</span>
             </span>
@@ -110,20 +98,25 @@ const CarruselDetalleHabitacion = ({ habitacion }) => {
             src={habitacion.imagenes[0]}
             class="w-[75px] h-[75px] md:w-[100px] md:h-[100px] 2xl:w-[150px] 2xl:h-[125px] object-cover cursor-pointer bg-gray-800"
             onClick={() => setImgActual(0)}
+            alt={`Imagen 1 de ${habitacion.nombre}`}
+            title="clic para ver imagen"
           ></img>
           <img
             src={habitacion.imagenes[1]}
             class="w-[75px] h-[75px] md:w-[100px] md:h-[100px] 2xl:w-[150px] 2xl:h-[125px] object-cover cursor-pointer bg-gray-800"
             onClick={() => setImgActual(1)}
+            alt={`Imagen 2 de ${habitacion.nombre}`}
+            title="clic para ver imagen"
           ></img>
           <img
             src={habitacion.imagenes[2]}
             class="w-[75px] h-[75px] md:w-[100px] md:h-[100px] 2xl:w-[150px] 2xl:h-[125px] object-cover cursor-pointer bg-gray-800"
             onClick={() => setImgActual(2)}
+            alt={`Imagen 3 de ${habitacion.nombre}`}
+            title="clic para ver imagen"
           ></img>
         </div>
       </div>
-
       {visible && (
         <CarruselFullScreen
           setVisible={setVisible}

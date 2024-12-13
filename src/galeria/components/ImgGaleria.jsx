@@ -20,17 +20,15 @@ const ImgGaleria = ({ img, index }) => {
       >
         <img
           src={img.url}
-          alt=""
+          alt={`imagen de ${img.descripcion}`}
           className="h-[100%] w-[100%] object-cover border-[1px] lg:shadow-lg"
           loading="lazy"
           title="Haz clic para ver"
         />
         <div className="hidden containerBg h-[100%] w-[100%] top-0 bg-[rgba(0,0,0,0.6)] text-white">
-          <span>Haz clic para ver</span>
           <GoZoomIn className="text-[30px]" />
         </div>
       </article>
-
       {visible && (
         <CarruselFullScreen
           setVisible={setVisible}

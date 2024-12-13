@@ -14,24 +14,28 @@ function HabitacionesHome() {
           <div className="flex gap-2 md:w-[100%] max-h-[300px]">
             <img
               src={habitacion}
-              alt=""
+              alt="Habitación quíntuple"
+              title="Habitación quíntuple"
               className="hidden lg:block lg:w-[50%] object-cover h-[100%]"
             />
             <img
               src={habitacion7}
-              alt=""
+              alt="Habitación doble"
+              title="Habitación doble matrimonial"
               className="hidden md:w-[100%] md:block lg:w-[50%] lg:h-[100%] object-cover "
             />
           </div>
           <div className="flex gap-2 lg:w-[100%] max-h-[300px]">
             <img
               src={desayuno}
-              alt=""
+              alt="Desayuno"
+              title="Desayuno en salón del Hostal"
               className="hidden lg:block lg:w-[45%] object-cover h-[100%] "
             />
             <img
               src={habitacion4}
-              alt=""
+              alt="Habitación cuádruple"
+              title="Habitación cuádruple"
               className="hidden lg:block lg:max-w-[55%] object-cover h-[100%]"
             />
           </div>
@@ -50,7 +54,7 @@ function HabitacionesHome() {
             <h3 className="lg:text-[20px] mb-3">Comodidades y Servicios:</h3>
             <div className="flex flex-wrap gap-1 flex-shrink 2xl:gap-4">
               {comodidades.map((com, index) => (
-                <span key={index} className="border p-2 md:py-2 md:px-5 text-[#363636]">
+                <span key={index} className="border p-2 md:py-2 md:px-5 text-[#363636]" title={`${com}`}>
                   {com}
                 </span>
               ))}
@@ -60,6 +64,7 @@ function HabitacionesHome() {
             <Link
               to={"/habitaciones"}
               className="bg-emerald-500 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 xl:w-[45%] xl:text-[16px]"
+              title="ver habitaciones"
             >
               <span className="text-[#fff]">VER HABITACIONES</span>{" "}
               <MdArrowForwardIos className="text-[#fff]" />
