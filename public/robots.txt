@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /habitaciones
+Allow: /habitacion/
+Allow: /nosotros
+Allow: /galeria
+Allow: /contacto
+Allow: /politicas
+Allow: /preguntasfrecuentes
+Sitemap: https://www.hostalsanjorgecafayate.netlify.app/sitemap.xml
