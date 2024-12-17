@@ -12,11 +12,12 @@ const Navbar = () => {
         <div className="vsm:w-full lg:max-w-screen-xl flex flex-wrap lg:flex-col lg:justify-center items-center justify-between mx-auto p-2 xl:p-8">
           <Link
             to={"/"}
-            className="flex flex-col lg:items-center xl:hidden space-x-3 rtl:space-x-reverse px-2 lg:px-5"
+            className="flex flex-col lg:items-center xl:hidden rtl:space-x-reverse px-2 lg:px-5"
           >
             <span className="self-center text-xl font-bold logo whitespace-nowrap dark:text-white text-[#3361c4]" >
               Hostal San Jorge
             </span>
+            <small className="text-sm text-gray-600">Cafayate, Salta</small>
           </Link>
           <button
             data-collapse-toggle="navbar-hamburger"
@@ -36,9 +37,6 @@ const Navbar = () => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
                 d="M1 1h15M1 7h15M1 13h15"
               />
             </svg>

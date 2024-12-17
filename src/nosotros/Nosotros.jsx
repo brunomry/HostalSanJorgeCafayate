@@ -23,7 +23,7 @@ const Nosotros = () => {
             </p>
           </div>
           <div>
-            <h2 className="text-[20px] md:text-[25px] mb-2 text-justify md:text-start">
+            <h2 className="text-[25px] mb-2 text-justify md:text-start">
               Nuestra historia
             </h2>
             <p className="text-gray-600 text-justify text-[1rem] lg:text-start">

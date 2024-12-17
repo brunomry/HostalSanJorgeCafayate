@@ -20,7 +20,10 @@ function Home() {
       <NosotrosHome></NosotrosHome>
       <HabitacionesHome></HabitacionesHome>
       <section className="px-4 py-24 w-[100%] xl:px-10 flex flex-col gap-5 md:gap-10  xl:py-32">
-        <h2 className="text-[20px] md:text-[25px] lg:text-[35px] font-bold text-center text-[#3361c4]">Preguntas frecuentes</h2>
+        <h2 className="text-[25px] lg:text-[35px] font-bold md:text-center text-[#3361c4]">Preguntas frecuentes</h2>
+        <p className="mb-3 text-gray-600 text-center ">
+            Consulta las preguntas más frecuentes de nuestros huéspedes
+          </p>
         <div
           id="accordion-collapse"
           data-accordion="collapse"

@@ -16,7 +16,7 @@ function Habitaciones() {
       <Head head={headData.habitaciones}></Head>
       <main className="py-24 px-4 lg:px-24 xl:px-10 lg:py-40 w-[100%]">
         <section className="mb-8 xl:mb-14">
-          <h1 className="text-[32px] md:text-[35px] lg:text-[45px] lg:text-start font-bold md:mb-3 text-[#3361c4]">
+          <h1 className="text-[32px] md:text-[35px] lg:text-[45px] lg:text-start font-bold mb-3 text-[#3361c4]">
             Nuestras habitaciones
           </h1>
           <p className=" text-gray-600 text-justify text-[1rem] lg:text-start">

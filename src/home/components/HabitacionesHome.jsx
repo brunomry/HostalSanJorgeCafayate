@@ -42,7 +42,7 @@ function HabitacionesHome() {
         </div>
         <div className="w-[100%] xl:w-[50%] 2xl:w-[40%] object-cover flex flex-col xl:order-1 gap-2 2xl:gap-10">
           <div>
-            <h2 className="text-[20px] md:text-[25px] lg:text-[35px] font-bold text-[#3361c4]">
+            <h2 className="text-[25px] lg:text-[35px] font-bold text-[#3361c4]">
               Nuestras Habitaciones
             </h2>
             <p className="xl:text-[16px] font-normal text-[#363636] mb-0">

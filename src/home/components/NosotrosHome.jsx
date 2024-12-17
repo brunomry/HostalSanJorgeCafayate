@@ -8,7 +8,7 @@ function NosotrosHome() {
       <div className="bg-slate-700 w-[100%] min-h-[200px] text-[#fff] flex md:flex-col lg:flex-row lg:justify-center px-4 md:px-20 md:gap-10 gap-24 py-10 md:py-20">
         <div className="w-[100%] lg:w-[40%] flex flex-col gap-5 xl:gap-16 lg:px-0 2xl:p-20">
           <div>
-            <h2 className="text-[20px] md:text-[25px] lg:text-[35px] font-bold">Sobre Nosotros</h2>
+            <h2 className="text-[25px] lg:text-[35px] font-bold">Sobre Nosotros</h2>
             <p className="xl:text-[16px] text-justify font-normal text-gray-300">
               Con más de 15 años brindando alojamiento a nuestros huéspedes, en
               Hostal San Jorge le ofrecemos un lugar cómodo, tranquilo e ideal

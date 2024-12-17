@@ -10,10 +10,10 @@ const Faqs = () => {
       <Head head={headData.preguntas}></Head>
       <main className="px-4 py-24 w-[100%] xl:px-10 flex flex-col gap-5 md:gap-10  lg:py-36">
         <div>
-          <h1 className="text-center text-[32px] md:text-[35px] lg:text-[45px] font-bold text-[#3361c4]">
+          <h1 className="md:text-center text-[32px] md:text-[35px] lg:text-[45px] font-bold text-[#3361c4]">
             Preguntas frecuentes
           </h1>
-          <p className="mb-3 text-gray-600 text-center ">
+          <p className="mb-3 text-gray-600 md:text-center mt-5">
             Consulta las preguntas más frecuentes de nuestros huéspedes
           </p>
         </div>

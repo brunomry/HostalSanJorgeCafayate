@@ -26,10 +26,9 @@ const DetalleHabitacion = () => {
     return <p>Cargando...</p>;
   }
 
-  const url = window.location.href;
-  const consulta = `Consulta de ${habitacion.nombre} \n\n${url}`;
-
   const consultaWhatsApp = () => {
+    const url = window.location.href;
+    const consulta = `Consulta de ${habitacion.nombre} \n\n${url}`;
     consultaPorWhatsApp(consulta);
   };
 
@@ -79,7 +78,7 @@ const DetalleHabitacion = () => {
           canonical: `habitacion/${habitacion.id}`
         }}
       ></Head>
-      <main className="vsm:px-4 xl:px-20 my-14 vsm:py-10 md:py-20 vsm:w-[100%] flex flex-col gap-8 text-justify">
+      <main className="vsm:px-4 xl:px-20 my-8 vsm:py-10 md:py-20 vsm:w-[100%] flex flex-col gap-8 text-justify">
         <BreadcrumbDetalle habitacion={habitacion}></BreadcrumbDetalle>
         <FiltrosDetalle></FiltrosDetalle>
         <div className="flex flex-col flex-wrap vsm:gap-3 md:flex-row md:gap-10 vsm:w-[100%]">
@@ -88,7 +87,7 @@ const DetalleHabitacion = () => {
               habitacion={habitacion}
             ></CarruselDetalleHabitacion>
           </article>
-          <article className="vsm:w-[100%] lg:w-[45%] md:mt-28 lg:mt-0">
+          <article className="vsm:w-[100%] lg:w-[45%] lg:mt-0">
             <div className="flex flex-col vsm:gap-2">
               <h1 className="vsm:text-[24px] mb-0 font-bold">
                 {habitacion.nombre}
@@ -96,7 +95,7 @@ const DetalleHabitacion = () => {
               <h2 className="text-[30px] text-[#3361c4] font-bold">$ {habitacion.precio}</h2>
               <p className="text-gray-600">{habitacion.descripcion_breve}.</p>
               <p className="text-gray-600">
-                <span className="">
+                <span>
                   Capacidad máxima para {habitacion.capacidad}{" "}
                   {habitacion.capacidad > 1 ? "personas" : "persona"}.
                 </span>
@@ -128,7 +127,7 @@ const DetalleHabitacion = () => {
               </div>
             </div>
           </article>
-          <article className="vsm:w-[100%] lg:w-[50%] flex flex-col gap-2 xl:mt-10 2xl:mt-28">
+          <article className="vsm:w-[100%] lg:w-[50%] flex flex-col gap-2">
             <h3 className="vsm:text-[20px] md:text-[25px] border-b md:mb-4">
               Más información
             </h3>

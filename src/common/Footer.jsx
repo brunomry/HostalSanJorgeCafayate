@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="md:flex md:flex-col lg:flex-row md:justify-between gap-8 w-[100%]">
           <article className="mb-6 md:mb-0">
             <div className="flex flex-col gap-10 lg:gap-20 lg:items-center">
-              <Link className="flex flex-col gap-2" to={"/"} title="clic para ir a la página principal">
+              <Link className="flex flex-col" to={"/"} title="clic para ir a la página principal">
                 <span className="text-2xl text-[#3361c4] logo font-bold whitespace-nowrap dark:text-white">
                   Hostal San Jorge
                 </span>
