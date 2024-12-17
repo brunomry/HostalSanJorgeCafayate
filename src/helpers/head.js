@@ -3,7 +3,7 @@ const head = {
         description: "Bienvenido a Hostal San Jorge. Nos encontramos ubicados a 2 cuadras de la Plaza Principal de Cafayate, en la provincia de Salta, noroeste argentino.",
         keywords: "hostal san jorge, hostal san jorge cafayate, san jorge, san jorge cafayate, alojamiento, Cafayate, Salta",
         robots: "index, follow",
-        canonical: "/",
+        canonical: "",
         title: "Home | Hostal San Jorge - Alojamiento en Cafayate, Salta",
     },
     habitaciones: {

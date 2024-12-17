@@ -132,6 +132,7 @@ const Footer = () => {
             © 2024{" "}
             <a
               href="https://tinyurl.com/2xpevaq2"
+              title="Hostal San Jorge en Google"
               className="hover:underline"
               target="_blank"
               rel="noopener"

@@ -75,7 +75,8 @@ const DetalleHabitacion = () => {
           robots: "index, follow",
           description: `Conoce nuestra ${habitacion.nombre}. Mira las imágenes y comodidades en detalle de esta habitación en Hostal San Jorge. ¡No dudes en contactarnos!`,
           keywords: `hostal san jorge ${habitacion.nombre}, san jorge ${habitacion.nombre}, san jorge cafayate ${habitacion.nombre}`,
-          canonical: `habitacion/${habitacion.id}`
+          canonical: `habitacion/${habitacion.id}`,
+          img: `${habitacion.imagenes[0]}`
         }}
       ></Head>
       <main className="vsm:px-4 xl:px-20 my-8 vsm:py-10 md:py-20 vsm:w-[100%] flex flex-col gap-8 text-justify">
