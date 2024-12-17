@@ -20,7 +20,7 @@ function Home() {
       <NosotrosHome></NosotrosHome>
       <HabitacionesHome></HabitacionesHome>
       <section className="px-4 py-24 w-[100%] xl:px-10 flex flex-col gap-5 md:gap-10  xl:py-32">
-        <h2 className="text-[20px] lg:text-[25px] text-center">Preguntas frecuentes</h2>
+        <h2 className="text-[20px] md:text-[25px] lg:text-[35px] font-bold text-center text-[#3361c4]">Preguntas frecuentes</h2>
         <div
           id="accordion-collapse"
           data-accordion="collapse"
@@ -35,7 +35,7 @@ function Home() {
         <div className="w-[100%] flex justify-center items-center">
           <Link
             to={"/preguntasfrecuentes"}
-            className="bg-slate-500 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 lg:px-8 2xl:w-[10%] xl:text-[16px]"
+            className="bg-emerald-500 hover:bg-emerald-600 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 lg:px-8 2xl:w-[10%] xl:text-[16px]"
             title="ver más preguntas"
           >
             <span className="text-[#fff]">VER MÁS</span>{" "}

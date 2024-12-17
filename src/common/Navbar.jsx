@@ -14,10 +14,9 @@ const Navbar = () => {
             to={"/"}
             className="flex flex-col lg:items-center xl:hidden space-x-3 rtl:space-x-reverse px-2 lg:px-5"
           >
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+            <span className="self-center text-xl font-bold logo whitespace-nowrap dark:text-white text-[#3361c4]" >
               Hostal San Jorge
             </span>
-            <small className="text-gray-600 ml-[0px]">Cafayate - Salta</small>
           </Link>
           <button
             data-collapse-toggle="navbar-hamburger"
@@ -82,14 +81,14 @@ const Navbar = () => {
               </li>
               <Link
                 to={"/"}
-                className="hidden xl:flex flex-col items-center space-x-3 rtl:space-x-reverse px-5"
+                className="hidden xl:flex flex-col items-center rtl:space-x-reverse px-5"
                 onClick={() => setDesplegado(false)}
                 title="clic para ir a página principal"
               >
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
+                <span className="self-center text-2xl text-[#3361c4] logo font-bold whitespace-nowrap dark:text-white">
                   Hostal San Jorge
                 </span>
-                <small className="text-gray-600 ml-0">Cafayate - Salta</small>
+                <p className="text-gray-600 text-[14px]">Cafayate - Salta</p>
               </Link>
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
                 <Link
@@ -112,17 +111,17 @@ const Navbar = () => {
               <li className="flex">
                 <button
                   className="py-2 px-2 flex gap-1 items-center cursor-pointer text-gray-600 hover:text-[#000]"
-                  title="cambiar a español"
+                  title="idioma español"
                 >
                   <span>Es</span>
-                  <img src={es} className="w-[25px] h-[18px] object-cover" />
+                  <img src={es} className="w-[25px] h-[18px] object-cover" title="idioma español" alt="bandera de Argentina"/>
                 </button>
                 <button
                   className="py-2 px-2 flex gap-1 items-center cursor-pointer text-gray-600 hover:text-[#000]"
-                  title="cambiar a inglés"
+                  title="idioma inglés"
                 >
                   <span>En</span>
-                  <img src={en} className="w-[25px] h-[18px] object-cover" />
+                  <img src={en} className="w-[25px] h-[18px] object-cover" title="idioma inglés" alt="bandera de Reino Unido"/>
                 </button>
               </li>
             </ul>

@@ -1,9 +1,6 @@
 import { Helmet } from "react-helmet";
 
 function Head({head}) {
-
-console.log(head)
-
   return (
     <Helmet>
       <meta

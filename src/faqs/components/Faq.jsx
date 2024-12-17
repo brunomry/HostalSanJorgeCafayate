@@ -16,7 +16,7 @@ function Faq({ faq }) {
         aria-controls={`${faq.id}`}
         onClick={() => (visible ? setVisible(false) : setVisible(true))}
       >
-        <h2 className="xl:text-[18px] text-start">{faq.question}</h2>
+        <p className="xl:text-[18px] text-start">{faq.question}</p>
         {visible ? (
           <FaMinus />
         ) : (

@@ -65,7 +65,7 @@ const FormContacto = () => {
               ></textarea>
             </div>
             <div className="flex justify-center w-[100%]">
-              <button className="bg-teal-400 hover:bg-teal-600 text-white p-3 vsm:w-[100%] md:w-[35%]" title="clic para confirmar envío">
+              <button className="bg-emerald-500 lg:hover:bg-emerald-600 text-white p-3 vsm:w-[100%] md:w-[35%]">
                 ENVIAR
               </button>
             </div>

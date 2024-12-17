@@ -1,27 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    font-family: 'Questrial';
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  font-family: "Questrial", "Sora";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
 .btnWppFixed {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    font-size: 60px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+  font-family: "Sora";
 }
 
 a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
 }

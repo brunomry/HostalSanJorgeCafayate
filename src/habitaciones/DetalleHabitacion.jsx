@@ -72,9 +72,9 @@ const DetalleHabitacion = () => {
       </Helmet> */}
       <Head
         head={{
-          title: habitacion.nombre,
+          title: `${habitacion.nombre} | Hostal San Jorge - Alojamiento`,
           robots: "index, follow",
-          description: `Conoce nuestra ${habitacion.nombre}. ${habitacion.descripcion_breve}`,
+          description: `Conoce nuestra ${habitacion.nombre}. Mira las imágenes y comodidades en detalle de esta habitación en Hostal San Jorge. ¡No dudes en contactarnos!`,
           keywords: `hostal san jorge ${habitacion.nombre}, san jorge ${habitacion.nombre}, san jorge cafayate ${habitacion.nombre}`,
           canonical: `habitacion/${habitacion.id}`
         }}
@@ -90,10 +90,10 @@ const DetalleHabitacion = () => {
           </article>
           <article className="vsm:w-[100%] lg:w-[45%] md:mt-28 lg:mt-0">
             <div className="flex flex-col vsm:gap-2">
-              <h1 className="vsm:text-[24px] mb-0 font-semibold ">
+              <h1 className="vsm:text-[24px] mb-0 font-bold">
                 {habitacion.nombre}
               </h1>
-              <p className="text-[30px]">$ {habitacion.precio}</p>
+              <h2 className="text-[30px] text-[#3361c4] font-bold">$ {habitacion.precio}</h2>
               <p className="text-gray-600">{habitacion.descripcion_breve}.</p>
               <p className="text-gray-600">
                 <span className="">
@@ -129,9 +129,9 @@ const DetalleHabitacion = () => {
             </div>
           </article>
           <article className="vsm:w-[100%] lg:w-[50%] flex flex-col gap-2 xl:mt-10 2xl:mt-28">
-            <h2 className="vsm:text-[20px] md:text-[25px] border-b md:mb-4">
+            <h3 className="vsm:text-[20px] md:text-[25px] border-b md:mb-4">
               Más información
-            </h2>
+            </h3>
             <p className="text-gray-600">{habitacion.descripcion_amplia}</p>
             <ul className="list-disc ms-5">
               <li className="text-gray-600">
@@ -149,9 +149,9 @@ const DetalleHabitacion = () => {
             </ul>
           </article>
           <article className="vsm:w-[100%] lg:w-[50%] flex flex-col gap-2">
-            <h2 className="text-[20px] md:text-[25px] border-b md:mb-4">
+            <h3 className="text-[20px] md:text-[25px] border-b md:mb-4">
               Medios de pago
-            </h2>
+            </h3>
             <p className="text-gray-600">
               Además de efectivo, aceptamos transferencias bancarias y también
               puedes abonar a través de link de mercadopago proporcionado por

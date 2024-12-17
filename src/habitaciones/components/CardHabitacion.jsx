@@ -20,7 +20,7 @@ function CardHabitacion({ habitacion }) {
 
   return (
     <article
-      className="border h-[550px] md:h-[100%] md:min-h-[400px] min-w-[85%] md:w-[100%] lg:cursor-pointer lg:hover:shadow-xl"
+      className="border lg:hover:border-[#90b1fa] h-[550px] md:h-[100%] md:min-h-[400px] min-w-[85%] md:w-[100%] lg:cursor-pointer "
       onClick={(e) => verDetalle(e)}
       title="clic para ver más información"
     >
@@ -31,9 +31,9 @@ function CardHabitacion({ habitacion }) {
         className="h-[300px] xl:h-[350px] 2xl:h-[400px] w-full object-cover"
       />
       <div className="vsm:p-2 mb:p-4 md:p-8">
-        <p className="text-[20px] font-normal">{habitacion.nombre}</p>
-        <h3 className="text-[30px]">$ {habitacion.precio}</h3>
-        <p className="text-gray-600 overflow-hidden text-ellipsis whitespace-nowrap">
+        <p className="text-[20px] font-bold">{habitacion.nombre}</p>
+        <h3 className="text-[30px] text-[#3361c4] font-bold">$ {habitacion.precio}</h3>
+        <p className="text-gray-500 overflow-hidden text-ellipsis whitespace-nowrap">
           {habitacion.descripcion_breve}
         </p>
         <div className="flex flex-col gap-2 items-center w-[100%] mt-4 md:mt-8">

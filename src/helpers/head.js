@@ -15,14 +15,14 @@ const head = {
     },
     nosotros: {
         description: "Bienvenido a Hostal San Jorge. Nos encontramos ubicados a 2 cuadras de la Plaza Principal de Cafayate, en la provincia de Salta, noroeste argentino.",
-        keywords: "hostal san jorge, hostal san jorge cafayate, san jorge, san jorge cafayate, alojamiento, Cafayate, Salta, habitaciones, desayuno, comodidades, redes sociales, Wi-Fi, baño privado, ropa de cama, toallas, preguntas frecuentes, cómo llegar, galería",
+        keywords: "hostal san jorge nosotros, hostal san jorge cafayate nosotros, san jorge nosotros, san jorge cafayate nosotros, hostal san jorge cafayate",
         robots: "index, follow",
         canonical: "nosotros",
         title: "Nosotros | Hostal San Jorge - Alojamiento en Cafayate, Salta",
     },
     galeria: {
-        description: "¡Conoce nuestras instalaciones y habitaciones a través de nuestra galería de imágenes en Hostal San Jorge, Cafayate!",
-        keywords: "hostal san jorge galeria, hostal san jorge cafayate, san jorge cafayate galeria, galería, habitaciones, instalaciones",
+        description: "Conoce nuestras instalaciones y habitaciones a través de nuestra galería de imágenes en Hostal San Jorge y no dudes en elegirnos.",
+        keywords: "hostal san jorge galeria, hostal san jorge cafayate, san jorge cafayate galeria, galería hostal san jorge",
         robots: "index, follow",
         canonical: "galeria",
         title: "Galería | Hostal San Jorge - Alojamiento en Cafayate, Salta",
@@ -42,7 +42,7 @@ const head = {
         title: "Políticas | Hostal San Jorge - Alojamiento en Cafayate, Salta",
     },
     preguntas: {
-        description: "Bienvenido a Hostal San Jorge. Consulta las preguntas más frecuentes de nuestros huéspedes. Puedes contactarnos por cualquier consulta.",
+        description: "Bienvenido a Hostal San Jorge. Consulta las preguntas más frecuentes de nuestros huéspedes y descubre nuestras comodidades, servicios y cómo realizar tu reserva.",
         keywords: "hostal san jorge preguntas frecuentes, hostal san jorge cafayate preguntas frecuentes",
         robots: "index, no follow",
         canonical: "preguntasfrecuentes",

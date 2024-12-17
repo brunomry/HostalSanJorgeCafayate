@@ -10,7 +10,7 @@ const Nosotros = () => {
       <main className="w-[100%] relative px-8 py-20 md:p-20 lg:py-40 flex flex-col items-center gap-10 justify-center">
         <section className="xl:w-[70%] flex flex-col gap-5  ">
           <div>
-            <h1 className="text-[28px] lg:text-[32px] lg:text-start xl:text-[40px] md:mb-3 font-bold">
+            <h1 className="text-[32px] md:text-[35px] lg:text-[45px] lg:text-start mb-5 font-bold text-[#3361c4]">
               Sobre Nosotros
             </h1>
             <p className="text-gray-600 text-justify text-[1rem] lg:text-start">
@@ -51,9 +51,9 @@ const Nosotros = () => {
           </figure>
           <article className="w-[100%] flex flex-col gap-3">
             <div className="flex flex-col gap-2">
-              <h2 className="text-[20px] md:text-[25px] text-justify md:text-start">
+              <h3 className="text-[20px] text-justify md:text-start">
                 Misión
-              </h2>
+              </h3>
               <p className="text-gray-600 text-justify text-[1rem] lg:text-start">
                 Nuestra misión es ofrecer a nuestros huéspedes un lugar cómodo,
                 tranquilo e ideal para descansar, comprometidos a brindar una
@@ -62,9 +62,9 @@ const Nosotros = () => {
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <h2 className="text-[20px] md:text-[25px] text-justify md:text-start">
+              <h3 className="text-[20px] text-justify md:text-start">
                 Visión
-              </h2>
+              </h3>
               <p className="text-gray-600 text-justify text-[1rem] lg:text-start">
                 Nuestra visión es ser un hostal de referencia en la ciudad,
                 reconocido por nuestra hospitalidad, siendo un lugar donde cada
@@ -73,9 +73,9 @@ const Nosotros = () => {
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <h2 className="text-[20px] md:text-[25px] text-justify md:text-start">
+              <h3 className="text-[20px] text-justify md:text-start">
                 Valores
-              </h2>
+              </h3>
               <ul className="md:list-disc md:ms-8 text-justify md:text-start">
                 <li className="text-gray-600 text-justify text-[1rem] lg:text-start">
                   Hospitalidad: Nos enorgullecemos de hacer sentir a nuestros

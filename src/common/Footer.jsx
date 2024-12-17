@@ -12,10 +12,10 @@ const Footer = () => {
           <article className="mb-6 md:mb-0">
             <div className="flex flex-col gap-10 lg:gap-20 lg:items-center">
               <Link className="flex flex-col gap-2" to={"/"} title="clic para ir a la página principal">
-                <span className="text-2xl font-semibold whitespace-nowrap dark:text-white">
+                <span className="text-2xl text-[#3361c4] logo font-bold whitespace-nowrap dark:text-white">
                   Hostal San Jorge
                 </span>
-                <small className="text-sm">Cafayate, Salta</small>
+                <small className="text-sm text-gray-600">Cafayate, Salta</small>
               </Link>
               <div>
                 <p className="mb-3">Síguenos en nuestras redes</p>

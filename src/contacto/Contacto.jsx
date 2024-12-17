@@ -21,16 +21,16 @@ const Contacto = () => {
           ></iframe>
         </section>
         <section className="vsm:mt-5 md:mt-10 vsm:w-[100%] xl:w-[45%]">
-          <h2 className="mb-3 vsm:text-[20px] md:text-[25px] font-bold">
+          <h1 className="mb-3 text-[32px] md:text-[35px] lg:text-[45px] font-bold text-[#3361c4]">
             Contáctanos
-          </h2>
+          </h1>
           <p className="mb-3 text-gray-600">
             Nos encontramos ubicados a 2 cuadras de la plaza principal de
             Cafayate.
           </p>
           <div className="flex flex-col gap-5">
             <div className="border-y py-5">
-              <p className="md:text-[18px] mb-2">Dirección</p>
+              <h2 className="md:text-[18px] mb-2">Dirección</h2>
               <div className="flex gap-2 items-center" title="Dirección: Calixto Mamaní 105, Cafayate, Salta, Argentina">
                 <FaMapMarkerAlt className="text-[20px] text-teal-500" />
                 <p className="text-gray-600">
@@ -39,21 +39,21 @@ const Contacto = () => {
               </div>
             </div>
             <div className="border-b pb-5" title="WhatsApp: +54 387 6843082">
-              <p className="md:text-[18px] mb-2">WhatsApp</p>
+              <h2 className="md:text-[18px] mb-2">WhatsApp</h2>
               <div className="flex gap-2 items-center">
                 <IoLogoWhatsapp className="text-[20px] text-teal-500" />
                 <p className="text-gray-600">+54 387 6843082</p>
               </div>
             </div>
             <div className="border-b pb-5" title="Teléfono fijo: +54 3868 422388">
-              <p className="md:text-[18px] mb-2">Teléfono fijo</p>
+              <h2 className="md:text-[18px] mb-2">Teléfono fijo</h2>
               <div className="flex gap-2 items-center">
                 <FaPhone className="text-[20px] text-teal-500" />
                 <p className="text-gray-600">+54 03868 422388</p>
               </div>
             </div>
             <div className="border-b pb-5 md:border-0 md:pb-0" title="Email: hostalsanjorgecafayate@gmail.com">
-              <p className="md:text-[18px] mb-2">Email</p>
+              <h2 className="md:text-[18px] mb-2">Email</h2>
               <div className="flex gap-2 items-center">
                 <MdEmail className="text-[20px] text-teal-500" />
                 <p className="text-gray-600">
@@ -64,9 +64,9 @@ const Contacto = () => {
           </div>
         </section>
         <section className="d-flex flex-column align-items-center mt-5 w-[100%] order-2">
-          <h2 className="text-center py-3  vsm:text-[20px] md:text-[25px]">
+          <h3 className="text-center py-3  vsm:text-[20px] md:text-[25px]">
             Déjanos tu consulta
-          </h2>
+          </h3>
           <FormContacto></FormContacto>
         </section>
       </main>

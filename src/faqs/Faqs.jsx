@@ -1,17 +1,22 @@
 import Faq from "./components/Faq";
 import BtnWhatsApp from "../common/BtnWhatsApp";
 import Head from "../seo/Head";
-import preguntas from "../helpers/faqs.js"
+import preguntas from "../helpers/faqs.js";
 import headData from "../helpers/head.js";
 
 const Faqs = () => {
   return (
     <>
       <Head head={headData.preguntas}></Head>
-      <main className="px-4 py-24 w-[100%] xl:px-10 flex flex-col gap-5 md:gap-10  xl:py-32">
-        <h1 className="text-center text-[28px] lg:text-[32px] xl:text-[40px]">
-          Preguntas frecuentes
-        </h1>
+      <main className="px-4 py-24 w-[100%] xl:px-10 flex flex-col gap-5 md:gap-10  lg:py-36">
+        <div>
+          <h1 className="text-center text-[32px] md:text-[35px] lg:text-[45px] font-bold text-[#3361c4]">
+            Preguntas frecuentes
+          </h1>
+          <p className="mb-3 text-gray-600 text-center ">
+            Consulta las preguntas más frecuentes de nuestros huéspedes
+          </p>
+        </div>
         <section
           id="accordion-collapse"
           data-accordion="collapse"

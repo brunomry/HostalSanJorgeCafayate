@@ -11,10 +11,10 @@ const Galeria = () => {
       <Head head={headData.galeria}></Head>
       <main className="py-24 lg:py-40 md:px-20 lg:px-24 px-4">
         <section className="text-center ">
-          <h2 className="text-center text-[28px] lg:text-[32px] lg:text-start xl:text-[40px] md:mb-3">
-            Galería de imágenes
-          </h2>
-          <p className="text-gray-600 lg:text-start">
+          <h1 className="text-[32px] md:text-[35px] lg:text-[45px] text-start font-bold md:mb-3 text-[#3361c4]">
+            Galería
+          </h1>
+          <p className="text-gray-600 text-start pb-5">
             Conoce nuestras instalaciones y habitaciones a través de nuestra
             galería.
           </p>

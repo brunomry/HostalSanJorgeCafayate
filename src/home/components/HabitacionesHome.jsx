@@ -42,7 +42,7 @@ function HabitacionesHome() {
         </div>
         <div className="w-[100%] xl:w-[50%] 2xl:w-[40%] object-cover flex flex-col xl:order-1 gap-2 2xl:gap-10">
           <div>
-            <h2 className="text-[20px] lg:text-[25px]">
+            <h2 className="text-[20px] md:text-[25px] lg:text-[35px] font-bold text-[#3361c4]">
               Nuestras Habitaciones
             </h2>
             <p className="xl:text-[16px] font-normal text-[#363636] mb-0">
@@ -63,7 +63,7 @@ function HabitacionesHome() {
           <div className="w-[100%] flex justify-start xl:justify-start">
             <Link
               to={"/habitaciones"}
-              className="bg-emerald-500 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 xl:w-[45%] xl:text-[16px]"
+              className="bg-emerald-500 lg:hover:bg-emerald-600 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 xl:w-[45%] xl:text-[16px]"
               title="ver habitaciones"
             >
               <span className="text-[#fff]">VER HABITACIONES</span>{" "}
