@@ -12,18 +12,24 @@ import Footer from "./common/Footer";
 import ScrollTop from "./common/ScrollTop";
 import Politicas from "./politicas/Politicas";
 import Nosotros from "./nosotros/Nosotros";
+import { traducciones } from "./helpers/traducciones";
+import { useState } from "react";
 
 const App = () => {
+
+  const [idioma, setIdioma] = useState(localStorage.getItem('idiomaKey') || 'es');
+  const traduccion = traducciones[idioma];
+
   return (
     <>
       <BrowserRouter>
         <ScrollTop></ScrollTop>
-        <Navbar></Navbar>
+        <Navbar setIdioma={setIdioma} traduccion={traduccion}></Navbar>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
           <Route
             path="/habitaciones"
-            element={<Habitaciones></Habitaciones>}
+            element={<Habitaciones traduccion={traduccion}></Habitaciones>}
           ></Route>
           <Route
             path="/habitacion/:id"
@@ -31,7 +37,7 @@ const App = () => {
           ></Route>
           <Route path="/galeria" element={<Galeria></Galeria>}></Route>
           <Route path="/preguntasfrecuentes" element={<Faqs></Faqs>}></Route>
-          <Route path="/contacto" element={<Contacto></Contacto>}></Route>
+          <Route path="/contacto" element={<Contacto traduccion={traduccion}></Contacto>}></Route>
           <Route path="/politicas" element={<Politicas></Politicas>}></Route>
           <Route path="/nosotros" element={<Nosotros></Nosotros>}></Route>
         </Routes>

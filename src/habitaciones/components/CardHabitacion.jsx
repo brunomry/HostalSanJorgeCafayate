@@ -2,8 +2,9 @@ import { ImWhatsapp } from "react-icons/im";
 import { MdArrowForwardIos } from "react-icons/md";
 import { Link, useNavigate } from "react-router-dom";
 import { consultaPorWhatsApp } from "../../helpers/whatsApp";
+import { useEffect, useState } from "react";
 
-function CardHabitacion({ habitacion }) {
+function CardHabitacion({ habitacion, traduccion }) {
   const url = window.location.origin + "/habitacion/" + habitacion.id;
   const consulta = `Consulta de ${habitacion.nombre} \n\n${url}`;
 
@@ -31,8 +32,8 @@ function CardHabitacion({ habitacion }) {
         className="h-[300px] xl:h-[350px] 2xl:h-[400px] w-full object-cover"
       />
       <div className="vsm:p-2 mb:p-4 md:p-8">
-        <p className="text-[20px] font-bold">{habitacion.nombre}</p>
-        <h3 className="text-[30px] text-[#3361c4] font-bold">$ {habitacion.precio}</h3>
+        <p className="text-[20px] font-bold">{traduccion.habitaciones[habitacion.tipo]?.nombre}</p>
+        <h3 className="text-[30px] text-[#3361c4] font-bold">$ {traduccion.habitaciones[habitacion.tipo]?.precio}</h3>
         <p className="text-gray-500 overflow-hidden text-ellipsis whitespace-nowrap">
           {habitacion.descripcion_breve}
         </p>

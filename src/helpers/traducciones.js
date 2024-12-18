@@ -2,16 +2,22 @@ export const traducciones={
     "es": {
       "rooms": "Habitaciones",
       "gallery": "Galería",
-      "howToGet": "Cómo Llegar",
+      "contact": "Contáctanos",
+      "aboutUs": "Sobre Nosotros",
       "faqs": "Preguntas Frecuentes",
       "language": "Idioma",
+      "habitaciones": {
+        "Individual": {
+          "nombre": "Habitación Individual",
+          "precio": "15.000",
+          "descripcion_breve": "Habitación simple de 4 m2 con cama individual",
+          "descripcion_amplia": "Esta acogedora habitación de 4 metros cuadrados con cama individual incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 1 huésped.",
+          "comodidades": ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
+        }
+      },
       "sectionWelcome": {
         "title": "Bienvenido a",
         "description": "Con más de 15 años brindando alojamiento a nuestros huéspedes, en Hostal San Jorge le ofrecemos un lugar cómodo, tranquilo e ideal para descansar. Permítanos ser su hogar lejos de casa y disfrute de una experiencia agradable y memorable mientras explora los encantos de la hermosa ciudad de Cafayate en la provincia de Salta, noroeste argentino."
-      },
-      "sectionService": {
-        "breakfastTitle": "Servicio de Desayuno incluido",
-        "breakfastDescription": "Comience sus mañanas con un rico desayuno para energizar su día. Te esperamos para brindarte nuestro servicio de desayuno, que podrás disfrutar durante tu estadía."
       },
       "sectionOurRooms": {
         "title": "Nuestras Habitaciones",
@@ -80,10 +86,6 @@ export const traducciones={
         "descriptionQuintuple": "Esta amplia y cómoda habitación para 5 personas cuenta con 1 cama matrimonial, 1 cama individual y 1 cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.",
         "share": "Compartir:"
       },
-      "contact": {
-        "title": "Por Consultas o Reservas:",
-        "telephone": "Teléfono"
-      },
       "fullscreen": {
         "btnClose": "Cerrar",
         "btnVolver": "Volver"
@@ -140,16 +142,22 @@ export const traducciones={
     "en": {
       "rooms": "Rooms",
       "gallery": "Gallery",
-      "howToGet": "How To Get Here",
+      "contact": "Contact us",
+      "aboutUs": "About us",
       "faqs": "FAQs",
       "language": "Language",
+      "habitaciones": {
+        "Individual": {
+          "nombre": "Single Individual",
+          "precio": "15.000",
+          "descripcion_breve": "Habitación simple de 4 m2 con cama individual",
+          "descripcion_amplia": "Esta acogedora habitación de 4 metros cuadrados con cama individual incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 1 huésped.",
+          "comodidades": ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
+        }
+      },
       "sectionWelcome": {
         "title": "Welcome to",
         "description": "With over 15 years of providing lodging to our guests, at Hostal San Jorge we offer you a comfortable, quiet, and ideal place to rest. Let us be your home away from home and enjoy a pleasant and memorable experience while you explore the charms of the beautiful city of Cafayate in the province of Salta, northwestern Argentina."
-      },
-      "sectionService": {
-        "breakfastTitle": "Breakfast Service Included",
-        "breakfastDescription": "Start your mornings with a delicious breakfast to energize your day. We look forward to serving you breakfast, which you can enjoy during your stay."
       },
       "sectionOurRooms": {
         "title": "Our Rooms",
@@ -217,10 +225,6 @@ export const traducciones={
         "descriptionTriple": "This room for 3 people features 1 double bed and 1 single bed. It includes amenities such as Wi-Fi, private bathroom, bed linens, towels, toiletries, and ceiling fan.",
         "descriptionQuintuple": "This spacious and comfortable room for 5 people features 1 double bed, 1 single bed, and 1 bunk bed. It includes amenities such as Wi-Fi, private bathroom, bed linens, towels, toiletries, and ceiling fan.",
         "share": "Share:"
-      },
-      "contact": {
-        "title": "For Inquiries or Reservations:",
-        "telephone": "Telephone"
       },
       "fullscreen": {
         "btnClose": "Close",

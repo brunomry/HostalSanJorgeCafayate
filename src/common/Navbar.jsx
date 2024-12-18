@@ -3,8 +3,13 @@ import es from "../assets/IMG/argentina.webp";
 import en from "../assets/IMG/ingles.webp";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({setIdioma, traduccion}) => {
   const [desplegado, setDesplegado] = useState(false);
+
+ const cambiarIdioma = (nuevoIdioma) => {
+      setIdioma(nuevoIdioma);
+      localStorage.setItem('idiomaKey', nuevoIdioma);
+  };
 
   return (
     <header>
@@ -65,7 +70,7 @@ const Navbar = () => {
                   aria-current="page"
                   onClick={() => setDesplegado(false)}
                 >
-                  Habitaciones
+                  {traduccion.rooms}
                 </Link>
               </li>
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
@@ -74,7 +79,7 @@ const Navbar = () => {
                   className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#0692a2] text-gray-600 hover:text-[#000]"
                   onClick={() => setDesplegado(false)}
                 >
-                  Nosotros
+                  {traduccion.aboutUs}
                 </Link>
               </li>
               <Link
@@ -94,7 +99,7 @@ const Navbar = () => {
                   className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#0692a2] text-gray-600 hover:text-[#000]"
                   onClick={() => setDesplegado(false)}
                 >
-                  Galería
+                 {traduccion.gallery}
                 </Link>
               </li>
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
@@ -103,13 +108,14 @@ const Navbar = () => {
                   className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#0692a2] text-gray-600 hover:text-[#000]"
                   onClick={() => setDesplegado(false)}
                 >
-                  Contacto
+                  {traduccion.contact}
                 </Link>
               </li>
               <li className="flex">
                 <button
                   className="py-2 px-2 flex gap-1 items-center cursor-pointer text-gray-600 hover:text-[#000]"
                   title="idioma español"
+                  onClick={() => cambiarIdioma('es')}
                 >
                   <span>Es</span>
                   <img src={es} className="w-[25px] h-[18px] object-cover" title="idioma español" alt="bandera de Argentina"/>
@@ -117,6 +123,7 @@ const Navbar = () => {
                 <button
                   className="py-2 px-2 flex gap-1 items-center cursor-pointer text-gray-600 hover:text-[#000]"
                   title="idioma inglés"
+                  onClick={() => cambiarIdioma('en')}
                 >
                   <span>En</span>
                   <img src={en} className="w-[25px] h-[18px] object-cover" title="idioma inglés" alt="bandera de Reino Unido"/>

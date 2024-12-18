@@ -6,7 +6,9 @@ import BtnWhatsApp from "../common/BtnWhatsApp";
 import Head from "../seo/Head";
 import headData from "../helpers/head";
 
-const Contacto = () => {
+const Contacto = ({traduccion}) => {
+
+  console.log(traduccion)
   return (
     <>
       <Head head={headData.contacto}></Head>
@@ -22,7 +24,7 @@ const Contacto = () => {
         </section>
         <section className="vsm:mt-5 md:mt-10 vsm:w-[100%] xl:w-[45%]">
           <h1 className="mb-3 text-[32px] md:text-[35px] lg:text-[45px] font-bold text-[#3361c4]">
-            Contáctanos
+            {traduccion.contact}
           </h1>
           <p className="mb-3 text-gray-600">
             Nos encontramos ubicados a 2 cuadras de la plaza principal de

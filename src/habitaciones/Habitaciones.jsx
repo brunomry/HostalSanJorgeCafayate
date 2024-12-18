@@ -6,7 +6,7 @@ import ListaHabitaciones from "./components/ListaHabitaciones";
 import Head from "../seo/Head";
 import headData from "../helpers/head";
 
-function Habitaciones() {
+function Habitaciones({traduccion}) {
   const [listaHabitaciones, setListaHabitaciones] = useState(habitaciones);
   const [habitacionSeleccionada, setHabitacionSeleccionada] = useState([]);
   const [tipo, setTipo] = useState("");
@@ -38,6 +38,7 @@ function Habitaciones() {
         <ListaHabitaciones
           listaHabitaciones={listaHabitaciones}
           habitacionSeleccionada={habitacionSeleccionada}
+          traduccion={traduccion}
         ></ListaHabitaciones>
       </main>
     </>
