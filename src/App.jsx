@@ -26,22 +26,22 @@ const App = () => {
         <ScrollTop></ScrollTop>
         <Navbar setIdioma={setIdioma} traduccion={traduccion}></Navbar>
         <Routes>
-          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/" element={<Home traduccion={traduccion}></Home>}></Route>
           <Route
             path="/habitaciones"
             element={<Habitaciones traduccion={traduccion}></Habitaciones>}
           ></Route>
           <Route
             path="/habitacion/:id"
-            element={<DetalleHabitacion></DetalleHabitacion>}
+            element={<DetalleHabitacion traduccion={traduccion}></DetalleHabitacion>}
           ></Route>
-          <Route path="/galeria" element={<Galeria></Galeria>}></Route>
-          <Route path="/preguntasfrecuentes" element={<Faqs></Faqs>}></Route>
+          <Route path="/galeria" element={<Galeria traduccion={traduccion}></Galeria>}></Route>
+          <Route path="/preguntasfrecuentes" element={<Faqs traduccion={traduccion}></Faqs>}></Route>
           <Route path="/contacto" element={<Contacto traduccion={traduccion}></Contacto>}></Route>
-          <Route path="/politicas" element={<Politicas></Politicas>}></Route>
-          <Route path="/nosotros" element={<Nosotros></Nosotros>}></Route>
+          <Route path="/politicas" element={<Politicas traduccion={traduccion}></Politicas>}></Route>
+          <Route path="/nosotros" element={<Nosotros traduccion={traduccion}></Nosotros>}></Route>
         </Routes>
-        <Footer></Footer>
+        <Footer traduccion={traduccion}></Footer>
       </BrowserRouter>
     </>
   );

@@ -70,7 +70,7 @@ const Navbar = ({setIdioma, traduccion}) => {
                   aria-current="page"
                   onClick={() => setDesplegado(false)}
                 >
-                  {traduccion.rooms}
+                  {traduccion.navbar.habitaciones}
                 </Link>
               </li>
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
@@ -79,7 +79,7 @@ const Navbar = ({setIdioma, traduccion}) => {
                   className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#0692a2] text-gray-600 hover:text-[#000]"
                   onClick={() => setDesplegado(false)}
                 >
-                  {traduccion.aboutUs}
+                  {traduccion.navbar.nosotros}
                 </Link>
               </li>
               <Link
@@ -99,7 +99,7 @@ const Navbar = ({setIdioma, traduccion}) => {
                   className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#0692a2] text-gray-600 hover:text-[#000]"
                   onClick={() => setDesplegado(false)}
                 >
-                 {traduccion.gallery}
+                 {traduccion.navbar.galeria}
                 </Link>
               </li>
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
@@ -108,7 +108,7 @@ const Navbar = ({setIdioma, traduccion}) => {
                   className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#0692a2] text-gray-600 hover:text-[#000]"
                   onClick={() => setDesplegado(false)}
                 >
-                  {traduccion.contact}
+                  {traduccion.navbar.contacto}
                 </Link>
               </li>
               <li className="flex">
