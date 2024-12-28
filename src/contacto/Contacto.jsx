@@ -31,7 +31,10 @@ const Contacto = () => {
           <div className="flex flex-col gap-5">
             <div className="border-y py-5">
               <h2 className="md:text-[18px] mb-2">Dirección</h2>
-              <div className="flex gap-2 items-center" title="Dirección: Calixto Mamaní 105, Cafayate, Salta, Argentina">
+              <div
+                className="flex gap-2 items-center"
+                title="Dirección: Calixto Mamaní 105, Cafayate, Salta, Argentina"
+              >
                 <FaMapMarkerAlt className="text-[20px] text-teal-500" />
                 <p className="text-gray-600">
                   Calixto Mamaní 105, Cafayate, Salta, Argentina
@@ -45,14 +48,20 @@ const Contacto = () => {
                 <p className="text-gray-600">+54 387 6843082</p>
               </div>
             </div>
-            <div className="border-b pb-5" title="Teléfono fijo: +54 3868 422388">
+            <div
+              className="border-b pb-5"
+              title="Teléfono fijo: +54 3868 422388"
+            >
               <h2 className="md:text-[18px] mb-2">Teléfono fijo</h2>
               <div className="flex gap-2 items-center">
                 <FaPhone className="text-[20px] text-teal-500" />
                 <p className="text-gray-600">+54 03868 422388</p>
               </div>
             </div>
-            <div className="border-b pb-5 md:border-0 md:pb-0" title="Email: hostalsanjorgecafayate@gmail.com">
+            <div
+              className="border-b pb-5 md:border-0 md:pb-0"
+              title="Email: hostalsanjorgecafayate@gmail.com"
+            >
               <h2 className="md:text-[18px] mb-2">Email</h2>
               <div className="flex gap-2 items-center">
                 <MdEmail className="text-[20px] text-teal-500" />
