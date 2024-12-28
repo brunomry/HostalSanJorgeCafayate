@@ -24,8 +24,7 @@ const FormContacto = () => {
 
       Swal.fire({
         position: "center",
-        icon: "success",
-        title: "Tu mensaje fue enviado con éxito.",
+        title: "✅ Tu mensaje fue enviado con éxito.",
         text: "Pronto recibirás una respuesta.",
         showConfirmButton: false,
         timer: 3000,
