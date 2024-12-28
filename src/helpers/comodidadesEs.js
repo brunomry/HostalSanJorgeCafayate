@@ -1,4 +1,4 @@
-export const comodidades = [
+export const comodidadesEs = [
   "Wi-Fi",
   "Desayuno incluido",
   "Aire acondicionado",

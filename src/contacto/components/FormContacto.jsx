@@ -1,4 +1,4 @@
-const FormContacto = () => {
+const FormContacto = ({traduccion}) => {
   return (
     <form className="vsm:w-[100%] max-w-[700px] mx-auto md:border vsm:px-2 vsm:py-3 mb:p-4 md:p-10 flex flex-wrap md:gap-2 lg:gap-7 ">
             <div className="mb-3 w-[100%]">
@@ -6,7 +6,7 @@ const FormContacto = () => {
                 htmlFor="fullname"
                 className="block mb-2  font-medium text-gray-900 dark:text-white"
               >
-                Nombre y Apellido
+                {traduccion.paginaContacto.formulario.nombre}
               </label>
               <input
                 type="text"
@@ -22,8 +22,8 @@ const FormContacto = () => {
                 htmlFor="email"
                 className="block mb-2  font-medium text-gray-900 dark:text-white"
               >
-                Correo electrónico
-              </label>
+                {traduccion.paginaContacto.formulario.email}
+                </label>
               <input
                 type="email"
                 id="email"
@@ -38,8 +38,8 @@ const FormContacto = () => {
                 htmlFor="tel"
                 className="block mb-2  font-medium text-gray-900 dark:text-white"
               >
-                Teléfono
-              </label>
+                {traduccion.paginaContacto.formulario.telefono}
+                </label>
               <input
                 type="text"
                 id="tel"
@@ -54,8 +54,8 @@ const FormContacto = () => {
                 htmlFor="message"
                 className="block mb-2  font-medium text-gray-900 dark:text-white"
               >
-                Mensaje
-              </label>
+                {traduccion.paginaContacto.formulario.mensaje}
+                </label>
               <textarea
                 id="message"
                 rows="4"
@@ -66,7 +66,7 @@ const FormContacto = () => {
             </div>
             <div className="flex justify-center w-[100%]">
               <button className="bg-emerald-500 lg:hover:bg-emerald-600 text-white p-3 vsm:w-[100%] md:w-[35%]">
-                ENVIAR
+              {traduccion.paginaContacto.formulario.btnEnviar}
               </button>
             </div>
           </form>

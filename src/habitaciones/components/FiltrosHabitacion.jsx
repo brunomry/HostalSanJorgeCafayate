@@ -5,6 +5,7 @@ function FiltrosHabitacion({
   setHabitacionSeleccionada,
   setTipo,
   tipo,
+  traduccion
 }) {
   const obtenerHabitacion = (habitacion) => {
     const habitacionBuscada = habitaciones.filter((hab) =>

@@ -9,7 +9,7 @@ import "./styles/detalleHabitacion.css";
 import { consultaPorWhatsApp } from "../helpers/whatsApp";
 import Head from "../seo/Head";
 
-const DetalleHabitacion = () => {
+const DetalleHabitacion = ({traduccion}) => {
   const [habitacion, setHabitacion] = useState(null);
   const { id } = useParams();
 
@@ -34,41 +34,6 @@ const DetalleHabitacion = () => {
 
   return (
     <>
-      {/* <Helmet>
-        <meta
-          name="description"
-          content="Mira ahora mismo las imágenes y comodidades de nuestra habitación doble en Hostal San Jorge, Cafayate. ¡No dudes en contactarnos!"
-        />
-        <meta
-          name="keywords"
-          content="hostal san jorge habitacion doble, hostal san jorge cafayate, san jorge cafayate, detalle de habitación doble, habitación doble, imágenes, comodidades de habitación doble"
-        />
-        <meta name="author" content="Bruno Madozzo Romay" />
-        <meta name="robots" content="index, follow" />
-        <link
-          rel="canonical"
-          href={`https://hostalsanjorgecafayate.netlify.app/src/habitacion/${habitacion.nombre}`}
-        />
-        <link rel="icon" href="../../IMG/favicon.png" />
-        <link rel="apple-touch-icon" href="../../IMG/favicon.png" />
-        <meta
-          property="og:title"
-          content={`${habitacion.nombre} | Hostal San Jorge - Alojamiento`}
-        />
-        <meta
-          property="og:description"
-          content="Mira ahora mismo las imágenes y comodidades de nuestra habitación doble en Hostal San Jorge, Cafayate. ¡No dudes en contactarnos!"
-        />
-        <meta
-          property="og:image"
-          content="https://hostalsanjorgecafayate.netlify.app/src/IMG/Habitaciones/HabitacionDoble/hab6 (1).webp"
-        />
-        <meta
-          property="og:url"
-          content={`https://hostalsanjorgecafayate.netlify.app/src/habitacion/${habitacion.nombre}`}
-        />
-        <title> {habitacion.nombre} | Hostal San Jorge - Alojamiento</title>
-      </Helmet> */}
       <Head
         head={{
           title: `${habitacion.nombre} | Hostal San Jorge - Alojamiento`,
@@ -81,7 +46,7 @@ const DetalleHabitacion = () => {
       ></Head>
       <main className="vsm:px-4 xl:px-20 my-8 vsm:py-10 md:py-20 vsm:w-[100%] flex flex-col gap-8 text-justify">
         <BreadcrumbDetalle habitacion={habitacion}></BreadcrumbDetalle>
-        <FiltrosDetalle></FiltrosDetalle>
+        <FiltrosDetalle traduccion={traduccion}></FiltrosDetalle>
         <div className="flex flex-col flex-wrap vsm:gap-3 md:flex-row md:gap-10 vsm:w-[100%]">
           <article className="w-[100%] lg:w-[50%]">
             <CarruselDetalleHabitacion

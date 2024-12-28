@@ -6,7 +6,7 @@ import ListaHabitaciones from "./components/ListaHabitaciones";
 import Head from "../seo/Head";
 import headData from "../helpers/head";
 
-function Habitaciones({traduccion}) {
+function Habitaciones({ traduccion }) {
   const [listaHabitaciones, setListaHabitaciones] = useState(habitaciones);
   const [habitacionSeleccionada, setHabitacionSeleccionada] = useState([]);
   const [tipo, setTipo] = useState("");
@@ -25,13 +25,14 @@ function Habitaciones({traduccion}) {
         </section>
         <section className="flex flex-col gap-3 ">
           <p className="text-center text-gray-600">
-            Puedes seleccionar la habitación que estés buscando
+            {traduccion.paginaHabitaciones.descripcionFiltro}
           </p>
           <FiltrosHabitacion
             tipo={tipo}
             habitacionSeleccionada={habitacionSeleccionada}
             setHabitacionSeleccionada={setHabitacionSeleccionada}
             setTipo={setTipo}
+            traduccion={traduccion}
           ></FiltrosHabitacion>
         </section>
         <ListaHabitaciones

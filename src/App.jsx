@@ -16,7 +16,6 @@ import { traducciones } from "./helpers/traducciones";
 import { useState } from "react";
 
 const App = () => {
-
   const [idioma, setIdioma] = useState(localStorage.getItem('idiomaKey') || 'es');
   const traduccion = traducciones[idioma];
 

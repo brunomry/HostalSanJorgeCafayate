@@ -7,14 +7,12 @@ import Head from "../seo/Head";
 import headData from "../helpers/head";
 
 const Contacto = ({traduccion}) => {
-
-  console.log(traduccion)
   return (
     <>
       <Head head={headData.contacto}></Head>
       <main className="w-[100%] vsm:py-20 vsm:px-3 mb:px-5 md:px-20 md:py-20 lg:py-32 xl:py-40 flex justify-center flex-wrap vsm:gap-5 md:gap-10">
         <section className="vsm:w-[100%] xl:w-[45%] order-1 xl:order-[0]">
-          <p className=" my-3 text-gray-600">Encuéntranos con Google Maps</p>
+          <p className=" my-3 text-gray-600">{traduccion.paginaContacto.descripcion2}</p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14335.370482057366!2d-65.9733965!3d-26.0713993!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941f316b69bb5591%3A0xbbf0869ad2ae3e8b!2sSan%20Jorge!5e0!3m2!1ses-419!2sar!4v1703898576596!5m2!1ses-419!2sar"
             className="w-[100%] vsm:h-[200px] md:h-[500px]"
@@ -24,7 +22,7 @@ const Contacto = ({traduccion}) => {
         </section>
         <section className="vsm:mt-5 md:mt-10 vsm:w-[100%] xl:w-[45%]">
           <h1 className="mb-3 text-[32px] md:text-[35px] lg:text-[45px] font-bold text-[#3361c4]">
-            {traduccion.contact}
+            {traduccion.paginaContacto.title}
           </h1>
           <p className="mb-3 text-gray-600">
             Nos encontramos ubicados a 2 cuadras de la plaza principal de
@@ -69,10 +67,10 @@ const Contacto = ({traduccion}) => {
           <h3 className="text-center py-3  vsm:text-[20px] md:text-[25px]">
             Déjanos tu consulta
           </h3>
-          <FormContacto></FormContacto>
+          <FormContacto traduccion={traduccion}></FormContacto>
         </section>
       </main>
-      <BtnWhatsApp></BtnWhatsApp>
+      <BtnWhatsApp traduccion={traduccion}></BtnWhatsApp>
     </>
   );
 };

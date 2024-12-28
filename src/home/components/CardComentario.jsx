@@ -1,9 +1,7 @@
 import { RiStarSFill } from "react-icons/ri";
 
 function CardComentario({ comentario }) {
-  const verComentario = (ruta) => {
-    window.open(ruta, "_BLANK");
-  };
+  const verComentario = (ruta) => window.open(ruta, "_BLANK");
 
   return (
     <div

@@ -1,4 +1,4 @@
-const faqs = [
+const faqsEs = [
   {
     id: "faqOne",
     question: "¿A qué hora puedo realizar el Check-In?",
@@ -75,4 +75,4 @@ Si tienes alguna pregunta adicional, estamos disponibles para ayudarte.`,
   },
 ];
 
-export default faqs;
+export default faqsEs;

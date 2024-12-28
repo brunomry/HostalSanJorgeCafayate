@@ -159,16 +159,16 @@ const Footer = ({ traduccion }) => {
             >
               Hostal San Jorge
             </a>
-            . Todos los derechos reservados.
+            . {traduccion.footer.derechos.derechos}
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
             <p className="text-gray-600">
-              Desarrollado por{" "}
+              {traduccion.footer.derechos.autor}
               <Link
                 to={"https://brunomadozzo-portfolio.netlify.app"}
                 target="_blank"
                 rel="noopener"
-                className="text-blue-600 cursor-pointer hover:underline"
+                className="text-blue-600 cursor-pointer hover:underline ms-1"
                 title="clic para visitar perfil de LinkedIn de Bruno Madozzo"
               >
                 Bruno Madozzo

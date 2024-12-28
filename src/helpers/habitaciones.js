@@ -14,7 +14,6 @@ import quintuple from "../assets/IMG/Habitaciones/HabitacionQuintuple/hab4 (1).w
 import quintuple1 from "../assets/IMG/Habitaciones/HabitacionQuintuple/bañoHab4 (1).webp";
 import quintuple2 from "../assets/IMG/Habitaciones/HabitacionQuintuple/bañoHab4 (2).webp";
 
-
 const habitaciones = [
     {
         id: 8,

@@ -1,4 +1,4 @@
-const politicas = [
+const politicasEs = [
     {
       titulo: "Horarios de Check-in y Check-out",
       descripcion:
@@ -64,4 +64,4 @@ const politicas = [
     }
   ];
 
-  export default politicas;
+  export default politicasEs;

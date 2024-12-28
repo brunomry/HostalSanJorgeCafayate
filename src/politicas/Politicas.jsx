@@ -1,20 +1,20 @@
 import BtnWhatsApp from "../common/BtnWhatsApp";
 import headData from "../helpers/head";
-import politicas from "../helpers/politicas";
 import Head from "../seo/Head";
 
-const Politicas = () => {
+const Politicas = ({ traduccion }) => {
+  const politicas = traduccion.paginaPoliticas.politicas;
+
   return (
     <>
       <Head head={headData.politicas}></Head>
       <main className="w-[100%] py-20 lg:py-40 flex justify-center vsm:px-4 md:px-10">
         <section className="vsm:py-10 lg:py-20 bg-gray-100 rounded-[10px] vsm:px-4 mb:px-10 xl:w-[70%] 2xl:w-[60%]">
           <h1 className="mb-3 text-center text-[28px] lg:text-[32px] xl:text-[40px] font-bold">
-            Políticas del Hostal
+            {traduccion.paginaPoliticas.title}
           </h1>
           <p className="text-gray-600 text-justify">
-            A continuación, te presentamos nuestras políticas generales para
-            asegurar una estadía cómoda y segura en el hostal.
+            {traduccion.paginaPoliticas.descripcion}
           </p>
           <ol className="flex flex-col mt-3">
             {politicas.map((politica, index) => (
@@ -36,7 +36,7 @@ const Politicas = () => {
             ))}
           </ol>
         </section>
-        <BtnWhatsApp></BtnWhatsApp>
+        <BtnWhatsApp traduccion={traduccion}></BtnWhatsApp>
       </main>
     </>
   );

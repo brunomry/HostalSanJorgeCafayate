@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import habitaciones from "../../helpers/habitaciones";
 
-const FiltrosDetalle = () => {
+const FiltrosDetalle = ({traduccion}) => {
   const { id } = useParams();
 
   return (

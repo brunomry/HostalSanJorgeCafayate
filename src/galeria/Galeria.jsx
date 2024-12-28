@@ -5,18 +5,17 @@ import "./styles/galeria.css";
 import Head from "../seo/Head";
 import headData from "../helpers/head";
 
-const Galeria = () => {
+const Galeria = ({traduccion}) => {
   return (
     <>
       <Head head={headData.galeria}></Head>
       <main className="py-24 lg:py-40 md:px-20 lg:px-24 px-4">
         <section className="text-center ">
           <h1 className="text-[32px] md:text-[35px] lg:text-[45px] text-start font-bold md:mb-3 text-[#3361c4]">
-            Galería
+            {traduccion.paginaGaleria.title}
           </h1>
           <p className="text-gray-600 text-start pb-5">
-            Conoce nuestras instalaciones y habitaciones a través de nuestra
-            galería.
+            {traduccion.paginaGaleria.descripcion}
           </p>
           <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 flex-wrap justify-center items-center mt-5 gap-2 md:gap-4">
             {galeria.map((img, index) => (
@@ -25,7 +24,7 @@ const Galeria = () => {
           </div>
         </section>
       </main>
-      <BtnWhatsApp></BtnWhatsApp>
+      <BtnWhatsApp traduccion={traduccion}></BtnWhatsApp>
     </>
   );
 };

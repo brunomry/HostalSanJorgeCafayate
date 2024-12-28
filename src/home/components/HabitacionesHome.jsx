@@ -4,9 +4,8 @@ import habitacion7 from "../../assets/IMG/Habitaciones/HabitacionDoble/hd1.jpeg"
 import habitacion4 from "../../assets/IMG/habitacion4.webp";
 import { MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { comodidades } from "../../helpers/comodidades";
 
-function HabitacionesHome() {
+function HabitacionesHome({ traduccion }) {
   return (
     <section className="px-4 pt-8 md:px-20 md:pt-20 3xl:px-24 3xl:pt-24">
       <div className="w-[100%] flex flex-col xl:flex-row gap-5 xl:gap-10 3xl:justify-center">
@@ -43,30 +42,41 @@ function HabitacionesHome() {
         <div className="w-[100%] xl:w-[50%] 2xl:w-[40%] object-cover flex flex-col xl:order-1 gap-2 2xl:gap-10">
           <div>
             <h2 className="text-[25px] lg:text-[35px] font-bold text-[#3361c4]">
-              Nuestras Habitaciones
+              {traduccion.paginaHome.seccionHabitaciones.title}
             </h2>
             <p className="xl:text-[16px] font-normal text-[#363636] mb-0">
-              Ofrecemos habitaciones privadas diseñadas para su comodidad y
-              tranquilidad, que van desde simples hasta quíntuples.
+              {traduccion.paginaHome.seccionHabitaciones.descripcion}
             </p>
           </div>
           <div>
-            <h3 className="lg:text-[20px] mb-3">Comodidades y Servicios:</h3>
+            <h3 className="lg:text-[20px] mb-3">
+              {" "}
+              {traduccion.paginaHome.seccionHabitaciones.subtitulo}
+            </h3>
             <div className="flex flex-wrap gap-1 flex-shrink 2xl:gap-4">
-              {comodidades.map((com, index) => (
-                <span key={index} className="border p-2 md:py-2 md:px-5 text-[#363636]" title={`${com}`}>
-                  {com}
-                </span>
-              ))}
+              {traduccion.paginaHome.seccionHabitaciones.comodidades.map(
+                (com, index) => (
+                  <span
+                    key={index}
+                    className="border p-2 md:py-2 md:px-5 text-[#363636]"
+                    title={`${com}`}
+                  >
+                    {com}
+                  </span>
+                )
+              )}
             </div>
           </div>
           <div className="w-[100%] flex justify-start xl:justify-start">
             <Link
               to={"/habitaciones"}
-              className="bg-emerald-500 lg:hover:bg-emerald-600 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 xl:w-[45%] xl:text-[16px]"
+              className="uppercase bg-emerald-500 lg:hover:bg-emerald-600 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 xl:w-[45%] xl:text-[16px]"
               title="ver habitaciones"
             >
-              <span className="text-[#fff]">VER HABITACIONES</span>{" "}
+              <span className="text-[#fff]">
+                {" "}
+                {traduccion.paginaHome.seccionHabitaciones.btn}
+              </span>{" "}
               <MdArrowForwardIos className="text-[#fff]" />
             </Link>
           </div>
