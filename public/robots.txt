@@ -7,4 +7,5 @@ Allow: /galeria
 Allow: /contacto
 Allow: /politicas
 Allow: /preguntasfrecuentes
+Allow: /reserva
 Sitemap: https://www.hostalsanjorgecafayate.netlify.app/sitemap.xml

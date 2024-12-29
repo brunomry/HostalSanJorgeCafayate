@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <header>
       <nav className=" bg-white z-50 dark:bg-gray-900 fixed vsm:w-full top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-        <div className="vsm:w-full lg:max-w-screen-xl flex flex-wrap lg:flex-col lg:justify-center items-center justify-between mx-auto p-2 xl:p-8">
+        <div className="vsm:w-full lg:max-w-screen-xl flex flex-wrap lg:flex-col lg:gap-3 xl:gap-0 lg:justify-center items-center justify-between mx-auto p-2 xl:p-8">
           <Link
             to={"/"}
             className="flex flex-col lg:items-center xl:hidden rtl:space-x-reverse px-2 lg:px-5"
@@ -47,7 +47,7 @@ const Navbar = () => {
             } items-center justify-between vsm:w-full lg:flex lg:w-auto md:order-1`}
             id="navbar-hamburger"
           >
-            <ul className="flex flex-col justify-center text-[18px] text-white lg:flex-row items-center p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col justify-center text-[16px] text-white lg:flex-row items-center p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
                 <Link
                   to={"/"}
@@ -70,11 +70,11 @@ const Navbar = () => {
               </li>
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
                 <Link
-                  to={"/nosotros"}
+                  to={"/galeria"}
                   className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#0692a2] text-gray-600 hover:text-[#000]"
                   onClick={() => setDesplegado(false)}
                 >
-                  Nosotros
+                  Galería
                 </Link>
               </li>
               <Link
@@ -88,15 +88,7 @@ const Navbar = () => {
                 </span>
                 <p className="text-gray-600 text-[14px]">Cafayate - Salta</p>
               </Link>
-              <li className="w-[100%] flex justify-center lg:w-[inherit]">
-                <Link
-                  to={"/galeria"}
-                  className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#0692a2] text-gray-600 hover:text-[#000]"
-                  onClick={() => setDesplegado(false)}
-                >
-                  Galería
-                </Link>
-              </li>
+             
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
                 <Link
                   to={"/contacto"}
@@ -106,7 +98,16 @@ const Navbar = () => {
                   Contacto
                 </Link>
               </li>
-              <li className="flex">
+              <li className="w-[100%] flex justify-center xl:w-[50%]">
+                <Link
+                  to={"/reserva"}
+                  className="w-[50%] lg:w-[80%] border shadow text-center  block py-2 px-2 rounded border-[#9b9a9a] text-gray-900 hover:bg-gray-100 hover:shadow-md hover:text-[#000]"
+                  onClick={() => setDesplegado(false)}
+                >
+                  Solicitud de Reserva
+                </Link>
+              </li>
+              <li className="flex gap-5">
                 <button
                   className="py-2 px-2 flex gap-1 items-center cursor-pointer text-gray-600 hover:text-[#000]"
                   title="idioma español"

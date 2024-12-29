@@ -35,7 +35,7 @@ const head = {
         title: "Contacto | Hostal San Jorge - Alojamiento en Cafayate, Salta",
     },
     politicas: {
-        description: "Hostal San Jorge. Consulta las políticas dispuestas en nuestro hostal.",
+        description: "Bievenido a Hostal San Jorge. Consulta las políticas dispuestas en nuestro hostal para asegurar una estadía cómoda y segura.",
         keywords: "hostal san jorge politicas, hostal san jorge cafayate politicas, san jorge cafayate politicas",
         robots: "index, no follow",
         canonical: "politicas",
@@ -47,6 +47,13 @@ const head = {
         robots: "index, no follow",
         canonical: "preguntasfrecuentes",
         title: "Preguntas frecuentes | Hostal San Jorge - Alojamiento en Cafayate",
+    },
+    reserva: {
+        description: "Realiza tu consulta de reserva en Hostal San Jorge, ubicado en Cafayate, Salta. Completa el formulario con tus datos y fechas de estadía, y nos pondremos en contacto para confirmar tu reserva.",
+        keywords: "hostal san jorge reserva, hostal san jorge cafayate reserva",
+        robots: "index, follow",
+        canonical: "reserva",
+        title: "Solicitud de Reserva | Hostal San Jorge - Alojamiento en Cafayate",
     }
 }
 

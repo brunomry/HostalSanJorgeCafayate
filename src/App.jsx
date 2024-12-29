@@ -12,6 +12,7 @@ import Footer from "./common/Footer";
 import ScrollTop from "./common/ScrollTop";
 import Politicas from "./politicas/Politicas";
 import Nosotros from "./nosotros/Nosotros";
+import Reserva from "./pages/reserva/Reserva";
 
 const App = () => {
   return (
@@ -34,6 +35,7 @@ const App = () => {
           <Route path="/contacto" element={<Contacto></Contacto>}></Route>
           <Route path="/politicas" element={<Politicas></Politicas>}></Route>
           <Route path="/nosotros" element={<Nosotros></Nosotros>}></Route>
+          <Route path="/reserva" element={<Reserva></Reserva>}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
