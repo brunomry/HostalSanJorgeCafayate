@@ -123,7 +123,7 @@ const Footer = ({ traduccion }) => {
                 <li className="mb-4 text-[.9rem]">
                   {traduccion.footer.colaboraciones.ph}:
                   <Link
-                    to={""}
+                    to={"https://www.instagram.com/solherrera.ar/"}
                     target="_blank"
                     rel="noopener"
                     title="ir a perfil de Sol Herrera"
@@ -135,7 +135,7 @@ const Footer = ({ traduccion }) => {
                 <li className="mb-4 text-[.9rem]">
                   {traduccion.footer.colaboraciones.traducciones}:
                   <Link
-                    to={""}
+                    to={"https://www.linkedin.com/in/daniel-sueldo-156651300/"}
                     target="_blank"
                     rel="noopener"
                     className="hover:underline text-blue-600 ms-1"

@@ -4,6 +4,8 @@ import faqsEn from "./faqsEn";
 import faqsEs from "./faqsEs";
 import politicasEn from "./politicasEn";
 import politicasEs from "./politicasEs";
+import habitacionesEn from "./habitacionesEn";
+import habitacionesEs from "./habitacionesEs";
 
 export const traducciones={
     "es": {
@@ -62,7 +64,15 @@ export const traducciones={
         "title":"Nuestras Habitaciones",
         "descripcion": "Descubre el encanto y la comodidad de nuestras habitaciones. Cada espacio fue diseñado pensando en tu confort.",
         "descripcionFiltro":"Puedes seleccionar la habitación que estés buscando",
-        "btnCard": "Más información"
+        "btnCard": "Más información",
+        "filtros":[
+          "Todas",
+          "Individual",
+          "Doble",
+          "Triple",
+          "Cuádruple",
+          "Quíntuple"
+        ],
       }, 
       "paginaNosotros":{
         "title":"Sobre nosotros",
@@ -130,49 +140,10 @@ export const traducciones={
         "estadia":"La estadía incluye Desayuno",
         "horarioDesayuno":"8:30 a 09:45 am (sin excepción)",
         "mediosPago": "Además de efectivo, aceptamos transferencias bancarias y también puedes abonar a través de link de mercadopago proporcionado por nosotros donde podrás utilizar tu tarjeta de débito/crédito. Esta última opción tiene un 10% de recargo.",
-        "Individual": {
-          "nombre": "Habitación Individual",
-          "precio": "15.000",
-          "descripcion_breve": "Habitación simple de 4 m2 con cama individual",
-          "descripcion_amplia": "Esta acogedora habitación de 4 metros cuadrados con cama individual incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 1 huésped.",
-          "comodidades": ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
-        },
-        "Doble opción 1": {
-          "nombre": "Habitación Doble",
-          "precio": "35.000",
-          "descripcion_breve": "Habitación doble de 9 m2 con cama matrimonial",
-          "descripcion_amplia": "Esta cómoda y luminosa habitación de 9 metros cuadrados cuenta con 1 cama matrimonial e incluye comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador, ventilador, armario y un mini balcón. Cuenta con una capacidad máxima de 2 huéspedes.",
-          "comodidades": ["Wi-Fi", "Aire acondicionado", "Balcón","Armario", "Ropa de cama", "Sommier","Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
-        },
-        "Doble opción 2": {
-          "nombre": "Habitación Doble",
-          "precio": "35.000",
-          "descripcion_breve": "Habitación doble de 9 m2 con cama matrimonial",
-          "descripcion_amplia": "Esta cómoda y luminosa habitación de 9 metros cuadrados cuenta con 1 cama matrimonial e incluye comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador, ventilador, armario y un mini balcón. Cuenta con una capacidad máxima de 2 huéspedes.",
-          "comodidades": ["Wi-Fi", "Aire acondicionado", "Balcón","Armario", "Ropa de cama", "Sommier","Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
-        },
-        "Triple": {
-          "nombre": "Habitación Triple",
-          "precio": "45.000",
-          "descripcion_breve": "Habitación triple de 10 m2 con cama matrimonial e individual.",
-          "descripcion_amplia": "Esta habitación cuenta con 1 cama matrimonial y 1 cama individual. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 3 huéspedes.",
-          "comodidades": ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Armario", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
-        },
-        "Cuádruple": {
-          "nombre": "Habitación Cuádruple",
-          "precio": "60.000",
-          "descripcion_breve": "Habitación cuádruple de 11 m2 con cama matrimonial y 2 camas individuales.",
-          "descripcion_amplia": "Esta amplia y cómoda habitación de 12 metros cuadrados cuenta con cama matrimonial y 2 cama individuales. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 4 huéspedes.",
-          "comodidades": ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
-        },
-        "Quíntuple": {
-          "nombre": "Habitación Quíntuple",
-          "precio": "75.000",
-          "descripcion_breve": "Habitación quíntuple de 12 m2 con cama matrimonial, cama cucheta y cama individual",
-          "descripcion_amplia": "Esta amplia y cómoda habitación de 12 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 5 huéspedes.",
-          "comodidades": ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
-        }
       },
+      "habitaciones": [
+        ...habitacionesEs
+      ]
     },
     "en": {
       "navbar": {
@@ -204,9 +175,9 @@ export const traducciones={
       "paginaHome":{
         "seccionBanner": {
           "ubicacion":"Salta province, Argentinian north-west",
-          "descripcion":"",
+          "descripcion":"The perfect place to rest and enjoy your vacations.",
           "btnHabitaciones": "Our Rooms",
-          "cercania":""
+          "cercania":"We are 2 blocks away of the main Square"
         },
         "seccionResenas": {
           "btn": "See reviews on Google"
@@ -229,23 +200,31 @@ export const traducciones={
       "paginaHabitaciones":{
         "title":"Our Rooms",
         "descripcion": "Discover the charm and comfort of our rooms. Each space was designed thinking about your comfort.",
-        "descripcionFiltro":"",
-        "btnCard": "More Information"
+        "descripcionFiltro":"Select the room you are looking for.",
+        "btnCard": "More Information",
+        "filtros":[
+          "All",
+          "Single",
+          "Double",
+          "Triple",
+          "Cuadruple",
+          "Quintuple"
+        ],
       }, 
       "paginaNosotros":{
         "title":"About us",
         "descripcion1": "With more than 15 years providing accommodation to our guests, at Hostal San Jorge we offer you a comfortable, quiet and ideal place to rest. Permit us be your home away and enjoy a greate and memorable experience, while you explore the charms of the beautiful Cafayate city, Salta province, Argentinian north-west.",
         "subtitulo": "Our history",
-        "descripcion2": "",
+        "descripcion2": "Hostal San Jorge began its history as a family project with the vision of offering tourists and travelers a place to rest and relax after exploring the wonderful landscapes of Cafayate. Over the years, we have become a preferred option for those who are looking for a quiet, warm and cozy place, always maintaining the personalized attention which sets us apart.",
         "apertura":"",
         "subtitulo1": "Mission",
-        "descripcion3": "",
+        "descripcion3": "Our mission is to offer our guests a comfortable, quiet and ideal place to rest, with a commitment: provide a unique and pleasant experience, where you can feel at home while exploring the local culture.",
         "subtitulo2": "Vision",
-        "descripcion4": "",
+        "descripcion4": "Our vision is to be a landmark hostel in the city, recognized for our outstanding hospitality, being a place where every guest feels comfortable and safe, ensuring that they will choose us again.",
         "subtitulo3": "Values",
-        "descripcion5": ["1",
-          "2",
-          "3"],
+        "descripcion5": ["Hospitality: We pride ourselves in making our guests feel like home, providing a warm and customized treatment.",
+          "Quality: We maintain high standards of cleanliness, comfort and attention to ensure that your stay is unbeatable.",
+          "Commitment: We are committed to the well-being of our guests, doing everything possible to surpass their expectations."],
       },
       "paginaGaleria":{
         "title":"Gallery",
@@ -275,8 +254,8 @@ export const traducciones={
         ]
       },
       "paginaPoliticas":{
-        "title":"Políticas del Hostal",
-        "descripcion":"",
+        "title":"Hostel Policies",
+        "descripcion":"The following are our general policies to guarantee a comfortable and safe staying at the hostel.",
         "politicas": [
           ...politicasEn
         ]
@@ -298,48 +277,9 @@ export const traducciones={
         "estadia":"",
         "horarioDesayuno":"8:30 a 09:45 am ",
         "mediosPago": "",
-        "Individual": {
-          "nombre": "Single Room",
-          "precio": "15.000",
-          "descripcion_breve": "",
-          "descripcion_amplia": "This cozy room features a single bed for a single person and amenities such as Wi-Fi, private bathroom, linens, towels, toiletries and ceiling fan.",
-          "comodidades": ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
-        },
-        "Doble opción 1": {
-          "nombre": "Double Room",
-          "precio": "35.000",
-          "descripcion_breve": "",
-          "descripcion_amplia": "",
-          "comodidades": ["Wi-Fi", "Aire acondicionado", "Balcón","Armario", "Ropa de cama", "Sommier","Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
-        },
-        "Doble opción 2": {
-          "nombre": "Double Room",
-          "precio": "35.000",
-          "descripcion_breve": "",
-          "descripcion_amplia": "",
-          "comodidades": ["Wi-Fi", "Aire acondicionado", "Balcón","Armario", "Ropa de cama", "Sommier","Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
-        },
-        "Triple": {
-          "nombre": "Triple Room",
-          "precio": "45.000",
-          "descripcion_breve": "",
-          "descripcion_amplia": "",
-          "comodidades": ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Armario", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
-        },
-        "Cuádruple": {
-          "nombre": "Cuadruple Room",
-          "precio": "60.000",
-          "descripcion_breve": "",
-          "descripcion_amplia": "",
-          "comodidades": ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
-        },
-        "Quíntuple": {
-          "nombre": "Quintuple Room",
-          "precio": "75.000",
-          "descripcion_breve": "",
-          "descripcion_amplia": "",
-          "comodidades": ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"],
-        }
       },
+      "habitaciones": [
+        ...habitacionesEn
+      ]
     },
   };  

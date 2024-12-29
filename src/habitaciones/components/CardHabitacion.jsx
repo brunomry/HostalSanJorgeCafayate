@@ -18,7 +18,7 @@ function CardHabitacion({ habitacion, traduccion }) {
     return;
   };
 
-  const hab = traduccion.paginaDetalle[habitacion.tipo] 
+  const hab = traduccion.habitaciones.find(h=> h.id == habitacion.id) 
 
   return (
     <article
@@ -28,15 +28,15 @@ function CardHabitacion({ habitacion, traduccion }) {
     >
       <img
         src={habitacion.imagenes[0]}
-        alt={`imagen de ${hab.nombre}`}
+        alt={`imagen de ${habitacion.nombre}`}
         title="clic para ver más información"
         className="h-[300px] xl:h-[350px] 2xl:h-[400px] w-full object-cover"
       />
       <div className="vsm:p-2 mb:p-4 md:p-8">
         <p className="text-[20px] font-bold">{hab.nombre}</p>
-        <h3 className="text-[30px] text-[#3361c4] font-bold">$ {hab.precio}</h3>
+        <h3 className="text-[30px] text-[#3361c4] font-bold">$ {habitacion.precio}</h3>
         <p className="text-gray-500 overflow-hidden text-ellipsis whitespace-nowrap">
-          {hab.descripcion_breve}
+          {habitacion.descripcion_breve}
         </p>
         <div className="flex flex-col gap-2 items-center w-[100%] mt-4 md:mt-8">
           <Link

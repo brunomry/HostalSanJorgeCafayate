@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-import habitaciones from "../helpers/habitaciones";
 import { useEffect, useState } from "react";
 import { ImWhatsapp } from "react-icons/im";
 import CarruselDetalleHabitacion from "./components/CarruselDetalleHabitacion";
@@ -9,18 +8,18 @@ import "./styles/detalleHabitacion.css";
 import { consultaPorWhatsApp } from "../helpers/whatsApp";
 import Head from "../seo/Head";
 
-const DetalleHabitacion = ({traduccion}) => {
+const DetalleHabitacion = ({ traduccion }) => {
   const [habitacion, setHabitacion] = useState(null);
   const { id } = useParams();
 
   const obtenerHabitacion = () => {
-    const habitacionBuscada = habitaciones.find((h) => h.id == id);
+    const habitacionBuscada = traduccion.habitaciones.find((h) => h.id == id);
     setHabitacion(habitacionBuscada);
   };
 
   useEffect(() => {
     obtenerHabitacion();
-  }, [id]);
+  }, [id, traduccion]);
 
   if (!habitacion) {
     return <p>Cargando...</p>;
@@ -41,7 +40,7 @@ const DetalleHabitacion = ({traduccion}) => {
           description: `Conoce nuestra ${habitacion.nombre}. Mira las imágenes y comodidades en detalle de esta habitación en Hostal San Jorge. ¡No dudes en contactarnos!`,
           keywords: `hostal san jorge ${habitacion.nombre}, san jorge ${habitacion.nombre}, san jorge cafayate ${habitacion.nombre}`,
           canonical: `habitacion/${habitacion.id}`,
-          img: `${habitacion.imagenes[0]}`
+          img: `${habitacion.imagenes[0]}`,
         }}
       ></Head>
       <main className="vsm:px-4 xl:px-20 my-8 vsm:py-10 md:py-20 vsm:w-[100%] flex flex-col gap-8 text-justify">
@@ -58,13 +57,12 @@ const DetalleHabitacion = ({traduccion}) => {
               <h1 className="vsm:text-[24px] mb-0 font-bold">
                 {habitacion.nombre}
               </h1>
-              <h2 className="text-[30px] text-[#3361c4] font-bold">$ {habitacion.precio}</h2>
+              <h2 className="text-[30px] text-[#3361c4] font-bold">
+                $ {habitacion.precio}
+              </h2>
               <p className="text-gray-600">{habitacion.descripcion_breve}.</p>
               <p className="text-gray-600">
-                <span>
-                  Capacidad máxima para {habitacion.capacidad}{" "}
-                  {habitacion.capacidad > 1 ? "personas" : "persona"}.
-                </span>
+                <span>Capacidad máxima para {habitacion.capacidad}.</span>
               </p>
               <div>
                 <h3 className="mb-1  text-[18px] font-medium">Comodidades:</h3>

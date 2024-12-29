@@ -14,13 +14,13 @@ import quintuple from "../assets/IMG/Habitaciones/HabitacionQuintuple/hab4 (1).w
 import quintuple1 from "../assets/IMG/Habitaciones/HabitacionQuintuple/bañoHab4 (1).webp";
 import quintuple2 from "../assets/IMG/Habitaciones/HabitacionQuintuple/bañoHab4 (2).webp";
 
-const habitaciones = [
+const habitacionesEn = [
     {
         id: 8,
         imagenes: [simple, simple2, simple3],
-        nombre: "Habitación Individual",
+        nombre: "Single Room",
         precio: "15.000",
-        tipo: "Individual",
+        tipo: "Single",
         descripcion_breve: "Habitación simple de 4 m2 con cama individual",
         descripcion_amplia: "Esta acogedora habitación de 4 metros cuadrados con cama individual incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 1 huésped.",
         capacidad: "1 persona",
@@ -29,9 +29,9 @@ const habitaciones = [
       {
         id: 6,
         imagenes:[doble6,doble6_1, doble6_2],
-        nombre: "Habitación Doble",
+        nombre: "Double Room",
         precio: "35.000",
-        tipo: "Doble opción 1",
+        tipo: "Double option 1",
         descripcion_breve: "Habitación doble de 9 m2 con cama matrimonial",
         descripcion_amplia: "Esta cómoda y luminosa habitación de 9 metros cuadrados cuenta con 1 cama matrimonial e incluye comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador, ventilador, armario y un mini balcón. Cuenta con una capacidad máxima de 2 huéspedes.",
         capacidad: "2 personas",
@@ -40,9 +40,9 @@ const habitaciones = [
       {
         id: 7,
         imagenes: [doble7, doble7_1, doble6_1],
-        nombre: "Habitación Doble",
+        nombre: "Double Room",
         precio: "35.000",
-        tipo: "Doble opción 2",
+        tipo: "Double option 2",
         descripcion_breve: "Habitación doble de 9 m2 con cama matrimonial",
         descripcion_amplia: "Esta habitación cuenta con 1 cama matrimonial para 2 personas y comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador, ventilador, armario y un mini balcón. Cuenta con una capacidad máxima de 2 huéspedes.",
         capacidad: "2 personas",
@@ -51,7 +51,7 @@ const habitaciones = [
       {
         id: 5,
         imagenes: [triple, triple1, triple2],
-        nombre: "Habitación Triple",
+        nombre: "Triple Room",
         precio: "45.000",
         tipo: "Triple",
         descripcion_breve: "Habitación triple de 10 m2 con cama matrimonial e individual",
@@ -62,9 +62,9 @@ const habitaciones = [
       {
         id: 3,
         imagenes: [cuadruple, quintuple1, quintuple2],
-        nombre: "Habitación Cuádruple",
+        nombre: "Cuadruple Room",
         precio: "60.000",
-        tipo: "Cuádruple",
+        tipo: "Cuadruple",
         descripcion_breve: "Habitación cuádruple de 11 m2 con cama matrimonial y 2 camas individuales",
         descripcion_amplia: "Esta amplia y cómoda habitación de 11 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 4 huéspedes.",
         capacidad: "4 personas",
@@ -73,9 +73,9 @@ const habitaciones = [
       {
         id: 4,
         imagenes: [quintuple, quintuple1, quintuple2],
-        nombre: "Habitación Quíntuple",
+        nombre: "Quintuple Room",
         precio: "75.000",
-        tipo: "Quíntuple",
+        tipo: "Quintuple",
         descripcion_breve: "Habitación quíntuple de 11 m2 con cama matrimonial, cama individual y cama cucheta",
         descripcion_amplia: "Esta amplia y cómoda habitación de 11 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 5 huéspedes.",
         capacidad: "5 personas",
@@ -83,4 +83,4 @@ const habitaciones = [
       },     
 ]
 
-export default habitaciones;
+export default habitacionesEn;

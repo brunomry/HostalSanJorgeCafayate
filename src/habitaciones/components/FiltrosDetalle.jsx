@@ -1,12 +1,11 @@
 import { Link, useParams } from "react-router-dom";
-import habitaciones from "../../helpers/habitaciones";
 
 const FiltrosDetalle = ({traduccion}) => {
   const { id } = useParams();
 
   return (
     <div className="flex w-[100%] h-[60px] pe-2 filtersDetail md:flex-wrap sm:justify-center vsm:gap-2 md:gap-3 md:h-[inherit]">
-      {habitaciones.map((h) => (
+      {traduccion.habitaciones.map((h) => (
         <Link
           key={h.id}
           to={`/habitacion/${h.id}`}

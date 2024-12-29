@@ -1,66 +1,65 @@
 const politicasEn = [
     {
-      titulo: "Horarios de Check-in y Check-out",
+      titulo: "Check-in and Check-out hours",
       descripcion:
-        "El horario de check-in es a partir de las 14:00 horas y el check-out es hasta las 10:00 horas."
+        "Check-in hours 02:00 p.m. to 00:00 and Check-out until 10:00 a.m."
     },
     {
-      titulo: "Política de Reserva",
+      titulo: "Booking Policy",
       descripcion:
-        "Para confirmar la reserva, solicitamos una seña equivalente al 50% del total de la estadía. La reserva no se considerará válida hasta que se haya recibido este pago."
+        "To confirm a reservation, we require a guarantee deposit equal to 50% of the total amount of the stay. The reservation will not be confirmed until this payment has been received."
     },
     {
-      titulo: "Política de Cancelación",
+      titulo: "Cancellation Policy",
       descripcion:
-        "En caso de cancelar tu reserva, ten en cuenta lo siguiente:",
+        "In case of cancellation , please note the following:",
       lista: [
-        "La seña del 50% del valor total de la reserva no es reembolsable en caso de cancelación con menos de 48 horas de antelación."
-      ]
+        "The guarantee deposit of 50% of the total value of the reservation is non-refundable if the cancellation is made less than 48 hours before the arrival date."]
     },
     {
-      titulo: "Política de Pagos",
+      titulo: "Payment Policy",
       descripcion:
-        "El saldo restante deberá abonarse al momento del check-in. Aceptamos pagos en efectivo, transferencias bancarias y también tarjetas de crédito o débito mediante link de mercadopago. Esta última opción tiene un 10% de recargo."
+        "The remaining amount must be paid at the check-in moment. Cash payments, bank transfers and also credit or debit cards (through Mercadopago link) are accepted . The last option has a 10% additional charge."
     },
     {
-      titulo: "Política de Ruido",
+      titulo: "Noise Policy",
       descripcion:
-        "Para garantizar la tranquilidad y respetar el descanso de todos los huéspedes, solicitamos que se mantenga un nivel de ruido discreto, especialmente después de las 11 pm."
+        "In order to guarantee quietness and respect to all guests, we request that a discreet noise level must be maintained, especially after 11 p.m."
     },
     {
-      titulo: "Política de Edad para niños",
+      titulo: "Childrens Age Policy",
       descripcion:
-        "En nuestro hostal, los niños deben abonar la tarifa correspondiente a partir de los 4 años de edad."
+        "In our hostel, children must pay the corresponding fee from 4 years of age and up."
     },
     {
-      titulo: "Política de Desayuno",
+      titulo: "Breakfast Policy",
       descripcion:
-        "El desayuno está incluido en la tarifa de la habitación y se sirve de 08:30 a 09:45 am horas. Debe aguardar en el salón hasta que sea atendido. Por el momento no ofrecemos alternativas en caso de restricciones alimentarias."
+        "Breakfast is included in the room rate and is served from 08:30 am to 09:45 am. You must wait in the meeting room until you are served. At the moment we are not offering alternatives in case of dietary restrictions."
     },
     {
-      titulo: "Política de Visitas",
+      titulo: "Visiting Policy",
       descripcion:
-        "No se permite el ingreso de personas que no estén hospedadas en el hostal. Esta medida es para garantizar la seguridad y tranquilidad de todos nuestros huéspedes."
+        "We do not allow the entrance of people who are not guests at the hostel. This measure is to guarantee security and safety for all our guests."
     },
     {
-      titulo: "Política de Fumadores",
+      titulo: "Smoking Policy",
       descripcion:
-        "El hostal es un espacio libre de humo. Fumar dentro de las habitaciones o en áreas comunes cerradas no está permitido."
+        "The hostel is a smoke-free place. Smoking inside the rooms or in enclosed common areas is not allowed."
     },
     {
-      titulo: "Política de Daños",
+      titulo: "Damages Policy",
       descripcion:
-        "Cualquier daño ocasionado en las instalaciones deberá ser cubierto por el huésped responsable antes del check-out."
+        "Any property damage must be covered by the responsible guest prior to check-out."
     },
     {
-      titulo: "Política de Mascotas",
+      titulo: "Pet Policy",
       descripcion:
-        "Lamentablemente, no se permiten mascotas en el hostal para garantizar la comodidad de todos nuestros huéspedes."
+        "Currently, pets are not allowed in the hostel to ensure the comfort of all our guests."
     },
     {
-      titulo: "Política de Consumo de alcohol",
+      titulo: "Alcohol Drinking Policy",
       descripcion:
-        "No está permitido consumir alcohol en las habitaciones para evitar ruidos o posibles daños a las instalaciones y garantizar la tranquilidad de todos los huéspedes."
+        "Alcohol is not allowed in the rooms to avoid annoying noises or possible damages to the facilities and to ensure the comfort of all guests.."
     }
   ];
 

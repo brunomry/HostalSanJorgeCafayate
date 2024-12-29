@@ -1,4 +1,3 @@
-import habitaciones from "../helpers/habitaciones";
 import "../habitaciones/styles/habitaciones.css";
 import { useState } from "react";
 import FiltrosHabitacion from "./components/FiltrosHabitacion";
@@ -7,7 +6,7 @@ import Head from "../seo/Head";
 import headData from "../helpers/head";
 
 function Habitaciones({ traduccion }) {
-  const [listaHabitaciones, setListaHabitaciones] = useState(habitaciones);
+  const [listaHabitaciones, setListaHabitaciones] = useState(traduccion.habitaciones);
   const [habitacionSeleccionada, setHabitacionSeleccionada] = useState([]);
   const [tipo, setTipo] = useState("");
 
