@@ -24,8 +24,8 @@ const FormContacto = () => {
 
       Swal.fire({
         position: "bottom",
-        title: "✅ Tu mensaje fue enviado con éxito.",
-        text: "Pronto recibirás una respuesta.",
+        title: "✅ Tu mensaje fue enviado.",
+        text: "<p>Pronto recibirás una respuesta.</p>",
         showConfirmButton: false,
         timer: 3000,
         timerProgressBar: true,
@@ -33,8 +33,8 @@ const FormContacto = () => {
     } catch (error) {
       Swal.fire({
         position: "bottom",
-        title: "❌ Hubo un error al enviar el mensaje.",
-        text: "Intenta nuevamente más tarde.",
+        title: "<p>❌ Hubo un error al enviar el mensaje.</p>",
+        text: "<p>Intenta nuevamente más tarde.</p>",
         timer: 3000,
         timerProgressBar: true
       });
@@ -71,6 +71,10 @@ const FormContacto = () => {
               value: 30,
               message:
                 "El nombre y apellido debe tener como maximo 30 caracteres",
+            },
+            pattern: {
+              value: /^[a-zA-ZÁÉÍÓÚáéíóúñÑ\s]+$/,
+              message: "Ingrese un nombre y apellido válidos.",
             },
           })}
         />

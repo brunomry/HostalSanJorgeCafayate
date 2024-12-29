@@ -28,8 +28,8 @@ const FormReserva = () => {
 
       Swal.fire({
         position: "bottom",
-        title: "✅ Tu solicitud de reserva fue enviada con éxito.",
-        text: "En breve nos pondremos en contacto. Muchas gracias!",
+        title: "<p>✅ Tu solicitud de reserva fue enviada.</p>",
+        text: "<p>En breve nos pondremos en contacto. Muchas gracias!</p>",
         showConfirmButton: false,
         timer: 4000,
         timerProgressBar: true,
@@ -37,8 +37,8 @@ const FormReserva = () => {
     } catch (error) {
       Swal.fire({
         position: "bottom",
-        title: "❌ Hubo un error al enviar la solicitud de reserva.",
-        text: "Intenta nuevamente más tarde.",
+        title: "<p>❌ Hubo un error al enviar la solicitud de reserva.</p>",
+        text: "<p>Intenta nuevamente más tarde.</p>",
         timer: 3000,
         timerProgressBar: true,
       });
@@ -71,6 +71,10 @@ const FormReserva = () => {
             maxLength: {
               value: 30,
               message: "Debe tener como máximo 30 caracteres",
+            },
+            pattern: {
+              value: /^[a-zA-ZÁÉÍÓÚáéíóúñÑ\s]+$/,
+              message: "Ingrese un nombre y apellido válidos.",
             },
           })}
         />
@@ -183,9 +187,7 @@ const FormReserva = () => {
         <select
           id="menores"
           className="bg-gray-50 border-gray-300 text-gray-700 block w-full p-2.5"
-          {...register("menores", {
-            required: "Debe seleccionar la cantidad de menores",
-          })}
+          {...register("menores")}
         >
           {[...Array(10).keys()].map((n) => (
             <option key={n} value={n}>
@@ -206,11 +208,20 @@ const FormReserva = () => {
           id="message"
           rows="4"
           className="bg-gray-50 border-gray-300 text-gray-700 block w-full p-2.5"
-          {...register("consulta", { required: "La consulta es obligatoria" })}
+          {...register("consulta", { 
+            required: "La consulta es obligatoria",
+            minLength: {
+              value: 25,
+              message: "La consulta debe contener al menos 25 caracteres",
+            },
+            maxLength: {
+              value: 500,
+              message: "La consulta debe contener como máximo 500 caracteres",
+            }, 
+          })}
         ></textarea>
         <small className="text-red-400">{errors.consulta?.message}</small>
       </div>
-
       <div className="flex justify-center w-[100%]">
         <button className="bg-emerald-500 hover:bg-emerald-600 text-white p-3 vsm:w-[100%] md:w-[50%]">
           ENVIAR CONSULTA
