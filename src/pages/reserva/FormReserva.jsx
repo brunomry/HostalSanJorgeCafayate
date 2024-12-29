@@ -27,18 +27,18 @@ const FormReserva = () => {
       reset();
 
       Swal.fire({
-        position: "bottom",
-        title: "<p>✅ Tu solicitud de reserva fue enviada.</p>",
-        text: "<p>En breve nos pondremos en contacto. Muchas gracias!</p>",
+        position: "center",
+        title: "✅ Tu solicitud de reserva fue enviada.",
+        text: "En breve nos pondremos en contacto. Muchas gracias!",
         showConfirmButton: false,
         timer: 4000,
         timerProgressBar: true,
       });
     } catch (error) {
       Swal.fire({
-        position: "bottom",
-        title: "<p>❌ Hubo un error al enviar la solicitud de reserva.</p>",
-        text: "<p>Intenta nuevamente más tarde.</p>",
+        position: "center",
+        title: "❌ Hubo un error al enviar la solicitud de reserva.",
+        text: "Intenta nuevamente más tarde.",
         timer: 3000,
         timerProgressBar: true,
       });

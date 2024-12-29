@@ -25,7 +25,7 @@ const FormContacto = () => {
       Swal.fire({
         position: "bottom",
         title: "✅ Tu mensaje fue enviado.",
-        text: "<p>Pronto recibirás una respuesta.</p>",
+        text: "Pronto recibirás una respuesta.",
         showConfirmButton: false,
         timer: 3000,
         timerProgressBar: true,
@@ -33,8 +33,8 @@ const FormContacto = () => {
     } catch (error) {
       Swal.fire({
         position: "bottom",
-        title: "<p>❌ Hubo un error al enviar el mensaje.</p>",
-        text: "<p>Intenta nuevamente más tarde.</p>",
+        title: "❌ Hubo un error al enviar el mensaje.",
+        text: "Intenta nuevamente más tarde.",
         timer: 3000,
         timerProgressBar: true
       });
