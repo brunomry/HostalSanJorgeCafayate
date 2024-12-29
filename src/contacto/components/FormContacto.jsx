@@ -23,19 +23,20 @@ const FormContacto = () => {
       reset();
 
       Swal.fire({
-        position: "center",
+        position: "bottom",
         title: "✅ Tu mensaje fue enviado con éxito.",
         text: "Pronto recibirás una respuesta.",
         showConfirmButton: false,
         timer: 3000,
+        timerProgressBar: true,
       });
     } catch (error) {
       Swal.fire({
-        position: "center",
-        icon: "error",
-        title: "Hubo un error al enviar el mensaje.",
+        position: "bottom",
+        title: "❌ Hubo un error al enviar el mensaje.",
         text: "Intenta nuevamente más tarde.",
-        showConfirmButton: true,
+        timer: 3000,
+        timerProgressBar: true
       });
     }
   };
