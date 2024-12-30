@@ -1,6 +1,6 @@
 import habitacion from "../../assets/IMG/Habitaciones/HabitacionQuintuple/hab4 (1).webp";
 import desayuno from "../../assets/IMG/Home/desayuno.webp";
-import habitacion7 from "../../assets/IMG/Habitaciones/HabitacionDoble/hd1.jpeg";
+import habitacion7 from "../../assets/IMG/Habitaciones/HabitacionDoble/habitacion7 (1).webp";
 import habitacion4 from "../../assets/IMG/habitacion4.webp";
 import { MdArrowForwardIos } from "react-icons/md";
 import { Link } from "react-router-dom";

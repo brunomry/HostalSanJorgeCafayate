@@ -1,3 +1,5 @@
+@import url('./assets/fonts/fuentes.min.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
