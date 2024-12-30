@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./home/Home";
 import Habitaciones from "./habitaciones/Habitaciones";
-import "./App.css";
+import "./App.min.css";
 import Navbar from "./common/Navbar";
 import "flowbite-react";
 import DetalleHabitacion from "./habitaciones/DetalleHabitacion";

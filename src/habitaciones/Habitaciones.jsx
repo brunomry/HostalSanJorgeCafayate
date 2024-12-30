@@ -1,5 +1,5 @@
 import habitaciones from "../helpers/habitaciones";
-import "../habitaciones/styles/habitaciones.css";
+import "../habitaciones/styles/habitaciones.min.css";
 import { useState } from "react";
 import FiltrosHabitacion from "./components/FiltrosHabitacion";
 import ListaHabitaciones from "./components/ListaHabitaciones";

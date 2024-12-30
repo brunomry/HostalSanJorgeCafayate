@@ -14,13 +14,14 @@ const Navbar = () => {
             to={"/"}
             className="flex flex-col lg:items-center xl:hidden rtl:space-x-reverse px-2 lg:px-5"
           >
-            <span className="self-center text-xl font-bold logo whitespace-nowrap dark:text-white text-[#3361c4]" >
+            <span className="self-center text-xl font-bold logo whitespace-nowrap dark:text-white text-[#3361c4]">
               Hostal San Jorge
             </span>
             <small className="text-sm text-gray-600">Cafayate, Salta</small>
           </Link>
           <button
             data-collapse-toggle="navbar-hamburger"
+            title="menú"
             type="button"
             className="lg:hidden inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-hamburger"
@@ -35,10 +36,7 @@ const Navbar = () => {
               fill="none"
               viewBox="0 0 17 14"
             >
-              <path
-                stroke="currentColor"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
+              <path stroke="currentColor" d="M1 1h15M1 7h15M1 13h15" />
             </svg>
           </button>
           <div
@@ -77,18 +75,19 @@ const Navbar = () => {
                   Galería
                 </Link>
               </li>
-              <Link
-                to={"/"}
-                className="hidden xl:flex flex-col items-center rtl:space-x-reverse px-5"
-                onClick={() => setDesplegado(false)}
-                title="clic para ir a página principal"
-              >
-                <span className="self-center text-2xl text-[#3361c4] logo font-bold whitespace-nowrap dark:text-white">
-                  Hostal San Jorge
-                </span>
-                <p className="text-gray-600 text-[14px]">Cafayate - Salta</p>
-              </Link>
-             
+              <li>
+                <Link
+                  to={"/"}
+                  className="hidden xl:flex flex-col items-center rtl:space-x-reverse px-5"
+                  onClick={() => setDesplegado(false)}
+                  title="clic para ir a página principal"
+                >
+                  <span className="self-center text-2xl text-[#3361c4] logo font-bold whitespace-nowrap dark:text-white">
+                    Hostal San Jorge
+                  </span>
+                  <p className="text-gray-600 text-[14px]">Cafayate - Salta</p>
+                </Link>
+              </li>
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
                 <Link
                   to={"/contacto"}
@@ -113,14 +112,24 @@ const Navbar = () => {
                   title="idioma español"
                 >
                   <span>Es</span>
-                  <img src={es} className="w-[25px] h-[18px] object-cover" title="idioma español" alt="bandera de Argentina"/>
+                  <img
+                    src={es}
+                    className="w-[25px] h-[18px] object-cover"
+                    title="idioma español"
+                    alt="bandera de Argentina"
+                  />
                 </button>
                 <button
                   className="py-2 px-2 flex gap-1 items-center cursor-pointer text-gray-600 hover:text-[#000]"
                   title="idioma inglés"
                 >
                   <span>En</span>
-                  <img src={en} className="w-[25px] h-[18px] object-cover" title="idioma inglés" alt="bandera de Reino Unido"/>
+                  <img
+                    src={en}
+                    className="w-[25px] h-[18px] object-cover"
+                    title="idioma inglés"
+                    alt="bandera de Reino Unido"
+                  />
                 </button>
               </li>
             </ul>

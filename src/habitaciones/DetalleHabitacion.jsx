@@ -5,7 +5,7 @@ import { ImWhatsapp } from "react-icons/im";
 import CarruselDetalleHabitacion from "./components/CarruselDetalleHabitacion";
 import BreadcrumbDetalle from "./components/BreadcrumbDetalle";
 import FiltrosDetalle from "./components/FiltrosDetalle";
-import "./styles/detalleHabitacion.css";
+import "./styles/detalleHabitacion.min.css";
 import { consultaPorWhatsApp } from "../helpers/whatsApp";
 import Head from "../seo/Head";
 

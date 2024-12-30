@@ -1,7 +1,7 @@
 import simple from "../assets/IMG/Habitaciones/HabitacionSimple/hab8.webp";
 import simple2 from "../assets/IMG/Habitaciones/HabitacionSimple/bañoSimple (1).webp";
 import simple3 from "../assets/IMG/Habitaciones/HabitacionSimple/bañoSimple (2).webp";
-import doble7 from "../assets/IMG/Habitaciones/HabitacionDoble/hd1.jpeg";
+import doble7 from "../assets/IMG/Habitaciones/HabitacionDoble/habitacion7 (1).webp";
 import doble7_1 from "../assets/IMG/Habitaciones/HabitacionDoble/hab7.webp";
 import doble6 from "../assets/IMG/Habitaciones/HabitacionDoble/hab6 (1).webp";
 import doble6_1 from "../assets/IMG/Habitaciones/HabitacionDoble/bañoHab6 (1).webp";

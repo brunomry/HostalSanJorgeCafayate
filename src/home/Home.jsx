@@ -1,4 +1,4 @@
-import "./styles/home.css";
+import "./styles/home.min.css";
 import BannerHome from "./components/BannerHome";
 import Comentarios from "./components/Comentarios";
 import NosotrosHome from "./components/NosotrosHome";

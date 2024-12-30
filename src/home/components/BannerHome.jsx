@@ -11,7 +11,8 @@ function BannerHome() {
             src={frente}
             alt="Hostal San Jorge Cafayate"
             title="Hostal San Jorge Cafayate"
-            className="w-[100%] py-14 md:py-0 min-h-[200px] object-cover md:object-fill absolute imgBannerHome xl:max-h-[800px] 2xl:min-h-[925px]"
+            loading="lazy"
+            className="w-[100%] py-14 md:py-0 h-[200px] object-cover md:object-fill absolute imgBannerHome xl:max-h-[800px] 2xl:min-h-[925px]"
           />
         </div>
         <div className=".bannerHome__description absolute top-[100px] left-5 right-5 mb:top-[150px] xl:top-[100px] xl:left-[100px] 2xl:left-[25%] 2xl:top-[25%] flex flex-col gap-2 md:gap-3  bg-[rgba(43,69,94,0.8)] px-3 py-5 md:p-10 xl:p-20 md:max-w-[550px] lg:max-w-[650px] xl:max-w-[800px] xl:mt-[75px] 2xl:mt-[0] min-h-[100px] rounded-[10px] md:rounded-none">
