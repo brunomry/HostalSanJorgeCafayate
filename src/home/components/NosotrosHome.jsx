@@ -5,7 +5,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 function NosotrosHome() {
   return (
     <section className=" flex flex-col items-center justify-center min-h-[250px] w-[100%] md:mt-[800px] lg:mt-[450px]">
-      <div className="bg-slate-700 w-[100%] min-h-[200px] text-[#fff] flex md:flex-col lg:flex-row lg:justify-center px-4 md:px-20 md:gap-10 gap-24 py-10 md:py-20">
+      <div className="bg-slate-700 w-[100%] min-h-[200px] text-[#fff] flex flex-col gap-10 lg:flex-row lg:justify-center px-4 md:px-20 md:gap-10 py-10 md:py-20">
         <div className="w-[100%] lg:w-[40%] flex flex-col gap-5 xl:gap-16 lg:px-0 2xl:p-20">
           <div>
             <h2 className="text-[25px] lg:text-[35px] font-bold">Sobre Nosotros</h2>
@@ -32,7 +32,7 @@ function NosotrosHome() {
             </Link>
           </div>
         </div>
-        <div className="hidden md:w-[100%] md:flex justify-center lg:w-[50%]">
+        <div className="w-[100%] md:flex justify-center lg:w-[50%]">
           <img
             src={salon}
             alt=""

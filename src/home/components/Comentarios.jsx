@@ -12,7 +12,7 @@ const Comentarios = () => {
           ></CardComentario>
         ))}
       </div>
-      <button className=" border w-[75%] md:w-[300px] p-3 text-gray-500 hover:border-[#c5c5c5]" title="ver reseñas en Google">
+      <button className=" border w-[75%] md:w-[300px] p-3 text-gray-500 border-[#c5c5c5]" title="ver reseñas en Google">
         Ver reseñas en Google
       </button>
     </section>
