@@ -60,7 +60,7 @@ const FormContacto = ({traduccion}) => {
                 id="message"
                 rows="4"
                 className="bg-gray-50 focus:border-gray-100 border-gray-300 text-gray-900    block w-full p-2.5  "
-                placeholder="Escribe tu mensaje aquí..."
+                placeholder={traduccion.paginaContacto.formulario.textarea}
                 title="Escribe tu consulta"
               ></textarea>
             </div>

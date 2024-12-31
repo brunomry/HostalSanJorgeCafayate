@@ -21,32 +21,32 @@ const habitacionesEn = [
         nombre: "Single Room",
         precio: "15.000",
         tipo: "Single",
-        descripcion_breve: "Habitación simple de 4 m2 con cama individual",
-        descripcion_amplia: "Esta acogedora habitación de 4 metros cuadrados con cama individual incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 1 huésped.",
+        descripcion_breve: "Single room 4 m2 single bed",
+        descripcion_amplia: "This cozy 4 square meter room with single bed includes amenities such as Wi-Fi, private bathroom, bed linens, towels, toiletries and seiling fan. It has a maximum capacity of 1 guest.",
         capacidad: "1 persona",
-        comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"]    
+        comodidades: ["Wi-Fi", "Linens", "Towels", "Private bathroom", "Toiletries", "Ceiling fan", "Stove", "Shower", "Hot water", "Breakfast included", "Chairs"]    
       },
       {
         id: 6,
         imagenes:[doble6,doble6_1, doble6_2],
         nombre: "Double Room",
-        precio: "35.000",
+        precio: "30.000",
         tipo: "Double option 1",
-        descripcion_breve: "Habitación doble de 9 m2 con cama matrimonial",
-        descripcion_amplia: "Esta cómoda y luminosa habitación de 9 metros cuadrados cuenta con 1 cama matrimonial e incluye comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador, ventilador, armario y un mini balcón. Cuenta con una capacidad máxima de 2 huéspedes.",
+        descripcion_breve: "9 m2 double room with double bed",
+        descripcion_amplia: "This comfortable and luminous 9 square meter room has 1 double bed and includes amenities such as Wi-Fi, air conditioning, private bathroom, linens, towels, toiletries, seiling fan, closet and a mini balcony. It has a maximum capacity of 2 guests.",
         capacidad: "2 personas",
-        comodidades: ["Wi-Fi", "Aire acondicionado", "Balcón", "Armario", "Ropa de cama", "Sommier", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"]    
+        comodidades: ["Wi-Fi", "Air conditioner", "Balcony", "cupboard", "Linens", "Sommier", "Towels", "Private bathroom", "Toiletries", "Ceiling fan", "Stove", "Shower", "Hot water", "Breakfast included", "Chairs"]    
       },
       {
         id: 7,
         imagenes: [doble7, doble7_1, doble6_1],
         nombre: "Double Room",
-        precio: "35.000",
+        precio: "30.000",
         tipo: "Double option 2",
-        descripcion_breve: "Habitación doble de 9 m2 con cama matrimonial",
-        descripcion_amplia: "Esta habitación cuenta con 1 cama matrimonial para 2 personas y comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador, ventilador, armario y un mini balcón. Cuenta con una capacidad máxima de 2 huéspedes.",
+        descripcion_breve: "9 m2 double room with double bed",
+        descripcion_amplia: "This comfortable and luminous 9 square meter room has 1 double bed and includes amenities such as Wi-Fi, air conditioning, private bathroom, linens, towels, toiletries, seiling fan, closet and a mini balcony. It has a maximum capacity of 2 guests.",
         capacidad: "2 personas",
-        comodidades: ["Wi-Fi", "Aire acondicionado", "Balcón", "Armario", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"]  
+        comodidades: ["Wi-Fi", "Air conditioner", "Balcony", "cupboard", "Linens", "Towels", "Private bathroom", "Toiletries", "Ceiling fan", "Stove", "Shower", "Hot water", "Breakfast included", "Chairs"]  
       },
       {
         id: 5,
@@ -54,10 +54,10 @@ const habitacionesEn = [
         nombre: "Triple Room",
         precio: "45.000",
         tipo: "Triple",
-        descripcion_breve: "Habitación triple de 10 m2 con cama matrimonial e individual",
-        descripcion_amplia: "Esta habitación cuenta con 1 cama matrimonial y 1 cama individual. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 3 huéspedes.",
+        descripcion_breve: "Triple room of 10 m2 with a double bed and a single bed.",
+        descripcion_amplia: "This room has 1 double bed and 1 single bed. It includes amenities such as Wi-Fi, private bathroom, bed linen, towels, toiletries and seiling fan. It has a maximum capacity of 3 guests.",
         capacidad: "3 personas",
-        comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador",  "Armario", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"]    
+        comodidades: ["Wi-Fi", "Linens", "Towels", "Private bathroom", "Toiletries", "Ceiling fan",  "cupboard", "Stove", "Shower", "Hot water", "Breakfast included", "Chairs"]    
       },
       {
         id: 3,
@@ -65,10 +65,10 @@ const habitacionesEn = [
         nombre: "Cuadruple Room",
         precio: "60.000",
         tipo: "Cuadruple",
-        descripcion_breve: "Habitación cuádruple de 11 m2 con cama matrimonial y 2 camas individuales",
-        descripcion_amplia: "Esta amplia y cómoda habitación de 11 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 4 huéspedes.",
+        descripcion_breve: "Quadruple room of 11 m2 with double bed and 2 single beds.",
+        descripcion_amplia: "This spacious and comfortable room of 12 square meters has a double bed and 2 single beds. It includes amenities such as Wi-Fi, private bathroom, bed linen, towels, toiletries and seiling fan. It has a maximum capacity of 4 guests.",
         capacidad: "4 personas",
-        comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Armario", "Mesa pequeña", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"]    
+        comodidades: ["Wi-Fi", "Linens", "Towels", "Private bathroom", "Toiletries", "Ceiling fan", "cupboard", "Mesa pequeña", "Stove", "Shower", "Hot water", "Breakfast included", "Chairs"]    
       },
       {
         id: 4,
@@ -76,10 +76,10 @@ const habitacionesEn = [
         nombre: "Quintuple Room",
         precio: "75.000",
         tipo: "Quintuple",
-        descripcion_breve: "Habitación quíntuple de 11 m2 con cama matrimonial, cama individual y cama cucheta",
-        descripcion_amplia: "Esta amplia y cómoda habitación de 11 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 5 huéspedes.",
+        descripcion_breve: "12 m2 quintuple room with double bed, bunk bed and single bed.",
+        descripcion_amplia: "This spacious and comfortable 12 m2 room has a double bed, a single bed and a bunk bed. It includes amenities such as Wi-Fi, private bathroom, bed linen, towels, toiletries and seiling fan. It has a maximum capacity of 5 guests.",
         capacidad: "5 personas",
-        comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Armario", "Mesa pequeña", "Estufa", "Ducha", "Agua caliente","Desayuno incluido", "Silla"]    
+        comodidades: ["Wi-Fi", "Linens", "Towels", "Private bathroom", "Toiletries", "Ceiling fan", "cupboard", "Mesa pequeña", "Stove", "Shower", "Hot water","Breakfast included", "Chairs"]    
       },     
 ]
 

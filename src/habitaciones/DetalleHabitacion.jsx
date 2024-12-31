@@ -7,6 +7,7 @@ import FiltrosDetalle from "./components/FiltrosDetalle";
 import "./styles/detalleHabitacion.css";
 import { consultaPorWhatsApp } from "../helpers/whatsApp";
 import Head from "../seo/Head";
+import { traducciones } from "../helpers/traducciones";
 
 const DetalleHabitacion = ({ traduccion }) => {
   const [habitacion, setHabitacion] = useState(null);
@@ -62,10 +63,10 @@ const DetalleHabitacion = ({ traduccion }) => {
               </h2>
               <p className="text-gray-600">{habitacion.descripcion_breve}.</p>
               <p className="text-gray-600">
-                <span>Capacidad máxima para {habitacion.capacidad}.</span>
+                <span>{traduccion.paginaDetalle.capacidad} {habitacion.capacidad}.</span>
               </p>
               <div>
-                <h3 className="mb-1  text-[18px] font-medium">Comodidades:</h3>
+                <h3 className="mb-1  text-[18px] font-medium">{traduccion.paginaDetalle.subtitulo1}:</h3>
                 <div className="flex flex-wrap gap-1 md:gap-3">
                   {habitacion.comodidades &&
                     habitacion.comodidades.map((com, index) => (
@@ -86,40 +87,35 @@ const DetalleHabitacion = ({ traduccion }) => {
                   className="p-2 rounded-[100px] md:p-3 mt-2 w-[100%] lg:max-w-[300px] flex gap-2 justify-center items-center text-[1rem] bg-emerald-600 text-white lg:hover:bg-emerald-700 lg:hover:text-[#fff] "
                 >
                   <ImWhatsapp className="text-[30px]" />
-                  <span>RESERVAR</span>
+                  <span>{traduccion.paginaDetalle.btnReservar}</span>
                 </button>
               </div>
             </div>
           </article>
           <article className="vsm:w-[100%] lg:w-[50%] flex flex-col gap-2">
             <h3 className="vsm:text-[20px] md:text-[25px] border-b md:mb-4">
-              Más información
+              {traduccion.paginaDetalle.subtitulo2}
             </h3>
             <p className="text-gray-600">{habitacion.descripcion_amplia}</p>
             <ul className="list-disc ms-5">
               <li className="text-gray-600">
-                <span className="">Check-In: </span>a partir de las 02:00 am
-                hasta 00:00
+                <span className="">Check-In: </span>{traduccion.paginaDetalle.checkin}
               </li>
               <li className="text-gray-600">
-                <span className="">Check-Out: </span>hasta 10:00 am
+                <span className="">Check-Out: </span>{traduccion.paginaDetalle.checkout}
               </li>
-              <li className="text-gray-600">La estadía incluye Desayuno.</li>
+              <li className="text-gray-600">{traduccion.paginaDetalle.estadia}</li>
               <li className="text-gray-600">
-                <span className="">Horario Desayuno: </span>8:30 a 09:45 am (sin
-                excepción)
+                <span className="">{traduccion.paginaDetalle.horarioDesayuno}</span>
               </li>
             </ul>
           </article>
           <article className="vsm:w-[100%] lg:w-[50%] flex flex-col gap-2">
             <h3 className="text-[20px] md:text-[25px] border-b md:mb-4">
-              Medios de pago
+            {traduccion.paginaDetalle.subtitulo3}
             </h3>
             <p className="text-gray-600">
-              Además de efectivo, aceptamos transferencias bancarias y también
-              puedes abonar a través de link de mercadopago proporcionado por
-              nosotros donde podrás utilizar tu tarjeta de débito/crédito. Esta
-              última opción tiene un 10% de recargo.
+            {traduccion.paginaDetalle.mediosPago}
             </p>
           </article>
         </div>

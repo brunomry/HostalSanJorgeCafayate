@@ -93,6 +93,16 @@ const Footer = ({ traduccion }) => {
               <ul className="text-gray-600 ">
                 <li className="mb-4">
                   <Link
+                    to={"https://tinyurl.com/bookingsanjorge"}
+                    rel="noopener noreferrer"
+                    target="_BLANK"
+                    className="hover:underline text-gray-600 text-[.9rem]"
+                  >
+                    {traduccion.footer.info.booking}
+                  </Link>
+                </li>
+                <li className="mb-4">
+                  <Link
                     to={"/politicas"}
                     className="hover:underline text-gray-600 text-[.9rem]"
                   >

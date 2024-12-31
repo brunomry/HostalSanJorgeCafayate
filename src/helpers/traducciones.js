@@ -20,6 +20,7 @@ export const traducciones={
         "contacto": "Contacto",
         "info": {
           "title":"Información",
+          "booking":"Perfil en Booking",
           "politicas":"Políticas del hostal",
           "faqs":"Preguntas frecuentes",
           "nosotros":"Sobre Nosotros"
@@ -97,16 +98,33 @@ export const traducciones={
         "title":"Contáctanos",
         "descripcion1":"Nos encontramos ubicados a 2 cuadras de la plaza principal de Cafayate.",
         "descripcion2": "Encuéntranos con Google Maps",
-        "direccion": "Calixto Mamaní 105, Cafayate, Provincia de Salta, Argentina",
+        "direccion": "Dirección",
         "whatsApp": "WhatsApp",
-        "telefonoFijo": "Teléfono fijo",
+        "telefono": "Teléfono fijo",
         "formulario": {
           "title": "Déjanos tu consulta",
           "nombre": "Nombre y Apellido",
           "email": "Correo electrónico",
           "telefono": "Teléfono",
           "mensaje": "Mensaje",
+          "textarea":"Hola quería consultar sobre...",
           "btnEnviar": "Enviar"
+        }
+      },
+      "paginaReserva":{
+        "title":"Envía tu consulta para reservar",
+        "descripcion1": "Completa el formulario con tus datos y fechas de estadía, y en breve nos pondremos en contacto.",
+        "formulario": {
+          "nombre": "Nombre y apellido:",
+          "email": "Email",
+          "telefono": "Teléfono",
+          "adultos":"Adultos",
+          "menores":"Menores",
+          "llegada":"Fecha de Check-In",
+          "salida":"Fecha de Check-Out",
+          "mensaje": "Mensaje",
+          "textarea":"Hola quería consultar sobre...",
+          "btnEnviar": "Enviar consulta"
         }
       },
       "paginaFaqs":{
@@ -133,12 +151,14 @@ export const traducciones={
           "quintuple": "Quíntuple"
         },
         "capacidad":"Capacidad máxima para",
-        "subtitulo":"Comodidades",
+        "subtitulo1":"Comodidades",
         "btnReservar":"Reservar",
-        "checkin":"a partir de las 02:00 hasta 00:00",
+        "subtitulo2":"Más información",
+        "checkin":"disponible a partir de las 02:00 hasta 00:00",
         "checkout":"hasta 10 am",
         "estadia":"La estadía incluye Desayuno",
-        "horarioDesayuno":"8:30 a 09:45 am (sin excepción)",
+        "horarioDesayuno":"Horario Desayuno: 8:30 a 09:45 am (sin excepción)",
+        "subtitulo3": "Formas de pago",
         "mediosPago": "Además de efectivo, aceptamos transferencias bancarias y también puedes abonar a través de link de mercadopago proporcionado por nosotros donde podrás utilizar tu tarjeta de débito/crédito. Esta última opción tiene un 10% de recargo.",
       },
       "habitaciones": [
@@ -151,12 +171,14 @@ export const traducciones={
         "nosotros": "About us",
         "contacto":"Contact",
         "galeria":"Gallery",
+        "reserva":"Reservation request"
       },
       "footer": {
         "redes":"Follow us on our networks",
         "contacto":"Contact",
         "info": {
           "title":"Information",
+          "booking":"Profile Booking",
           "politicas":"Hostal Policies",
           "faqs":"Faqs",
           "nosotros":"About us"
@@ -232,18 +254,35 @@ export const traducciones={
       },
       "paginaContacto":{
         "title":"Contact us",
-        "descripcion1":"",
+        "descripcion1":"We are 2 blocks away from the main square of Cafayate.",
         "descripcion2": "Find us with Google Maps",
-        "direccion": "Calixto Mamaní 105, Cafayate, Salta, Argentina",
+        "direccion": "Address",
         "whatsApp": "WhatsApp",
-        "telefonoFijo": "",
+        "telefono": "Telephone",
         "formulario": {
-          "title": "",
+          "title": "Ask a question",
           "nombre": "Name and Surname:",
           "email": "Email",
           "telefono": "Telephone",
           "mensaje": "Message",
+          "textarea":"Hello, I wanted to ask about...",
           "btnEnviar": "Submit"
+        }
+      },
+      "paginaReserva":{
+        "title":"",
+        "descripcion1": "",
+        "formulario": {
+          "nombre": "Name and Surname:",
+          "email": "Email",
+          "telefono": "Telephone",
+          "adultos":"Adults",
+          "menores":"Minors",
+          "llegada":"Check-In Date",
+          "salida":"Check-Out Date",
+          "mensaje": "Message",
+          "textarea":"Hello, I wanted to ask about...",
+          "btnEnviar": "Submit inquiry"
         }
       },
       "paginaFaqs":{
@@ -269,14 +308,16 @@ export const traducciones={
           "cuadruple": "Cuadruple",
           "quintuple": "Quintuple"
         },
-        "capacidad":"Capacidad máxima para",
-        "subtitulo":"Amenities",
+        "capacidad":"Maximum capacity for",
+        "subtitulo1":"Amenities",
         "btnReservar":"Reserve",
-        "checkin":"",
-        "checkout":"",
-        "estadia":"",
-        "horarioDesayuno":"8:30 a 09:45 am ",
-        "mediosPago": "",
+        "subtitulo2":"More information",
+        "checkin":"available from 02:00 pm to 00:00 am",
+        "checkout":"is until 10:00 am.",
+        "estadia":"The stay includes breakfast",
+        "horarioDesayuno":"Breakfast time: 8:30 a.m. to 9:45 a.m. (no exceptions)",
+        "subtitulo3":"Payment Methods",
+        "mediosPago": "In addition to cash, we accept bank transfers and you can also pay through the Mercadopago link provided by us where you can use your debit/credit card. This last option has a 10% extra charge.",
       },
       "habitaciones": [
         ...habitacionesEn

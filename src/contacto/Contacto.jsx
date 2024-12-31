@@ -25,12 +25,11 @@ const Contacto = ({traduccion}) => {
             {traduccion.paginaContacto.title}
           </h1>
           <p className="mb-3 text-gray-600">
-            Nos encontramos ubicados a 2 cuadras de la plaza principal de
-            Cafayate.
+          {traduccion.paginaContacto.descripcion1}
           </p>
           <div className="flex flex-col gap-5">
             <div className="border-y py-5">
-              <h2 className="md:text-[18px] mb-2">Dirección</h2>
+              <h2 className="md:text-[18px] mb-2"> {traduccion.paginaContacto.direccion}</h2>
               <div className="flex gap-2 items-center" title="Dirección: Calixto Mamaní 105, Cafayate, Salta, Argentina">
                 <FaMapMarkerAlt className="text-[20px] text-teal-500" />
                 <p className="text-gray-600">
@@ -46,7 +45,7 @@ const Contacto = ({traduccion}) => {
               </div>
             </div>
             <div className="border-b pb-5" title="Teléfono fijo: +54 3868 422388">
-              <h2 className="md:text-[18px] mb-2">Teléfono fijo</h2>
+              <h2 className="md:text-[18px] mb-2">{traduccion.paginaContacto.telefono}</h2>
               <div className="flex gap-2 items-center">
                 <FaPhone className="text-[20px] text-teal-500" />
                 <p className="text-gray-600">+54 03868 422388</p>
@@ -65,7 +64,7 @@ const Contacto = ({traduccion}) => {
         </section>
         <section className="d-flex flex-column align-items-center mt-5 w-[100%] order-2">
           <h3 className="text-center py-3  vsm:text-[20px] md:text-[25px]">
-            Déjanos tu consulta
+          {traduccion.paginaContacto.formulario.title}
           </h3>
           <FormContacto traduccion={traduccion}></FormContacto>
         </section>
