@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import frente from "../assets/IMG/frente.jpg"
 
 function Head({ head }) {
   return (

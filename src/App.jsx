@@ -13,31 +13,36 @@ import ScrollTop from "./common/ScrollTop";
 import Politicas from "./politicas/Politicas";
 import Nosotros from "./nosotros/Nosotros";
 import Reserva from "./pages/reserva/Reserva";
+import { traducciones } from "./helpers/traducciones";
+import { useState } from "react";
 
 const App = () => {
+  const [idioma, setIdioma] = useState(localStorage.getItem('idiomaKey') || 'es');
+  const traduccion = traducciones[idioma];
+
   return (
     <>
       <BrowserRouter>
         <ScrollTop></ScrollTop>
-        <Navbar></Navbar>
+        <Navbar setIdioma={setIdioma} traduccion={traduccion}></Navbar>
         <Routes>
-          <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/" element={<Home traduccion={traduccion}></Home>}></Route>
           <Route
             path="/habitaciones"
-            element={<Habitaciones></Habitaciones>}
+            element={<Habitaciones traduccion={traduccion}></Habitaciones>}
           ></Route>
           <Route
             path="/habitacion/:id"
-            element={<DetalleHabitacion></DetalleHabitacion>}
+            element={<DetalleHabitacion traduccion={traduccion}></DetalleHabitacion>}
           ></Route>
-          <Route path="/galeria" element={<Galeria></Galeria>}></Route>
-          <Route path="/preguntasfrecuentes" element={<Faqs></Faqs>}></Route>
-          <Route path="/contacto" element={<Contacto></Contacto>}></Route>
-          <Route path="/politicas" element={<Politicas></Politicas>}></Route>
-          <Route path="/nosotros" element={<Nosotros></Nosotros>}></Route>
-          <Route path="/reserva" element={<Reserva></Reserva>}></Route>
+          <Route path="/galeria" element={<Galeria traduccion={traduccion}></Galeria>}></Route>
+          <Route path="/preguntasfrecuentes" element={<Faqs traduccion={traduccion}></Faqs>}></Route>
+          <Route path="/contacto" element={<Contacto traduccion={traduccion}></Contacto>}></Route>
+          <Route path="/politicas" element={<Politicas traduccion={traduccion}></Politicas>}></Route>
+          <Route path="/nosotros" element={<Nosotros traduccion={traduccion}></Nosotros>}></Route>
+          <Route path="/reserva" element={<Reserva traduccion={traduccion}></Reserva>}></Route>
         </Routes>
-        <Footer></Footer>
+        <Footer traduccion={traduccion}></Footer>
       </BrowserRouter>
     </>
   );

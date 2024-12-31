@@ -1,278 +1,326 @@
+import { comodidadesEs } from "./comodidadesEs";
+import { comodidadesEn } from "./comodidadesEn";
+import faqsEn from "./faqsEn";
+import faqsEs from "./faqsEs";
+import politicasEn from "./politicasEn";
+import politicasEs from "./politicasEs";
+import habitacionesEn from "./habitacionesEn";
+import habitacionesEs from "./habitacionesEs";
+
 export const traducciones={
     "es": {
-      "rooms": "Habitaciones",
-      "gallery": "Galería",
-      "howToGet": "Cómo Llegar",
-      "faqs": "Preguntas Frecuentes",
-      "language": "Idioma",
-      "sectionWelcome": {
-        "title": "Bienvenido a",
-        "description": "Con más de 15 años brindando alojamiento a nuestros huéspedes, en Hostal San Jorge le ofrecemos un lugar cómodo, tranquilo e ideal para descansar. Permítanos ser su hogar lejos de casa y disfrute de una experiencia agradable y memorable mientras explora los encantos de la hermosa ciudad de Cafayate en la provincia de Salta, noroeste argentino."
-      },
-      "sectionService": {
-        "breakfastTitle": "Servicio de Desayuno incluido",
-        "breakfastDescription": "Comience sus mañanas con un rico desayuno para energizar su día. Te esperamos para brindarte nuestro servicio de desayuno, que podrás disfrutar durante tu estadía."
-      },
-      "sectionOurRooms": {
-        "title": "Nuestras Habitaciones",
-        "description1": "Ofrecemos habitaciones privadas diseñadas para su comodidad y tranquilidad, que van desde simples hasta quíntuples.",
-        "description2": "¡Tu espacio perfecto y la mejor experiencia la tendrás con nosotros!",
-        "btnSeeRooms": "Ver Habitaciones"
-      },
-      "sectionInfo": {
-        "faqsTitle": "Preguntas frecuentes",
-        "faqsDescription": "Consultá las preguntas más frecuentes de nuestros huéspedes.",
-        "howToArriveTitle": "Cómo llegar",
-        "howToArriveDescription": "Hostal San Jorge se encuentra ubicado a 2 cuadras de la plaza principal de Cafayate.",
-        "galleryTitle": "Galería",
-        "galleryDescription": "También puedes ver más imágenes de nuestro Hostal.",
-        "SeeMore": "Ver más"
-      },
-      "descriptionRooms": {
-        "title": "Nuestras Habitaciones",
-        "description": "Descubre el encanto y la comodidad de nuestras habitaciones. Cada espacio ha sido diseñado pensando en tu confort.",
-        "description1": "¡Conoce nuestras habitaciones y no dudes en elegirnos!",
-        "descriptionPayMethods": "También puedes ver:",
-        "btnPayMethods": "Formas de pago"
-      },
-      "cardRoom": {
-        "descriptionBedSingle": "1 cama individual.",
-        "descriptionBedDouble": "1 cama matrimonial.",
-        "descriptionBedTriple": "1 cama matrimonial y 1 cama individual.",
-        "descriptionBedQuintuple": "1 cama matrimonial, 1 cama individual y 1 cama cucheta.",
-        "maximumCapacitySingle": "Capacidad Máxima:",
-        "maximumCapacityDouble": "Capacidad Máxima:",
-        "maximumCapacityTriple": "Capacidad Máxima:",
-        "maximumCapacityQuintuple": "Capacidad Máxima:",
-        "btnMoreInfo": "Más información"
-      },
-      "btnCheckRoom": "Consultar Habitación",
-      "sectionGallery": {
-        "title": "Galería de imágenes",
-        "description1": "¡Conoce nuestras instalaciones y habitaciones a través de nuestra galería de imágenes!",
-        "description2": "Puedes ver cada imagen en detalle.",
-        "description3": "Imágenes tomadas por Sol Herrera. Ig: solherrera.ar"
-      },
-      "sectionHowToGet": {
-        "title": "Cómo llegar a nuestro Hostal",
-        "description": "Encuéntranos con Google Maps"
-      },
-      "sectionContact": {
-        "title": "Visítanos",
-        "address": "Calixto Mamaní 105, Cafayate, Provincia de Salta, Argentina",
-        "telephone": "Teléfono",
-        "formContact": {
-          "name": "Nombre y Apellido:",
-          "email": "Correo electrónico:",
-          "questions": "Consulta:",
-          "btnSubmit": "Enviar"
-        }
-      },
-      "simpleRoom": "Habitación Individual",
-      "dobleRoom": "Habitación Doble",
-      "tripleRoom": "Habitación Triple",
-      "quintupleRoom": "Habitación Quíntuple",
-      "roomDescription": {
-        "subtitle": "Descripción",
-        "descriptionSingle": "Esta acogedora habitación cuenta con 1 cama individual para una sola persona y comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.",
-        "descriptionDouble": "Esta habitación cuenta con 1 cama matrimonial para 2 personas y comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo. Además cuenta con un mini balcón.",
-        "descriptionTriple": "Esta habitación para 3 personas cuenta con 1 cama matrimonial y 1 cama individual. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.",
-        "descriptionQuintuple": "Esta amplia y cómoda habitación para 5 personas cuenta con 1 cama matrimonial, 1 cama individual y 1 cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador de techo.",
-        "share": "Compartir:"
-      },
-      "contact": {
-        "title": "Por Consultas o Reservas:",
-        "telephone": "Teléfono"
-      },
-      "fullscreen": {
-        "btnClose": "Cerrar",
-        "btnVolver": "Volver"
-      },
-      "containerQuestions": {
-        "title": "Preguntas Frecuentes",
-        "description": "Si tu pregunta no se encuentra aquí, no te preocupes. Puedes escribirnos o llamarnos y estaremos encantados en ayudarte a responder tus dudas."
-      },
-      "faq": {
-        "question1": "¿A qué hora puedo realizar el Check-In?",
-        "answer1": "El Check-In está disponible a partir de las 02:00 pm.",
-        "question2": "¿A qué hora puedo realizar el Check-Out?",
-        "answer2": "El Check-Out es hasta las 10:00 am.",
-        "question3": "¿El Desayuno está incluido en la Estadía?",
-        "answer3": "¡Sí, claro que sí! En nuestro hostal, ofrecemos servicio de desayuno cada mañana en el horario de las 08:15 a 09:45 am.",
-        "question4": "¿Cuáles son las Formas de pago?",
-        "question5": "¿El Hostal cuenta con Wi-Fi?",
-        "answer5": "Sí, contamos con conexión Wi-Fi y puedes conectarte desde cualquier lugar del hostal, ya sea en tu habitación o en áreas comunes.",
-        "question6": "¿Las Habitaciones son Privadas o Compartidas?",
-        "answer6": "En nuestro hostal, todas las habitaciones son privadas garantizando la mayor privacidad para nuestros huéspedes.",
-        "question7": "¿Las Habitaciones cuentan con Aire Acondicionado?",
-        "answer7": "Actualmente tenemos dos habitaciones dobles con aire acondicionado para brindarle una estancia aún más cómoda. Las demás habitaciones aún no disponen de este servicio.",
-        "question8": "¿Las Habitaciones cuentan con Televisión?",
-        "answer8": "En nuestro hostal, nos enfocamos en brindar un espacio tranquilo e ideal para descansar, por lo que actualmente no ofrecemos servicio de televisión en ninguna de nuestras habitaciones o en áreas comunes.",
-        "question9": "¿Las Habitaciones cuentan con Baño privado?",
-        "answer9": "Sí, todas nuestras habitaciones disponen de baño privado.",
-        "question10": "¿El Hostal cuenta con Estacionamiento?",
-        "answer10": "En este momento, nuestro hostal no dispone de estacionamiento propio.",
-        "question11": "¿El Hostal cuenta con Piscina?",
-        "answer11": "Nuestro hostal no cuenta con piscina.",
-        "question12": "¿Se aceptan mascotas?",
-        "answer12": "No se aceptan mascotas por el momento.",
-        "question13": {
-          "description1": {
-            "span1": "Puedes realizar tu reserva de dos maneras: a través de WhatsApp o llamando a nuestro teléfono fijo. Para garantizar tu estadía, solicitamos un pago inicial del 50% como seña. Puedes realizar esta transacción a través de las",
-            "link": "formas de pago",
-            "span2": "habilitadas."
-          },
-          "description2": "En caso de cancelación, te recomendamos notificarnos con al menos 12 horas de antelación para poder procesar el reintegro de la seña. Estas políticas nos permiten gestionar eficientemente nuestras reservas y brindarte el mejor servicio posible.",
-          "description3": "En caso de llegar más tarde de lo previsto, por favor comunícate con nosotros para informarnos. Esto nos ayuda a asegurarnos de tu llegada. Apreciamos tu colaboración, especialmente en períodos de alta demanda.",
-          "description4": "Si tienes alguna pregunta adicional, estamos disponibles para ayudarte."
-        }
-      },
-      "paymentMethods": {
-        "title": "Formas de Pago",
-        "payment1": "Pago en efectivo.",
-        "payment2": "Transferencias bancarias.",
-        "payment3": "Link de la app MercadoPago para que puedas pagar con tu tarjeta de débito o crédito."
+      "navbar": {
+        "habitaciones":"Habitaciones",
+        "nosotros": "Nosotros",
+        "contacto":"Contacto",
+        "galeria":"Galería",
       },
       "footer": {
-        "title": "¡Esperamos verte pronto en Hostal San Jorge!"
-      }
+        "redes":"Síguenos en nuestras redes",
+        "contacto": "Contacto",
+        "info": {
+          "title":"Información",
+          "booking":"Perfil en Booking",
+          "politicas":"Políticas del hostal",
+          "faqs":"Preguntas frecuentes",
+          "nosotros":"Sobre Nosotros"
+        },
+        "colaboraciones":{
+          "title":"Colaboraciones",
+          "ph": "Fotografía",
+          "traducciones":"Traducciones"
+        },
+        "derechos":{
+          "derechos": "Todos los derechos reservados.",
+          "autor": "Desarrollado por"
+        }
+      },
+      "btnWpp": "Reserva ahora",
+      "paginaHome":{
+        "seccionBanner": {
+          "ubicacion":"Provincia de Salta, Noroeste argentino",
+          "descripcion":"Tu lugar ideal para descansar y pasar tus vacaciones.",
+          "btnHabitaciones": "Nuestras habitaciones",
+          "cercania":"Estamos a 2 cuadras de la plaza principal"
+        },
+        "seccionResenas": {
+          "btn": "Ver reseñas en Google"
+        },
+        "seccionNosotros":{
+          "title":"Sobre Nosotros",
+          "descripcion1": "Con más de 15 años brindando alojamiento a nuestros huéspedes, en Hostal San Jorge le ofrecemos un lugar cómodo, tranquilo e ideal para descansar.",
+          "descripcion2": "Permítanos ser su hogar lejos de casa y disfrute de una experiencia agradable y memorable mientras explora los encantos de la hermosa ciudad de Cafayate en la provincia de Salta, noroeste argentino.",
+          "btn": "Leer más"
+        },
+        "seccionHabitaciones": {
+          "title":"Nuestras Habitaciones",
+          "descripcion": "Ofrecemos habitaciones privadas diseñadas para su comodidad y tranquilidad, que van desde simples hasta quíntuples.",
+          "subtitulo":"Comodidades y Servicios",
+          "comodidades": [...comodidadesEs],
+          "btn": "Ver Habitaciones"
+        },
+        "btnVerMas": "Ver más"  
+      },
+      "paginaHabitaciones":{
+        "title":"Nuestras Habitaciones",
+        "descripcion": "Descubre el encanto y la comodidad de nuestras habitaciones. Cada espacio fue diseñado pensando en tu confort.",
+        "descripcionFiltro":"Puedes seleccionar la habitación que estés buscando",
+        "btnCard": "Más información",
+        "filtros":[
+          "Todas",
+          "Individual",
+          "Doble",
+          "Triple",
+          "Cuádruple",
+          "Quíntuple"
+        ],
+      }, 
+      "paginaNosotros":{
+        "title":"Sobre nosotros",
+        "descripcion1": "Con más de 15 años brindando alojamiento a nuestros huéspedes, en Hostal San Jorge le ofrecemos un lugar cómodo, tranquilo e ideal para descansar. Permítanos ser su hogar lejos de casa y disfrute de una experiencia agradable y memorable mientras explora los encantos de la hermosa ciudad de Cafayate en la provincia de Salta, noroeste argentino.",
+        "subtitulo": "Nuestra historia",
+        "descripcion2": "El Hostal San Jorge comenzó su camino como un proyecto familiar con la visión de ofrecer a turistas y viajeros un espacio donde relajarse después de explorar los maravillosos paisajes de Cafayate. A lo largo de los años, nos hemos convertido en una opción preferida para aquellos que buscan un ambiente tranquilo, cálido y acogedor, manteniendo siempre una atención personalizada que nos diferencia.",
+        "apertura":"Hostal San Jorge abrió sus puertas en el año 2008.",
+        "subtitulo1": "Misión",
+        "descripcion3": "Nuestra misión es ofrecer a nuestros huéspedes un lugar cómodo, tranquilo e ideal para descansar, comprometidos a brindar una experiencia única y agradable, donde puedan sentirse como en casa mientras exploran la cultura local.",
+        "subtitulo2": "Visión",
+        "descripcion4": "Nuestra visión es ser un hostal de referencia en la ciudad, reconocido por nuestra hospitalidad, siendo un lugar donde cada huésped se sienta cómodo y seguro, asegurando que en el futuro nos elijan nuevamente.",
+        "subtitulo3": "Valores",
+        "descripcion5": ["Hospitalidad: Nos enorgullecemos de hacer sentir a nuestros huéspedes como en casa, brindando un trato personalizado y cordial",
+          "Calidad: Mantenemos altos estándares de limpieza, confort y atención para asegurar que su estadía sea inmejorable",
+          "Compromiso: Estamos comprometidos con el bienestar de nuestros huéspedes, haciendo todo lo posible para superar sus expectativas"],
+      },
+      "paginaGaleria":{
+        "title":"Galería",
+        "descripcion": "¡Conoce nuestras instalaciones y habitaciones a través de nuestra galería de imágenes!",
+      },
+      "paginaContacto":{
+        "title":"Contáctanos",
+        "descripcion1":"Nos encontramos ubicados a 2 cuadras de la plaza principal de Cafayate.",
+        "descripcion2": "Encuéntranos con Google Maps",
+        "direccion": "Dirección",
+        "whatsApp": "WhatsApp",
+        "telefono": "Teléfono fijo",
+        "formulario": {
+          "title": "Déjanos tu consulta",
+          "nombre": "Nombre y Apellido",
+          "email": "Correo electrónico",
+          "telefono": "Teléfono",
+          "mensaje": "Mensaje",
+          "textarea":"Hola quería consultar sobre...",
+          "btnEnviar": "Enviar"
+        }
+      },
+      "paginaReserva":{
+        "title":"Envía tu consulta para reservar",
+        "descripcion1": "Completa el formulario con tus datos y fechas de estadía, y en breve nos pondremos en contacto.",
+        "formulario": {
+          "nombre": "Nombre y apellido:",
+          "email": "Email",
+          "telefono": "Teléfono",
+          "adultos":"Adultos",
+          "menores":"Menores",
+          "llegada":"Fecha de Check-In",
+          "salida":"Fecha de Check-Out",
+          "mensaje": "Mensaje",
+          "textarea":"Hola quería consultar sobre...",
+          "btnEnviar": "Enviar consulta"
+        }
+      },
+      "paginaFaqs":{
+        "title":"Preguntas frecuentes",
+        "descripcion": "Consultá las preguntas más frecuentes de nuestros huéspedes.",
+        "faqs": [
+          ...faqsEs
+        ]
+      },
+      "paginaPoliticas":{
+        "title":"Políticas del Hostal",
+        "descripcion":"A continuación, te presentamos nuestras políticas generales para asegurar una estadía cómoda y segura en el hostal.",
+        "politicas": [
+          ...politicasEs
+        ]
+      },
+      "paginaDetalle":{
+        "filtros":{
+          "individual": "Individual",
+          "doble1": "Doble opción 1",
+          "doble2": "Doble opción 2",
+          "triple": "Triple",
+          "cuadruple": "Cuádruple",
+          "quintuple": "Quíntuple"
+        },
+        "capacidad":"Capacidad máxima para",
+        "subtitulo1":"Comodidades",
+        "btnReservar":"Reservar",
+        "subtitulo2":"Más información",
+        "checkin":"disponible a partir de las 02:00 hasta 00:00",
+        "checkout":"hasta 10 am",
+        "estadia":"La estadía incluye Desayuno",
+        "horarioDesayuno":"Horario Desayuno: 8:30 a 09:45 am (sin excepción)",
+        "subtitulo3": "Formas de pago",
+        "mediosPago": "Además de efectivo, aceptamos transferencias bancarias y también puedes abonar a través de link de mercadopago proporcionado por nosotros donde podrás utilizar tu tarjeta de débito/crédito. Esta última opción tiene un 10% de recargo.",
+      },
+      "habitaciones": [
+        ...habitacionesEs
+      ]
     },
     "en": {
-      "rooms": "Rooms",
-      "gallery": "Gallery",
-      "howToGet": "How To Get Here",
-      "faqs": "FAQs",
-      "language": "Language",
-      "sectionWelcome": {
-        "title": "Welcome to",
-        "description": "With over 15 years of providing lodging to our guests, at Hostal San Jorge we offer you a comfortable, quiet, and ideal place to rest. Let us be your home away from home and enjoy a pleasant and memorable experience while you explore the charms of the beautiful city of Cafayate in the province of Salta, northwestern Argentina."
-      },
-      "sectionService": {
-        "breakfastTitle": "Breakfast Service Included",
-        "breakfastDescription": "Start your mornings with a delicious breakfast to energize your day. We look forward to serving you breakfast, which you can enjoy during your stay."
-      },
-      "sectionOurRooms": {
-        "title": "Our Rooms",
-        "description1": "We offer private rooms designed for your comfort and peace, ranging from single to quintuple.",
-        "description2": "Your perfect space and best experience await with us!",
-        "btnSeeRooms": "See Rooms"
-      },
-      "sectionInfo": {
-        "faqsTitle": "Frequently Asked Questions",
-        "faqsDescription": "Check out the most frequently asked questions from our guests.",
-        "howToArriveTitle": "How to Get Here",
-        "howToArriveDescription": "Hostal San Jorge is located 2 blocks from the main square of Cafayate.",
-        "galleryTitle": "Gallery",
-        "galleryDescription": "You can also view more images of our Hostal.",
-        "SeeMore": "See More"
-      },
-      "descriptionRooms": {
-        "title": "Our Rooms",
-        "description": "Discover the charm and comfort of our rooms. Each space is designed with your comfort in mind.",
-        "description1": "Explore our rooms and don’t hesitate to choose us!",
-        "descriptionPayMethods": "You can also check out:",
-        "btnPayMethods": "Payment Methods"
-      },
-      "cardRoom": {
-        "descriptionBedSingle": "1 single bed.",
-        "descriptionBedDouble": "1 double bed.",
-        "descriptionBedTriple": "1 double bed and 1 single bed.",
-        "descriptionBedQuintuple": "1 double bed, 1 single bed, and 1 bunk bed.",
-        "maximumCapacitySingle": "Maximum Capacity:",
-        "maximumCapacityDouble": "Maximum Capacity:",
-        "maximumCapacityTriple": "Maximum Capacity:",
-        "maximumCapacityQuintuple": "Maximum Capacity:",
-        "btnMoreInfo": "More Info"
-      },
-      "btnCheckRoom": "Check Room",
-      "sectionGallery": {
-        "title": "Image Gallery",
-        "description1": "Explore our facilities and rooms through our image gallery!",
-        "description2": "You can view each image in detail.",
-        "description3": "Images taken by Sol Herrera. Ig: solherrera.ar"
-      },
-      "sectionHowToGet": {
-        "title": "How to Get to Our Hostal",
-        "description": "Find us with Google Maps"
-      },
-      "sectionContact": {
-        "title": "Visit Us",
-        "address": "Calixto Mamaní 105, Cafayate, Province of Salta, Argentina",
-        "telephone": "Telephone",
-        "formContact": {
-          "name": "Name:",
-          "email": "Email:",
-          "questions": "Inquiry:",
-          "btnSubmit": "Submit"
-        }
-      },
-      "simpleRoom": "Single Room",
-      "dobleRoom": "Double Room",
-      "tripleRoom": "Triple Room",
-      "quintupleRoom": "Quintuple Room",
-      "roomDescription": {
-        "subtitle": "Description",
-        "descriptionSingle": "This cozy room features 1 single bed for one person and amenities such as Wi-Fi, private bathroom, bed linens, towels, toiletries, and ceiling fan.",
-        "descriptionDouble": "This room features 1 double bed for 2 people and amenities such as Wi-Fi, air conditioning, private bathroom, bed linens, towels, toiletries, and ceiling fan. It also has a small balcony.",
-        "descriptionTriple": "This room for 3 people features 1 double bed and 1 single bed. It includes amenities such as Wi-Fi, private bathroom, bed linens, towels, toiletries, and ceiling fan.",
-        "descriptionQuintuple": "This spacious and comfortable room for 5 people features 1 double bed, 1 single bed, and 1 bunk bed. It includes amenities such as Wi-Fi, private bathroom, bed linens, towels, toiletries, and ceiling fan.",
-        "share": "Share:"
-      },
-      "contact": {
-        "title": "For Inquiries or Reservations:",
-        "telephone": "Telephone"
-      },
-      "fullscreen": {
-        "btnClose": "Close",
-        "btnVolver": "Return"
-      },
-      "containerQuestions": {
-        "title": "Frequently Asked Questions",
-        "description": "If your question is not listed here, don't worry. You can write to us or call us and we will be happy to assist you with your queries."
-      },
-      "faq": {
-        "question1": "What time can I Check-In?",
-        "answer1": "Check-In is available from 02:00 pm.",
-        "question2": "What time can I Check-Out?",
-        "answer2": "Check-Out is until 10:00 am.",
-        "question3": "Is Breakfast included in the Stay?",
-        "answer3": "Yes, of course! At our hostal, we offer breakfast service every morning from 08:15 to 09:45 am.",
-        "question4": "What are the Payment Methods?",
-        "question5": "Does the Hostal have Wi-Fi?",
-        "answer5": "Yes, we have Wi-Fi and you can connect from anywhere in the hostal, whether in your room or common areas.",
-        "question6": "Are the Rooms Private or Shared?",
-        "answer6": "At our hostal, all rooms are private, ensuring maximum privacy for our guests.",
-        "question7": "Do the Rooms have Air Conditioning?",
-        "answer7": "Currently, we have two double rooms with air conditioning to provide an even more comfortable stay. The other rooms do not yet have this service.",
-        "question8": "Do the Rooms have a Television?",
-        "answer8": "At our hostal, we focus on providing a peaceful and ideal space for rest, so we do not currently offer television service in any of our rooms or common areas.",
-        "question9": "Do the Rooms have Private Bathrooms?",
-        "answer9": "Yes, all of our rooms have private bathrooms.",
-        "question10": "Does the Hostal have Parking?",
-        "answer10": "At this moment, our hostal does not have its own parking.",
-        "question11": "Does the Hostal have a Swimming Pool?",
-        "answer11": "Our hostal does not have a swimming pool.",
-        "question12": "Are Pets Allowed?",
-        "answer12": "Pets are not allowed at the moment.",
-        "question13": {
-          "description1": {
-            "span1": "You can make your reservation in two ways: via WhatsApp or by calling our landline. To guarantee your stay, we request a 50% advance payment as a deposit. You can make this transaction through the",
-            "link": "payment methods",
-            "span2": "enabled."
-          },
-          "description2": "In case of cancellation, we recommend notifying us at least 12 hours in advance to process the refund of the deposit. These policies allow us to efficiently manage our reservations and provide you with the best possible service.",
-          "description3": "If you are arriving later than expected, please contact us to inform us. This helps us ensure your arrival. We appreciate your cooperation, especially during peak periods.",
-          "description4": "If you have any further questions, we are available to assist you."
-        }
-      },
-      "paymentMethods": {
-        "title": "Payment Methods",
-        "payment1": "Cash payment.",
-        "payment2": "Bank transfers.",
-        "payment3": "MercadoPago app link so you can pay with your debit or credit card."
+      "navbar": {
+        "habitaciones":"Rooms",
+        "nosotros": "About us",
+        "contacto":"Contact",
+        "galeria":"Gallery",
+        "reserva":"Reservation request"
       },
       "footer": {
-        "title": "We hope to see you soon at Hostal San Jorge!"
-      }
-    }
+        "redes":"Follow us on our networks",
+        "contacto":"Contact",
+        "info": {
+          "title":"Information",
+          "booking":"Profile Booking",
+          "politicas":"Hostal Policies",
+          "faqs":"Faqs",
+          "nosotros":"About us"
+        },
+        "colaboraciones":{
+          "title":"Collaborations",
+          "ph": "Photograph",
+          "traducciones":"Translations"
+        },
+        "derechos":{
+          "derechos": "All rights reserved.",
+          "autor": "Developed by"
+        }
+      },
+      "btnWpp": "Reserve now",
+      "paginaHome":{
+        "seccionBanner": {
+          "ubicacion":"Salta province, Argentinian north-west",
+          "descripcion":"The perfect place to rest and enjoy your vacations.",
+          "btnHabitaciones": "Our Rooms",
+          "cercania":"We are 2 blocks away of the main Square"
+        },
+        "seccionResenas": {
+          "btn": "See reviews on Google"
+        },
+        "seccionNosotros":{
+          "title":"About us",
+          "descripcion1": "With more than 15 years providing accommodation to our guests, at Hostal San Jorge we offer you a comfortable, quiet and ideal place to rest.",
+          "descripcion2": "Permit us be your home away and enjoy a greate and memorable experience, while you explore the charms of the beautiful Cafayate city, Salta province, Argentinian north-west.",
+          "btn": "See more"
+        },
+        "seccionHabitaciones": {
+          "title":"Our Rooms",
+          "descripcion": "We offer private rooms designed for your comfort and peace, ranging from single to quintuple.",
+          "subtitulo":"Amenities and Services",
+          "comodidades": [...comodidadesEn],
+          "btn": "See Rooms"
+        },  
+        "btnVerMas": "See more"  
+      },
+      "paginaHabitaciones":{
+        "title":"Our Rooms",
+        "descripcion": "Discover the charm and comfort of our rooms. Each space was designed thinking about your comfort.",
+        "descripcionFiltro":"Select the room you are looking for.",
+        "btnCard": "More Information",
+        "filtros":[
+          "All",
+          "Single",
+          "Double",
+          "Triple",
+          "Cuadruple",
+          "Quintuple"
+        ],
+      }, 
+      "paginaNosotros":{
+        "title":"About us",
+        "descripcion1": "With more than 15 years providing accommodation to our guests, at Hostal San Jorge we offer you a comfortable, quiet and ideal place to rest. Permit us be your home away and enjoy a greate and memorable experience, while you explore the charms of the beautiful Cafayate city, Salta province, Argentinian north-west.",
+        "subtitulo": "Our history",
+        "descripcion2": "Hostal San Jorge began its history as a family project with the vision of offering tourists and travelers a place to rest and relax after exploring the wonderful landscapes of Cafayate. Over the years, we have become a preferred option for those who are looking for a quiet, warm and cozy place, always maintaining the personalized attention which sets us apart.",
+        "apertura":"",
+        "subtitulo1": "Mission",
+        "descripcion3": "Our mission is to offer our guests a comfortable, quiet and ideal place to rest, with a commitment: provide a unique and pleasant experience, where you can feel at home while exploring the local culture.",
+        "subtitulo2": "Vision",
+        "descripcion4": "Our vision is to be a landmark hostel in the city, recognized for our outstanding hospitality, being a place where every guest feels comfortable and safe, ensuring that they will choose us again.",
+        "subtitulo3": "Values",
+        "descripcion5": ["Hospitality: We pride ourselves in making our guests feel like home, providing a warm and customized treatment.",
+          "Quality: We maintain high standards of cleanliness, comfort and attention to ensure that your stay is unbeatable.",
+          "Commitment: We are committed to the well-being of our guests, doing everything possible to surpass their expectations."],
+      },
+      "paginaGaleria":{
+        "title":"Gallery",
+        "descripcion": "¡Get to know our facilities and rooms through our image gallery!",
+      },
+      "paginaContacto":{
+        "title":"Contact us",
+        "descripcion1":"We are 2 blocks away from the main square of Cafayate.",
+        "descripcion2": "Find us with Google Maps",
+        "direccion": "Address",
+        "whatsApp": "WhatsApp",
+        "telefono": "Telephone",
+        "formulario": {
+          "title": "Ask a question",
+          "nombre": "Name and Surname:",
+          "email": "Email",
+          "telefono": "Telephone",
+          "mensaje": "Message",
+          "textarea":"Hello, I wanted to ask about...",
+          "btnEnviar": "Submit"
+        }
+      },
+      "paginaReserva":{
+        "title":"",
+        "descripcion1": "",
+        "formulario": {
+          "nombre": "Name and Surname:",
+          "email": "Email",
+          "telefono": "Telephone",
+          "adultos":"Adults",
+          "menores":"Minors",
+          "llegada":"Check-In Date",
+          "salida":"Check-Out Date",
+          "mensaje": "Message",
+          "textarea":"Hello, I wanted to ask about...",
+          "btnEnviar": "Submit inquiry"
+        }
+      },
+      "paginaFaqs":{
+        "title":"Faqs",
+        "descripcion": "Check out the most frequently asked questions from our guests.",
+        "faqs": [
+          ...faqsEn
+        ]
+      },
+      "paginaPoliticas":{
+        "title":"Hostel Policies",
+        "descripcion":"The following are our general policies to guarantee a comfortable and safe staying at the hostel.",
+        "politicas": [
+          ...politicasEn
+        ]
+      },
+      "paginaDetalle":{
+        "filtros":{
+          "individual": "Single",
+          "doble1": "Double option 1",
+          "doble2": "Double option 2",
+          "triple": "Triple",
+          "cuadruple": "Cuadruple",
+          "quintuple": "Quintuple"
+        },
+        "capacidad":"Maximum capacity for",
+        "subtitulo1":"Amenities",
+        "btnReservar":"Reserve",
+        "subtitulo2":"More information",
+        "checkin":"available from 02:00 pm to 00:00 am",
+        "checkout":"is until 10:00 am.",
+        "estadia":"The stay includes breakfast",
+        "horarioDesayuno":"Breakfast time: 8:30 a.m. to 9:45 a.m. (no exceptions)",
+        "subtitulo3":"Payment Methods",
+        "mediosPago": "In addition to cash, we accept bank transfers and you can also pay through the Mercadopago link provided by us where you can use your debit/credit card. This last option has a 10% extra charge.",
+      },
+      "habitaciones": [
+        ...habitacionesEn
+      ]
+    },
   };  

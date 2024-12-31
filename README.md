@@ -1,28 +1,43 @@
-# Hostal San Jorge: Sitio web
+# Hostal San Jorge: Aplicación web
 
-Este proyecto es un sitio web realizado para el Hostal San Jorge que se encuentra situado en la ciudad de Cafayate, provincia de Salta, Argentina.
+Este proyecto es una aplicación web realizada para el Hostal San Jorge situado en la ciudad de Cafayate, provincia de Salta, Argentina.
+
+## Objetivo
+
+
+## Primera versión
+
+
 
 ## Deploy
 
 La aplicación está desplegada en Netlify. Puedes acceder haciendo clic en el siguiente enlace:
 
-[Hostal San Jorge](https://hostalsanjorgecafayate.netlify.app/)
+[Hostal San Jorge](https://hostalsanjorge-dev.netlify.app/)
 
 Para visitar el sitio web y más, también puedes buscar 'hostal san jorge', 'hostal san jorge cafayate' o 'san jorge cafayate' en Google y encontrarás el enlace en los primeros resultados de búsqueda y más información sobre el hostal.
 
 ## Tecnologías utilizadas
 
-- HTML5, CSS3, Tailwind, React, Javascript, React-Helmet, React-Router-Dom
+- HTML5, CSS3, Tailwind, React, Javascript, React-Helmet, React-Router-Dom, Netlify, Vite
 
 ## Funcionalidades y Aspectos Adicionales
 
 1. **Diseño Responsivo:** El sitio web está diseñado para adaptarse a cualquier dispositivo, incluyendo dispositivos móviles, tablets y computadoras de escritorio, garantizando una experiencia de usuario óptima en cualquier pantalla.
 
-3. **Integración con Redes Sociales:** Se han integrado cuentas de redes sociales del hostal, permitiendo a los visitantes acceder fácilmente a los perfiles sociales de Facebook e Instagram desde el sitio web.
+2. **Integración con Redes Sociales:** Se integraron cuentas de redes sociales del hostal, permitiendo a los visitantes acceder fácilmente a los perfiles sociales de Facebook e Instagram desde el sitio web.
+
+3. **Optimización SEO:**
+
+4. **Formulario de Reserva:** 
+
+5. **Formulario de Contacto:**
+
+6. **Integración con WhatsApp:**
 
 ## Actualizaciones Futuras
 
- Refactorizar el sitio hacia una aplicación web usando React y Tailwind donde se rediseñarán las páginas, además de incorporar reseñas de Google y nuevas funcionalidades, como la opción de reserva de habitaciones que permitirá a los visitantes seleccionar fechas y confirmar su reserva, integrando métodos de pago online.
+ Me encuentro trabajando nuevas funcionalidades, como la opción de reserva de habitaciones que permitirá a los visitantes seleccionar fechas y confirmar su reserva, integrando métodos de pago online.
 
 - **Opción de Reserva:** Se añadirá una opción de reserva en la barra de navegación y en el detalle de habitación. Esto facilitará el proceso de reserva y mejorará la accesibilidad para los clientes potenciales.
 

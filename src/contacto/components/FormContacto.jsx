@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { enviarCorreo } from "../../helpers/queries";
 
-const FormContacto = () => {
+const FormContacto = ({traduccion}) => {
   const {
     register,
     handleSubmit,
@@ -36,7 +36,7 @@ const FormContacto = () => {
         title: "❌ Hubo un error al enviar el mensaje.",
         text: "Intenta nuevamente más tarde.",
         timer: 3000,
-        timerProgressBar: true
+        timerProgressBar: true,
       });
     }
   };
@@ -51,7 +51,7 @@ const FormContacto = () => {
           htmlFor="fullname"
           className="block   font-bold text-gray-700 dark:text-white"
         >
-          Nombre y Apellido
+          {traduccion.paginaContacto.formulario.nombre}
         </label>
         <input
           type="text"
@@ -85,7 +85,7 @@ const FormContacto = () => {
           htmlFor="email"
           className="block   font-bold text-gray-700 dark:text-white"
         >
-          E-mail
+          {traduccion.paginaContacto.formulario.email}
         </label>
         <input
           type="email"
@@ -119,7 +119,8 @@ const FormContacto = () => {
           htmlFor="tel"
           className="block   font-bold text-gray-700 dark:text-white"
         >
-          Teléfono <small>(sin 0 ni 15)</small>
+          {traduccion.paginaContacto.formulario.telefono}
+          <small>(sin 0 ni 15)</small>
         </label>
         <input
           type="text"
@@ -157,13 +158,13 @@ const FormContacto = () => {
           htmlFor="message"
           className="block   font-bold text-gray-700 dark:text-white"
         >
-          Mensaje
+          {traduccion.paginaContacto.formulario.mensaje}
         </label>
         <textarea
           id="message"
           rows="4"
           className="bg-gray-50 focus:border-gray-100 border-gray-300 text-gray-700    block w-full p-2.5  "
-          placeholder="Escribe tu mensaje aquí..."
+          placeholder={traduccion.paginaContacto.formulario.textarea}
           title="Escribe tu consulta"
           {...register("mensaje", {
             required: "El mensaje es obligatorio",
@@ -181,7 +182,7 @@ const FormContacto = () => {
       </div>
       <div className="flex justify-center w-[100%]">
         <button className="bg-emerald-500 lg:hover:bg-emerald-600 text-white p-3 vsm:w-[100%] md:w-[35%]">
-          ENVIAR
+          {traduccion.paginaContacto.formulario.btnEnviar}{" "}
         </button>
       </div>
     </form>

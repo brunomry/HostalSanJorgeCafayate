@@ -1,4 +1,3 @@
-import habitaciones from "../helpers/habitaciones";
 import "../habitaciones/styles/habitaciones.min.css";
 import { useState } from "react";
 import FiltrosHabitacion from "./components/FiltrosHabitacion";
@@ -6,8 +5,8 @@ import ListaHabitaciones from "./components/ListaHabitaciones";
 import Head from "../seo/Head";
 import headData from "../helpers/head";
 
-function Habitaciones() {
-  const [listaHabitaciones, setListaHabitaciones] = useState(habitaciones);
+function Habitaciones({ traduccion }) {
+  const [listaHabitaciones, setListaHabitaciones] = useState(traduccion.habitaciones);
   const [habitacionSeleccionada, setHabitacionSeleccionada] = useState([]);
   const [tipo, setTipo] = useState("");
 
@@ -17,27 +16,28 @@ function Habitaciones() {
       <main className="py-24 px-4 lg:px-24 xl:px-10 lg:py-40 w-[100%]">
         <section className="mb-8 xl:mb-14">
           <h1 className="text-[32px] md:text-[35px] lg:text-[45px] lg:text-start font-bold mb-3 text-[#3361c4]">
-            Nuestras habitaciones
+            {traduccion.paginaHabitaciones.title}
           </h1>
           <p className=" text-gray-600 text-justify text-[1rem] lg:text-start">
-            Descubre el encanto y la comodidad de nuestras habitaciones. Cada
-            espacio fue diseñado pensando en tu confort.
+            {traduccion.paginaHabitaciones.descripcion}
           </p>
         </section>
         <section className="flex flex-col gap-3 ">
           <p className="text-center text-gray-600">
-            Puedes seleccionar la habitación que estés buscando
+            {traduccion.paginaHabitaciones.descripcionFiltro}
           </p>
           <FiltrosHabitacion
             tipo={tipo}
             habitacionSeleccionada={habitacionSeleccionada}
             setHabitacionSeleccionada={setHabitacionSeleccionada}
             setTipo={setTipo}
+            traduccion={traduccion}
           ></FiltrosHabitacion>
         </section>
         <ListaHabitaciones
           listaHabitaciones={listaHabitaciones}
           habitacionSeleccionada={habitacionSeleccionada}
+          traduccion={traduccion}
         ></ListaHabitaciones>
       </main>
     </>
