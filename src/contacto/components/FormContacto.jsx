@@ -59,7 +59,7 @@ const FormContacto = ({traduccion}) => {
           )}
         {isSubmitSuccessful && exito && (
           <Alerta
-            mensaje="✅ Tu solicitud de reserva fue enviada. En breve nos pondremos en contacto."
+            mensaje="✅ Tu consulta fue enviada. En breve nos pondremos en contacto."
             tipo="success"
           />
         )}
@@ -240,7 +240,7 @@ const FormContacto = ({traduccion}) => {
           )}
         {isSubmitSuccessful && exito && (
           <Alerta
-            mensaje="✅ Tu solicitud de reserva fue enviada. En breve nos pondremos en contacto."
+            mensaje="✅ Tu consulta fue enviada. En breve nos pondremos en contacto."
             tipo="success"
           />
         )}
