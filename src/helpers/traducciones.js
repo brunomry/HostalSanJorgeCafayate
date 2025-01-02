@@ -76,6 +76,7 @@ export const traducciones={
           "Cuádruple",
           "Quíntuple"
         ],
+        "nota":"NOTA: Tarifas aplicables del 1 al 6 de Enero de 2025. Consultar tarifas para otras fechas."
       }, 
       "paginaNosotros":{
         "title":"Sobre nosotros",
@@ -152,6 +153,7 @@ export const traducciones={
           "cuadruple": "Cuádruple",
           "quintuple": "Quíntuple"
         },
+        "tarifaActual":"Tarifa del 1 al 6 de Enero 2025",
         "capacidad":"Capacidad máxima para",
         "subtitulo1":"Comodidades",
         "btnReservar":"Reservar",
@@ -162,6 +164,7 @@ export const traducciones={
         "horarioDesayuno":"Horario Desayuno: 8:30 a 09:45 am (sin excepción)",
         "subtitulo3": "Formas de pago",
         "mediosPago": "Además de efectivo, aceptamos transferencias bancarias y también puedes abonar a través de link de mercadopago proporcionado por nosotros donde podrás utilizar tu tarjeta de débito/crédito. Esta última opción tiene un 10% de recargo.",
+        "nota":"NOTA: Tarifa aplicable del 1 al 7 de Enero de 2025. Consultar tarifa para otras fechas."
       },
       "habitaciones": [
         ...habitacionesEs
@@ -235,6 +238,7 @@ export const traducciones={
           "Cuadruple",
           "Quintuple"
         ],
+        "nota":"NOTA: Tarifas aplicables del 1 al 6 de Enero de 2025. Consultar tarifas para otras fechas."
       }, 
       "paginaNosotros":{
         "title":"About us",
@@ -311,6 +315,7 @@ export const traducciones={
           "cuadruple": "Cuadruple",
           "quintuple": "Quintuple"
         },
+        "tarifaActual":"Tarifa del 1 al 6 de Enero 2025",
         "capacidad":"Maximum capacity for",
         "subtitulo1":"Amenities",
         "btnReservar":"Reserve",
@@ -321,6 +326,7 @@ export const traducciones={
         "horarioDesayuno":"Breakfast time: 8:30 a.m. to 9:45 a.m. (no exceptions)",
         "subtitulo3":"Payment Methods",
         "mediosPago": "In addition to cash, we accept bank transfers and you can also pay through the Mercadopago link provided by us where you can use your debit/credit card. This last option has a 10% extra charge.",
+        "nota":"NOTA: Tarifa aplicable del 1 al 6 de Enero de 2025. Consultar tarifa para otras fechas."
       },
       "habitaciones": [
         ...habitacionesEn

@@ -44,7 +44,7 @@ function CardHabitacion({ habitacion, traduccion }) {
       />
       <div className="vsm:p-2 mb:p-4 md:p-8">
         <p className="text-[20px] font-bold">{habitacionBuscada.nombre}</p>
-        <h3 className="flex flex-col 2xl:flex-row 2xl:items-center 2xl:gap-3"><span className="text-[30px] text-[#3361c4] font-bold">$ {habitacionBuscada.precio}</span> <small className="text-gray-400">Tarifa del 1 al 7 de Enero 2025</small></h3>
+        <h3 className="flex flex-col 2xl:flex-row 2xl:items-center 2xl:gap-3"><span className="text-[30px] text-[#3361c4] font-bold">$ {habitacionBuscada.precio}</span> <small className="text-gray-400">{traduccion.paginaDetalle.tarifaActual}</small></h3>
         <p className="text-gray-500 overflow-hidden text-ellipsis whitespace-nowrap mt-2">
           {habitacionBuscada.descripcion_breve}
         </p>

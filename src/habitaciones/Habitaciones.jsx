@@ -43,8 +43,7 @@ function Habitaciones({ traduccion }) {
         ></ListaHabitaciones>
         <div className="mx-auto mt-10 p-5 border border-[#818181] md:w-[50%] shadow-lg">
           <p className="text-gray-700 text-center">
-            NOTA: Tarifas aplicables del 1 al 7 de Enero de 2025. Consultar tarifas para otras
-            fechas.
+            {traduccion.paginaHabitaciones.nota}
           </p>
         </div>
       </main>

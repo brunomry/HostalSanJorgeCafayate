@@ -58,7 +58,7 @@ const DetalleHabitacion = ({ traduccion }) => {
                 {habitacion.nombre}
               </h1>
               <h2 className="flex flex-col 2xl:flex-row 2xl:items-center 2xl:gap-3">
-                <span className="text-[30px] text-[#3361c4] font-bold">$ {habitacion.precio}</span> <small className="text-gray-400 ms-1">Tarifa del 1 al 7 de Enero 2025</small>
+                <span className="text-[30px] text-[#3361c4] font-bold">$ {habitacion.precio}</span> <small className="text-gray-400 ms-1">{traduccion.paginaDetalle.tarifaActual}</small>
               </h2>
               <p className="text-gray-600">{habitacion.descripcion_breve}.</p>
               <p className="text-gray-600">
@@ -120,8 +120,7 @@ const DetalleHabitacion = ({ traduccion }) => {
         </div>
         <div className=" xl:mt-5 p-5 border border-[#818181] lg:w-[50%] shadow-lg">
           <p className="text-gray-700 text-center">
-            NOTA: Tarifa aplicable del 1 al 7 de Enero de 2025. Consultar tarifa para otras
-            fechas.
+            {traduccion.paginaDetalle.nota}
           </p>
         </div>
       </main>

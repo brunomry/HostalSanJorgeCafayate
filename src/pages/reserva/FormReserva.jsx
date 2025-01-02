@@ -35,7 +35,17 @@ const FormReserva = ({ traduccion }) => {
         return;
       }
 
-      const formData = { ...usuario };
+      const formData = {
+        nombre: usuario.nombre,
+        email: usuario.email,
+        telefono: usuario.pais + usuario.telefono,
+        checkin: usuario.checkin,
+        checkout: usuario.checkout,
+        adultos: usuario.adultos,
+        menores: usuario.menores,
+        mensaje: usuario.mensaje
+      };
+      
       await enviarSolicitudReserva(formData);
       reset();
       setExito(true);
