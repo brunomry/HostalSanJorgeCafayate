@@ -36,14 +36,7 @@ const FormReserva = ({ traduccion }) => {
       }
 
       const formData = {
-        nombre: usuario.nombre,
-        email: usuario.email,
-        telefono: `${usuario.pais} ${usuario.telefono}`,
-        checkin: usuario.checkin,
-        checkout: usuario.checkout,
-        adultos: usuario.adultos,
-        menores: usuario.menores,
-        mensaje: usuario.mensaje
+        ...usuario
       };
       
       await enviarSolicitudReserva(formData);
@@ -182,15 +175,14 @@ const FormReserva = ({ traduccion }) => {
           <div className="w-[60%]">
             <select
               id="pais"
-              name="pais"
               className=" block max-w-[100%]  py-3 rounded-none  border-gray-300 text-[12px]"
               {...register("pais", {
                 required: "Seleccionar un país es obligatorio",
               })}
             >
-              {paises.map((pais) => (
-                <option key={pais.code} value={pais.phone}>
-                  {pais.code} ({pais.phone})
+              {paises.map((p) => (
+                <option key={p.code} value={p.phone}>
+                  {p.code} ({p.phone})
                 </option>
               ))}
             </select>
@@ -339,6 +331,10 @@ const FormReserva = ({ traduccion }) => {
             maxLength: {
               value: 500,
               message: "El mensaje debe contener como máximo 500 caracteres",
+            },
+            pattern: {
+              value: /^[a-zA-Z0-9\s.,!?]*$/,
+              message: "Ingrese un mensaje válido.",
             },
           })}
         ></textarea>

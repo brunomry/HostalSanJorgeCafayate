@@ -22,10 +22,7 @@ const FormContacto = ({traduccion}) => {
 
     try {
       const formData = {
-        nombre: usuario.nombre,
-        email: usuario.email,
-        telefono: `${usuario.pais} ${usuario.telefono}`,
-        mensaje: usuario.mensaje,
+        ...usuario
       };
 
       await enviarCorreo(formData);
@@ -210,6 +207,10 @@ const FormContacto = ({traduccion}) => {
             maxLength: {
               value: 500,
               message: "El mensaje debe contener como máximo 500 caracteres",
+            },
+            pattern: {
+              value: /^[a-zA-Z0-9\s.,!?]*$/,
+              message: "Ingrese un mensaje válido.",
             },
           })}
         ></textarea>
