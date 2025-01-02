@@ -57,7 +57,7 @@ const FormContacto = ({traduccion}) => {
           type="text"
           id="fullname"
           aria-describedby="helper-text-explanation"
-          className="bg-gray-50 focus:border-gray-100 border-gray-300 text-gray-700    block w-full p-2.5  "
+          className=" focus:border-gray-100 border-gray-300 text-gray-700    block w-full p-3  "
           placeholder="Juan Perez"
           title="Escribe tu nombre y apellido"
           {...register("nombre", {
@@ -91,7 +91,7 @@ const FormContacto = ({traduccion}) => {
           type="email"
           id="email"
           aria-describedby="helper-text-explanation"
-          className="bg-gray-50 focus:border-gray-100 border-gray-300 text-gray-700 block w-full p-2.5  "
+          className=" focus:border-gray-100 border-gray-300 text-gray-700 block w-full p-3  "
           placeholder="nombre@ejemplo.com"
           title="Escribe tu correo electrónico"
           {...register("email", {
@@ -126,7 +126,7 @@ const FormContacto = ({traduccion}) => {
           type="text"
           id="tel"
           aria-describedby="helper-text-explanation"
-          className="bg-gray-50 focus:border-gray-100 border-gray-300 text-gray-700    block w-full p-2.5  "
+          className=" focus:border-gray-100 border-gray-300 text-gray-700    block w-full p-3  "
           placeholder="+54 3811111111"
           title="Escribe tu número de celular"
           {...register("telefono", {
@@ -163,7 +163,7 @@ const FormContacto = ({traduccion}) => {
         <textarea
           id="message"
           rows="4"
-          className="bg-gray-50 focus:border-gray-100 border-gray-300 text-gray-700    block w-full p-2.5  "
+          className=" focus:border-gray-100 border-gray-300 text-gray-700    block w-full p-3  "
           placeholder={traduccion.paginaContacto.formulario.textarea}
           title="Escribe tu consulta"
           {...register("mensaje", {
@@ -181,7 +181,7 @@ const FormContacto = ({traduccion}) => {
         <small className="text-red-400">{errors.mensaje?.message}</small>
       </div>
       <div className="flex justify-center w-[100%]">
-        <button className="bg-emerald-500 lg:hover:bg-emerald-600 text-white p-3 vsm:w-[100%] md:w-[35%]">
+        <button className="bg-emerald-500 lg:hover:bg-emerald-600 text-white p-4 vsm:w-[100%] md:w-[35%] uppercase">
           {traduccion.paginaContacto.formulario.btnEnviar}{" "}
         </button>
       </div>
