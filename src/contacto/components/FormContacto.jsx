@@ -24,7 +24,7 @@ const FormContacto = ({traduccion}) => {
       const formData = {
         nombre: usuario.nombre,
         email: usuario.email,
-        telefono: `${usuario.pais.phone} ${usuario.telefono}`,
+        telefono: `${usuario.pais} ${usuario.telefono}`,
         mensaje: usuario.mensaje,
       };
 
@@ -153,7 +153,7 @@ const FormContacto = ({traduccion}) => {
               })}
             >
               {paises.map((pais) => (
-                <option key={pais.code} value={pais.code}>
+                <option key={pais.code} value={pais.phone}>
                   {pais.code} ({pais.phone})
                 </option>
               ))}
