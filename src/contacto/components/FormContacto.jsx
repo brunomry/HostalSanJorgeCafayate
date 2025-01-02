@@ -114,6 +114,7 @@ const FormContacto = ({traduccion}) => {
         />
         <small className="text-red-400">{errors.email?.message}</small>
       </div>
+
       <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[35%]">
         <label
           htmlFor="tel"
@@ -146,11 +147,10 @@ const FormContacto = ({traduccion}) => {
           })}
         />
         <p>
-          {!errors.telefono ? (
-            <small className="text-gray-500">Código de país opcional</small>
-          ) : (
+          {!errors.telefono && (
             <small className="text-red-400"> {errors.telefono?.message}</small>
-          )}
+          )
+          }
         </p>
       </div>
       <div className="mb-3 lg:mb-0 w-[100%]">

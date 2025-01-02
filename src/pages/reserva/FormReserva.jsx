@@ -4,6 +4,7 @@ import { enviarSolicitudReserva } from "../../helpers/queries";
 import { useEffect, useState } from "react";
 import Spinner from "../../common/Spinner";
 import Alerta from "../../common/Alerta";
+import { paises } from "../../helpers/paises";
 
 const FormReserva = ({ traduccion }) => {
   const [cargando, setCargando] = useState(false);
@@ -72,7 +73,7 @@ const FormReserva = ({ traduccion }) => {
 
   return (
     <form
-      className="vsm:w-[100%] shadow-md max-w-[600px] mx-auto md:border vsm:px-2 vsm:py-3 mb:p-4 md:p-10 flex flex-wrap md:gap-2 lg:gap-4 "
+      className="vsm:w-[100%] shadow-md max-w-[650px] mx-auto md:border vsm:px-2 vsm:py-3 mb:p-4 md:p-10 flex flex-wrap md:gap-2 lg:gap-4 "
       onSubmit={handleSubmit(enviarDatos)}
     >
       <div className="hidden md:block md:w-full">
@@ -102,6 +103,7 @@ const FormReserva = ({ traduccion }) => {
         <input
           type="text"
           id="fullname"
+          title="Escribe tu nombre y apellido"
           className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
           placeholder="Juan Perez"
           {...register("nombre", {
@@ -124,7 +126,7 @@ const FormReserva = ({ traduccion }) => {
           <small className="text-red-400">{errors.nombre?.message}</small>
         )}
       </div>
-      <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[60%]">
+      <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[52%]">
         <label
           htmlFor="email"
           className="block  font-bold text-gray-700 dark:text-white"
@@ -134,6 +136,7 @@ const FormReserva = ({ traduccion }) => {
         <input
           type="email"
           id="email"
+          title="Escribe tu dirección de correo electrónico"
           className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
           placeholder="nombre@ejemplo.com"
           {...register("email", {
@@ -158,34 +161,55 @@ const FormReserva = ({ traduccion }) => {
           <small className="text-red-400">{errors.email?.message}</small>
         )}
       </div>
-      <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[35%]">
+      <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[45%]">
         <label htmlFor="tel" className="block dark:text-white">
           <span className="text-gray-700 font-bold">
             {traduccion.paginaReserva.formulario.telefono}
           </span>
           <small className="ms-1">(Sin 0 ni 15)</small>
         </label>
-        <input
-          type="text"
-          id="tel"
-          className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
-          placeholder="+54 3811111111"
-          {...register("telefono", {
-            required: "El teléfono es obligatorio.",
-            minLength: {
-              value: 10,
-              message: "Debe contener al menos 10 caracteres",
-            },
-            maxLength: {
-              value: 14,
-              message: "Debe contener como máximo 14 caracteres",
-            },
-            pattern: {
-              value: /^\+?[0-9\s]+$/,
-              message: "Ingrese un número de teléfono válido.",
-            },
-          })}
-        />
+        <div className="flex gap-2 w-full">
+          <div className="w-[60%]">
+            <select
+              id="pais"
+              name="pais"
+              className=" block max-w-[100%]  py-3 rounded-none  border-gray-300 text-[12px]"
+              {...register("pais", {
+                required: "Seleccionar un país es obligatorio",
+              })}
+            >
+              {paises.map((pais) => (
+                <option key={pais.code} value={pais.code}>
+                  {pais.code} ({pais.phone})
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="w-[100%]">
+            <input
+              type="text"
+              id="tel"
+              title="Escribe tu número de celular"
+              className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
+              placeholder="3811111111"
+              {...register("telefono", {
+                required: "El teléfono es obligatorio.",
+                minLength: {
+                  value: 10,
+                  message: "Debe contener al menos 5 caracteres",
+                },
+                maxLength: {
+                  value: 14,
+                  message: "Debe contener como máximo 11 caracteres",
+                },
+                pattern: {
+                  value: /^\d+$/,
+                  message: "Ingrese un número de teléfono válido.",
+                },
+              })}
+            />
+          </div>
+        </div>
         {errors.telefono && errors.telefono.type !== "required" && (
           <small className="text-red-400">{errors.telefono?.message}</small>
         )}
@@ -200,6 +224,7 @@ const FormReserva = ({ traduccion }) => {
         <input
           type="date"
           id="checkin"
+          title="selecciona la fecha de ingreso"
           className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
           {...register("checkin", {
             required: "La fecha de check-in es obligatoria",
@@ -219,6 +244,7 @@ const FormReserva = ({ traduccion }) => {
         <input
           type="date"
           id="checkout"
+          title="selecciona la fecha de salida"
           className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
           {...register("checkout", {
             required: "La fecha de check-out es obligatoria",
@@ -238,6 +264,7 @@ const FormReserva = ({ traduccion }) => {
         <select
           id="adultos"
           defaultValue=""
+          title="selecciona la cantidad de mayores"
           className={`${
             errors.adultos || watch("menores") === "" ? "" : ""
           } text-gray-700 block w-full p-3 focus:border-none border-gray-300`}
@@ -245,9 +272,6 @@ const FormReserva = ({ traduccion }) => {
             required: "Debe seleccionar la cantidad de adultos",
           })}
         >
-          <option value="" disabled selected>
-            Seleccione
-          </option>
           {[...Array(18).keys()].map((n) => (
             <option key={n + 1} value={n + 1}>
               {n + 1}
@@ -265,15 +289,13 @@ const FormReserva = ({ traduccion }) => {
         <select
           id="menores"
           defaultValue=""
+          title="selecciona la cantidad de menores"
           className={`${
             errors.menores || watch("menores") === "" ? "" : ""
           }   text-gray-700 block w-full p-3 focus:border-none border-gray-300`}
           {...register("menores")}
         >
-          <option value="" disabled selected>
-            Seleccione
-          </option>
-          {[...Array(9).keys()].map((n) => (
+          {[...Array(17).keys()].map((n) => (
             <option key={n} value={n}>
               {n}
             </option>
@@ -295,6 +317,8 @@ const FormReserva = ({ traduccion }) => {
         <textarea
           id="message"
           rows="4"
+          title="Escribe tu consulta"
+          placeholder={traduccion.paginaReserva.formulario.textarea}
           className="border-gray-300 text-gray-700 block w-full p-3 focus:border-none"
           {...register("mensaje", {
             required: "El mensaje es obligatorio",
