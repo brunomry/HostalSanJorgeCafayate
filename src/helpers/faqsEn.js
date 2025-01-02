@@ -1,4 +1,4 @@
-const faqsEn = [
+export const faqsEn = [
   {
     id: "faqOne",
     question: "What time can I Check-In?",
@@ -25,12 +25,12 @@ const faqsEn = [
   {
     id: "faqSix",
     question: "What are the Payment Methods?",
-    answer: "",
+    answer: "In addition to cash, we accept bank transfers and you can also pay through the Mercadopago link provided by us where you can use your debit/credit card. This last option has a 10% extra charge.",
   },
   {
     id: "faqFour",
     question: "Does the Hostal have Wi-Fi?",
-    answer: "Yes, ",
+    answer: "Yes, we have free Wi-Fi in all areas of the hostel.",
   },
   {
     id: "faqFive",
@@ -72,5 +72,3 @@ const faqsEn = [
     answer: "Pets are not allowed at the moment.",
   },
 ];
-
-export default faqsEn;

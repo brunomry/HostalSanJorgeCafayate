@@ -1,19 +1,21 @@
-import { comodidadesEs } from "./comodidadesEs";
-import { comodidadesEn } from "./comodidadesEn";
-import faqsEn from "./faqsEn";
-import faqsEs from "./faqsEs";
-import politicasEn from "./politicasEn";
-import politicasEs from "./politicasEs";
-import habitacionesEn from "./habitacionesEn";
-import habitacionesEs from "./habitacionesEs";
+import habitacionesEs from "./min/habitacionesEs.min";
+import habitacionesEn from "./min/habitacionesEn.min";
+import { comodidadesEs } from "./min/comodidadesEs.min";
+import { comodidadesEn } from "./min/comodidadesEn.min";
+import { politicasEs } from "./min/politicasEs.min";
+import { politicasEn } from "./min/politicasEn.min";
+import { faqsEs } from "./min/faqsEs.min";
+import { faqsEn } from "./min/faqsEn.min";
 
 export const traducciones={
     "es": {
+      "hostal":"Hostal San Jorge Cafayate",
       "navbar": {
         "habitaciones":"Habitaciones",
         "nosotros": "Nosotros",
         "contacto":"Contacto",
         "galeria":"Galería",
+        "reserva": "Solicitud de reserva",
       },
       "footer": {
         "redes":"Síguenos en nuestras redes",
@@ -56,7 +58,7 @@ export const traducciones={
           "title":"Nuestras Habitaciones",
           "descripcion": "Ofrecemos habitaciones privadas diseñadas para su comodidad y tranquilidad, que van desde simples hasta quíntuples.",
           "subtitulo":"Comodidades y Servicios",
-          "comodidades": [...comodidadesEs],
+          "comodidades": [ ...comodidadesEs ],
           "btn": "Ver Habitaciones"
         },
         "btnVerMas": "Ver más"  
@@ -113,9 +115,9 @@ export const traducciones={
       },
       "paginaReserva":{
         "title":"Envía tu consulta para reservar",
-        "descripcion1": "Completa el formulario con tus datos y fechas de estadía, y en breve nos pondremos en contacto.",
+        "descripcion": "Completa el formulario con tus datos y fechas de estadía, y en breve nos pondremos en contacto.",
         "formulario": {
-          "nombre": "Nombre y apellido:",
+          "nombre": "Nombre y apellido",
           "email": "Email",
           "telefono": "Teléfono",
           "adultos":"Adultos",
@@ -131,7 +133,7 @@ export const traducciones={
         "title":"Preguntas frecuentes",
         "descripcion": "Consultá las preguntas más frecuentes de nuestros huéspedes.",
         "faqs": [
-          ...faqsEs
+         ...faqsEs
         ]
       },
       "paginaPoliticas":{
@@ -166,6 +168,7 @@ export const traducciones={
       ]
     },
     "en": {
+      "hostal":"Hostel San Jorge Cafayate",
       "navbar": {
         "habitaciones":"Rooms",
         "nosotros": "About us",
@@ -179,14 +182,14 @@ export const traducciones={
         "info": {
           "title":"Information",
           "booking":"Profile Booking",
-          "politicas":"Hostal Policies",
+          "politicas":"Hostel Policies",
           "faqs":"Faqs",
           "nosotros":"About us"
         },
         "colaboraciones":{
           "title":"Collaborations",
           "ph": "Photograph",
-          "traducciones":"Translations"
+          "traducciones":"Translation"
         },
         "derechos":{
           "derechos": "All rights reserved.",
@@ -208,13 +211,13 @@ export const traducciones={
           "title":"About us",
           "descripcion1": "With more than 15 years providing accommodation to our guests, at Hostal San Jorge we offer you a comfortable, quiet and ideal place to rest.",
           "descripcion2": "Permit us be your home away and enjoy a greate and memorable experience, while you explore the charms of the beautiful Cafayate city, Salta province, Argentinian north-west.",
-          "btn": "See more"
+          "btn": "Read more"
         },
         "seccionHabitaciones": {
           "title":"Our Rooms",
           "descripcion": "We offer private rooms designed for your comfort and peace, ranging from single to quintuple.",
           "subtitulo":"Amenities and Services",
-          "comodidades": [...comodidadesEn],
+          "comodidades": [ ...comodidadesEn ],
           "btn": "See Rooms"
         },  
         "btnVerMas": "See more"  
@@ -270,10 +273,10 @@ export const traducciones={
         }
       },
       "paginaReserva":{
-        "title":"",
-        "descripcion1": "",
+        "title":"Submit your reservation inquiry",
+        "descripcion": "Complete the following form with your personal information and dates of stay, and we will contact you as soon as possible.",
         "formulario": {
-          "nombre": "Name and Surname:",
+          "nombre": "Name and Surname",
           "email": "Email",
           "telefono": "Telephone",
           "adultos":"Adults",
@@ -288,9 +291,9 @@ export const traducciones={
       "paginaFaqs":{
         "title":"Faqs",
         "descripcion": "Check out the most frequently asked questions from our guests.",
-        "faqs": [
+        "faqs": [ 
           ...faqsEn
-        ]
+         ]
       },
       "paginaPoliticas":{
         "title":"Hostel Policies",

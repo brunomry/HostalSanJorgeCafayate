@@ -8,9 +8,9 @@ import { Link } from "react-router-dom";
 function HabitacionesHome({ traduccion }) {
   return (
     <section className="px-4 pt-8 md:px-20 md:pt-20 3xl:px-24 3xl:pt-24">
-      <div className="w-[100%] flex flex-col xl:flex-row gap-5 xl:gap-10 3xl:justify-center">
+      <div className="w-[100%] flex flex-col xl:flex-row gap-6 xl:gap-10 3xl:justify-center">
         <div className="md:w-[100%] hidden md:order-1 xl:w-[50%]  md:flex lg:flex-wrap gap-2 3xl:gap-2">
-          <div className="flex gap-2 md:w-[100%] max-h-[300px]">
+          <div className="flex gap-2 md:w-[100%] max-h-[300px] containerImages">
             <img
               src={habitacion}
               alt="Habitación quíntuple"
@@ -39,12 +39,12 @@ function HabitacionesHome({ traduccion }) {
             />
           </div>
         </div>
-        <div className="w-[100%] xl:w-[50%] 2xl:w-[40%] object-cover flex flex-col xl:order-1 gap-2 2xl:gap-10">
+        <div className="w-[100%] xl:w-[50%] 2xl:w-[40%] object-cover flex flex-col xl:order-1 gap-6 2xl:gap-10">
           <div>
             <h2 className="text-[25px] lg:text-[35px] font-bold text-[#3361c4]">
               {traduccion.paginaHome.seccionHabitaciones.title}
             </h2>
-            <p className="xl:text-[16px] font-normal text-[#363636] mb-0">
+            <p className="xl:text-[16px] font-normal text-[#363636] mt-2">
               {traduccion.paginaHome.seccionHabitaciones.descripcion}
             </p>
           </div>

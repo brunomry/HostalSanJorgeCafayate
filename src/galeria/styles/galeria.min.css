@@ -1,1 +1,1 @@
-@media all and (min-width:992px){.containerImgGalery{position:relative;transition:0.4s}.containerImgGalery:hover .containerBg{position:absolute;display:flex;flex-direction:column;gap:5px;justify-content:center;align-items:center;z-index:1;transition:0.4s}}
+@media all and (min-width:992px){.containerImgGalery{position:relative;transition:0.4s}}

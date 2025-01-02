@@ -46,7 +46,7 @@ const FormContacto = ({traduccion}) => {
       className="vsm:w-[100%] max-w-[650px] mx-auto md:border vsm:px-2 vsm:py-3 mb:p-4 md:p-10 flex flex-wrap md:gap-2 lg:gap-5 "
       onSubmit={handleSubmit(enviarDatos)}
     >
-      <div className=" w-[100%]">
+      <div className="mb-2 lg:mb-0 w-[100%]">
         <label
           htmlFor="fullname"
           className="block   font-bold text-gray-700 dark:text-white"
@@ -80,7 +80,7 @@ const FormContacto = ({traduccion}) => {
         />
         <small className="text-red-400">{errors.nombre?.message}</small>
       </div>
-      <div className=" vsm:w-[100%] md:w-[60%]">
+      <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[60%]">
         <label
           htmlFor="email"
           className="block   font-bold text-gray-700 dark:text-white"
@@ -114,13 +114,13 @@ const FormContacto = ({traduccion}) => {
         />
         <small className="text-red-400">{errors.email?.message}</small>
       </div>
-      <div className=" vsm:w-[100%] md:w-[35%]">
+      <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[35%]">
         <label
           htmlFor="tel"
-          className="block   font-bold text-gray-700 dark:text-white"
+          className="block dark:text-white"
         >
-          {traduccion.paginaContacto.formulario.telefono}
-          <small>(sin 0 ni 15)</small>
+          <span className="font-bold text-gray-700">{traduccion.paginaContacto.formulario.telefono}</span>
+          <small className="ms-1">(sin 0 ni 15)</small>
         </label>
         <input
           type="text"
@@ -153,7 +153,7 @@ const FormContacto = ({traduccion}) => {
           )}
         </p>
       </div>
-      <div className=" w-[100%]">
+      <div className="mb-3 lg:mb-0 w-[100%]">
         <label
           htmlFor="message"
           className="block   font-bold text-gray-700 dark:text-white"

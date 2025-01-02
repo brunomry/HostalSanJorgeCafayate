@@ -18,12 +18,11 @@ function NosotrosHome({ traduccion }) {
               </span>
             </p>
           </div>
-
           <div className="w-[100%] flex lg:justify-start">
             <Link
               to={"/nosotros"}
               title="clic para leer más acerca de nosotros"
-              className="uppercase bg-emerald-500 lg:hover:bg-emerald-600 text-white flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 xl:w-[40%] xl:text-[16px]"
+              className="uppercase bg-emerald-500 lg:hover:bg-emerald-600 text-white flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 xl:w-[55%] 2xl:w-[45%] 3xl:w-[40%] xl:text-[16px]"
             >
               <span> {traduccion.paginaHome.seccionNosotros.btn}</span>{" "}
               <MdArrowForwardIos />
@@ -33,7 +32,8 @@ function NosotrosHome({ traduccion }) {
         <div className="w-[100%] md:flex justify-center lg:w-[50%]">
           <img
             src={salon}
-            alt=""
+            alt="Salón Desayunador"
+            title="Salón Desayunador"
             className="w-[100%] md:min-h-[300px] xl:max-w-[900px] xl:max-h-[500px] object-cover border-[8px] border-[#fff]"
           />
         </div>

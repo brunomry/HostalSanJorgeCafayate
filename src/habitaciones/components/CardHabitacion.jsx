@@ -32,7 +32,7 @@ function CardHabitacion({ habitacion, traduccion }) {
 
   return (
     <article
-      className="border lg:hover:border-[#90b1fa] h-[550px] md:h-[100%] md:min-h-[400px] min-w-[85%] md:w-[100%] lg:cursor-pointer "
+      className="border lg:hover:border-[#90b1fa] h-[560px] md:h-[100%] md:min-h-[400px] min-w-[85%] md:w-[95%] lg:cursor-pointer "
       onClick={(e) => verDetalle(e)}
       title="clic para ver más información"
     >
@@ -44,8 +44,8 @@ function CardHabitacion({ habitacion, traduccion }) {
       />
       <div className="vsm:p-2 mb:p-4 md:p-8">
         <p className="text-[20px] font-bold">{habitacionBuscada.nombre}</p>
-        <h3 className="text-[30px] text-[#3361c4] font-bold">$ {habitacionBuscada.precio}</h3>
-        <p className="text-gray-500 overflow-hidden text-ellipsis whitespace-nowrap">
+        <h3 className="flex flex-col 2xl:flex-row 2xl:items-center 2xl:gap-3"><span className="text-[30px] text-[#3361c4] font-bold">$ {habitacionBuscada.precio}</span> <small className="text-gray-400">Tarifa del 1 al 7 de Enero 2025</small></h3>
+        <p className="text-gray-500 overflow-hidden text-ellipsis whitespace-nowrap mt-2">
           {habitacionBuscada.descripcion_breve}
         </p>
         <div className="flex flex-col gap-2 items-center w-[100%] mt-4 md:mt-8">

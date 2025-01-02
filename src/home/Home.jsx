@@ -23,7 +23,7 @@ function Home({traduccion}) {
       <HabitacionesHome traduccion={traduccion}></HabitacionesHome>
       <section className="px-4 py-24 w-[100%] xl:px-10 flex flex-col gap-5 md:gap-10  xl:py-32">
         <h2 className="text-[25px] lg:text-[35px] font-bold md:text-center text-[#3361c4]">{traduccion.paginaFaqs.title}</h2>
-        <p className="mb-3 text-gray-600 text-center ">
+        <p className="mb-3 text-gray-600 md:text-center ">
             {traduccion.paginaFaqs.descripcion}
           </p>
         <div
@@ -40,7 +40,7 @@ function Home({traduccion}) {
         <div className="w-[100%] flex justify-center items-center">
           <Link
             to={"/preguntasfrecuentes"}
-            className="bg-emerald-500 hover:bg-emerald-600 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 lg:px-8 xl:w-[15%] 2xl:w-[10%] xl:text-[16px]"
+            className="bg-emerald-500 hover:bg-emerald-600 flex justify-center items-center gap-3 px-15 p-3 md:p-4 xl:p-5 lg:px-8 xl:w-[15%] 2xl:w-[15%] 3xl:w-[10%] xl:text-[16px]"
             title="ver más preguntas"
           >
             <span className="text-[#fff] uppercase">{traduccion.paginaHome.btnVerMas}</span>{" "}

@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import { enviarSolicitudReserva } from "../../helpers/queries";
 
-const FormReserva = () => {
+const FormReserva = ({ traduccion }) => {
   const {
     register,
     handleSubmit,
@@ -50,12 +50,12 @@ const FormReserva = () => {
       className="vsm:w-[100%] shadow-md max-w-[600px] mx-auto md:border vsm:px-2 vsm:py-3 mb:p-4 md:p-10 flex flex-wrap md:gap-2 lg:gap-5 "
       onSubmit={handleSubmit(enviarDatos)}
     >
-      <div className=" w-[100%]">
+      <div className="mb-2 lg:mb-0 w-[100%]">
         <label
           htmlFor="fullname"
           className="block  font-bold text-gray-700 dark:text-white"
         >
-          Nombre y Apellido
+          {traduccion.paginaReserva.formulario.nombre}
         </label>
         <input
           type="text"
@@ -80,12 +80,12 @@ const FormReserva = () => {
         />
         <small className="text-red-400">{errors.nombre?.message}</small>
       </div>
-      <div className=" vsm:w-[100%] md:w-[60%]">
+      <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[60%]">
         <label
           htmlFor="email"
           className="block  font-bold text-gray-700 dark:text-white"
         >
-          E-mail
+          {traduccion.paginaReserva.formulario.email}
         </label>
         <input
           type="email"
@@ -102,12 +102,13 @@ const FormReserva = () => {
         />
         <small className="text-red-400">{errors.email?.message}</small>
       </div>
-      <div className="vsm:w-[100%] md:w-[35%]">
+      <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[35%]">
         <label
           htmlFor="tel"
-          className="block  text-gray-700 font-bold dark:text-white"
+          className="block dark:text-white"
         >
-          Teléfono <small>(Sin 0 ni 15)</small>
+          <span className="text-gray-700 font-bold">{traduccion.paginaReserva.formulario.telefono}</span>
+          <small className="ms-1">(Sin 0 ni 15)</small>
         </label>
         <input
           type="text"
@@ -121,12 +122,12 @@ const FormReserva = () => {
         />
         <small className="text-red-400">{errors.telefono?.message}</small>
       </div>
-      <div className=" vsm:w-[100%] md:w-[48%]">
+      <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[48%]">
         <label
           htmlFor="checkin"
           className="block  font-bold text-gray-700 dark:text-white"
         >
-          Fecha de Check-In
+          {traduccion.paginaReserva.formulario.llegada}
         </label>
         <input
           type="date"
@@ -138,12 +139,12 @@ const FormReserva = () => {
         />
         <small className="text-red-400">{errors.checkin?.message}</small>
       </div>
-      <div className=" vsm:w-[100%] md:w-[48%]">
+      <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[48%]">
         <label
           htmlFor="checkout"
           className="block  font-bold text-gray-700 dark:text-white"
         >
-          Fecha de Check-Out
+          {traduccion.paginaReserva.formulario.salida}
         </label>
         <input
           type="date"
@@ -155,12 +156,12 @@ const FormReserva = () => {
         />
         <small className="text-red-400">{errors.checkout?.message}</small>
       </div>
-      <div className=" vsm:w-[100%] md:w-[48%]">
+      <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[48%]">
         <label
           htmlFor="adultos"
           className="block  font-bold text-gray-700 dark:text-white"
         >
-          Adultos
+          {traduccion.paginaReserva.formulario.adultos}
         </label>
         <select
           id="adultos"
@@ -177,12 +178,12 @@ const FormReserva = () => {
         </select>
         <small className="text-red-400">{errors.adultos?.message}</small>
       </div>
-      <div className=" vsm:w-[100%] md:w-[48%]">
+      <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[48%]">
         <label
           htmlFor="menores"
           className="block  font-bold text-gray-700 dark:text-white"
         >
-          Menores
+          {traduccion.paginaReserva.formulario.menores}
         </label>
         <select
           id="menores"
@@ -197,18 +198,18 @@ const FormReserva = () => {
         </select>
         <small className="text-red-400">{errors.menores?.message}</small>
       </div>
-      <div className=" w-[100%]">
+      <div className="mb-3 lg:mb-0 w-[100%]">
         <label
           htmlFor="message"
           className="block  font-bold text-gray-700 dark:text-white"
         >
-          Consulta
+          {traduccion.paginaReserva.formulario.mensaje}
         </label>
         <textarea
           id="message"
           rows="4"
           className="bg-gray-50 border-gray-300 text-gray-700 block w-full p-2.5"
-          {...register("consulta", { 
+          {...register("consulta", {
             required: "La consulta es obligatoria",
             minLength: {
               value: 25,
@@ -217,14 +218,14 @@ const FormReserva = () => {
             maxLength: {
               value: 500,
               message: "La consulta debe contener como máximo 500 caracteres",
-            }, 
+            },
           })}
         ></textarea>
         <small className="text-red-400">{errors.consulta?.message}</small>
       </div>
       <div className="flex justify-center w-[100%]">
-        <button className="bg-emerald-500 hover:bg-emerald-600 text-white p-3 vsm:w-[100%] md:w-[50%]">
-          ENVIAR CONSULTA
+        <button className="bg-emerald-500 hover:bg-emerald-600 text-white p-3 vsm:w-[100%] md:w-[50%] uppercase">
+          {traduccion.paginaReserva.formulario.btnEnviar}
         </button>
       </div>
     </form>

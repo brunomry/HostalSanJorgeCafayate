@@ -1,19 +1,33 @@
 import { Link } from "react-router-dom";
 import es from "../assets/IMG/argentina.webp";
 import en from "../assets/IMG/ingles.webp";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = ({setIdioma, traduccion}) => {
   const [desplegado, setDesplegado] = useState(false);
+  const [scroll, setScroll] = useState()
 
  const cambiarIdioma = (nuevoIdioma) => {
       setIdioma(nuevoIdioma);
       localStorage.setItem('idiomaKey', nuevoIdioma);
+      setDesplegado(false)
   };
+
+  const handleScroll = () => {
+    setScroll(window.scrollY === 0);
+  };
+
+  useEffect(()=>{
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  },[])
 
   return (
     <header>
-      <nav className=" bg-white z-50 dark:bg-gray-900 fixed vsm:w-full top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+      <nav  className={`${
+          scroll ? "bg-[#ffffffa1]" : "bg-[#fff]"
+        } z-50 dark:bg-gray-900 fixed vsm:w-full top-0 start-0 border-b border-gray-100 dark:border-gray-600 transition-colors duration-300`}>
         <div className="vsm:w-full lg:max-w-screen-xl flex flex-wrap lg:flex-col lg:gap-3 xl:gap-0 lg:justify-center items-center justify-between mx-auto p-2 xl:p-8">
           <Link
             to={"/"}
@@ -50,11 +64,11 @@ const Navbar = ({setIdioma, traduccion}) => {
             } items-center justify-between vsm:w-full lg:flex lg:w-auto md:order-1`}
             id="navbar-hamburger"
           >
-            <ul className="flex flex-col justify-center text-[16px] text-white lg:flex-row items-center p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col justify-center text-[16px] text-white bg-white lg:bg-inherit lg:flex-row items-center p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
                 <Link
                   to={"/"}
-                  className="w-[100%] text-center lg:w-[inherit] lg:text-start lg:block py-2 px-3 border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#0692a2] text-gray-600 hover:text-[#000] rounded "
+                  className="w-[100%] text-center lg:w-[inherit] lg:text-start lg:block py-2 px-3 border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#065ca2] text-gray-600 hover:text-[#000] rounded "
                   aria-current="page"
                   onClick={() => setDesplegado(false)}
                 >
@@ -64,7 +78,7 @@ const Navbar = ({setIdioma, traduccion}) => {
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
                 <Link
                   to={"/habitaciones"}
-                  className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#0692a2] text-gray-600 hover:text-[#000]"
+                  className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#065ca2] text-gray-600 hover:text-[#000]"
                   aria-current="page"
                   onClick={() => setDesplegado(false)}
                 >
@@ -74,7 +88,7 @@ const Navbar = ({setIdioma, traduccion}) => {
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
                 <Link
                   to={"/galeria"}
-                  className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#0692a2] text-gray-600 hover:text-[#000]"
+                  className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#065ca2] text-gray-600 hover:text-[#000]"
                   onClick={() => setDesplegado(false)}
                 >
                  {traduccion.navbar.galeria}
@@ -96,7 +110,7 @@ const Navbar = ({setIdioma, traduccion}) => {
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
                 <Link
                   to={"/contacto"}
-                  className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#0692a2] text-gray-600 hover:text-[#000]"
+                  className="w-[100%] text-center lg:w-[inherit] lg:text-start block py-2 px-3 rounded border-b-[3px] border-b-[#fff] hover:border-b-[3px] hover:border-b-[#065ca2] text-gray-600 hover:text-[#000]"
                   onClick={() => setDesplegado(false)}
                 >
                   {traduccion.navbar.contacto}
@@ -105,10 +119,10 @@ const Navbar = ({setIdioma, traduccion}) => {
               <li className="w-[100%] flex justify-center xl:w-[50%]">
                 <Link
                   to={"/reserva"}
-                  className="w-[50%] lg:w-[80%] border shadow text-center  block py-2 px-2 rounded border-[#9b9a9a] text-gray-900 hover:bg-gray-100 hover:shadow-md hover:text-[#000]"
+                  className="w-[60%] lg:w-[80%] border shadow text-center  block py-2 px-2 rounded border-[#9b9a9a] text-gray-900 hover:bg-gray-100 hover:shadow-md hover:text-[#000]"
                   onClick={() => setDesplegado(false)}
                 >
-                  Solicitud de Reserva
+                  {traduccion.navbar.reserva}
                 </Link>
               </li>
               <li className="flex gap-5">

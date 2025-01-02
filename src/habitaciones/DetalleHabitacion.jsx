@@ -7,7 +7,6 @@ import FiltrosDetalle from "./components/FiltrosDetalle";
 import "./styles/detalleHabitacion.min.css";
 import { consultaPorWhatsApp } from "../helpers/whatsApp";
 import Head from "../seo/Head";
-import { traducciones } from "../helpers/traducciones";
 
 const DetalleHabitacion = ({ traduccion }) => {
   const [habitacion, setHabitacion] = useState(null);
@@ -58,8 +57,8 @@ const DetalleHabitacion = ({ traduccion }) => {
               <h1 className="vsm:text-[24px] mb-0 font-bold">
                 {habitacion.nombre}
               </h1>
-              <h2 className="text-[30px] text-[#3361c4] font-bold">
-                $ {habitacion.precio}
+              <h2 className="flex flex-col 2xl:flex-row 2xl:items-center 2xl:gap-3">
+                <span className="text-[30px] text-[#3361c4] font-bold">$ {habitacion.precio}</span> <small className="text-gray-400 ms-1">Tarifa del 1 al 7 de Enero 2025</small>
               </h2>
               <p className="text-gray-600">{habitacion.descripcion_breve}.</p>
               <p className="text-gray-600">
@@ -118,6 +117,12 @@ const DetalleHabitacion = ({ traduccion }) => {
             {traduccion.paginaDetalle.mediosPago}
             </p>
           </article>
+        </div>
+        <div className=" xl:mt-5 p-5 border border-[#818181] lg:w-[50%] shadow-lg">
+          <p className="text-gray-700 text-center">
+            NOTA: Tarifa aplicable del 1 al 7 de Enero de 2025. Consultar tarifa para otras
+            fechas.
+          </p>
         </div>
       </main>
     </>

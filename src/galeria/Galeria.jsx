@@ -1,7 +1,7 @@
 import galeria from "../helpers/galeriaImagenes";
 import ImgGaleria from "./components/ImgGaleria";
 import BtnWhatsApp from "../common/BtnWhatsApp";
-import "./styles/galeria.css";
+import "./styles/galeria.min.css";
 import Head from "../seo/Head";
 import headData from "../helpers/head";
 
@@ -17,7 +17,7 @@ const Galeria = ({traduccion}) => {
           <p className="text-gray-600 text-start pb-5">
             {traduccion.paginaGaleria.descripcion}
           </p>
-          <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 flex-wrap justify-center items-center mt-5 gap-2 md:gap-4">
+          <div className="grid grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 flex-wrap justify-center items-center mt-5 gap-2 md:gap-1">
             {galeria.map((img, index) => (
               <ImgGaleria key={img.id} img={img} index={index}></ImgGaleria>
             ))}

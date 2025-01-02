@@ -1,4 +1,4 @@
-const faqsEs = [
+export const faqsEs = [
   {
     id: "faqOne",
     question: "¿A qué hora puedo realizar el Check-In?",
@@ -26,7 +26,7 @@ Si tienes alguna pregunta adicional, estamos disponibles para ayudarte.`,
     id: "faqSix",
     question: "¿Cuáles son las formas de pago?",
     answer:
-      "Aceptamos efectivo, transferencias bancarias y también puedes abonar a través de link de mercadopago con tarjeta de débito o crédito. Esta última opción tiene un recargo del 10%.",
+      "Además de efectivo, aceptamos transferencias bancarias y también puedes abonar a través de link de mercadopago proporcionado por nosotros donde podrás utilizar tu tarjeta de débito/crédito. Esta última opción tiene un 10% de recargo.",
   },
   {
     id: "faqFour",
@@ -74,5 +74,3 @@ Si tienes alguna pregunta adicional, estamos disponibles para ayudarte.`,
     answer: "No se adminten mascotas por el momento.",
   },
 ];
-
-export default faqsEs;

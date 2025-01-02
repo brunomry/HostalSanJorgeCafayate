@@ -19,7 +19,7 @@ Para visitar el sitio web y más, también puedes buscar 'hostal san jorge', 'ho
 
 ## Tecnologías utilizadas
 
-- HTML5, CSS3, Tailwind, React, Javascript, React-Helmet, React-Router-Dom, Netlify, Vite
+- HTML5, CSS3, Tailwind, React, Javascript, React-Hook-Form, React-Helmet, React-Router-Dom, React-Icons, SweetAlert, Flowbite, Netlify, Vite
 
 ## Funcionalidades y Aspectos Adicionales
 

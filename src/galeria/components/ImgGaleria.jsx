@@ -1,5 +1,5 @@
 import { useState } from "react";
-import galeria from "../../helpers/galeriaImagenes";
+import galeria from "../../helpers/min/galeriaImagenes.min";
 import { GoZoomIn } from "react-icons/go";
 import CarruselFullScreen from "../../common/CarruselFullScreen";
 
@@ -15,19 +15,19 @@ const ImgGaleria = ({ img, index }) => {
   return (
     <>
       <article
-        className="w-[100%] vsm:h-[100px] mb:h-[150px] md:h-[175px] 2xl:h-[180px] cursor-zoom-in containerImgGalery"
+        className="relative w-[100%] vsm:h-[100px] mb:h-[150px] md:h-[175px] 2xl:h-[225px] cursor-zoom-in group overflow-hidden"
         onClick={() => openCarousel(index)}
       >
         <img
           src={img.url}
           alt={`imagen de ${img.descripcion}`}
-          className="h-[100%] w-[100%] object-cover border-[1px] lg:shadow-lg"
+          className="h-[100%] w-[100%] object-cover border-[1px] lg:shadow-lg transition-transform duration-500 ease-in-out group-hover:scale-125"
           loading="lazy"
           title="Haz clic para ver"
         />
-        <div className="hidden containerBg h-[100%] w-[100%] top-0 bg-[rgba(0,0,0,0.6)] text-white">
+        {/* <div className="absolute top-0 left-0 hidden h-[100%] w-[100%] bg-[rgba(0,0,0,0.6)] text-white justify-center items-center group-hover:flex">
           <GoZoomIn className="text-[30px]" />
-        </div>
+        </div> */}
       </article>
       {visible && (
         <CarruselFullScreen
@@ -35,7 +35,7 @@ const ImgGaleria = ({ img, index }) => {
           visible={visible}
           imagenesActuales={galeria}
           imgActual={imgActual}
-        ></CarruselFullScreen>
+        />
       )}
     </>
   );

@@ -11,7 +11,7 @@ function BannerHome({ traduccion }) {
             src={frente}
             alt="Hostal San Jorge Cafayate"
             title="Hostal San Jorge Cafayate"
-            className="w-[100%] py-14 md:py-0 h-[400px] object-cover md:object-fill absolute imgBannerHome xl:max-h-[800px] 2xl:min-h-[925px]"
+            className="w-[100%] py-14 md:py-0 h-[400px] lg:h-[100vh] object-cover md:object-fill absolute imgBannerHome xl:max-h-[800px] 2xl:min-h-[925px]"
           />
         </div>
         <div className=".bannerHome__description absolute top-[100px] left-5 right-5 mb:top-[150px] xl:top-[100px] xl:left-[100px] 2xl:left-[25%] 2xl:top-[25%] flex flex-col gap-2 md:gap-3  bg-[rgba(43,69,94,0.8)] px-3 py-5 md:p-10 xl:p-20 md:max-w-[550px] lg:max-w-[650px] xl:max-w-[800px] xl:mt-[75px] 2xl:mt-[0] min-h-[100px] rounded-[10px] md:rounded-none">
@@ -19,7 +19,7 @@ function BannerHome({ traduccion }) {
             {traduccion.paginaHome.seccionBanner.ubicacion}
           </small>
           <h1 className="text-[.8rem] md:block md:text-[35px] lg:text-[45px] text-[#fff] mt-0 md:font-bold ">
-            Hostal San Jorge Cafayate
+           {traduccion.hostal}
           </h1>
           <p className="text-[18px] text-[#fff] lg:text-[20px]">
             {traduccion.paginaHome.seccionBanner.descripcion}
