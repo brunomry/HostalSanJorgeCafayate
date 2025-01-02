@@ -24,7 +24,7 @@ const FormContacto = ({traduccion}) => {
       const formData = {
         nombre: usuario.nombre,
         email: usuario.email,
-        telefono: usuario.pais + usuario.telefono,
+        telefono: `${usuario.pais.phone} ${usuario.telefono}`,
         mensaje: usuario.mensaje,
       };
 
