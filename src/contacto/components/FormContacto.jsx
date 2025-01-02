@@ -209,7 +209,7 @@ const FormContacto = ({traduccion}) => {
               message: "El mensaje debe contener como máximo 500 caracteres",
             },
             pattern: {
-              value: /^[a-zA-Z0-9\s.,!?]*$/,
+              value: /^[\s\S]*$/,
               message: "Ingrese un mensaje válido.",
             },
           })}
