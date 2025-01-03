@@ -1,5 +1,5 @@
-import Head from "../../seo/Head";
-import headData from "../../helpers/head";
+import Head from "../../common/seo/Head";
+import headData from "../../common/seo/headData";
 import FormReserva from "./FormReserva";
 
 function Reserva({traduccion}) {

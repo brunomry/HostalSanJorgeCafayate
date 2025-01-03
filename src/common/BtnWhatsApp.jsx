@@ -1,5 +1,5 @@
 import { FaWhatsapp } from "react-icons/fa";
-import { consultaPorWhatsApp } from "../helpers/min/whatsApp.min";
+import { consultaPorWhatsApp } from "../helpers/whatsApp";
 
 function BtnWhatsApp({traduccion}) {
   const consultaWhatsApp = () => consultaPorWhatsApp("");

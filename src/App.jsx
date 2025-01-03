@@ -1,19 +1,19 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./home/Home";
-import Habitaciones from "./habitaciones/Habitaciones";
-import "./App.min.css";
+import Home from "./pages/home/Home";
+import Habitaciones from "./pages/habitaciones/Habitaciones";
+import "./App.css";
 import Navbar from "./common/Navbar";
 import "flowbite-react";
-import DetalleHabitacion from "./habitaciones/DetalleHabitacion";
-import Galeria from "./galeria/Galeria";
-import Faqs from "./faqs/Faqs";
-import Contacto from "./contacto/Contacto";
+import DetalleHabitacion from "./pages/detalleHabitacion/DetalleHabitacion";
+import Galeria from "./pages/galeria/Galeria";
+import Faqs from "./pages/faqs/Faqs";
+import Contacto from "./pages/contacto/Contacto";
 import Footer from "./common/Footer";
 import ScrollTop from "./common/ScrollTop";
-import Politicas from "./politicas/Politicas";
-import Nosotros from "./nosotros/Nosotros";
+import Politicas from "./pages/politicas/Politicas";
+import Nosotros from "./pages/nosotros/Nosotros";
 import Reserva from "./pages/reserva/Reserva";
-import { traducciones } from "./helpers/traducciones";
+import { traducciones } from "./helpers/traducciones/traducciones";
 import { useState } from "react";
 
 const App = () => {

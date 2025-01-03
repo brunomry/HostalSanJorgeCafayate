@@ -1,1 +1,0 @@
-@import url(./assets/fonts/fuentes.min.css);@tailwind base;@tailwind components;@tailwind utilities;body{font-family:"Questrial",sans-serif;min-height:100vh;display:flex;flex-direction:column}.main{flex-grow:1}.btnWppFixed{position:fixed;right:20px;bottom:20px;font-size:60px}h1,h2,h3,h4,h5,h6,.logo{font-family:"Sora",sans-serif}a{text-decoration:none;cursor:pointer;color:#000}
