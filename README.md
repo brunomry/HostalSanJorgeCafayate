@@ -15,7 +15,7 @@ El Hostal San Jorge (situado en la ciudad de Cafayate, provincia de Salta, Argen
 
 ## Introducción
 
-Este proyecto tiene como objetivo resolver la ausencia de presencia en línea del Hostal San Jorge, ubicado en Cafayate, Salta, Argentina. La necesidad de un sitio web surgió para mejorar su visibilidad en el mercado y atraer a más potenciales clientes, ofreciendo una plataforma accesible donde puedan informarse sobre los servicios del hostal, consultar disponibilidad de habitaciones y realizar reservas.
+Este proyecto tiene como objetivo establecer la presencia en línea del Hostal San Jorge, ubicado en Cafayate, Salta, Argentina. La necesidad de un sitio web surgió para mejorar su visibilidad en el mercado y atraer a más clientes potenciales, ofreciendo una plataforma accesible donde puedan informarse sobre los servicios del hostal, consultar la disponibilidad de habitaciones y realizar reservas.
 
 ## Versiones
 
