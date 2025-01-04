@@ -8,7 +8,7 @@ function Head({ head }) {
       <meta name="robots" content={head.robots} />
       <link
         rel="canonical"
-        href={`https://www.hostalsanjorgecafayate.netlify.app/${head.canonical}`}
+        href={`https://hostalsanjorgecafayate.netlify.app/${head.canonical}`}
       />
       <meta
         property="og:title"
@@ -17,7 +17,7 @@ function Head({ head }) {
       <meta property="og:description" content={head.description} />
       <meta
         property="og:url"
-        content={`https://www.hostalsanjorgecafayate.netlify.app/${head.canonical}`}
+        content={`https://hostalsanjorgecafayate.netlify.app/${head.canonical}`}
       />
       <title>{head.title}</title>
     </Helmet>
