@@ -12,9 +12,9 @@ const FiltrosDetalle = ({traduccion}) => {
           title={h.tipo}
           className={` ${
             id == h.id ? "bg-gray-200" : ""
-          } border vsm:min-w-[125px] md:min-w-[120px] text-center vsm:h-[50px] vsm:p-2 sm:py-2 sm:px-5 text-gray-600 cursor-pointer hover:bg-gray-200 3xl:text-[1.2rem]`}
+          } border min-w-[130px] flex justify-center items-center vsm:h-[50px] vsm:p-2 sm:py-2 sm:px-5 text-gray-600 cursor-pointer hover:bg-gray-200 3xl:text-[1.2rem]`}
         >
-          {h.tipo}
+          <span>{h.tipo}</span>
         </Link>
       ))}
     </div>
