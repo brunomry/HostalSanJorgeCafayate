@@ -78,7 +78,8 @@ La segunda versión incluyó las siguientes funcionalidades o características p
 **Página de Referencia:**  Página de Detalle de habitación.
 
 **Componentes Clave:**  
-- Detalle de Habitación  
+- Detalle de Habitación
+- Filtrar detalle de habitación por tipo  
 - Botón de Reserva por medio de WhatsApp  
 
 **Acciones Principales:**  
@@ -147,7 +148,7 @@ Estoy trabajando en la implementación de nuevas funcionalidades que mejorarán 
 
 - Integración con MercadoPago para permitir pagos seguros y en tiempo real, facilitando la confirmación de reservas y evitando cancelaciones por falta de prepagos.
 
-**3. Gestión Multilingüe Ampliada**
+**3. Traducción a más idiomas**
 
 - Implementación de más idiomas además del español e inglés para atraer a una audiencia internacional más amplia.
 
