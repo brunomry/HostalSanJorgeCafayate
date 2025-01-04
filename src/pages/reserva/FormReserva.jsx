@@ -22,7 +22,7 @@ const FormReserva = ({ traduccion }) => {
   } = useForm();
 
   let totalPersonas;
-
+  
   const enviarDatos = async (usuario) => {
     setCargando(true);
 
@@ -41,7 +41,7 @@ const FormReserva = ({ traduccion }) => {
       if (checkout <= checkin) {
         setError("checkout", {
           type: "manual",
-          message: "La fecha de salida debe ser posterior a la de entrada",
+          message: `${traduccion.validaciones.salidaValida}`,
         });
         return;
       }
@@ -52,7 +52,8 @@ const FormReserva = ({ traduccion }) => {
     } catch (error) {
       Swal.fire({
         position: "center",
-        text: "❌ Hubo un error al enviar la solicitud de reserva. Intenta nuevamente más tarde.",
+        title: `${traduccion.validaciones.form_error}`,
+        text: `${traduccion.validaciones.form_error_text}`,
         timer: 3000,
       });
     } finally {
@@ -68,11 +69,11 @@ const FormReserva = ({ traduccion }) => {
       setExito(false);
       setError("adultos", {
         type: "manual",
-        message: "La capacidad total no puede superar 18 personas",
+        message: `${traduccion.validaciones.capacidadValida}`,
       });
       setError("menores", {
         type: "manual",
-        message: "La capacidad total no puede superar 18 personas",
+        message: `${traduccion.validaciones.capacidadValida}`,
       });
     } else {
       clearErrors("adultos");
@@ -87,7 +88,7 @@ const FormReserva = ({ traduccion }) => {
     if (checkout <= checkin) {
       setError("checkout", {
         type: "manual",
-        message: "La fecha de salida debe ser posterior a la de entrada",
+        message: `${traduccion.validaciones.salidaValida}`,
       });
     } else {
       clearErrors("checkout");
@@ -96,7 +97,7 @@ const FormReserva = ({ traduccion }) => {
 
   return (
     <form
-      className="vsm:w-[100%] shadow-md max-w-[650px] mx-auto md:border vsm:px-2 vsm:py-3 mb:p-4 md:p-10 flex flex-wrap md:gap-2 lg:gap-4 "
+      className="vsm:w-[100%] bg-[#fff] rounded-[8px] shadow-md max-w-[650px] mx-auto md:border vsm:px-2 vsm:py-3 mb:p-4 md:p-10 flex flex-wrap md:gap-2 lg:gap-4 "
       onSubmit={handleSubmit(enviarDatos)}
     >
       <div className="hidden md:block md:w-full">
@@ -105,13 +106,13 @@ const FormReserva = ({ traduccion }) => {
             (key) => errors[key]?.type === "required"
           ) && (
             <Alerta
-              mensaje="Por favor, completa todos los campos."
+              mensaje={traduccion.validaciones.form_required}
               tipo="error"
             />
           )}
         {isSubmitSuccessful && capacidad <= 18 && exito && (
           <Alerta
-            mensaje="✅ Tu solicitud de reserva fue enviada. En breve nos pondremos en contacto."
+            mensaje={traduccion.validaciones.form_exito}
             tipo="success"
           />
         )}
@@ -119,7 +120,7 @@ const FormReserva = ({ traduccion }) => {
       <div className="mb-2 lg:mb-0 w-[100%]">
         <label
           htmlFor="fullname"
-          className="block  font-bold text-gray-700 dark:text-white"
+          className="block 3xl:text-[1.2rem] font-bold text-[#094067] dark:text-white"
         >
           {traduccion.paginaReserva.formulario.nombre}
         </label>
@@ -127,21 +128,21 @@ const FormReserva = ({ traduccion }) => {
           type="text"
           id="fullname"
           title="Escribe tu nombre y apellido"
-          className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
+          className=" text-[#094067] block w-full p-3 focus:border-none border-gray-300"
           placeholder="Juan Perez"
           {...register("nombre", {
             required: "El nombre y apellido es obligatorio",
             minLength: {
               value: 7,
-              message: "Debe tener al menos 7 caracteres",
+              message: `${traduccion.validaciones.nombre.minLength}`,
             },
             maxLength: {
               value: 30,
-              message: "Debe tener como máximo 30 caracteres",
+              message: `${traduccion.validaciones.nombre.maxLength}`,
             },
             pattern: {
               value: /^[a-zA-ZÁÉÍÓÚáéíóúñÑ\s]+$/,
-              message: "Ingrese nombre y apellido válido.",
+              message: `${traduccion.validaciones.nombre.pattern}`,
             },
           })}
         />
@@ -152,7 +153,7 @@ const FormReserva = ({ traduccion }) => {
       <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[52%]">
         <label
           htmlFor="email"
-          className="block  font-bold text-gray-700 dark:text-white"
+          className="block 3xl:text-[1.2rem] font-bold text-[#094067] dark:text-white"
         >
           {traduccion.paginaReserva.formulario.email}
         </label>
@@ -160,23 +161,23 @@ const FormReserva = ({ traduccion }) => {
           type="email"
           id="email"
           title="Escribe tu dirección de correo electrónico"
-          className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
+          className=" text-[#094067] block w-full p-3 focus:border-none border-gray-300"
           placeholder="nombre@ejemplo.com"
           {...register("email", {
             required: "El correo electrónico es obligatorio",
             minLength: {
               value: 4,
               message:
-                "El correo electrónico debe contener al menos 4 caracteres",
+                `${traduccion.validaciones.email.minLength}`,
             },
             maxLength: {
               value: 265,
               message:
-                "El correo electrónico debe contener como máximo 265 caracteres",
+                `${traduccion.validaciones.email.maxLength}`,
             },
             pattern: {
               value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/,
-              message: "Ingrese una dirección de correo electrónico válida",
+              message: `${traduccion.validaciones.email.pattern}`,
             },
           })}
         />
@@ -185,8 +186,8 @@ const FormReserva = ({ traduccion }) => {
         )}
       </div>
       <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[45%]">
-        <label htmlFor="tel" className="block dark:text-white">
-          <span className="text-gray-700 font-bold">
+        <label htmlFor="tel" className="block 3xl:text-[1.2rem] dark:text-white">
+          <span className="text-[#094067] font-bold">
             {traduccion.paginaReserva.formulario.telefono}
           </span>
           <small className="ms-1">(Sin 0 ni 15)</small>
@@ -212,21 +213,21 @@ const FormReserva = ({ traduccion }) => {
               type="text"
               id="tel"
               title="Escribe tu número de celular"
-              className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
+              className=" text-[#094067] block w-full p-3 focus:border-none border-gray-300"
               placeholder="3811111111"
               {...register("telefono", {
                 required: "El teléfono es obligatorio.",
                 minLength: {
                   value: 5,
-                  message: "Debe contener al menos 5 caracteres",
+                  message: `${traduccion.validaciones.telefono.minLength}`,
                 },
                 maxLength: {
                   value: 11,
-                  message: "Debe contener como máximo 11 caracteres",
+                  message: `${traduccion.validaciones.telefono.minLength}`,
                 },
                 pattern: {
                   value: /^\d+$/,
-                  message: "Ingrese un número de teléfono válido.",
+                  message: `${traduccion.validaciones.telefono.pattern}`,
                 },
               })}
             />
@@ -239,7 +240,7 @@ const FormReserva = ({ traduccion }) => {
       <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[48%]">
         <label
           htmlFor="checkin"
-          className="block  font-bold text-gray-700 dark:text-white"
+          className="block 3xl:text-[1.2rem] font-bold text-[#094067] dark:text-white"
         >
           {traduccion.paginaReserva.formulario.llegada}
         </label>
@@ -247,7 +248,7 @@ const FormReserva = ({ traduccion }) => {
           type="date"
           id="checkin"
           title="selecciona la fecha de ingreso"
-          className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
+          className=" text-[#094067] block w-full p-3 focus:border-none border-gray-300"
           {...register("checkin", {
             required: "La fecha de check-in es obligatoria",
           })}
@@ -259,7 +260,7 @@ const FormReserva = ({ traduccion }) => {
       <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[48%]">
         <label
           htmlFor="checkout"
-          className="block  font-bold text-gray-700 dark:text-white"
+          className="block 3xl:text-[1.2rem] font-bold text-[#094067] dark:text-white"
         >
           {traduccion.paginaReserva.formulario.salida}
         </label>
@@ -267,19 +268,19 @@ const FormReserva = ({ traduccion }) => {
           type="date"
           id="checkout"
           title="selecciona la fecha de salida"
-          className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
+          className=" text-[#094067] block w-full p-3 focus:border-none border-gray-300"
           {...register("checkout", {
             required: "La fecha de check-out es obligatoria",
           })}
         />
         {errors.checkout && errors.checkout.type !== "required" && (
-          <small className="text-red-400">{errors.checkout?.message}</small>
+          <small className="text-red-400">{`${traduccion.validaciones.salidaValida}`}</small>
         )}
       </div>
       <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[48%]">
         <label
           htmlFor="adultos"
-          className="block  font-bold text-gray-700 dark:text-white"
+          className="block 3xl:text-[1.2rem] font-bold text-[#094067] dark:text-white"
         >
           {traduccion.paginaReserva.formulario.adultos}
         </label>
@@ -289,7 +290,7 @@ const FormReserva = ({ traduccion }) => {
           title="selecciona la cantidad de mayores"
           className={`${
             errors.adultos || watch("menores") === "" ? "" : ""
-          } text-gray-700 block w-full p-3 focus:border-none border-gray-300`}
+          } text-[#094067] block w-full p-3 focus:border-none border-gray-300`}
           {...register("adultos", {
             required: "Debe seleccionar la cantidad de adultos",
           })}
@@ -304,7 +305,7 @@ const FormReserva = ({ traduccion }) => {
       <div className="mb-2 lg:mb-0 vsm:w-[100%] md:w-[48%]">
         <label
           htmlFor="menores"
-          className="block  font-bold text-gray-700 dark:text-white"
+          className="block 3xl:text-[1.2rem] font-bold text-[#094067] dark:text-white"
         >
           {traduccion.paginaReserva.formulario.menores}
         </label>
@@ -314,7 +315,7 @@ const FormReserva = ({ traduccion }) => {
           title="selecciona la cantidad de menores"
           className={`${
             errors.menores || watch("menores") === "" ? "" : ""
-          }   text-gray-700 block w-full p-3 focus:border-none border-gray-300`}
+          }   text-[#094067] block w-full p-3 focus:border-none border-gray-300`}
           {...register("menores")}
         >
           {[...Array(17).keys()].map((n) => (
@@ -326,13 +327,13 @@ const FormReserva = ({ traduccion }) => {
       </div>
       {capacidad > 18 && (
         <small className="w-full text-red-500">
-          La capacidad total no puede superar las 18 personas.
+          {traduccion.validaciones.capacidadValida}
         </small>
       )}
       <div className="mb-3 lg:mb-0 w-[100%]">
         <label
           htmlFor="message"
-          className="block  font-bold text-gray-700 dark:text-white"
+          className="block 3xl:text-[1.2rem] font-bold text-[#094067] dark:text-white"
         >
           {traduccion.paginaReserva.formulario.mensaje}
         </label>
@@ -341,20 +342,20 @@ const FormReserva = ({ traduccion }) => {
           rows="4"
           title="Escribe tu consulta"
           placeholder={traduccion.paginaReserva.formulario.textarea}
-          className="border-gray-300 text-gray-700 block w-full p-3 focus:border-none"
+          className="border-gray-300 text-[#094067] block w-full p-3 focus:border-none"
           {...register("mensaje", {
             required: "El mensaje es obligatorio",
             minLength: {
               value: 25,
-              message: "El mensaje debe contener al menos 25 caracteres",
+              message: `${traduccion.validaciones.mensaje.minLength}`,
             },
             maxLength: {
               value: 500,
-              message: "El mensaje debe contener como máximo 500 caracteres",
+              message: `${traduccion.validaciones.mensaje.maxLength}`,
             },
             pattern: {
               value: /^[\s\S]*$/,
-              message: "Ingrese un mensaje válido.",
+              message: `${traduccion.validaciones.mensaje.pattern}`,
             },
           })}
         ></textarea>
@@ -363,7 +364,7 @@ const FormReserva = ({ traduccion }) => {
         )}
       </div>
       <div className="flex justify-center w-[100%]">
-        <button className="bg-emerald-500 hover:bg-emerald-600 text-white p-4 vsm:w-[100%] md:w-[50%] uppercase flex gap-3 justify-center items-center">
+        <button className="rounded-[8px] bg-[#3d89c0] text-white p-4 vsm:w-[100%] md:w-[50%] uppercase flex gap-3 justify-center items-center">
           {cargando && (
             <span>
               <Spinner></Spinner>
@@ -378,13 +379,13 @@ const FormReserva = ({ traduccion }) => {
             (key) => errors[key]?.type === "required"
           ) && (
             <Alerta
-              mensaje="Por favor, completa todos los campos."
+              mensaje={traduccion.validaciones.form_required}
               tipo="error"
             />
           )}
         {isSubmitSuccessful && capacidad <= 18 && exito && (
           <Alerta
-            mensaje="✅ Tu solicitud de reserva fue enviada. En breve nos pondremos en contacto."
+            mensaje={traduccion.validaciones.form_exito}
             tipo="success"
           />
         )}

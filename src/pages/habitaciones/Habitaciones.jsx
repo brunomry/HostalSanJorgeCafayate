@@ -15,17 +15,17 @@ function Habitaciones({ traduccion }) {
   return (
     <>
       <Head head={headData.habitaciones}></Head>
-      <main className="py-24 px-4 lg:px-24 xl:px-10 lg:py-40 w-[100%]">
+      <main className="py-24 px-4 lg:px-24 xl:px-10 lg:py-40 w-[100%] ">
         <section className="mb-8 xl:mb-14">
-          <h1 className="text-[32px] md:text-[35px] lg:text-[45px] lg:text-start font-bold mb-3 text-[#3361c4]">
+          <h1 className="text-[32px] md:text-[35px] lg:text-[45px] lg:text-start font-bold mb-3 text-[#094067]">
             {traduccion.paginaHabitaciones.title}
           </h1>
-          <p className=" text-gray-600 text-justify text-[1rem] lg:text-start">
+          <p className=" text-gray-600 text-justify text-[1rem] 3xl:text-[1.2rem] lg:text-start">
             {traduccion.paginaHabitaciones.descripcion}
           </p>
         </section>
         <section className="flex flex-col gap-3 ">
-          <p className="text-center text-gray-600">
+          <p className="text-center text-gray-600 3xl:text-[1.2rem]">
             {traduccion.paginaHabitaciones.descripcionFiltro}
           </p>
           <FiltrosHabitacion
@@ -41,7 +41,7 @@ function Habitaciones({ traduccion }) {
           habitacionSeleccionada={habitacionSeleccionada}
           traduccion={traduccion}
         ></ListaHabitaciones>
-        <div className="mx-auto mt-10 p-5 border border-[#818181] md:w-[50%] shadow-lg">
+        <div className="mx-auto mt-10 p-5 border border-[#818181] md:w-[50%] shadow-lg bg-[#fff] 3xl:text-[1.2rem]">
           <p className="text-gray-700 text-center">
             {traduccion.paginaHabitaciones.nota}
           </p>

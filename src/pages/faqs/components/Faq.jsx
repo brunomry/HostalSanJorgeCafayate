@@ -16,7 +16,7 @@ function Faq({ faq }) {
         aria-controls={`${faq.id}`}
         onClick={() => (visible ? setVisible(false) : setVisible(true))}
       >
-        <p className="xl:text-[18px] text-start">{faq.question}</p>
+        <p className="xl:text-[18px] text-start 3xl:text-[1.2rem]">{faq.question}</p>
         {visible ? (
           <FaMinus />
         ) : (
@@ -33,7 +33,7 @@ function Faq({ faq }) {
         }  md:w-[80%] lg:w-[70%] border-none bg-slate-100 p-5 bg-gray-100"`}
       >
         <div className=" border-gray-200 dark:border-gray-800 dark:bg-gray-900">
-          <p className=" text-gray-600 ">{faq.answer}</p>
+          <p className=" text-gray-600 3xl:text-[1.2rem]">{faq.answer}</p>
         </div>
       </div>
     </>

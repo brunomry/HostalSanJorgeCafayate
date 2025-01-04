@@ -28,8 +28,8 @@ const FormContacto = ({traduccion}) => {
     } catch (error) {
       Swal.fire({
         position: "bottom",
-        title: "❌ Hubo un error al enviar el mensaje.",
-        text: "Intenta nuevamente más tarde.",
+        title: `${traduccion.validaciones.form_error}`,
+        text: `${traduccion.validaciones.form_error_text}`,
         timer: 3000,
       });
     }finally {
@@ -39,7 +39,7 @@ const FormContacto = ({traduccion}) => {
 
   return (
     <form
-      className="vsm:w-[100%] shadow-md max-w-[550px] mx-auto md:border vsm:px-2 vsm:py-3 mb:p-4 md:p-10 flex flex-wrap md:gap-2 lg:gap-4 "
+      className="vsm:w-[100%] bg-[#fff] rounded-[8px] shadow-lg max-w-[550px] mx-auto md:border vsm:px-2 vsm:py-3 mb:p-4 md:p-10 flex flex-wrap md:gap-2 lg:gap-4 3xl:text-[1.2rem]"
       onSubmit={handleSubmit(enviarDatos)}
     >
       <div className="hidden md:block md:w-full">
@@ -48,13 +48,13 @@ const FormContacto = ({traduccion}) => {
             (key) => errors[key]?.type === "required"
           ) && (
             <Alerta
-              mensaje="Por favor, completa todos los campos."
+              mensaje={traduccion.validaciones.form_required}
               tipo="error"
             />
           )}
         {isSubmitSuccessful && exito && (
           <Alerta
-            mensaje="✅ Tu consulta fue enviada. En breve nos pondremos en contacto."
+            mensaje={traduccion.validaciones.form_exito}
             tipo="success"
           />
         )}
@@ -62,7 +62,7 @@ const FormContacto = ({traduccion}) => {
       <div className="mb-2 lg:mb-0 w-[100%]">
         <label
           htmlFor="fullname"
-          className="block  font-bold text-gray-700 dark:text-white"
+          className="block  font-bold text-[#094067] dark:text-white"
         >
           {traduccion.paginaReserva.formulario.nombre}
         </label>
@@ -70,21 +70,21 @@ const FormContacto = ({traduccion}) => {
           type="text"
           id="fullname"
           title="Escribe tu nombre y apellido"
-          className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
+          className=" text-[#094067] block w-full p-3 focus:border-none border-gray-300"
           placeholder="Juan Perez"
           {...register("nombre", {
             required: "El nombre y apellido es obligatorio",
             minLength: {
               value: 7,
-              message: "Debe tener al menos 7 caracteres",
+              message: `${traduccion.validaciones.nombre.minLength}`,
             },
             maxLength: {
               value: 30,
-              message: "Debe tener como máximo 30 caracteres",
+              message: `${traduccion.validaciones.nombre.maxLength}`,
             },
             pattern: {
               value: /^[a-zA-ZÁÉÍÓÚáéíóúñÑ\s]+$/,
-              message: "Ingrese nombre y apellido válido.",
+              message: `${traduccion.validaciones.nombre.pattern}`,
             },
           })}
         />
@@ -95,7 +95,7 @@ const FormContacto = ({traduccion}) => {
       <div className="mb-2 lg:mb-0 w-[100%] ">
         <label
           htmlFor="email"
-          className="block  font-bold text-gray-700 dark:text-white"
+          className="block  font-bold text-[#094067] dark:text-white"
         >
           {traduccion.paginaReserva.formulario.email}
         </label>
@@ -103,23 +103,23 @@ const FormContacto = ({traduccion}) => {
           type="email"
           id="email"
           title="Escribe tu dirección de correo electrónico"
-          className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
+          className=" text-[#094067] block w-full p-3 focus:border-none border-gray-300"
           placeholder="nombre@ejemplo.com"
           {...register("email", {
             required: "El correo electrónico es obligatorio",
             minLength: {
               value: 4,
               message:
-                "El correo electrónico debe contener al menos 4 caracteres",
+                `${traduccion.validaciones.email.minLength}`,
             },
             maxLength: {
               value: 265,
               message:
-                "El correo electrónico debe contener como máximo 265 caracteres",
+                `${traduccion.validaciones.email.maxLength}`,
             },
             pattern: {
               value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/,
-              message: "Ingrese una dirección de correo electrónico válida",
+              message: `${traduccion.validaciones.email.pattern}`,
             },
           })}
         />
@@ -129,7 +129,7 @@ const FormContacto = ({traduccion}) => {
       </div>
       <div className="mb-2 lg:mb-0 vsm:w-[100%]">
         <label htmlFor="tel" className="block dark:text-white">
-          <span className="text-gray-700 font-bold">
+          <span className="text-[#094067] font-bold">
             {traduccion.paginaReserva.formulario.telefono}
           </span>
           <small className="ms-1">(Sin 0 ni 15)</small>
@@ -156,21 +156,21 @@ const FormContacto = ({traduccion}) => {
               type="text"
               id="tel"
               title="Escribe tu número de celular"
-              className=" text-gray-700 block w-full p-3 focus:border-none border-gray-300"
+              className=" text-[#094067] block w-full p-3 focus:border-none border-gray-300"
               placeholder="3811111111"
               {...register("telefono", {
                 required: "El teléfono es obligatorio.",
                 minLength: {
                   value: 5,
-                  message: "Debe contener al menos 5 caracteres",
+                  message: `${traduccion.validaciones.telefono.minLength}`,
                 },
                 maxLength: {
                   value: 11,
-                  message: "Debe contener como máximo 11 caracteres",
+                  message: `${traduccion.validaciones.telefono.maxLength}`,
                 },
                 pattern: {
                   value: /^\d+$/,
-                  message: "Ingrese un número de teléfono válido.",
+                  message: `${traduccion.validaciones.telefono.pattern}`,
                 },
               })}
             />
@@ -183,7 +183,7 @@ const FormContacto = ({traduccion}) => {
       <div className="mb-3 lg:mb-0 w-[100%]">
         <label
           htmlFor="message"
-          className="block  font-bold text-gray-700 dark:text-white"
+          className="block  font-bold text-[#094067] dark:text-white"
         >
           {traduccion.paginaReserva.formulario.mensaje}
         </label>
@@ -192,20 +192,20 @@ const FormContacto = ({traduccion}) => {
           rows="4"
           title="Escribe tu consulta"
           placeholder={traduccion.paginaReserva.formulario.textarea}
-          className="border-gray-300 text-gray-700 block w-full p-3 focus:border-none"
+          className="border-gray-300 text-[#094067] block w-full p-3 focus:border-none"
           {...register("mensaje", {
             required: "El mensaje es obligatorio",
             minLength: {
               value: 25,
-              message: "El mensaje debe contener al menos 25 caracteres",
+              message: `${traduccion.validaciones.mensaje.minLength}`,
             },
             maxLength: {
               value: 500,
-              message: "El mensaje debe contener como máximo 500 caracteres",
+              message: `${traduccion.validaciones.mensaje.maxLength}`,
             },
             pattern: {
               value: /^[\s\S]*$/,
-              message: "Ingrese un mensaje válido.",
+              message:`${traduccion.validaciones.mensaje.pattern}`,
             },
           })}
         ></textarea>
@@ -214,7 +214,7 @@ const FormContacto = ({traduccion}) => {
         )}
       </div>
       <div className="flex justify-center w-[100%]">
-        <button className="bg-emerald-500 hover:bg-emerald-600 text-white p-4 vsm:w-[100%] md:w-[50%] uppercase flex gap-3 justify-center items-center">
+        <button className="bg-[#3d89c0] rounded-[6px] text-white p-3 vsm:w-[100%] md:w-[50%] uppercase flex gap-3 justify-center items-center">
           {cargando && (
             <span>
               <Spinner></Spinner>
@@ -229,13 +229,13 @@ const FormContacto = ({traduccion}) => {
             (key) => errors[key]?.type === "required"
           ) && (
             <Alerta
-              mensaje="Por favor, completa todos los campos."
+              mensaje={traduccion.validaciones.form_required}
               tipo="error"
             />
           )}
         {isSubmitSuccessful && exito && (
           <Alerta
-            mensaje="✅ Tu consulta fue enviada. En breve nos pondremos en contacto."
+            mensaje={traduccion.validaciones.form_exito}
             tipo="success"
           />
         )}

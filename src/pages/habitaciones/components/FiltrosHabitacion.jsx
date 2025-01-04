@@ -29,7 +29,7 @@ function FiltrosHabitacion({
         <span
           key={tipoHabitacion}
           title={`Habitaciones ${tipoHabitacion}`}
-          className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer lg:hover:bg-gray-200 
+          className={`border py-2 px-5 text-gray-600 lg:hover:text-[#363636] cursor-pointer bg-[#fff] shadow-md lg:hover:bg-gray-200 3xl:text-[1.2rem] 
             ${
               tipo === tipoHabitacion || 
               (tipoHabitacion === "Todas" && habitacionSeleccionada === "") 

@@ -9,12 +9,12 @@ const Faqs = ({ traduccion }) => {
   return (
     <>
       <Head head={headData.preguntas}></Head>
-      <main className="px-4 py-24 w-[100%] xl:px-10 flex flex-col gap-5 md:gap-10  lg:py-36 2xl:py-44">
+      <main className="px-4 py-24 w-[100%] xl:px-10 flex flex-col gap-5 md:gap-10  lg:py-36 2xl:py-44 ">
         <div>
-          <h1 className="md:ms-10 text-[32px] md:text-[35px] lg:text-[45px] font-bold text-[#3361c4]">
+          <h1 className="md:ms-10 text-[32px] md:text-[35px] lg:text-[45px] font-bold text-[#094067]">
             {traduccion.paginaFaqs.title}
           </h1>
-          <p className="mb-3 text-gray-600 md:ms-20 mt-5">
+          <p className="mb-3 text-gray-600 md:ms-20 mt-5 3xl:text-[1.2rem]">
             {traduccion.paginaFaqs.descripcion}
           </p>
         </div>

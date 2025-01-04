@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 
 const Footer = ({ traduccion }) => {
   return (
-    <footer className=" dark:bg-gray-900 border-t">
-      <section className="mx-auto vsm:w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <footer className="  bg-[#f1f9ff] text-[#fff]">
+      <section className="mx-auto vsm:w-full max-w-screen-xl p-4 py-6 lg:py-8 ">
         <div className="md:flex md:flex-col lg:flex-row md:justify-between gap-8 w-[100%]">
           <article className="mb-6 md:mb-0">
             <div className="flex flex-col gap-10 lg:gap-20 lg:items-center">
@@ -19,15 +19,15 @@ const Footer = ({ traduccion }) => {
                 <span className="text-2xl text-[#3361c4] logo font-bold whitespace-nowrap dark:text-white">
                   Hostal San Jorge
                 </span>
-                <small className="text-sm text-gray-600">Cafayate, Salta</small>
+                <small className="text-sm">Cafayate, Salta</small>
               </Link>
               <div>
-                <p className="mb-3 text-[.9rem]">{traduccion.footer.redes}</p>
+                <p className="mb-3 text-[.9rem] text-gray-600">{traduccion.footer.redes}</p>
                 <div className="flex gap-3">
                   <Link
                     to={`https://www.instagram.com/hostalsanjorgecafayate`}
                     title="clic para visitar perfil de Instagram"
-                    className="shadow-sm border p-2 rounded-[100%] hover:scale-110"
+                    className="shadow-sm border bg-[#fff] p-2 rounded-[100%] hover:scale-110"
                     target="_blank"
                     rel="noopener"
                   >
@@ -36,7 +36,7 @@ const Footer = ({ traduccion }) => {
                   <Link
                     to={`https://www.facebook.com/profile.php?id=100089399326566`}
                     title="clic para visitar perfil de Facebook"
-                    className="shadow-sm border p-2 rounded-[100%] hover:scale-110"
+                    className="shadow-sm border bg-[#fff] p-2 rounded-[100%] hover:scale-110"
                     target="_blank"
                     rel="noopener"
                   >
@@ -48,7 +48,7 @@ const Footer = ({ traduccion }) => {
           </article>
           <div className="flex flex-col sm:flex-row gap-8 md:gap-16">
             <article>
-              <h4 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h4 className="mb-6 text-sm font-semibold text-[#094067] uppercase dark:text-white">
                 {traduccion.footer.contacto}
               </h4>
               <ul className="text-gray-600 flex flex-col gap-4">
@@ -57,7 +57,7 @@ const Footer = ({ traduccion }) => {
                   title="Dirección: Calixto Mamaní 105, Cafayate, Salta, Argentina"
                 >
                   <FaMapMarkerAlt className="text-[20px] text-teal-500" />
-                  <p className="text-[.9rem]">
+                  <p className="text-[.9rem] ">
                     Calixto Mamaní 105, Cafayate, Salta, Argentina
                   </p>{" "}
                 </li>
@@ -87,7 +87,7 @@ const Footer = ({ traduccion }) => {
               </ul>
             </article>
             <article>
-              <h4 className="mb-6 text-sm font-semibold text-gray-900 uppercase">
+              <h4 className="mb-6 text-sm font-semibold text-[#094067] uppercase">
                 {traduccion.footer.info.title}
               </h4>
               <ul className="text-gray-600 ">
@@ -126,7 +126,7 @@ const Footer = ({ traduccion }) => {
                   </Link>
                 </li>
               </ul>
-              <h4 className="mt-7 mb-6 text-sm font-semibold text-gray-900 uppercase ">
+              <h4 className="mt-7 mb-6 text-sm font-semibold text-[#094067] uppercase ">
                 {traduccion.footer.colaboraciones.title}
               </h4>
               <ul className="text-gray-600 ">

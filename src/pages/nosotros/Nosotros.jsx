@@ -10,18 +10,18 @@ const Nosotros = ({ traduccion }) => {
       <main className="w-[100%] relative px-8 py-20 md:p-20 lg:py-40 flex flex-col items-center gap-10 justify-center">
         <section className="xl:w-[70%] flex flex-col gap-5  ">
           <div>
-            <h1 className="text-[32px] md:text-[35px] lg:text-[45px] lg:text-start mb-5 font-bold text-[#3361c4]">
+            <h1 className="text-[32px] md:text-[35px] lg:text-[45px] lg:text-start mb-5 font-bold text-[#094067]">
               {traduccion.paginaNosotros.title}
             </h1>
-            <p className="text-gray-600 text-justify text-[1rem] lg:text-start">
+            <p className="text-gray-600 text-justify text-[1rem] lg:text-start 3xl:text-[1.2rem]">
               {traduccion.paginaNosotros.descripcion1}
             </p>
           </div>
           <div>
-            <h2 className="text-[25px] mb-2 text-justify md:text-start">
+            <h2 className="text-[25px] mb-2 text-justify md:text-start font-bold text-[#094067]">
               {traduccion.paginaNosotros.subtitulo}
             </h2>
-            <p className="text-gray-600 text-justify text-[1rem] lg:text-start">
+            <p className="text-gray-600 text-justify text-[1rem] lg:text-start 3xl:text-[1.2rem]">
               {traduccion.paginaNosotros.descripcion2}
             </p>
           </div>
@@ -40,27 +40,27 @@ const Nosotros = ({ traduccion }) => {
           </figure>
           <article className="w-[100%] flex flex-col gap-3">
             <div className="flex flex-col gap-2">
-              <h3 className="text-[20px] text-justify md:text-start">
+              <h3 className="text-[20px] text-justify md:text-start font-bold text-[#094067]">
                 {traduccion.paginaNosotros.subtitulo1}
               </h3>
-              <p className="text-gray-600 text-justify text-[1rem] lg:text-start">
+              <p className="text-gray-600 text-justify text-[1rem] lg:text-start 3xl:text-[1.2rem]">
                 {traduccion.paginaNosotros.descripcion3}
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-[20px] text-justify md:text-start">Visión</h3>
-              <p className="text-gray-600 text-justify text-[1rem] lg:text-start">
+              <h3 className="text-[20px] text-justify md:text-start font-bold text-[#094067]"> {traduccion.paginaNosotros.subtitulo2}</h3>
+              <p className="text-gray-600 text-justify text-[1rem] lg:text-start 3xl:text-[1.2rem]">
                 {traduccion.paginaNosotros.descripcion4}
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-[20px] text-justify md:text-start">
-                Valores
+              <h3 className="text-[20px] text-justify md:text-start font-bold text-[#094067] ">
+              {traduccion.paginaNosotros.subtitulo3}
               </h3>
               <ul className="md:list-disc md:ms-8 text-justify md:text-start">
                 {traduccion.paginaNosotros.descripcion5.map((valor, i) => (
                   <li
-                    className="text-gray-600 text-justify text-[1rem] lg:text-start"
+                    className="text-gray-600 text-justify text-[1rem] lg:text-start 3xl:text-[1.2rem]"
                     key={i}
                   >
                     {valor}

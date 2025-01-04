@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import comentarios from "../helpers/comentarios";
 import CardComentario from "./CardComentario";
 
@@ -12,9 +13,9 @@ const Comentarios = ({traduccion}) => {
           ></CardComentario>
         ))}
       </div>
-      <button className=" border w-[75%] md:w-[300px] p-3 text-gray-500 hover:border-[#c5c5c5]" title="ver reseñas en Google">
+      <Link to={"https://tinyurl.com/opinionesSanJorge"} target="_blank" rel="noopener noreferrer" className="text-center border w-[75%] md:w-[300px] p-3 text-gray-500 border-[#c5c5c5] hover:border-[#aaa9a9] shadow-md hover:shadow" title="ver reseñas en Google">
         {traduccion.paginaHome.seccionResenas.btn}
-      </button>
+      </Link>
     </section>
   );
 };

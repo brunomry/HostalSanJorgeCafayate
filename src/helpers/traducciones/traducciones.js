@@ -166,11 +166,53 @@ export const traducciones={
         "horarioDesayuno":"Horario Desayuno: 8:30 a 09:45 am (sin excepción)",
         "subtitulo3": "Formas de pago",
         "mediosPago": "Además de efectivo, aceptamos transferencias bancarias y también puedes abonar a través de link de mercadopago proporcionado por nosotros donde podrás utilizar tu tarjeta de débito/crédito. Esta última opción tiene un 10% de recargo.",
-        "nota":"NOTA: Tarifa aplicable del 1 al 7 de Enero de 2025. Consultar tarifa para otras fechas."
+        "nota":"NOTA: Tarifa aplicable del 1 al 6 de Enero de 2025. Consultar tarifa para otras fechas."
       },
       "habitaciones": [
         ...habitacionesEs
-      ]
+      ],
+      "validaciones": {
+        "form_exito": "✅ Tu solicitud de reserva fue enviada. En breve nos pondremos en contacto.",
+        "form_error": "❌ Hubo un error al enviar la solicitud de reserva. Intenta nuevamente más tarde.",
+        "form_error_text": "Intenta nuevamente más tarde.",
+        "form_required": "Por favor, completa todos los campos.",
+        "salidaValida": "La fecha de salida debe ser posterior a la de entrada",
+        "capacidadValida": "La capacidad total no puede superar 18 personas",
+        "nombre": {
+          "required": "El nombre y apellido es obligatorio",
+          "minLength": "Debe tener al menos 7 caracteres",
+          "maxLength": "Debe tener como máximo 30 caracteres",
+          "pattern": "Ingrese nombre y apellido válido.",
+        },
+        "email": {
+          "required": "El e-mail es obligatorio",
+          "minLength": "El e-mail debe contener al menos 4 caracteres",
+          "maxLength":  "El e-mail debe contener como máximo 265 caracteres",
+          "pattern": "Ingrese una dirección de e-mail válida",
+        },
+        "telefono": {
+          "required": "El teléfono es obligatorio.",
+          "minLength": "Debe contener al menos 5 caracteres",
+          "maxLength": "Debe contener como máximo 11 caracteres",
+          "pattern": "Ingrese un número de teléfono válido.",
+          },
+        "checkin": {
+          "required": "La fecha de check-in es obligatoria",
+        },
+        "checkout": {
+          "required": "La fecha de check-out es obligatoria",
+        },
+        "adultos": {
+          "required": "Debe seleccionar la cantidad de adultos",
+        },
+        "mensaje": {
+          "required": "El mensaje es obligatorio",
+          "minLength": "El mensaje debe contener al menos 25 caracteres",
+          },
+        "pais": {
+          "required": "Seleccionar un país es obligatorio",
+        },
+      }
     },
     "en": {
       "hostal":"Hostel San Jorge Cafayate",
@@ -240,14 +282,14 @@ export const traducciones={
           "Cuadruple",
           "Quintuple"
         ],
-        "nota":"NOTA: Tarifas aplicables del 1 al 6 de Enero de 2025. Consultar tarifas para otras fechas."
+        "nota":"NOTE: Rates applicable from January 1 to January 6, 2025. Please inquire for rates on other dates."
       }, 
       "paginaNosotros":{
         "title":"About us",
         "descripcion1": "With more than 15 years providing accommodation to our guests, at Hostal San Jorge we offer you a comfortable, quiet and ideal place to rest. Permit us be your home away and enjoy a greate and memorable experience, while you explore the charms of the beautiful Cafayate city, Salta province, Argentinian north-west.",
         "subtitulo": "Our history",
         "descripcion2": "Hostal San Jorge began its history as a family project with the vision of offering tourists and travelers a place to rest and relax after exploring the wonderful landscapes of Cafayate. Over the years, we have become a preferred option for those who are looking for a quiet, warm and cozy place, always maintaining the personalized attention which sets us apart.",
-        "apertura":"",
+        "apertura":"Hostal San Jorge opened its doors in 2008.",
         "subtitulo1": "Mission",
         "descripcion3": "Our mission is to offer our guests a comfortable, quiet and ideal place to rest, with a commitment: provide a unique and pleasant experience, where you can feel at home while exploring the local culture.",
         "subtitulo2": "Vision",
@@ -274,7 +316,7 @@ export const traducciones={
           "email": "Email",
           "telefono": "Telephone",
           "mensaje": "Message",
-          "textarea":"Hello, I wanted to ask about...",
+          "textarea":"Hello, I wanted to inquire about...",
           "btnEnviar": "Submit"
         }
       },
@@ -317,7 +359,7 @@ export const traducciones={
           "cuadruple": "Cuadruple",
           "quintuple": "Quintuple"
         },
-        "tarifaActual":"Tarifa del 1 al 6 de Enero 2025",
+        "tarifaActual":"Rate from January 1 to January 6, 2025.",
         "capacidad":"Maximum capacity for",
         "subtitulo1":"Amenities",
         "btnReservar":"Reserve",
@@ -328,10 +370,53 @@ export const traducciones={
         "horarioDesayuno":"Breakfast time: 8:30 a.m. to 9:45 a.m. (no exceptions)",
         "subtitulo3":"Payment Methods",
         "mediosPago": "In addition to cash, we accept bank transfers and you can also pay through the Mercadopago link provided by us where you can use your debit/credit card. This last option has a 10% extra charge.",
-        "nota":"NOTA: Tarifa aplicable del 1 al 6 de Enero de 2025. Consultar tarifa para otras fechas."
+        "nota":"NOTE: Rate applicable from January 1 to January 6, 2025. Please inquire for rate on other dates."
       },
       "habitaciones": [
         ...habitacionesEn
-      ]
+      ],
+      "validaciones": {
+        "form_exito": "✅ Your booking request has been sent. We will contact you as soon as possible.",
+        "form_error": "❌  There was an error sending the booking request. Please try again later.",
+        "form_error_text": "Try again later.",
+        "form_required": "Please, fill in all fields",
+        "salidaValida": "The check-out date must be later than the arrival date.",
+        "capacidadValida": "Total capacity cannot exceed 18 people",
+        "nombre": {
+          "required": "First and last name is required",
+          "minLength": "Must contain at least 7 characters",
+          "maxLength": "Must contain a maximum of 30 characters",
+          "pattern": "Enter a valid first and last name.",
+        },
+        "email": {
+          "required": "Email is required",
+          "minLength": "Email must contain at least 4 characters",
+          "maxLength":  "Email address must contain a maximum of 265 characters",
+          "pattern": "Enter a valid email address",
+        },
+        "telefono": {
+          "required": "Phone is required.",
+          "minLength": "Must contain at least 5 characters",
+          "maxLength": "Must contain a maximum of 11 characters",
+          "pattern": "Enter a valid phone number.",
+          },
+        "checkin": {
+          "required": "The check-in date is obligatory",
+        },
+        "checkout": {
+          "required": "The check-out date is obligatory",
+        },
+        "adultos": {
+          "required": "Debe seleccionar la cantidad de adultos",
+        },
+        "mensaje": {
+          "required": "The message is obligatory",
+          "minLength": "The message must contain at least 25 characters",
+          "maxLength":"The message must contain a maximum of 500 characters"
+          },
+        "pais": {
+          "required": "Seleccionar un país es obligatorio",
+        },
+      }
     },
   };  
