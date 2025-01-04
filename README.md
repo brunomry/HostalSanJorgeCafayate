@@ -50,7 +50,7 @@ Para el despliegue del sitio web se utilizó Netlify. Puedes acceder haciendo cl
 -------------------------------------------------------
 -----------------------------
 
-### - Segunda Versión
+### - Segunda Versión (Actual)
 
 La segunda versión incluyó las siguientes funcionalidades o características principales:
 
@@ -132,7 +132,7 @@ La segunda versión incluyó las siguientes funcionalidades o características p
 
 Para el despliegue del sitio web se utilizó Netlify. Puedes acceder haciendo clic en el siguiente enlace:
 
-[Hostal San Jorge - Segunda versión](https://hostalsanjorge.netlify.app/)
+[Hostal San Jorge - Segunda versión](https://hostalsanjorgecafayate.netlify.app/)
 
 ## Actualizaciones Futuras
 
