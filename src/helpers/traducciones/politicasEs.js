@@ -13,7 +13,7 @@ const politicasEs = [
     titulo: "Política de Cancelación",
     descripcion: "En caso de cancelar tu reserva, ten en cuenta lo siguiente:",
     lista: [
-      "La seña del 50% del valor total de la reserva no es reembolsable en caso de cancelación con menos de 48 horas de antelación.",
+      "La seña del 50% del valor total de la reserva no es reembolsable en caso de cancelación.",
     ],
   },
   {

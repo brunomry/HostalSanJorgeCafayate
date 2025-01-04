@@ -11,9 +11,9 @@ const politicasEn = [
   },
   {
     titulo: "Cancellation Policy",
-    descripcion: "In case of cancellation , please note the following:",
+    descripcion: "In case of cancellation, please note the following:",
     lista: [
-      "The guarantee deposit of 50% of the total value of the reservation is non-refundable if the cancellation is made less than 48 hours before the arrival date.",
+      "The guarantee deposit of 50% of the total value of the reservation is non-refundable if the cancellation.",
     ],
   },
   {
