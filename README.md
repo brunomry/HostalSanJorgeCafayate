@@ -122,7 +122,7 @@ La segunda versión incluyó las siguientes funcionalidades o características p
 
 2. **Integración con Redes Sociales:** Se integraron cuentas de redes sociales del hostal, permitiendo a los visitantes acceder fácilmente a los perfiles sociales de Facebook e Instagram desde el sitio web.
 
-3. **Optimización SEO:** Se aplicaron las técnicas correspondientes de SEO mediante la librería react-helmet y otras herramientas de forma que la aplicación web continúe en los primeros resultados de búsqueda mediante el ingreso de palabras claves como "hostal san jorge", "hostal san jorge cafayate" o "san jorge cafayate".
+3. **Optimización SEO:** Se aplicaron las técnicas correspondientes de SEO mediante la librería react-helmet y otras herramientas de forma que la aplicación web continúe en los primeros resultados de búsqueda.
 
 4. **Integración con WhatsApp:** Los usuarios pueden contactarse con el Hostal por medio de WhatsApp, ya sea de forma directa o mediante enlace de habitación.
 
