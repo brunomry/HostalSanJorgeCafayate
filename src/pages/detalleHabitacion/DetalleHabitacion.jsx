@@ -43,7 +43,7 @@ const DetalleHabitacion = ({ traduccion }) => {
           img: `${habitacion.imagenes[0]}`,
         }}
       ></Head>
-      <main className="vsm:px-4 xl:px-20 py-8 vsm:py-10 md:py-24 vsm:w-[100%] flex flex-col gap-8 text-justify ">
+      <main className="vsm:px-4 xl:px-20 py-20 lg:py-32 vsm:w-[100%] flex flex-col gap-8 text-justify ">
         <BreadcrumbDetalle habitacion={habitacion}></BreadcrumbDetalle>
         <FiltrosDetalle traduccion={traduccion}></FiltrosDetalle>
         <div className="flex flex-col flex-wrap vsm:gap-3 md:flex-row md:gap-10 vsm:w-[100%]">

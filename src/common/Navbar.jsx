@@ -64,7 +64,7 @@ const Navbar = ({setIdioma, traduccion}) => {
             } items-center justify-between vsm:w-full lg:flex lg:w-auto md:order-1`}
             id="navbar-hamburger"
           >
-            <ul className="flex flex-col justify-center text-[16px] text-white bg-white lg:bg-inherit lg:flex-row items-center p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col justify-center text-[16px] text-white bg-[#daeffd] lg:bg-inherit lg:flex-row items-center p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg lg:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li className="w-[100%] flex justify-center lg:w-[inherit]">
                 <Link
                   to={"/"}
