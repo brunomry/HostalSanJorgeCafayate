@@ -24,7 +24,7 @@ const politicasEs = [
   {
     titulo: "Política de Ruido",
     descripcion:
-      "Para garantizar la tranquilidad y respetar el descanso de todos los huéspedes, solicitamos que se mantenga un nivel de ruido discreto, especialmente después de las 11 pm.",
+      "Para garantizar la tranquilidad y respetar el descanso de todos los huéspedes, solicitamos que se mantenga un nivel de ruido discreto, especialmente después de las 00.",
   },
   {
     titulo: "Política de Edad para niños",

@@ -24,7 +24,7 @@ const politicasEn = [
   {
     titulo: "Noise Policy",
     descripcion:
-      "In order to guarantee quietness and respect to all guests, we request that a discreet noise level must be maintained, especially after 11 p.m.",
+      "In order to guarantee quietness and respect to all guests, we request that a discreet noise level must be maintained, especially after 00 am.",
   },
   {
     titulo: "Childrens Age Policy",
