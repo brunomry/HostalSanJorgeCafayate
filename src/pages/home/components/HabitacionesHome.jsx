@@ -9,33 +9,33 @@ function HabitacionesHome({ traduccion }) {
   return (
     <section className="px-4 py-8 md:px-20 md:pt-20 3xl:px-24 3xl:py-24 bg-[#e1eff8]">
       <div className="w-[100%] flex flex-col xl:flex-row gap-6 xl:gap-10 3xl:justify-center">
-        <div className="md:w-[100%] hidden md:order-1 xl:w-[50%]  md:flex lg:flex-wrap gap-1">
-          <div className="flex gap-1 md:w-[100%] max-h-[300px] containerImages">
+        <div className="md:w-[100%] flex flex-col lg:flex-row order-1 xl:w-[50%] xl:max-h-[400px] 2xl:max-h-[500px] lg:flex-wrap gap-1">
+          <div className="flex gap-1 justify-center md:justify-normal md:w-[100%] max-h-[300px] containerImages">
             <img
               src={habitacion}
               alt="Habitación quíntuple"
               title="Habitación quíntuple"
-              className="hidden lg:block lg:w-[50%] object-cover h-[100%]"
+              className="w-[45%] md:w-[50%] object-cover block h-[100%]"
             />
             <img
               src={habitacion7}
               alt="Habitación doble"
               title="Habitación doble matrimonial"
-              className="hidden md:w-[100%] md:block lg:w-[50%] lg:h-[100%] object-cover "
+              className="w-[45%] md:w-[50%] block h-[100%] object-cover "
             />
           </div>
-          <div className="flex gap-1 lg:w-[100%] max-h-[300px]">
+          <div className="flex justify-center md:justify-normal gap-1 md:w-[100%] h-[100%] md:h-[inherit] max-h-[300px]">
             <img
               src={desayuno}
               alt="Desayuno"
               title="Desayuno en salón del Hostal"
-              className="hidden lg:block lg:w-[45%] object-cover h-[100%] "
+              className="w-[45%] block lg:w-[45%] object-cover h-[100%]"
             />
             <img
               src={habitacion4}
               alt="Habitación cuádruple"
               title="Habitación cuádruple"
-              className="hidden lg:block lg:max-w-[55%] object-cover h-[100%]"
+              className="w-[45%] block md:w-[100%] md:max-w-[55%] object-cover h-[auto] lg:h-[100%]"
             />
           </div>
         </div>
@@ -53,7 +53,7 @@ function HabitacionesHome({ traduccion }) {
               {" "}
               {traduccion.paginaHome.seccionHabitaciones.subtitulo}
             </h3>
-            <div className="flex flex-wrap gap-3 flex-shrink 2xl:gap-4">
+            <div className="flex flex-wrap gap-3 flex-shrink xl:gap-1 3xl:gap-2">
               {traduccion.paginaHome.seccionHabitaciones.comodidades.map(
                 (com, index) => (
                   <span

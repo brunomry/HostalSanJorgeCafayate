@@ -21,7 +21,7 @@ const habitacionesEs = [
         nombre: "Habitación Individual",
         precio: "15.000",
         tipo: "Individual",
-        descripcion_breve: "Habitación simple de 4 m2 con cama individual",
+        descripcion_breve: "Habitación simple de 4 m\u00B2 con cama individual",
         descripcion_amplia: "Esta acogedora habitación de 4 metros cuadrados con cama individual incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 1 huésped.",
         capacidad: "1 persona",
         comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"]    
@@ -32,7 +32,7 @@ const habitacionesEs = [
         nombre: "Habitación Doble",
         precio: "35.000",
         tipo: "Doble opción 1",
-        descripcion_breve: "Habitación doble de 9 m2 con cama matrimonial",
+        descripcion_breve: "Habitación doble de 9 m\u00B2 con cama matrimonial",
         descripcion_amplia: "Esta cómoda y luminosa habitación de 9 metros cuadrados cuenta con 1 cama matrimonial e incluye comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador, ventilador, armario y un mini balcón. Cuenta con una capacidad máxima de 2 huéspedes.",
         capacidad: "2 personas",
         comodidades: ["Wi-Fi", "Aire acondicionado", "Balcón", "Armario", "Ropa de cama", "Sommier", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"]    
@@ -43,7 +43,7 @@ const habitacionesEs = [
         nombre: "Habitación Doble",
         precio: "35.000",
         tipo: "Doble opción 2",
-        descripcion_breve: "Habitación doble de 9 m2 con cama matrimonial",
+        descripcion_breve: "Habitación doble de 9 m\u00B2 con cama matrimonial",
         descripcion_amplia: "Esta habitación cuenta con 1 cama matrimonial para 2 personas y comodidades como Wi-Fi, aire acondicionado, baño privado, ropa de cama, toallas, artículos de tocador, ventilador, armario y un mini balcón. Cuenta con una capacidad máxima de 2 huéspedes.",
         capacidad: "2 personas",
         comodidades: ["Wi-Fi", "Aire acondicionado", "Balcón", "Armario", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"]  
@@ -54,7 +54,7 @@ const habitacionesEs = [
         nombre: "Habitación Triple",
         precio: "50.000",
         tipo: "Triple",
-        descripcion_breve: "Habitación triple de 10 m2 con cama matrimonial e individual",
+        descripcion_breve: "Habitación triple de 10 m\u00B2 con cama matrimonial e individual",
         descripcion_amplia: "Esta habitación cuenta con 1 cama matrimonial y 1 cama individual. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 3 huéspedes.",
         capacidad: "3 personas",
         comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador",  "Armario", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"]    
@@ -65,7 +65,7 @@ const habitacionesEs = [
         nombre: "Habitación Cuádruple",
         precio: "60.000",
         tipo: "Cuádruple",
-        descripcion_breve: "Habitación cuádruple de 11 m2 con cama matrimonial y 2 camas individuales",
+        descripcion_breve: "Habitación cuádruple de 14 m\u00B2 con cama matrimonial y 2 camas individuales",
         descripcion_amplia: "Esta amplia y cómoda habitación de 11 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 4 huéspedes.",
         capacidad: "4 personas",
         comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Armario", "Mesa pequeña", "Estufa", "Ducha", "Agua caliente", "Desayuno incluido", "Silla"]    
@@ -76,7 +76,7 @@ const habitacionesEs = [
         nombre: "Habitación Quíntuple",
         precio: "75.000",
         tipo: "Quíntuple",
-        descripcion_breve: "Habitación quíntuple de 11 m2 con cama matrimonial, cama individual y cama cucheta",
+        descripcion_breve: "Habitación quíntuple de 14 m\u00B2 con cama matrimonial, cama individual y cama cucheta",
         descripcion_amplia: "Esta amplia y cómoda habitación de 11 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 5 huéspedes.",
         capacidad: "5 personas",
         comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Armario", "Mesa pequeña", "Estufa", "Ducha", "Agua caliente","Desayuno incluido", "Silla"]    
