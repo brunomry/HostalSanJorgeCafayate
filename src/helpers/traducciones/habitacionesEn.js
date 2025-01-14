@@ -74,7 +74,7 @@ const habitacionesEn = [
         id: 4,
         imagenes: [quintuple, quintuple1, quintuple2],
         nombre: "Quintuple Room",
-        precio: "75.000",
+        precio: "70.000",
         tipo: "Quintuple",
         descripcion_breve: "14 m\u00B2 quintuple room with double bed, bunk bed and single bed.",
         descripcion_amplia: "This spacious and comfortable 14 m\u00B2 room has a double bed, a single bed and a bunk bed. It includes amenities such as Wi-Fi, private bathroom, bed linen, towels, toiletries and seiling fan. It has a maximum capacity of 5 guests.",

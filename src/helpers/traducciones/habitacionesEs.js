@@ -74,7 +74,7 @@ const habitacionesEs = [
         id: 4,
         imagenes: [quintuple, quintuple1, quintuple2],
         nombre: "Habitación Quíntuple",
-        precio: "75.000",
+        precio: "70.000",
         tipo: "Quíntuple",
         descripcion_breve: "Habitación quíntuple de 14 m\u00B2 con cama matrimonial, cama individual y cama cucheta",
         descripcion_amplia: "Esta amplia y cómoda habitación de 11 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 5 huéspedes.",
