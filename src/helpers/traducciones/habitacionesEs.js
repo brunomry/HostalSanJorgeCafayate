@@ -77,7 +77,7 @@ const habitacionesEs = [
         precio: "70.000",
         tipo: "Quíntuple",
         descripcion_breve: "Habitación quíntuple de 14 m\u00B2 con cama matrimonial, cama individual y cama cucheta",
-        descripcion_amplia: "Esta amplia y cómoda habitación de 11 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 5 huéspedes.",
+        descripcion_amplia: "Esta amplia y cómoda habitación de 14 metros cuadrados cuenta con cama matrimonial, cama individual y cama cucheta. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima para 5 huéspedes.",
         capacidad: "5 personas",
         comodidades: ["Wi-Fi", "Ropa de cama", "Toallas", "Baño privado", "Artículos de tocador", "Ventilador", "Armario", "Mesa pequeña", "Estufa", "Ducha", "Agua caliente","Desayuno incluido", "Silla"]    
       },     
