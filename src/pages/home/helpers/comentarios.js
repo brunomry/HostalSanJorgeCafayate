@@ -3,7 +3,7 @@ const comentarios = [
     id: 1,
     nombre: "Jesús",
     comentario: "Hermoso el lugar sin molestias y la comida espectacular",
-    fecha: "Hace un día",
+    fecha: "Hace unos días",
     estrellas: 5,
     ruta: "https://g.co/kgs/ZAup16L",
   },
