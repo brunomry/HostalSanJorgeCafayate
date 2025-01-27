@@ -1,6 +1,17 @@
 const comentarios = [
   {
     id: 1,
+    nombre: "Enzo Joaquin Alvarado Rosales",
+    comentario: `Hotel perfecto para familia.
+                  Ubicacion cerca de la plaza, muy buena, especialmente destaco la gran y calida atencion de los dueños que siempre que fui son buenos.
+                  Las habitaciones muy lindas, el ventilador de techo enfria como aire acondicionado, es maravilloso. El baño espacioso y comodo, el desayuno muy bueno y agradable.
+                  Recomendado si quieres venir con familia`,
+    fecha: "Hace unos días",
+    estrellas: 5,
+    ruta: "https://goo.gl/maps/PA4RvqeLK1T6jB6W7",
+  },
+  {
+    id: 1,
     nombre: "Jesús",
     comentario: "Hermoso el lugar sin molestias y la comida espectacular",
     fecha: "Hace unos días",

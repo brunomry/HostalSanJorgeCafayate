@@ -52,7 +52,7 @@ const habitacionesEs = [
         id: 5,
         imagenes: [triple, triple1, triple2],
         nombre: "Habitación Triple",
-        precio: "50.000",
+        precio: "45.000",
         tipo: "Triple",
         descripcion_breve: "Habitación triple de 10 m\u00B2 con cama matrimonial e individual",
         descripcion_amplia: "Esta habitación cuenta con 1 cama matrimonial y 1 cama individual. Incluye comodidades como Wi-Fi, baño privado, ropa de cama, toallas, artículos de tocador y ventilador. Cuenta con una capacidad máxima de 3 huéspedes.",

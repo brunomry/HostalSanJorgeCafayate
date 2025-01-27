@@ -52,7 +52,7 @@ const habitacionesEn = [
         id: 5,
         imagenes: [triple, triple1, triple2],
         nombre: "Triple Room",
-        precio: "50.000",
+        precio: "45.000",
         tipo: "Triple",
         descripcion_breve: "Triple room of 10 m\u00B2 with a double bed and a single bed.",
         descripcion_amplia: "This room has 1 double bed and 1 single bed. It includes amenities such as Wi-Fi, private bathroom, bed linen, towels, toiletries and seiling fan. It has a maximum capacity of 3 guests.",
